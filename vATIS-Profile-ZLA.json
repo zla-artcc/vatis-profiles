@@ -1,6 +1,8 @@
 {
   "name": "ZLA",
   "id": "270f0e20-7dba-49cb-9335-0c80fcb5417e",
+  "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profile/vATIS-profile-ZLA.json",
+  "updateSerial": 2024122001,
   "composites": [
     {
       "id": "1e59ad0a-b24d-4bb7-b4d1-ce34ac4439d2",
