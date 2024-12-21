@@ -2,7 +2,7 @@
   "name": "Los Angeles Center (ZLA)",
   "id": "e1126dde-5a6a-40dd-ad5c-3f594f8c0f82",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profile/releases/latest/download/vATIS-Profile-ZLA.json",
-  "updateSerial": 2024122004,
+  "updateSerial": 2024122005,
   "stations": [
     {
       "id": "1e59ad0a-b24d-4bb7-b4d1-ce34ac4439d2",
@@ -1802,7 +1802,7 @@
         {
           "id": "ad47e047-c7df-420b-bf13-0b4d93587ba6",
           "name": "WEST - INST AND VISUAL",
-          "airportConditions": "INST APCHS AND RNAV RNP APCHS IN PROG RWY 24R AND RWY 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWY 24L, RWY 25R.",
+          "airportConditions": "INST APCHS AND RNAV RNP APCHS IN PROG RWY 24R AND RWY 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND 25.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. CALL FOR PUSH ONLY REQUIRED ONTO A TAXIWAY. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
