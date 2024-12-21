@@ -3097,7 +3097,7 @@
         },
         {
           "string": "RNAV",
-          "spoken": "ARE NAV"
+          "spoken": "R NAV"
         }
       ],
       "airportConditionDefinitions": [],
@@ -3404,7 +3404,7 @@
         },
         {
           "string": "RNAV",
-          "spoken": "ARE NAV"
+          "spoken": "R NAV"
         },
         {
           "string": "25",
