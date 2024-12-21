@@ -746,12 +746,12 @@
           "voice": "TWO ZERO RIGHT"
         },
         {
-          "variableName": "02L",
+          "variableName": "2L",
           "text": "2L",
           "voice": "TWO LEFT"
         },
         {
-          "variableName": "02R",
+          "variableName": "2R",
           "text": "2R",
           "voice": "TWO RIGHT"
         }
@@ -1923,22 +1923,22 @@
           "voice": "TWO FIVE LEFT"
         },
         {
-          "variableName": "06L",
+          "variableName": "6L",
           "text": "6L",
           "voice": "SIX LEFT"
         },
         {
-          "variableName": "06R",
+          "variableName": "6R",
           "text": "6R",
           "voice": "SIX RIGHT"
         },
         {
-          "variableName": "07L",
+          "variableName": "7L",
           "text": "7L",
           "voice": "SEVEN LEFT"
         },
         {
-          "variableName": "07R",
+          "variableName": "7R",
           "text": "7R",
           "voice": "SEVEN RIGHT"
         }
