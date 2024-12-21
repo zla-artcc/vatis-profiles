@@ -2,7 +2,7 @@
   "name": "Los Angeles Center (ZLA)",
   "id": "e1126dde-5a6a-40dd-ad5c-3f594f8c0f82",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profile/releases/latest/download/vATIS-Profile-ZLA.json",
-  "updateSerial": 2024122001,
+  "updateSerial": 2024122002,
   "stations": [
     {
       "id": "1e59ad0a-b24d-4bb7-b4d1-ce34ac4439d2",
@@ -1792,7 +1792,7 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 133800000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
-      "useNotamPrefix": false,
+      "useNotamPrefix": true,
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
@@ -4418,7 +4418,7 @@
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "US Male"
+        "voice": "Default"
       },
       "presets": [
         {
