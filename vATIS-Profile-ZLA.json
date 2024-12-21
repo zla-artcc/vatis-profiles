@@ -2638,7 +2638,7 @@
         {
           "id": "a343e52a-16c4-43ed-a178-1e753a380712",
           "name": "WEST - IMC",
-          "airportConditions": "LANDING RUNWAY 27 LOCALIZER, @RNAV APPROACHES IN USE. DEPTG RWY 27.",
+          "airportConditions": "LANDING RUNWAY 27. LOCALIZER, @RNAV APPROACHES IN USE. DEPTG RWY 27.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
