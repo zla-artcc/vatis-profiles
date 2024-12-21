@@ -4091,7 +4091,7 @@
         {
           "id": "b9e9fd9e-cb2b-45b9-8498-dca515aedbca",
           "name": "SOUTH (16)",
-          "airportConditions": "ILS Z RWY 16R APP, AND VIS APPS IN USE. LDG AND DEPTG RWYS 16L AND ^16R.",
+          "airportConditions": "ILS-Z RWY 16R APP, AND VIS APPS IN USE. LDG AND DEPTG RWYS 16L AND ^16R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -4119,7 +4119,13 @@
           }
         }
       ],
-      "contractions": [],
+      "contractions": [
+        {
+          "variableName": "ILS-Z",
+          "text": "ILS-Z",
+          "voice": "EYE EL ESS ZULU"
+        }
+      ],
       "airportConditionDefinitions": [],
       "notamDefinitions": []
     },
