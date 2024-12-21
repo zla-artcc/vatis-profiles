@@ -694,7 +694,7 @@
         {
           "id": "7d0a5818-3626-4294-9d48-d3d73e5d2c15",
           "name": "SOUTH",
-          "airportConditions": "VIS APPS RWY 20R IN USE. LDG AND DEPTG RWYS 20R, AND 20L. ",
+          "airportConditions": "VIS APPS RWY 20R IN USE. LDG AND DEPTG RWYS 20R, AND ^20L. ",
           "notams": "CAUTION, SIMULTAENOUS OPS TO CLOSELY SPACED PARALLEL RWYS. ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -704,7 +704,7 @@
         {
           "id": "bd9500c1-5036-4b3b-b9b7-6315f213793d",
           "name": "SOUTH IMC",
-          "airportConditions": "ILS RWY 20R APPROACH IN USE. LDG AND DEPTG RWYS 20R, AND 20L.",
+          "airportConditions": "ILS RWY 20R APPROACH IN USE. LDG AND DEPTG RWYS 20R, AND ^20L.",
           "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -714,7 +714,7 @@
         {
           "id": "464dad55-7adb-4db3-9d97-a350df43c1d6",
           "name": "NORTH",
-          "airportConditions": "VIS APPS IN USE. LDG AND DEPTG RWY 2L, AND 2R.",
+          "airportConditions": "VIS APPS IN USE. LDG AND DEPTG RWY 2L, AND ^2R.",
           "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TAXIWAYS AND RUNWAYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS. ",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -724,7 +724,7 @@
         {
           "id": "afa05742-88e9-4363-b52f-5b609c6418ed",
           "name": "NORTH IMC",
-          "airportConditions": "@RNAV AND LOC BC APPS IN USE. LDG AND DEPTG RWY 2L, AND 2R.",
+          "airportConditions": "@RNAV AND LOC BC APPS IN USE. LDG AND DEPTG RWY 2L, AND ^2R.",
           "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.  ",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -733,6 +733,11 @@
         }
       ],
       "contractions": [
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "R NAV"
+        },
         {
           "variableName": "20L",
           "text": "20L",
@@ -1087,7 +1092,7 @@
         {
           "id": "d9defc81-0e88-448d-892b-e8d75c8661c0",
           "name": "CONFIG 2 (1/8)",
-          "airportConditions": "VIS APPS IN USE RWY 1L. LDG RWYS 1L, AND 1R. DEPTG RWY 8L AT TWY A8.",
+          "airportConditions": "VIS APPS IN USE RWY 1L. LDG RWYS 1L, AND ^1R. DEPTG RWY 8L AT TWY A8.",
           "notams": "LAS VEGAS METROPLEX PROCEDURES IN EFFECT. VERIFY NAVIGATIONAL DATA IS UP TO DATE. ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -1439,7 +1444,7 @@
         {
           "id": "b79b588a-bf64-45dd-ac1f-1900c01d6f49",
           "name": "WEST",
-          "airportConditions": "ILS RWY 30 APPROACH IN USE. ARRIVING AND DEPARTING RWYS 30, 26L, 26R.",
+          "airportConditions": "ILS RWY 30 APPROACH IN USE. ARRIVING AND DEPARTING RWYS 30, ^26L, ^26R.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -1448,7 +1453,7 @@
         {
           "id": "79bd3308-7cd4-480f-a2da-c1779938e676",
           "name": "EAST",
-          "airportConditions": "LA RIVER VISUAL RWY 12 IN USE. RNP APPROACH AVAILABLE ON REQUEST. ARRIVING AND DEPARTING RWY 12, 8L, 8R.",
+          "airportConditions": "LA RIVER VISUAL RWY 12 IN USE. @RNAV RNP APPROACH AVAILABLE ON REQUEST. ARRIVING AND DEPARTING RWYS 12, ^8L, ^8R.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -1456,6 +1461,11 @@
         }
       ],
       "contractions": [
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "R NAV"
+        },
         {
           "variableName": "26L",
           "text": "26L",
@@ -1860,7 +1870,7 @@
         {
           "id": "87221528-e3c3-4742-8ae8-121af32bfea4",
           "name": "EAST - SIMUL INST AND VISUAL",
-          "airportConditions": "SIMUL INST APCHS IN PROG RWY 6L AND RWY 7R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL VISUAL APCHS TO ALL RWYS IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS AND 7.",
+          "airportConditions": "SIMUL INST APCHS IN PROG RWY 6L AND RWY 7R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL VISUAL APCHS TO ALL RWYS IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 6 AND 7.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. CALL FOR PUSH ONLY REQUIRED ONTO A TAXIWAY. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -2264,7 +2274,7 @@
         {
           "id": "4a6ddfd0-4b56-4326-8826-affeeddf292d",
           "name": "NORMAL (26)",
-          "airportConditions": "ILS RWY 26L APP IN USE, OR VECTOR FOR VIS APP WILL BE PROVIDED. LDG AND DEPTG RWYS 26R, AND 26L.",
+          "airportConditions": "ILS RWY 26L APP IN USE, OR VECTOR FOR VIS APP WILL BE PROVIDED. LDG AND DEPTG RWYS 26R, AND ^26L.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -2284,7 +2294,7 @@
         {
           "id": "425133e1-e815-46ba-a86f-247e7a12a1f3",
           "name": "ODO (8/26)",
-          "airportConditions": "ILS RWY 26L APP IN USE. LDG RWYS 26L, AND 26R. DEPTG RWY 8L, AND 8R. OPPOSITE DRCTN OPS IN EFFECT.",
+          "airportConditions": "ILS RWY 26L APP IN USE. LDG RWYS 26L, AND ^26R. DEPTG RWYS 8L, AND ^8R. OPPOSITE DRCTN OPS IN EFFECT.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -2664,7 +2674,13 @@
           }
         }
       ],
-      "contractions": [],
+      "contractions": [
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "R NAV"
+        }
+      ],
       "airportConditionDefinitions": [],
       "notamDefinitions": []
     },
@@ -3334,7 +3350,7 @@
         {
           "id": "20ac6dd7-2eab-4776-b8a2-8ff1964cc31b",
           "name": "25/15",
-          "airportConditions": "VOR OR GPS RWY 25, AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, 15L, AND 15R.",
+          "airportConditions": "VOR OR GPS RWY 25, AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, ^15L, AND ^15R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -3344,7 +3360,7 @@
         {
           "id": "2802dd50-1d05-41e5-b4da-39f2acee5646",
           "name": "25/33",
-          "airportConditions": "VOR OR GPS RWY 25, AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, 33L, AND 33R.",
+          "airportConditions": "VOR OR GPS RWY 25, AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, ^33L, AND ^33R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -3354,7 +3370,7 @@
         {
           "id": "9c02de1b-90d7-42b1-8478-e2efd6755a0d",
           "name": "7/15",
-          "airportConditions": "ILS AND @RNAV RWY 7 AND VIS APPS IN USE. LDG AND DEPTG RWYS 7, 15L, AND 15R.",
+          "airportConditions": "ILS AND @RNAV RWY 7 AND VIS APPS IN USE. LDG AND DEPTG RWYS 7, ^15L, AND ^15R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -3364,7 +3380,7 @@
         {
           "id": "acb28145-27f6-4089-9451-46c1049b7f67",
           "name": "17/33",
-          "airportConditions": "ILS AND @RNAV RWY 7, AND VIS APPS IN USE. LDG AND DEPTG RWYS 7, 33L, AND 33R.",
+          "airportConditions": "ILS AND @RNAV RWY 7, AND VIS APPS IN USE. LDG AND DEPTG RWYS 7, ^33L, AND ^33R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -4073,7 +4089,7 @@
         {
           "id": "b9e9fd9e-cb2b-45b9-8498-dca515aedbca",
           "name": "SOUTH (16)",
-          "airportConditions": "ILS Z RWY 16R APP, AND VIS APPS IN USE. LDG AND DEPTG RWYS 16L AND 16R.",
+          "airportConditions": "ILS-Z RWY 16R APP, AND VIS APPS IN USE. LDG AND DEPTG RWYS 16L AND ^16R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -4083,7 +4099,7 @@
         {
           "id": "e00b7ede-252a-4fb1-9906-3cae10d306ba",
           "name": "SOUTH - IMC (16)",
-          "airportConditions": "ILS-Z RWY 16R APCH IN USE. LNDG AND DEPTG RWY 16 L/R.",
+          "airportConditions": "ILS-Z RWY 16R APCH IN USE. LNDG AND DEPTG RWYS 16L, AND ^16R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -4093,7 +4109,7 @@
         {
           "id": "33ddc6f1-907e-451d-907c-5f850091f5c5",
           "name": "NORTH (34)",
-          "airportConditions": "VIS APPS IN USE. LDG AND DEPTG RWYS 34L, AND 34R.",
+          "airportConditions": "VIS APPS IN USE. LDG AND DEPTG RWYS 34L, AND ^34R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -5139,7 +5155,7 @@
         {
           "id": "8266924a-e61f-42f3-8871-42d60b5d9745",
           "name": "NORMAL VMC (31L/R)",
-          "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPTG RWYS 31L, 31R.",
+          "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPTG RWYS 31L, ^31R.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -5148,7 +5164,7 @@
         {
           "id": "580f3bb1-c0cf-4b77-85ff-cc03fa5f7e0a",
           "name": "NORMAL IMC (31L/R)",
-          "airportConditions": "@RNAV APPROACHES IN USE. LANDING RWY 31L, RWY 31R",
+          "airportConditions": "@RNAV APPROACHES IN USE. LANDING RWYS 31L, ^31R",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -5157,7 +5173,7 @@
         {
           "id": "07b58ec4-fb60-48c4-a83a-f286d92836c4",
           "name": "SOUTH VMC (13L/R)",
-          "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPTG RWYS 13L, 13R.",
+          "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPTG RWYS 13L, ^13R.",
           "notams": "EXPECT DELAYS FOR DEPARTURES TO OAKLAND CENTER AIRPORTS INCLUDING KSFO, KSJC, KOAK, KSMF, AND KMRY. PILOTS WISHING TO FLY IN THE EVENT SHOULD BOTH DEPART FROM AND ARRIVE AT EVENT AIRPORTS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -7519,7 +7535,7 @@
         {
           "id": "4e9e3ee6-182d-4ef8-a6e0-8b42e7028445",
           "name": "WEST",
-          "airportConditions": "VISUAL APPROACHES IN USE. LANDING RWYS 28R, 28L.",
+          "airportConditions": "VISUAL APPROACHES IN USE. LANDING RWYS 28R, ^28L.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -7868,7 +7884,7 @@
         {
           "id": "fdb817ee-bea0-476a-a8e7-f4051180b576",
           "name": "RWY 17/35 ODO",
-          "airportConditions": "VISUAL APPROACHES IN USE. ARRIVING RWYS 35L, 35R. DEPARTING RWYS 17L, 17R.",
+          "airportConditions": "VISUAL APPROACHES IN USE. ARRIVING RWYS 35L, ^35R. DEPARTING RWYS 17L, ^17R.",
           "notams": "OPPOSITE DIRECTION OPERATIONS IN USE.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -8197,7 +8213,7 @@
         {
           "id": "92cec4fb-4225-46c1-b85d-a4deca07ed86",
           "name": "RWYS 12L/R",
-          "airportConditions": "VISUAL APPROACHS IN USE. ARRIVING AND DEPARTING RWYS 12L, 12R.",
+          "airportConditions": "VISUAL APPROACHS IN USE. ARRIVING AND DEPARTING RWYS 12L, ^12R.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false

@@ -4119,13 +4119,7 @@
           }
         }
       ],
-      "contractions": [
-        {
-          "variableName": "ILS-Z",
-          "text": "ILS-Z",
-          "voice": "EYE EL ESS ZULU"
-        }
-      ],
+      "contractions": [],
       "airportConditionDefinitions": [],
       "notamDefinitions": []
     },
