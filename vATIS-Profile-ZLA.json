@@ -2,7 +2,7 @@
   "name": "Los Angeles ARTCC (ZLA)",
   "id": "e1126dde-5a6a-40dd-ad5c-3f594f8c0f82",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profile/releases/latest/download/vATIS-Profile-ZLA.json",
-  "updateSerial": 2024122006,
+  "updateSerial": 2024122701,
   "stations": [
     {
       "id": "1e59ad0a-b24d-4bb7-b4d1-ce34ac4439d2",
