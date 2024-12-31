@@ -4,7 +4,7 @@
 
 **vATIS-Profile-<TRACON>.json**: Each of these profiles contains more airports for specific TRACONs. Auto-updating.
 
-**vATIS-Profile-ZLA-Static.json**: Static copy of vATIS-Profile-ZLA.json. This file will not auto-update.
+**vATIS-Profile-ZLA-Static.json**: Archived, legacy static copy. This file will not auto-update in vATIS.
 
 **vATIS-Profile-ZLA-DEV.json**: This is for testing.
 
