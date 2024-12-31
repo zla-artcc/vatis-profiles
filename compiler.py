@@ -4,7 +4,7 @@ Each vATIS profile must exist in the root directory and be defined in vars below
 Each vATIS profile must contain at least a defined "name" key.
 Example:
     {
-        "name": "Los Angeles ARTCC (ZLA)",
+        "name": "Los Angeles ARTCC (ZLA)"
     }
 Ideally, the station profile also includes the "id" key.
 """
@@ -31,9 +31,21 @@ SBA_PROFILE_STATIONS = []
 SCT_PROFILE = "./vATIS-Profile-SCT.json"
 SCT_PROFILE_STATIONS = []
 
-def build_station_list(search_query, output_list):
+# These airports will not be included in any profile.
+EXCLUDE_AIRPORTS = []
+
+def filter_all_stations():
+    """ Filters airports in EXCLUDE_AIRPORTS """
+    available_stations = ALL_STATIONS
+    for available_stations_index, each_station in enumerate(available_stations):
+        for each_exclude_airport in EXCLUDE_AIRPORTS:
+            if each_exclude_airport in each_station:
+                available_stations.pop(available_stations_index)
+    return available_stations
+
+def build_station_list(search_query, input_list, output_list):
     """ Builds a list of all station files """
-    for each_station in ALL_STATIONS:
+    for each_station in input_list:
         for each_search_query in search_query:
             if each_search_query in each_station:
                 output_list.append(each_station)
@@ -62,22 +74,24 @@ def merge_stations(input_stations, vatis_profile):
         new_data["stations"] = merged_stations
         json.dump(new_data, vatis_profile_file, indent=2)
 
+AVAILABLE_STATIONS = filter_all_stations()
+
 # Build the ZLA profile
-build_station_list(ZLA_PROFILE_AIRPORTS, ZLA_PROFILE_STATIONS)
+build_station_list(ZLA_PROFILE_AIRPORTS, AVAILABLE_STATIONS, ZLA_PROFILE_STATIONS)
 merge_stations(ZLA_PROFILE_STATIONS, ZLA_PROFILE)
 
 # Build the JCF profile
-build_station_list(['/JCF'], JCF_PROFILE_STATIONS)
+build_station_list(['/JCF'], AVAILABLE_STATIONS, JCF_PROFILE_STATIONS)
 merge_stations(JCF_PROFILE_STATIONS, JCF_PROFILE)
 
 # Build the L30 profile
-build_station_list(['/L30'], L30_PROFILE_STATIONS)
+build_station_list(['/L30'], AVAILABLE_STATIONS, L30_PROFILE_STATIONS)
 merge_stations(L30_PROFILE_STATIONS, L30_PROFILE)
 
 # Build the SBA profile
-build_station_list(['/SBA'], SBA_PROFILE_STATIONS)
+build_station_list(['/SBA'], AVAILABLE_STATIONS, SBA_PROFILE_STATIONS)
 merge_stations(SBA_PROFILE_STATIONS, SBA_PROFILE)
 
 # Build the SCT profile
-build_station_list(['/SCT'], SCT_PROFILE_STATIONS)
+build_station_list(['/SCT'], AVAILABLE_STATIONS, SCT_PROFILE_STATIONS)
 merge_stations(SCT_PROFILE_STATIONS, SCT_PROFILE)
