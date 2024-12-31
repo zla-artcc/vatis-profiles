@@ -8,4 +8,4 @@
 
 **vATIS-Profile-ZLA-DEV.json**: This is for testing.
 
-**Download the latest release at (https://github.com/ZLA-ARTCC/vatis-profile/releases/latest).**
+**Download the latest release at (https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest).**
