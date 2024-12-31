@@ -9,3 +9,6 @@
 **vATIS-Profile-ZLA-DEV.json**: This is for testing.
 
 **Download the latest release at (https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest).**
+
+**How to Update**
+Make changes to .station files and submit pull requests. Do not edit vATIS profiles except for releaseSerial.
