@@ -1,8 +1,10 @@
 # ZLA vATIS Profile
 
-**vATIS-Profile-ZLA.json**: This is the auto-updating profile. If you import this file to vATIS v4.1.0-beta.1 or newer, it will automatically update.
+**vATIS-Profile-ZLA.json**: This is the auto-updating profile for general use. If you import this file to vATIS v4.1.0-beta.1 or newer, it will automatically update.
 
-**vATIS-Profile-ZLA-Static.json**: For now, this is mostly the current file found at (https://laartcc.org/downloads).
+**vATIS-Profile-<TRACON>.json**: Each of these profiles contains more airports for specific TRACONs. Auto-updating.
+
+**vATIS-Profile-ZLA-Static.json**: Static copy of vATIS-Profile-ZLA.json. This file will not auto-update.
 
 **vATIS-Profile-ZLA-DEV.json**: This is for testing.
 
