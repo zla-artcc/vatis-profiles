@@ -26,15 +26,14 @@ PROFILES = {
 }
 
 # Exclude these airports from all profiles.
-EXCLUDE_AIRPORTS = {}
+EXCLUDE_AIRPORTS = []
 
 def filter_available_stations():
     """Remove airports in EXCLUDE_AIRPORTS from AVAILABLE_STATIONS."""
-    for index, each_station in enumerate(AVAILABLE_STATIONS):
-        for each_exclude_airport in EXCLUDE_AIRPORTS:
-            if each_exclude_airport in each_station:
+    for index, station in enumerate(AVAILABLE_STATIONS):
+        for airport in EXCLUDE_AIRPORTS:
+            if airport in station:
                 AVAILABLE_STATIONS.pop(index)
-    return AVAILABLE_STATIONS
 
 def build_station_list(station_filter):
     """
@@ -42,29 +41,30 @@ def build_station_list(station_filter):
     
     Args:
         station_filter (list): List of substrings to match (e.g., airport codes or folder names).
-        input_station_list (list): List of all available station file paths.
     
     Returns:
-        output_stations (list): A list of station file paths that match the filter.
+        profile_stations (list): A list of station file paths that match the filter.
     
     Example:
         station_filter = ['/SCT']
-        input_station_list = ['./stations/SCT/KLAX.station', './stations/L30/KLAS.station']
+        AVAILABLE_STATIONS = ['./stations/SCT/KLAX.station', './stations/L30/KLAS.station']
         Result = ['./stations/SCT/KLAX.station']
     """
-    output_stations = []
-    for each_station in AVAILABLE_STATIONS:
-        for filter_item in station_filter:
-            if filter_item in each_station:
-                output_stations.append(each_station)
-    return output_stations
+    profile_stations = []
 
-def build_profile(profile_station_list, vatis_profile):
+    for station in AVAILABLE_STATIONS:
+        for filter_item in station_filter:
+            if filter_item in station:
+                profile_stations.append(station)
+
+    return profile_stations
+
+def build_profile(profile_stations, vatis_profile):
     """
     Build a vATIS profile using a list of stations
 
     Args:
-        profile_station_list (list): A list of station files
+        profile_stations (list): A list of station files
         vatis_profile (str): A vATIS profile
     
     Example:
@@ -75,8 +75,8 @@ def build_profile(profile_station_list, vatis_profile):
     merged_stations = []
 
     # Open each station file from input_stations (a list of files) and appends to merged_stations
-    for each_station in profile_station_list:
-        with open(each_station, "r", encoding="utf-8") as station_file:
+    for station in profile_stations:
+        with open(station, "r", encoding="utf-8") as station_file:
             station_data = json.load(station_file)
             merged_stations.append(station_data)
 
