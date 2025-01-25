@@ -216,6 +216,12 @@
             "voice": "{weather}"
           }
         },
+        "recentWeather": {
+          "template": {
+            "text": "RECENT WEATHER {weather}",
+            "voice": "RECENT WEATHER {weather}"
+          }
+        },
         "clouds": {
           "identifyCeilingLayer": true,
           "convertToMetric": false,
@@ -301,6 +307,12 @@
             "voice": "TRANSITION LEVEL {trl}"
           }
         },
+        "notams": {
+          "template": {
+            "text": "NOTAMS... {notams}",
+            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+          }
+        },
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
@@ -313,7 +325,6 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 132650000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
-      "useNotamPrefix": true,
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
@@ -394,7 +405,13 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ]
     },
     {
       "identifier": "KSBP",

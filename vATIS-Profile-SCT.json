@@ -216,6 +216,12 @@
             "voice": "{weather}"
           }
         },
+        "recentWeather": {
+          "template": {
+            "text": "RECENT WEATHER {weather}",
+            "voice": "RECENT WEATHER {weather}"
+          }
+        },
         "clouds": {
           "identifyCeilingLayer": true,
           "convertToMetric": false,
@@ -301,6 +307,12 @@
             "voice": "TRANSITION LEVEL {trl}"
           }
         },
+        "notams": {
+          "template": {
+            "text": "NOTAMS... {notams}",
+            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+          }
+        },
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
@@ -313,7 +325,6 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 134500000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
-      "useNotamPrefix": true,
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
@@ -373,7 +384,13 @@
       ],
       "contractions": [],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ]
     },
     {
       "identifier": "KCRQ",
@@ -1267,6 +1284,12 @@
             "voice": "{weather}"
           }
         },
+        "recentWeather": {
+          "template": {
+            "text": "RECENT WEATHER {weather}",
+            "voice": "RECENT WEATHER {weather}"
+          }
+        },
         "clouds": {
           "identifyCeilingLayer": true,
           "convertToMetric": false,
@@ -1352,6 +1375,12 @@
             "voice": "TRANSITION LEVEL {trl}"
           }
         },
+        "notams": {
+          "template": {
+            "text": "NOTAMS... {notams}",
+            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+          }
+        },
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
@@ -1364,7 +1393,6 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 133800000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
-      "useNotamPrefix": true,
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
@@ -1516,7 +1544,13 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ]
     },
     {
       "identifier": "KLGB",
@@ -2443,6 +2477,12 @@
             "voice": "{weather}"
           }
         },
+        "recentWeather": {
+          "template": {
+            "text": "RECENT WEATHER {weather}",
+            "voice": "RECENT WEATHER {weather}"
+          }
+        },
         "clouds": {
           "identifyCeilingLayer": true,
           "convertToMetric": false,
@@ -2528,6 +2568,12 @@
             "voice": "TRANSITION LEVEL {trl}"
           }
         },
+        "notams": {
+          "template": {
+            "text": "NOTAMS... {notams}",
+            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+          }
+        },
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
@@ -2540,7 +2586,6 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 124250000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
-      "useNotamPrefix": true,
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
@@ -2580,7 +2625,13 @@
       ],
       "contractions": [],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ]
     },
     {
       "identifier": "KPSP",
@@ -2791,6 +2842,12 @@
             "voice": "{weather}"
           }
         },
+        "recentWeather": {
+          "template": {
+            "text": "RECENT WEATHER {weather}",
+            "voice": "RECENT WEATHER {weather}"
+          }
+        },
         "clouds": {
           "identifyCeilingLayer": true,
           "convertToMetric": false,
@@ -2876,6 +2933,12 @@
             "voice": "TRANSITION LEVEL {trl}"
           }
         },
+        "notams": {
+          "template": {
+            "text": "NOTAMS... {notams}",
+            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+          }
+        },
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
@@ -2888,7 +2951,6 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 124650000,
       "idsEndpoint": "",
-      "useNotamPrefix": true,
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
@@ -2952,7 +3014,13 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ]
     },
     {
       "identifier": "KSAN",
@@ -3166,6 +3234,12 @@
             "voice": "{weather}"
           }
         },
+        "recentWeather": {
+          "template": {
+            "text": "RECENT WEATHER {weather}",
+            "voice": "RECENT WEATHER {weather}"
+          }
+        },
         "clouds": {
           "identifyCeilingLayer": true,
           "convertToMetric": false,
@@ -3251,6 +3325,12 @@
             "voice": "TRANSITION LEVEL {trl}"
           }
         },
+        "notams": {
+          "template": {
+            "text": "NOTAMS... {notams}",
+            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+          }
+        },
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
@@ -3263,7 +3343,6 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 134800000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
-      "useNotamPrefix": true,
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
@@ -3329,7 +3408,13 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ]
     },
     {
       "identifier": "KSEE",
@@ -4253,6 +4338,12 @@
             "voice": "{weather}"
           }
         },
+        "recentWeather": {
+          "template": {
+            "text": "RECENT WEATHER {weather}",
+            "voice": "RECENT WEATHER {weather}"
+          }
+        },
         "clouds": {
           "identifyCeilingLayer": true,
           "convertToMetric": false,
@@ -4338,6 +4429,12 @@
             "voice": "TRANSITION LEVEL {trl}"
           }
         },
+        "notams": {
+          "template": {
+            "text": "NOTAMS... {notams}",
+            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+          }
+        },
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
@@ -4350,7 +4447,6 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 126000000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
-      "useNotamPrefix": true,
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
@@ -4426,7 +4522,13 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ]
     },
     {
       "identifier": "KVNY",
@@ -4640,6 +4742,12 @@
             "voice": "{weather}"
           }
         },
+        "recentWeather": {
+          "template": {
+            "text": "RECENT WEATHER {weather}",
+            "voice": "RECENT WEATHER {weather}"
+          }
+        },
         "clouds": {
           "identifyCeilingLayer": true,
           "convertToMetric": false,
@@ -4725,6 +4833,12 @@
             "voice": "TRANSITION LEVEL {trl}"
           }
         },
+        "notams": {
+          "template": {
+            "text": "NOTAMS... {notams}",
+            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+          }
+        },
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
@@ -4737,7 +4851,6 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 127550000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
-      "useNotamPrefix": true,
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
@@ -4777,7 +4890,13 @@
       ],
       "contractions": [],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ]
     },
     {
       "identifier": "KWHP",
