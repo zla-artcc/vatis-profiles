@@ -70,7 +70,7 @@ def build_profile(profile_stations, vatis_profile):
     Example:
         profile_station_list = ['./stations/L30/KHND.station', './stations/L30/KLAS.station',
                                 './stations/L30/KVGT.station']
-        vatis_profile = "./vATIS-Profile-SBA.json"
+        vatis_profile = "./vATIS-Profile-L30.json"
     """
     merged_stations = []
 
