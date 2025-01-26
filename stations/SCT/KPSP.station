@@ -383,7 +383,7 @@
     {
       "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
       "ordinal": 1,
-      "enabled": true
+      "enabled": false
     }
   ]
 }
