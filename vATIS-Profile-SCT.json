@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2024123001,
+  "updateSerial": 2024126001,
   "stations": [
     {
       "identifier": "KBUR",
@@ -388,7 +388,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -1548,7 +1548,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -2629,7 +2629,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -3018,7 +3018,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -3412,7 +3412,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -4526,7 +4526,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -4894,7 +4894,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
