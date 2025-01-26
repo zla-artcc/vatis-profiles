@@ -378,7 +378,7 @@
         {
           "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -787,7 +787,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -1175,7 +1175,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -1655,7 +1655,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -2023,7 +2023,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -2412,7 +2412,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -2806,7 +2806,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -3210,7 +3210,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -3578,7 +3578,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     }
