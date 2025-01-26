@@ -17,10 +17,10 @@ AVAILABLE_STATIONS = glob.glob("./stations/*/*.station")
 # Each profile (key) has "stations" updated to those found using the search filter (value)
 # Profile: Search filter
 PROFILES = {
-    "./vATIS-Profile-JCF.json": ['/JCF'],
-    "./vATIS-Profile-L30.json": ['/L30'],
-    "./vATIS-Profile-SBA.json": ['/SBA'],
-    "./vATIS-Profile-SCT.json": ['/SCT'],
+    "./vATIS-Profile-JCF.json": ['JCF'],
+    "./vATIS-Profile-L30.json": ['L30'],
+    "./vATIS-Profile-SBA.json": ['SBA'],
+    "./vATIS-Profile-SCT.json": ['SCT'],
     "./vATIS-Profile-ZLA.json": ['KBUR', 'KLAS', 'KLAX', 'KONT', 'KPSP', 'KSAN', 'KSBA', 'KSNA',
                                  'KVNY']
 }
