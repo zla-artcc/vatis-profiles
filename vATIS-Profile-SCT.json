@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2025012601,
+  "updateSerial": 2025012700,
   "stations": [
     {
       "identifier": "KBUR",
@@ -336,7 +336,7 @@
           "name": "NORMAL (8/15)",
           "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARR AND DEPTG RWY 8, AND RWY 15. LAHSO IN EFFECT FOR NON TURBOJET ACFT LDG RWY 15, AVBL LDG DIST FOUR THOUSAND TWO HUNDRED FIFTY FEET. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "notams": "",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] ...ADVS ON INITIAL CONTACT YOU HAVE INFO [ATIS_CODE].",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
           }
@@ -346,7 +346,7 @@
           "name": "NORMAL IMC (8/15)",
           "airportConditions": "ILS RWY 8 APCH IN USE. ARVNG AND DEPTG RWY 8 AND RWY 15. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "notams": "",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] ...ADVS ON INITIAL CONTACT YOU HAVE INFO [ATIS_CODE].",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
           }
@@ -356,7 +356,7 @@
           "name": "NORTH (8/33)",
           "airportConditions": "ILS RWY 8 APP IN USE, OR VECTOR FOR VIS APP WILL BE PROVIDED. LDG AND DEPTG RWY 8, AND RWY 33.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] ...ADVS ON INITIAL CONTACT YOU HAVE INFO [ATIS_CODE].",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
           }
@@ -366,7 +366,7 @@
           "name": "STRAIGHT 33 (33)",
           "airportConditions": "VIS APP RWY 33 IN USE. LDG AND DEPTG RWY 33.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] ...ADVS ON INITIAL CONTACT YOU HAVE INFO [ATIS_CODE].",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
           }
@@ -376,13 +376,24 @@
           "name": "33/26 (26/33)",
           "airportConditions": "VIS APPRS IN USE. LDG AND DEPTG RWYS 26, AND 33.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] ...ADVS ON INITIAL CONTACT YOU HAVE INFO [ATIS_CODE].",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
           }
         }
       ],
-      "contractions": [],
+      "contractions": [
+        {
+          "variableName": "B1",
+          "text": "B1",
+          "voice": "BRAVO ONE"
+        },
+        {
+          "variableName": "B4",
+          "text": "B4",
+          "voice": "BRAVO FOUR"
+        }
+      ],
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
@@ -391,8 +402,13 @@
           "enabled": false
         },
         {
-          "text": "ACFT IN GATES B1 THRU B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
+          "text": "ACFT IN GATES @B1 THRU @B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
           "ordinal": 2,
+          "enabled": true
+        },
+        {
+          "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
+          "ordinal": 3,
           "enabled": false
         }
       ]
@@ -4462,7 +4478,7 @@
           "id": "7d0a5818-3626-4294-9d48-d3d73e5d2c15",
           "name": "SOUTH",
           "airportConditions": "VIS APPS RWY 20R IN USE. LDG AND DEPTG RWYS 20R, AND ^20L. ",
-          "notams": "CAUTION, SIMULTAENOUS OPS TO CLOSELY SPACED PARALLEL RWYS. ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+          "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -4471,7 +4487,7 @@
         {
           "id": "bd9500c1-5036-4b3b-b9b7-6315f213793d",
           "name": "SOUTH IMC",
-          "airportConditions": "ILS RWY 20R APPROACH IN USE. LDG AND DEPTG RWYS 20R, AND ^20L.",
+          "airportConditions": "ILS RWY 20R APPROACH IN USE. LDG AND DEPTG RWYS 20R AND ^20L.",
           "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -4526,7 +4542,13 @@
           "voice": "TWO RIGHT"
         }
       ],
-      "airportConditionDefinitions": [],
+      "airportConditionDefinitions": [
+        {
+          "text": "CAUTION, SIMULTAENOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ],
       "notamDefinitions": [
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
