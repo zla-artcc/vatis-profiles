@@ -22,7 +22,8 @@ PROFILES = {
     "./vATIS-Profile-SBA.json": ['SBA'],
     "./vATIS-Profile-SCT.json": ['SCT'],
     "./vATIS-Profile-ZLA.json": ['KBUR', 'KLAS', 'KLAX', 'KONT', 'KPSP', 'KSAN', 'KSBA', 'KSNA',
-                                 'KVNY']
+                                 'KVNY'],
+    "./vATIS-Profile-ZLA-2.json": ['CTR']
 }
 
 # Exclude these airports from all profiles.
