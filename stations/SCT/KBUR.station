@@ -1,4 +1,5 @@
 {
+  "ordinal": 4,
   "identifier": "KBUR",
   "name": "Burbank",
   "atisType": "Combined",
@@ -132,9 +133,21 @@
           "text": "-FZDZ",
           "spoken": "Light Freezing Drizzle"
         },
+        "-FZDZPL": {
+          "text": "-FZDZPL",
+          "spoken": "Light Freezing Drizzle And Ice Pellets"
+        },
         "-FZDZRA": {
           "text": "-FZDZRA",
           "spoken": "Light Freezing Drizzle And Rain"
+        },
+        "-FZDZSG": {
+          "text": "-FZDZSG",
+          "spoken": "Light Freezing Drizzle And Snow Grains"
+        },
+        "-FZDZSN": {
+          "text": "-FZDZSN",
+          "spoken": "Light Freezing Drizzle And Snow"
         },
         "-FZRA": {
           "text": "-FZRA",
@@ -143,6 +156,18 @@
         "-FZRADZ": {
           "text": "-FZRADZ",
           "spoken": "Light Freezing Rain And Drizzle"
+        },
+        "-FZRAPL": {
+          "text": "-FZRAPL",
+          "spoken": "Light Freezing Rain And Ice Pellets"
+        },
+        "-FZRASG": {
+          "text": "-FZRASG",
+          "spoken": "Light Freezing Rain And Snow Grains"
+        },
+        "-FZRASN": {
+          "text": "-FZRASN",
+          "spoken": "Light Freezing Rain And Snow"
         },
         "-FZUP": {
           "text": "-FZUP",
@@ -628,9 +653,21 @@
           "text": "+FZDZ",
           "spoken": "Heavy Freezing Drizzle"
         },
+        "+FZDZPL": {
+          "text": "+FZDZPL",
+          "spoken": "Heavy Freezing Drizzle And Ice Pellets"
+        },
         "+FZDZRA": {
           "text": "+FZDZRA",
           "spoken": "Heavy Freezing Drizzle And Rain"
+        },
+        "+FZDZSG": {
+          "text": "+FZDZSG",
+          "spoken": "Heavy Freezing Drizzle And Snow Grains"
+        },
+        "+FZDZSN": {
+          "text": "+FZDZSN",
+          "spoken": "Heavy Freezing Drizzle And Snow"
         },
         "+FZRA": {
           "text": "+FZRA",
@@ -639,6 +676,18 @@
         "+FZRADZ": {
           "text": "+FZRADZ",
           "spoken": "Heavy Freezing Rain And Drizzle"
+        },
+        "+FZRAPL": {
+          "text": "+FZRAPL",
+          "spoken": "Heavy Freezing Rain And Ice Pellets"
+        },
+        "+FZRASG": {
+          "text": "+FZRASG",
+          "spoken": "Heavy Freezing Rain And Snow Grains"
+        },
+        "+FZRASN": {
+          "text": "+FZRASN",
+          "spoken": "Heavy Freezing Rain And Snow"
         },
         "+FZUP": {
           "text": "+FZUP",
@@ -1184,9 +1233,21 @@
           "text": "FZDZ",
           "spoken": "Freezing Drizzle"
         },
+        "FZDZPL": {
+          "text": "FZDZPL",
+          "spoken": "Freezing Drizzle And Ice Pellets"
+        },
         "FZDZRA": {
           "text": "FZDZRA",
           "spoken": "Freezing Drizzle And Rain"
+        },
+        "FZDZSG": {
+          "text": "FZDZSG",
+          "spoken": "Freezing Drizzle And Snow Grains"
+        },
+        "FZDZSN": {
+          "text": "FZDZSN",
+          "spoken": "Freezing Drizzle And Snow"
         },
         "FZFG": {
           "text": "FZFG",
@@ -1199,6 +1260,18 @@
         "FZRADZ": {
           "text": "FZRADZ",
           "spoken": "Freezing Rain And Drizzle"
+        },
+        "FZRAPL": {
+          "text": "FZRAPL",
+          "spoken": "Freezing Rain And Ice Pellets"
+        },
+        "FZRASG": {
+          "text": "FZRASG",
+          "spoken": "Freezing Rain And Snow Grains"
+        },
+        "FZRASN": {
+          "text": "FZRASN",
+          "spoken": "Freezing Rain And Snow"
         },
         "FZUP": {
           "text": "FZUP",
@@ -1227,6 +1300,10 @@
         "MIFG": {
           "text": "MIFG",
           "spoken": "Shallow Fog"
+        },
+        "NSW": {
+          "text": "NSW",
+          "spoken": "No Significant Weather"
         },
         "PL": {
           "text": "PL",
@@ -1752,6 +1829,10 @@
         "text": "undetermined",
         "voice": "undetermined"
       },
+      "automaticCbDetection": {
+        "text": "//////CB",
+        "voice": "RADAR DETECTED C-B CLOUDS"
+      },
       "types": {
         "FEW": {
           "text": "FEW{altitude}",
@@ -1850,7 +1931,8 @@
   "useDecimalTerminology": false,
   "atisVoice": {
     "useTextToSpeech": true,
-    "voice": "Default"
+    "voice": "Default",
+    "speechRate": 180
   },
   "presets": [
     {

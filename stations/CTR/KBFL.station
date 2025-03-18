@@ -1,7 +1,7 @@
 {
   "ordinal": 99,
-  "identifier": "KSMX",
-  "name": "Santa Maria",
+  "identifier": "KBFL",
+  "name": "Bakersfield",
   "atisType": "Combined",
   "codeRange": {
     "low": "A",
@@ -10,7 +10,7 @@
   "atisFormat": {
     "observationTime": {
       "standardUpdateTime": [
-        51
+        54
       ],
       "template": {
         "text": "{time}Z",
@@ -133,9 +133,21 @@
           "text": "-FZDZ",
           "spoken": "Light Freezing Drizzle"
         },
+        "-FZDZPL": {
+          "text": "-FZDZPL",
+          "spoken": "Light Freezing Drizzle And Ice Pellets"
+        },
         "-FZDZRA": {
           "text": "-FZDZRA",
           "spoken": "Light Freezing Drizzle And Rain"
+        },
+        "-FZDZSG": {
+          "text": "-FZDZSG",
+          "spoken": "Light Freezing Drizzle And Snow Grains"
+        },
+        "-FZDZSN": {
+          "text": "-FZDZSN",
+          "spoken": "Light Freezing Drizzle And Snow"
         },
         "-FZRA": {
           "text": "-FZRA",
@@ -144,6 +156,18 @@
         "-FZRADZ": {
           "text": "-FZRADZ",
           "spoken": "Light Freezing Rain And Drizzle"
+        },
+        "-FZRAPL": {
+          "text": "-FZRAPL",
+          "spoken": "Light Freezing Rain And Ice Pellets"
+        },
+        "-FZRASG": {
+          "text": "-FZRASG",
+          "spoken": "Light Freezing Rain And Snow Grains"
+        },
+        "-FZRASN": {
+          "text": "-FZRASN",
+          "spoken": "Light Freezing Rain And Snow"
         },
         "-FZUP": {
           "text": "-FZUP",
@@ -629,9 +653,21 @@
           "text": "+FZDZ",
           "spoken": "Heavy Freezing Drizzle"
         },
+        "+FZDZPL": {
+          "text": "+FZDZPL",
+          "spoken": "Heavy Freezing Drizzle And Ice Pellets"
+        },
         "+FZDZRA": {
           "text": "+FZDZRA",
           "spoken": "Heavy Freezing Drizzle And Rain"
+        },
+        "+FZDZSG": {
+          "text": "+FZDZSG",
+          "spoken": "Heavy Freezing Drizzle And Snow Grains"
+        },
+        "+FZDZSN": {
+          "text": "+FZDZSN",
+          "spoken": "Heavy Freezing Drizzle And Snow"
         },
         "+FZRA": {
           "text": "+FZRA",
@@ -640,6 +676,18 @@
         "+FZRADZ": {
           "text": "+FZRADZ",
           "spoken": "Heavy Freezing Rain And Drizzle"
+        },
+        "+FZRAPL": {
+          "text": "+FZRAPL",
+          "spoken": "Heavy Freezing Rain And Ice Pellets"
+        },
+        "+FZRASG": {
+          "text": "+FZRASG",
+          "spoken": "Heavy Freezing Rain And Snow Grains"
+        },
+        "+FZRASN": {
+          "text": "+FZRASN",
+          "spoken": "Heavy Freezing Rain And Snow"
         },
         "+FZUP": {
           "text": "+FZUP",
@@ -1185,9 +1233,21 @@
           "text": "FZDZ",
           "spoken": "Freezing Drizzle"
         },
+        "FZDZPL": {
+          "text": "FZDZPL",
+          "spoken": "Freezing Drizzle And Ice Pellets"
+        },
         "FZDZRA": {
           "text": "FZDZRA",
           "spoken": "Freezing Drizzle And Rain"
+        },
+        "FZDZSG": {
+          "text": "FZDZSG",
+          "spoken": "Freezing Drizzle And Snow Grains"
+        },
+        "FZDZSN": {
+          "text": "FZDZSN",
+          "spoken": "Freezing Drizzle And Snow"
         },
         "FZFG": {
           "text": "FZFG",
@@ -1201,6 +1261,18 @@
           "text": "FZRADZ",
           "spoken": "Freezing Rain And Drizzle"
         },
+        "FZRAPL": {
+          "text": "FZRAPL",
+          "spoken": "Freezing Rain And Ice Pellets"
+        },
+        "FZRASG": {
+          "text": "FZRASG",
+          "spoken": "Freezing Rain And Snow Grains"
+        },
+        "FZRASN": {
+          "text": "FZRASN",
+          "spoken": "Freezing Rain And Snow"
+        },
         "FZUP": {
           "text": "FZUP",
           "spoken": "Unidentified Freezing Precipitation"
@@ -1211,7 +1283,7 @@
         },
         "GS": {
           "text": "GS",
-          "spoken": "small hail"
+          "spoken": "small hail, snow pellets"
         },
         "HZ": {
           "text": "HZ",
@@ -1228,6 +1300,10 @@
         "MIFG": {
           "text": "MIFG",
           "spoken": "Shallow Fog"
+        },
+        "NSW": {
+          "text": "NSW",
+          "spoken": "No Significant Weather"
         },
         "PL": {
           "text": "PL",
@@ -1753,6 +1829,10 @@
         "text": "undetermined",
         "voice": "undetermined"
       },
+      "automaticCbDetection": {
+        "text": "//////CB",
+        "voice": "RADAR DETECTED C-B CLOUDS"
+      },
       "types": {
         "FEW": {
           "text": "FEW{altitude}",
@@ -1846,27 +1926,50 @@
   },
   "notamsBeforeFreeText": false,
   "airportConditionsBeforeFreeText": false,
-  "frequency": 121150000,
+  "frequency": 118600000,
   "idsEndpoint": "https://ids.laartcc.org/remote/atis",
   "useDecimalTerminology": false,
   "atisVoice": {
     "useTextToSpeech": true,
-    "voice": "Default"
+    "voice": "Default",
+    "speechRate": 180
   },
   "presets": [
     {
-      "id": "d32dc143-37e1-420f-92a4-6f93e9c4146b",
-      "name": "NORTHWEST",
-      "airportConditions": "VISUAL RWY 30 AND LOC BC APPROACH IN USE. ARRIVING AND DEPARTING RWY 30.",
+      "id": "8feb0c6a-5c24-4b4b-ac9e-fbe02ba48278",
+      "name": "NORTH",
+      "airportConditions": "VIS AND ILS APPS IN USE. LNDG AND DEPTG 30L, 30R.",
+      "notams": "READBACK ALL RWY ASSIGNMENT AND HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
       }
     },
     {
-      "id": "65edff29-04ad-434d-bef3-0e1a4b7dd7cd",
-      "name": "SOUTHEAST",
-      "airportConditions": "ILS RWY 12, VISUAL APPROACH IN USE. ARRIVING AND DEPARTING RWY 12.",
+      "id": "fd27b9f1-f017-46e3-8db5-3b8ae5e6fd0a",
+      "name": "SOUTH",
+      "airportConditions": "VIS AND RNAV APPS IN USE. LNDG AND DEPTG 12L, 12R.",
+      "notams": "READBACK ALL RWY ASSIGNMENT AND HOLD SHORT INSTRUCTIONS.",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "externalGenerator": {
+        "enabled": false
+      }
+    },
+    {
+      "id": "b59dd4ab-c192-401a-a6a5-fd6e1b799860",
+      "name": "NORTH IMC",
+      "airportConditions": "RNAV AND ILS APPS IN USE. LNDG AND DEPTG 30L, 30R.",
+      "notams": "READBACK ALL RWY ASSIGNMENT AND HOLD SHORT INSTRUCTIONS.",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "externalGenerator": {
+        "enabled": false
+      }
+    },
+    {
+      "id": "324fccba-b84c-4996-9b74-88f7caa76c43",
+      "name": "SOUTH IMC",
+      "airportConditions": "RNAV APPS IN USE. LNDG AND DEPTG 12L, 12R.",
+      "notams": "READBACK ALL RWY ASSIGNMENT AND HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
@@ -1875,9 +1978,34 @@
   ],
   "contractions": [
     {
+      "variableName": "30R",
+      "text": "30R",
+      "voice": "THREE ZERO RIGHT"
+    },
+    {
+      "variableName": "30L",
+      "text": "30L",
+      "voice": "THREE ZERO LEFT"
+    },
+    {
+      "variableName": "12R",
+      "text": "12R",
+      "voice": "ONE TWO RIGHT"
+    },
+    {
+      "variableName": "12L",
+      "text": "12L",
+      "voice": "ONE TWO LEFT"
+    },
+    {
+      "variableName": "APPS",
+      "text": "APPS",
+      "voice": "APPROACHES"
+    },
+    {
       "variableName": "RNAV",
       "text": "RNAV",
-      "voice": "R NAV"
+      "voice": "ARE NAV"
     }
   ],
   "airportConditionDefinitions": [],
