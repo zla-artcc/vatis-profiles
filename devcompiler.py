@@ -21,7 +21,7 @@ PROFILES = {
     "./vATIS-Profile-L30-DEV.json": ['L30'],
     "./vATIS-Profile-SBA-DEV.json": ['SBA'],
     "./vATIS-Profile-SCT-DEV.json": ['SCT'],
-    "./vATIS-Profile-ZLA-DEV.json": ['KBUR', 'KLAS', 'KLAX', 'KONT', 'KPSP', 'KSAN', 'KSBA', 'KSNA',
+    "./vATIS-Profile-ZLA-DEV.json": ['KBFL', 'KBUR', 'KLAS', 'KLAX', 'KONT', 'KPSP', 'KSAN', 'KSBA', 'KSNA',
                                  'KVNY'],
     "./vATIS-Profile-ZLA-2-DEV.json": ['CTR']
 }
