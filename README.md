@@ -8,9 +8,9 @@
 
 **vATIS-Profile-ZLA-Static.json**: Archived, legacy static copy. This file will not auto-update in vATIS.
 
-**vATIS-Profile-ZLA-DEV.json**: This is for testing.
+**vATIS-Profile-DEV-ZLA.json**: This is for testing.
 
-**vATIS-Profile-SCT-DEV.json**: This file is for testing.
+**vATIS-Profile-DEV-SCT.json**: This file is for testing.
 
 **Download the latest release at (https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest).**
 
@@ -18,4 +18,5 @@
 
 ## Compiler and Dev Compilers
 
-Compiler.py combines the stations files and outputs the non-DEV, non-static .json files listed above. DevCompiler.py compiles DEV versions of the .json files. DO NOT SUBMIT PRs WITH COMPILED .JSON FILES. See above; PR .station files only. 
+Compiler.py combines the stations files and outputs the non-DEV, non-static .json files listed above. DevCompiler.py compiles DEV versions of the .json files. 
+DO NOT SUBMIT PRs WITH COMPILED .JSON FILES. See above; PR .station files only. 
