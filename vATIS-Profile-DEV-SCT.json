@@ -1,8 +1,8 @@
 {
   "name": "DEV SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
-  "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT-DEV.json",
-  "updateSerial": 2025031701,
+  "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-DEV-SCT.json",
+  "updateSerial": 2025031800,
   "stations": [
     {
       "ordinal": 4,
@@ -13969,7 +13969,7 @@
       ]
     },
     {
-      "ordinal": 7,
+      "ordinal": 6,
       "identifier": "KPSP",
       "name": "Palm Springs",
       "atisType": "Combined",
@@ -21924,7 +21924,7 @@
       "notamDefinitions": []
     },
     {
-      "ordinal": 3,
+      "ordinal": 8,
       "identifier": "KSNA",
       "name": "John Wayne",
       "atisType": "Combined",
@@ -23944,7 +23944,7 @@
       ]
     },
     {
-      "ordinal": 6,
+      "ordinal": 9,
       "identifier": "KVNY",
       "name": "Van Nuys",
       "atisType": "Combined",
