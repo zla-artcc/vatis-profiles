@@ -2,10 +2,10 @@
   "name": "Santa Barbara TRACON (SBA)",
   "id": "f41ff02d-b3c8-4e9c-8898-45f3d7ea3bef",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SBA.json",
-  "updateSerial": 2025031701,
+  "updateSerial": 2025031800,
   "stations": [
     {
-      "ordinal": 8,
+      "ordinal": 7,
       "identifier": "KSBA",
       "name": "Santa Barbara",
       "atisType": "Combined",
