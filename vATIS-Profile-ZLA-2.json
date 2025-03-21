@@ -1,7 +1,7 @@
 {
   "name": "ZLA Non-TRACON Fields",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-2.json",
-  "updateSerial": 2025032100,
+  "updateSerial": 2025032104,
   "stations": [
     {
       "ordinal": 98,
@@ -2014,7 +2014,13 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ]
     },
     {
       "ordinal": 99,

@@ -2,7 +2,7 @@
   "name": "Los Angeles ARTCC (ZLA)",
   "id": "e1126dde-5a6a-40dd-ad5c-3f594f8c0f82",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA.json",
-  "updateSerial": 2025032100,
+  "updateSerial": 2025032104,
   "stations": [
     {
       "ordinal": 98,
@@ -2015,7 +2015,13 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ]
     },
     {
       "ordinal": 1,
@@ -4002,6 +4008,11 @@
           "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
           "ordinal": 1,
           "enabled": false
+        },
+        {
+          "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+          "ordinal": 2,
+          "enabled": true
         }
       ]
     },
@@ -8027,18 +8038,23 @@
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
+          "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+          "ordinal": 0,
+          "enabled": true
+        },
+        {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
-          "ordinal": 1,
+          "ordinal": 2,
           "enabled": false
         },
         {
           "text": "ACFT IN GATES @B1 THRU @B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
-          "ordinal": 2,
+          "ordinal": 3,
           "enabled": true
         },
         {
           "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
-          "ordinal": 3,
+          "ordinal": 4,
           "enabled": false
         }
       ]
@@ -9958,7 +9974,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS... {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIRMEN: {notams}"
           }
         },
         "closingStatement": {
@@ -10122,6 +10138,16 @@
           "variableName": "7R",
           "text": "7R",
           "voice": "SEVEN RIGHT"
+        },
+        {
+          "variableName": "SUMMR",
+          "text": "SUMMR",
+          "voice": "SUMMER"
+        },
+        {
+          "variableName": "LADYJ",
+          "text": "LADYJ",
+          "voice": "LADY JAY"
         }
       ],
       "airportConditionDefinitions": [],
@@ -10130,6 +10156,16 @@
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
           "enabled": false
+        },
+        {
+          "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+          "ordinal": 2,
+          "enabled": true
+        },
+        {
+          "text": "ACFT ON SUMMR, LADYJ, VTU DEPS EXP RWY 24L.",
+          "ordinal": 3,
+          "enabled": true
         }
       ]
     },
@@ -12108,6 +12144,11 @@
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
           "enabled": false
+        },
+        {
+          "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+          "ordinal": 2,
+          "enabled": true
         }
       ]
     },
@@ -14107,6 +14148,11 @@
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
           "enabled": false
+        },
+        {
+          "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+          "ordinal": 2,
+          "enabled": true
         }
       ]
     },
@@ -16111,6 +16157,11 @@
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
           "enabled": false
+        },
+        {
+          "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+          "ordinal": 2,
+          "enabled": true
         }
       ]
     },
@@ -20155,6 +20206,11 @@
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
           "enabled": false
+        },
+        {
+          "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+          "ordinal": 2,
+          "enabled": true
         }
       ]
     },
@@ -22133,6 +22189,11 @@
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
           "enabled": false
+        },
+        {
+          "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+          "ordinal": 2,
+          "enabled": true
         }
       ]
     }
