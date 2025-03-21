@@ -1924,7 +1924,7 @@
       }
     }
   },
-  "notamsBeforeFreeText": false,
+  "notamsBeforeFreeText": true,
   "airportConditionsBeforeFreeText": false,
   "frequency": 127750000,
   "idsEndpoint": "https://ids.laartcc.org/remote/atis",
@@ -1982,5 +1982,11 @@
     }
   ],
   "airportConditionDefinitions": [],
-  "notamDefinitions": []
+  "notamDefinitions": [
+    {
+      "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+      "ordinal": 1,
+      "enabled": true
+    }
+  ]
 }

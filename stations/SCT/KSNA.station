@@ -1,5 +1,5 @@
 {
-  "ordinal": 3,
+  "ordinal": 99,
   "identifier": "KSNA",
   "name": "John Wayne",
   "atisType": "Combined",
@@ -1924,7 +1924,7 @@
       }
     }
   },
-  "notamsBeforeFreeText": false,
+  "notamsBeforeFreeText": true,
   "airportConditionsBeforeFreeText": false,
   "frequency": 126000000,
   "idsEndpoint": "https://ids.laartcc.org/remote/atis",
@@ -2015,6 +2015,11 @@
       "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
       "ordinal": 1,
       "enabled": false
+    },
+    {
+      "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+      "ordinal": 2,
+      "enabled": true
     }
   ]
 }
