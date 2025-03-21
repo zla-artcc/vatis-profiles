@@ -1,10 +1,10 @@
 {
   "name": "ZLA Non-TRACON Fields",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-2.json",
-  "updateSerial": 2025031800,
+  "updateSerial": 2025032001,
   "stations": [
     {
-      "ordinal": 3,
+      "ordinal": 98,
       "identifier": "KBFL",
       "name": "Bakersfield",
       "atisType": "Combined",
@@ -1929,7 +1929,7 @@
           }
         }
       },
-      "notamsBeforeFreeText": false,
+      "notamsBeforeFreeText": true,
       "airportConditionsBeforeFreeText": false,
       "frequency": 118600000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
@@ -2014,7 +2014,13 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ]
     },
     {
       "ordinal": 99,

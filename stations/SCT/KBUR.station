@@ -1,5 +1,5 @@
 {
-  "ordinal": 4,
+  "ordinal": 99,
   "identifier": "KBUR",
   "name": "Burbank",
   "atisType": "Combined",
@@ -1924,7 +1924,7 @@
       }
     }
   },
-  "notamsBeforeFreeText": false,
+  "notamsBeforeFreeText": true,
   "airportConditionsBeforeFreeText": false,
   "frequency": 134500000,
   "idsEndpoint": "https://ids.laartcc.org/remote/atis",
@@ -2001,18 +2001,23 @@
   "airportConditionDefinitions": [],
   "notamDefinitions": [
     {
+      "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+      "ordinal": 0,
+      "enabled": true
+    },
+    {
       "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
-      "ordinal": 1,
+      "ordinal": 2,
       "enabled": false
     },
     {
       "text": "ACFT IN GATES @B1 THRU @B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
-      "ordinal": 2,
+      "ordinal": 3,
       "enabled": true
     },
     {
       "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
-      "ordinal": 3,
+      "ordinal": 4,
       "enabled": false
     }
   ]
