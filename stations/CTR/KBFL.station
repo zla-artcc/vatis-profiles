@@ -2009,11 +2009,5 @@
     }
   ],
   "airportConditionDefinitions": [],
-  "notamDefinitions": [
-    {
-      "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
-      "ordinal": 1,
-      "enabled": true
-    }
-  ]
+  "notamDefinitions": []
 }
