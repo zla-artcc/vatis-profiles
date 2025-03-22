@@ -1913,7 +1913,7 @@
     "notams": {
       "template": {
         "text": "NOTAMS... {notams}",
-        "voice": "NOTICES TO AIR MISSIONS: {notams}"
+        "voice": "NOTICES TO AIRMEN: {notams}"
       }
     },
     "closingStatement": {
@@ -2077,6 +2077,16 @@
       "variableName": "7R",
       "text": "7R",
       "voice": "SEVEN RIGHT"
+    },
+    {
+      "variableName": "SUMMR",
+      "text": "SUMMR",
+      "voice": "SUMMER"
+    },
+    {
+      "variableName": "LADYJ",
+      "text": "LADYJ",
+      "voice": "LADY JAY"
     }
   ],
   "airportConditionDefinitions": [],
@@ -2087,9 +2097,9 @@
       "enabled": false
     },
     {
-      "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
+      "text": "ACFT ON SUMMR, LADYJ, VTU DEPS EXP RWY 24L.",
       "ordinal": 2,
-      "enabled": true
+      "enabled": false
     }
   ]
 }

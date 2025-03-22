@@ -2001,23 +2001,18 @@
   "airportConditionDefinitions": [],
   "notamDefinitions": [
     {
-      "text": "MAJOR EVENT, EXPECT DELAYS TO +SFO, +SJC, +SEA, +PDX.",
-      "ordinal": 0,
-      "enabled": true
-    },
-    {
       "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
-      "ordinal": 2,
+      "ordinal": 1,
       "enabled": false
     },
     {
       "text": "ACFT IN GATES @B1 THRU @B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
-      "ordinal": 3,
+      "ordinal": 2,
       "enabled": true
     },
     {
       "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
-      "ordinal": 4,
+      "ordinal": 3,
       "enabled": false
     }
   ]
