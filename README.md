@@ -1,5 +1,7 @@
 # ZLA vATIS Profile
 
+![GitHub Release](https://img.shields.io/github/v/release/ZLA-ARTCC/vatis-profiles)
+
 **vATIS-Profile-DEV-ZLA.json**: This file is for testing.
 
 **vATIS-Profile-DEV-SCT.json**: This file is for testing.
