@@ -1948,7 +1948,7 @@
     {
       "id": "bd9500c1-5036-4b3b-b9b7-6315f213793d",
       "name": "SOUTH IMC",
-      "airportConditions": "ILS RWY 20R APPROACH IN USE. LDG AND DEPTG RWYS 20R AND ^20L.",
+      "airportConditions": "ILS RWY 20R APPROACH IN USE. LANDING AND DEPARTING RUNWAYS ^20R AND ^20L.",
       "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -2001,13 +2001,58 @@
       "variableName": "2R",
       "text": "2R",
       "voice": "TWO RIGHT"
+    },
+    {
+      "variableName": "TXG",
+      "text": "TAXIING",
+      "voice": "TAXIING"
+    },
+    {
+      "variableName": "ADZD",
+      "text": "ADVISED",
+      "voice": "ADVISED"
+    },
+    {
+      "variableName": "MK",
+      "text": "MAKE",
+      "voice": "MAKE"
+    },
+    {
+      "variableName": "IMDT",
+      "text": "IMMEDIATE",
+      "voice": "IMMEDIATE"
+    },
+    {
+      "variableName": "TRN",
+      "text": "TURN",
+      "voice": "TURN"
+    },
+    {
+      "variableName": "OVR",
+      "text": "OVER",
+      "voice": "OVER"
+    },
+    {
+      "variableName": "A",
+      "text": "A",
+      "voice": "ALPHA"
+    },
+    {
+      "variableName": "H",
+      "text": "H",
+      "voice": "HOTEL"
     }
   ],
   "airportConditionDefinitions": [
     {
-      "text": "CAUTION, SIMULTAENOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
+      "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
       "ordinal": 1,
       "enabled": true
+    },
+    {
+      "text": "ACFT SOUTH OF @H TXG ON @A BE ADZD RY20L DEPTS MK IMDT SE TRN OVR @A.",
+      "ordinal": 2,
+      "enabled": false
     }
   ],
   "notamDefinitions": [
