@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2025032500,
+  "updateSerial": 2025050300,
   "stations": [
     {
       "ordinal": 99,
@@ -8039,13 +8039,23 @@
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
-          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "text": "PILOTS EXPECTED TO BRIEF AND COMPLY WITH ALL PUBLISHED SIDS AND STARS. VERIFY ALTITUDES, HEADINGS, SPEEDS, CLIMB OR DESCENT GRADIENTS PRIOR TO DEP OR ARR.",
           "ordinal": 1,
           "enabled": false
         },
         {
-          "text": "ACFT ON SUMMR, LADYJ, VTU DEPS EXP RWY 24L.",
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
+          "enabled": false
+        },
+        {
+          "text": "METERING AND GATE HOLD PROCEDURES IN EFFECT.",
+          "ordinal": 3,
+          "enabled": false
+        },
+        {
+          "text": "ACFT PUSHING ONTO TWY K, TWY L, TWY M CTC GC ON 121.4 FOR PUSH.",
+          "ordinal": 4,
           "enabled": false
         }
       ]
