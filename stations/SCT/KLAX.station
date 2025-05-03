@@ -2101,12 +2101,12 @@
       "enabled": false
     },
     {
-      "text": "ACFT PUSHING ONTO TWY K, TWY L, TWY M CTC GC ON 121.4 FOR PUSH.",
+      "text": "METERING AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 3,
       "enabled": false
     },
     {
-      "text": "METERING AND GATE HOLD PROCEDURES IN EFFECT.",
+      "text": "ACFT PUSHING ONTO TWY K, TWY L, TWY M CTC GC ON 121.4 FOR PUSH.",
       "ordinal": 4,
       "enabled": false
     }
