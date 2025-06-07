@@ -2014,6 +2014,16 @@
       "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
       "ordinal": 3,
       "enabled": false
+    },
+    {
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+      "ordinal": 4,
+      "enabled": false
+    },
+    {
+      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "ordinal": 5,
+      "enabled": false
     }
   ]
 }
