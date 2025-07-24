@@ -6,6 +6,8 @@
 
 ## Profile Descriptions
 
+**vATIS-Profile-D-ATIS.json**: Contains only airports that have a real-world Digital ATIS.
+
 **vATIS-Profile-DEV-ZLA.json**: This file is for testing.
 
 **vATIS-Profile-DEV-SCT.json**: This file is for testing.
