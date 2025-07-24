@@ -2,7 +2,7 @@
   "name": "Santa Barbara TRACON (SBA)",
   "id": "f41ff02d-b3c8-4e9c-8898-45f3d7ea3bef",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SBA.json",
-  "updateSerial": 2025061200,
+  "updateSerial": 2025072400,
   "stations": [
     {
       "ordinal": 99,
@@ -1919,7 +1919,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS... {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIRMEN: {notams}"
           }
         },
         "closingStatement": {
@@ -3858,7 +3858,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS... {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIRMEN: {notams}"
           }
         },
         "closingStatement": {
@@ -5743,7 +5743,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS... {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIRMEN: {notams}"
           }
         },
         "closingStatement": {
@@ -7625,7 +7625,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS... {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIRMEN: {notams}"
           }
         },
         "closingStatement": {

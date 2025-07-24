@@ -2,7 +2,7 @@
   "name": "Las Vegas TRACON (L30)",
   "id": "935bca6d-a174-4aa9-bb41-27f99533e86c",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-L30.json",
-  "updateSerial": 2025061200,
+  "updateSerial": 2025072400,
   "stations": [
     {
       "ordinal": 99,
@@ -1836,7 +1836,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS... {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIRMEN: {notams}"
           }
         },
         "closingStatement": {
@@ -3787,7 +3787,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS... {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIRMEN: {notams}"
           }
         },
         "closingStatement": {
@@ -5702,7 +5702,7 @@
         "notams": {
           "template": {
             "text": "NOTAMS... {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "voice": "NOTICES TO AIRMEN: {notams}"
           }
         },
         "closingStatement": {
