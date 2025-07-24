@@ -1,7 +1,7 @@
 {
-  "ordinal": 99,
-  "identifier": "KSBP",
-  "name": "San Luis Obispo",
+  "ordinal": 0,
+  "identifier": "KPOC",
+  "name": "Brackett Field ",
   "atisType": "Combined",
   "codeRange": {
     "low": "A",
@@ -10,7 +10,7 @@
   "atisFormat": {
     "observationTime": {
       "standardUpdateTime": [
-        56
+        47
       ],
       "template": {
         "text": "{time}Z",
@@ -79,6 +79,12 @@
         "voice": "VISIBILITY {visibility}"
       }
     },
+    "runwayVisualRange": {
+      "neutralTendency": "Neutral",
+      "goingUpTendency": "Going Up",
+      "goingDownTendency": "Going Down",
+      "template": {}
+    },
     "presentWeather": {
       "presentWeatherTypes": {
         "-DS": {
@@ -133,9 +139,21 @@
           "text": "-FZDZ",
           "spoken": "Light Freezing Drizzle"
         },
+        "-FZDZPL": {
+          "text": "-FZDZPL",
+          "spoken": "Light Freezing Drizzle And Ice Pellets"
+        },
         "-FZDZRA": {
           "text": "-FZDZRA",
           "spoken": "Light Freezing Drizzle And Rain"
+        },
+        "-FZDZSG": {
+          "text": "-FZDZSG",
+          "spoken": "Light Freezing Drizzle And Snow Grains"
+        },
+        "-FZDZSN": {
+          "text": "-FZDZSN",
+          "spoken": "Light Freezing Drizzle And Snow"
         },
         "-FZRA": {
           "text": "-FZRA",
@@ -144,6 +162,18 @@
         "-FZRADZ": {
           "text": "-FZRADZ",
           "spoken": "Light Freezing Rain And Drizzle"
+        },
+        "-FZRAPL": {
+          "text": "-FZRAPL",
+          "spoken": "Light Freezing Rain And Ice Pellets"
+        },
+        "-FZRASG": {
+          "text": "-FZRASG",
+          "spoken": "Light Freezing Rain And Snow Grains"
+        },
+        "-FZRASN": {
+          "text": "-FZRASN",
+          "spoken": "Light Freezing Rain And Snow"
         },
         "-FZUP": {
           "text": "-FZUP",
@@ -629,9 +659,21 @@
           "text": "+FZDZ",
           "spoken": "Heavy Freezing Drizzle"
         },
+        "+FZDZPL": {
+          "text": "+FZDZPL",
+          "spoken": "Heavy Freezing Drizzle And Ice Pellets"
+        },
         "+FZDZRA": {
           "text": "+FZDZRA",
           "spoken": "Heavy Freezing Drizzle And Rain"
+        },
+        "+FZDZSG": {
+          "text": "+FZDZSG",
+          "spoken": "Heavy Freezing Drizzle And Snow Grains"
+        },
+        "+FZDZSN": {
+          "text": "+FZDZSN",
+          "spoken": "Heavy Freezing Drizzle And Snow"
         },
         "+FZRA": {
           "text": "+FZRA",
@@ -640,6 +682,18 @@
         "+FZRADZ": {
           "text": "+FZRADZ",
           "spoken": "Heavy Freezing Rain And Drizzle"
+        },
+        "+FZRAPL": {
+          "text": "+FZRAPL",
+          "spoken": "Heavy Freezing Rain And Ice Pellets"
+        },
+        "+FZRASG": {
+          "text": "+FZRASG",
+          "spoken": "Heavy Freezing Rain And Snow Grains"
+        },
+        "+FZRASN": {
+          "text": "+FZRASN",
+          "spoken": "Heavy Freezing Rain And Snow"
         },
         "+FZUP": {
           "text": "+FZUP",
@@ -1069,17 +1123,9 @@
           "text": "+UP",
           "spoken": "Heavy Unidentified Precipitation"
         },
-        "BC": {
-          "text": "BC",
-          "spoken": "patches"
-        },
         "BCFG": {
           "text": "BCFG",
           "spoken": "Patches Of Fog"
-        },
-        "BL": {
-          "text": "BL",
-          "spoken": "blowing"
         },
         "BLDU": {
           "text": "BLDU",
@@ -1095,11 +1141,7 @@
         },
         "BR": {
           "text": "BR",
-          "spoken": "mist"
-        },
-        "DR": {
-          "text": "DR",
-          "spoken": "low drifting"
+          "spoken": "Mist"
         },
         "DRDU": {
           "text": "DRDU",
@@ -1115,15 +1157,15 @@
         },
         "DS": {
           "text": "DS",
-          "spoken": "dust storm"
+          "spoken": "Duststorm"
         },
         "DU": {
           "text": "DU",
-          "spoken": "widespread dust"
+          "spoken": "Dust"
         },
         "DZ": {
           "text": "DZ",
-          "spoken": "drizzle"
+          "spoken": "Drizzle"
         },
         "DZPL": {
           "text": "DZPL",
@@ -1167,27 +1209,35 @@
         },
         "FC": {
           "text": "FC",
-          "spoken": "funnel cloud tornado waterspout"
+          "spoken": "Funnel Cloud"
         },
         "FG": {
           "text": "FG",
-          "spoken": "fog"
+          "spoken": "Fog"
         },
         "FU": {
           "text": "FU",
-          "spoken": "smoke"
-        },
-        "FZ": {
-          "text": "FZ",
-          "spoken": "freezing"
+          "spoken": "Smoke"
         },
         "FZDZ": {
           "text": "FZDZ",
           "spoken": "Freezing Drizzle"
         },
+        "FZDZPL": {
+          "text": "FZDZPL",
+          "spoken": "Freezing Drizzle And Ice Pellets"
+        },
         "FZDZRA": {
           "text": "FZDZRA",
           "spoken": "Freezing Drizzle And Rain"
+        },
+        "FZDZSG": {
+          "text": "FZDZSG",
+          "spoken": "Freezing Drizzle And Snow Grains"
+        },
+        "FZDZSN": {
+          "text": "FZDZSN",
+          "spoken": "Freezing Drizzle And Snow"
         },
         "FZFG": {
           "text": "FZFG",
@@ -1201,37 +1251,37 @@
           "text": "FZRADZ",
           "spoken": "Freezing Rain And Drizzle"
         },
+        "FZRAPL": {
+          "text": "FZRAPL",
+          "spoken": "Freezing Rain And Ice Pellets"
+        },
+        "FZRASG": {
+          "text": "FZRASG",
+          "spoken": "Freezing Rain And Snow Grains"
+        },
+        "FZRASN": {
+          "text": "FZRASN",
+          "spoken": "Freezing Rain And Snow"
+        },
         "FZUP": {
           "text": "FZUP",
           "spoken": "Unidentified Freezing Precipitation"
         },
-        "GR": {
-          "text": "GR",
-          "spoken": "hail"
-        },
-        "GS": {
-          "text": "GS",
-          "spoken": "small hail"
-        },
         "HZ": {
           "text": "HZ",
-          "spoken": "haze"
-        },
-        "IC": {
-          "text": "IC",
-          "spoken": "ice crystals"
-        },
-        "MI": {
-          "text": "MI",
-          "spoken": "shallow"
+          "spoken": "Haze"
         },
         "MIFG": {
           "text": "MIFG",
           "spoken": "Shallow Fog"
         },
+        "NSW": {
+          "text": "NSW",
+          "spoken": "No Significant Weather"
+        },
         "PL": {
           "text": "PL",
-          "spoken": "ice pellets"
+          "spoken": "Ice Pellets"
         },
         "PLDZ": {
           "text": "PLDZ",
@@ -1275,23 +1325,15 @@
         },
         "PO": {
           "text": "PO",
-          "spoken": "well developed dust, sand whirls"
-        },
-        "PR": {
-          "text": "PR",
-          "spoken": "partial"
+          "spoken": "Dust/Sand Whirls"
         },
         "PRFG": {
           "text": "PRFG",
           "spoken": "Partial Fog"
         },
-        "PY": {
-          "text": "PY",
-          "spoken": "spray"
-        },
         "RA": {
           "text": "RA",
-          "spoken": "rain"
+          "spoken": "Rain"
         },
         "RADZ": {
           "text": "RADZ",
@@ -1351,11 +1393,11 @@
         },
         "SA": {
           "text": "SA",
-          "spoken": "sand"
+          "spoken": "Sand"
         },
         "SG": {
           "text": "SG",
-          "spoken": "snow grains"
+          "spoken": "Snow Grains"
         },
         "SGDZ": {
           "text": "SGDZ",
@@ -1396,10 +1438,6 @@
         "SGSNRA": {
           "text": "SGSNRA",
           "spoken": "Snow Grains, Snow And Rain"
-        },
-        "SH": {
-          "text": "SH",
-          "spoken": "showers"
         },
         "SHGR": {
           "text": "SHGR",
@@ -1511,7 +1549,7 @@
         },
         "SN": {
           "text": "SN",
-          "spoken": "snow"
+          "spoken": "Snow"
         },
         "SNDZ": {
           "text": "SNDZ",
@@ -1563,15 +1601,15 @@
         },
         "SQ": {
           "text": "SQ",
-          "spoken": "squalls"
+          "spoken": "Squalls"
         },
         "SS": {
           "text": "SS",
-          "spoken": "sandstorm"
+          "spoken": "Sandstorm"
         },
         "TS": {
           "text": "TS",
-          "spoken": "thunderstorm"
+          "spoken": "Thunderstorm"
         },
         "TSGR": {
           "text": "TSGR",
@@ -1683,11 +1721,11 @@
         },
         "UP": {
           "text": "UP",
-          "spoken": "unknown precipitation"
+          "spoken": "Unidentified Precipitation"
         },
         "VA": {
           "text": "VA",
-          "spoken": "volcanic ash"
+          "spoken": "Volcanic Ash"
         },
         "VCBLDU": {
           "text": "VCBLDU",
@@ -1747,11 +1785,21 @@
     },
     "clouds": {
       "identifyCeilingLayer": true,
+      "identifyCeilingLayerTextAtis": false,
+      "textAtisCeilingPrefix": "CIG",
+      "cloudCeilingLayerTypes": [
+        "BKN",
+        "OVC"
+      ],
       "convertToMetric": false,
       "isAltitudeInHundreds": false,
       "undeterminedLayerAltitude": {
         "text": "undetermined",
         "voice": "undetermined"
+      },
+      "automaticCbDetection": {
+        "text": "//////CB",
+        "voice": "RADAR DETECTED C-B CLOUDS"
       },
       "types": {
         "FEW": {
@@ -1823,6 +1871,22 @@
         "voice": "ALTIMETER {altimeter}"
       }
     },
+    "trend": {
+      "nosigText": "NOSIG",
+      "nosigVoice": "No Significant Changes",
+      "becomingText": "BECMG",
+      "becomingVoice": "Becoming",
+      "temporaryText": "TEMPO",
+      "temporaryVoice": "Temporary",
+      "template": {}
+    },
+    "windShear": {
+      "runwayText": "WS R{Runway}",
+      "runwayVoice": "Wind Shear Runway {Runway}",
+      "allRunwayText": "WS ALL RWY",
+      "allRunwayVoice": "Wind Shear All Runways",
+      "template": {}
+    },
     "transitionLevel": {
       "values": [],
       "template": {
@@ -1839,47 +1903,92 @@
     "closingStatement": {
       "autoIncludeClosingStatement": true,
       "template": {
-        "text": "...ADVS YOU HAVE INFO {letter}",
+        "text": "...ADVS YOU HAVE INFO {letter}.",
         "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
       }
     }
   },
-  "notamsBeforeFreeText": false,
+  "notamsBeforeFreeText": true,
   "airportConditionsBeforeFreeText": false,
-  "frequency": 120600000,
+  "frequency": 124400000,
   "idsEndpoint": "https://ids.laartcc.org/remote/atis",
   "useDecimalTerminology": false,
   "atisVoice": {
     "useTextToSpeech": true,
-    "voice": "Default"
+    "voice": "Default",
+    "speechRate": 180
   },
   "presets": [
     {
-      "id": "be4b8b2c-2fca-427c-99f6-bbbba2812f2d",
-      "name": "SOUTHEAST",
-      "airportConditions": "ILS AND VISUAL APPROACH RWY 11 IN USE. ARRIVING AND DEPARTING RWY 11.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "id": "69474d05-2af1-42db-8b13-04704155ef24",
+      "ordinal": 1,
+      "name": "West VMC",
+      "airportConditions": "GPS @A APR IN USE. LNDG AND DEPG RWYS 26L AND ^26R.",
+      "notams": "PILOTS READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     },
     {
-      "id": "02762a68-a7bb-4cc2-951b-fd1ed749011f",
-      "name": "NORTHWEST",
-      "airportConditions": "VISUAL APPROACHES IN USE. LDG AND DEPTG RWY 29.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "id": "df481bcf-44ae-48a8-b09a-0f30d1a158cb",
+      "ordinal": 2,
+      "name": "West (ILS)",
+      "airportConditions": "ILS RWY 26L APR IN USE. LNDG AND DEPG RWYS 26L AND ^26R.",
+      "notams": "PILOTS READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+      "template": "",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "9b0e335a-e638-48c8-b08b-092aeba7a187",
+      "ordinal": 2,
+      "name": "East VMC",
+      "airportConditions": "GPS @A APR IN USE. LNDG AND DEPG RWYS 8L AND ^8R.",
+      "notams": "PILOTS READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+      "template": "",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     }
   ],
   "contractions": [
     {
-      "variableName": "RNAV",
-      "text": "RNAV",
-      "voice": "R NAV"
+      "variableName": "APR",
+      "text": "APPROACH",
+      "voice": "APPROACH"
+    },
+    {
+      "variableName": "A",
+      "text": "A",
+      "voice": "ALPHA"
     }
   ],
   "airportConditionDefinitions": [],
-  "notamDefinitions": []
+  "notamDefinitions": [
+    {
+      "text": "USE CAUTION FOR BIRD ACTIVITY IN VICINITY OF BRACKETT AIRPORT.",
+      "ordinal": 1,
+      "enabled": true
+    }
+  ]
 }
