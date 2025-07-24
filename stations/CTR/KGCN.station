@@ -1786,7 +1786,7 @@
     "notams": {
       "template": {
         "text": "NOTAMS... {notams}",
-        "voice": "NOTICES TO AIR MISSIONS: {notams}"
+        "voice": "NOTICES TO AIRMEN: {notams}"
       }
     },
     "closingStatement": {
