@@ -79,6 +79,12 @@
         "voice": "VISIBILITY {visibility}"
       }
     },
+    "runwayVisualRange": {
+      "neutralTendency": "Neutral",
+      "goingUpTendency": "Going Up",
+      "goingDownTendency": "Going Down",
+      "template": {}
+    },
     "presentWeather": {
       "presentWeatherTypes": {
         "-DS": {
@@ -1823,6 +1829,12 @@
     },
     "clouds": {
       "identifyCeilingLayer": true,
+      "identifyCeilingLayerTextAtis": false,
+      "textAtisCeilingPrefix": "CIG",
+      "cloudCeilingLayerTypes": [
+        "BKN",
+        "OVC"
+      ],
       "convertToMetric": false,
       "isAltitudeInHundreds": false,
       "undeterminedLayerAltitude": {
@@ -1903,6 +1915,22 @@
         "voice": "ALTIMETER {altimeter}"
       }
     },
+    "trend": {
+      "nosigText": "NOSIG",
+      "nosigVoice": "No Significant Changes",
+      "becomingText": "BECMG",
+      "becomingVoice": "Becoming",
+      "temporaryText": "TEMPO",
+      "temporaryVoice": "Temporary",
+      "template": {}
+    },
+    "windShear": {
+      "runwayText": "WS R{Runway}",
+      "runwayVoice": "Wind Shear Runway {Runway}",
+      "allRunwayText": "WS ALL RWY",
+      "allRunwayVoice": "Wind Shear All Runways",
+      "template": {}
+    },
     "transitionLevel": {
       "values": [],
       "template": {
@@ -1977,7 +2005,13 @@
     }
   ],
   "contractions": [],
-  "airportConditionDefinitions": [],
+  "airportConditionDefinitions": [
+    {
+      "text": "LAHSO IN EFFECT RWY 19R. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "ordinal": 1,
+      "enabled": false
+    }
+  ],
   "notamDefinitions": [
     {
       "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
@@ -1992,6 +2026,16 @@
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 3,
+      "enabled": false
+    },
+    {
+      "text": "CHECK DENSITY ALTITUDE",
+      "ordinal": 4,
+      "enabled": false
+    },
+    {
+      "text": "HELICOPTERS OVER THE STRIP AT 3 THOUSAND FEET AND BELOW.",
+      "ordinal": 4,
       "enabled": false
     }
   ]
