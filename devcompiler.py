@@ -8,8 +8,10 @@ Example:
     }
 """
 
+from datetime import datetime
 import json
 import glob
+import math
 
 # Search for station files in all sub-folders of ./stations/
 AVAILABLE_STATIONS = glob.glob("./stations/*/*.station")
@@ -37,6 +39,25 @@ def filter_available_stations():
         for airport in EXCLUDE_AIRPORTS:
             if airport in station:
                 AVAILABLE_STATIONS.pop(index)
+
+def generate_serial(prev_serial):
+    """
+    Generate a new updateSerial based on a profile's current one. If the previous update was
+    today, increment the version number. Otherwise, generate a serial for today.
+
+    Args:
+        prev_serial (int): Serial in YYYYMMDD## format where ## is a version from 00 to 99
+    
+    Returns:
+        new_serial (int): The new serial based on the value of prev_serial
+
+    Example:
+
+    """
+    today_int = int(datetime.today().strftime("%Y%m%d"))
+    if math.floor(prev_serial / 100) != today_int:
+        return today_int * 100
+    return prev_serial + 1
 
 def build_station_list(station_filter):
     """
@@ -90,6 +111,7 @@ def build_profile(profile_stations, vatis_profile):
     # Write merged_stations to "stations" key and save the vATIS profile
     with open(vatis_profile, "w", encoding="utf-8") as vatis_profile_file:
         vatis_profile_data["stations"] = merged_stations
+        vatis_profile_data["updateSerial"] = generate_serial(vatis_profile_data["updateSerial"])
         json.dump(vatis_profile_data, vatis_profile_file, indent=2)
 
 if len(EXCLUDE_AIRPORTS) > 0:
