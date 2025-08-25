@@ -21,11 +21,11 @@
 **vATIS-Profile-ZLA-Static.json**: Archived, legacy static copy. This file will not auto-update in vATIS.
 
 
-**How to Update**: Make changes to .station files and submit pull requests. Do not edit vATIS profiles except for releaseSerial.
+**How to Update**: Make changes to .station files and submit pull requests. Do not edit vATIS profiles directly.
 
 ## Compiler and Dev Compilers
 
-Compiler.py combines the stations files and outputs the non-DEV, non-static .json files listed above. 
+Compiler.py combines the stations files and outputs the non-DEV, non-static .json files listed above. It also automatically generates an `updateSerial`.
 
 DevCompiler.py compiles DEV versions of the .json files. 
 
