@@ -29,7 +29,23 @@ Compiler.py combines the stations files and outputs the non-DEV, non-static .jso
 
 DevCompiler.py compiles DEV versions of the .json files. 
 
-DO NOT SUBMIT PRs WITH COMPILED .JSON FILES. See above; PR .station files only. 
+**Do not submit PRs with compiled .json files. See above; PR .station files only.**
+
+## Releasing
+
+Releases are automatic when station files are changed. The release version depends on your commit message.
+
+### Major versions
+
+If you want to generate a new major version (i.e. increment v1.2.0 to v2.0.0), start your commit message with `feat!:` (note the exclamation point). **This is usually reserved for breaking changes.**
+
+### Minor versions
+
+If you want to generate a new minor version (i.e. increment v1.2.0 to v1.3.0), start your commit message with `feat:`. Most changes should be this type.
+
+### Patch versions
+
+If you want to generate a patch version (i.e. increment v1.2.0 to v1.2.1 instead of v1.3.0), start your commit message with `fix:`. This should be used when fixing a mistake rather than changing functionality.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/ZLA-ARTCC/vatis-profiles?style=for-the-badge)
 ![GitHub contributors](https://img.shields.io/github/contributors-anon/ZLA-ARTCC/vatis-profiles?style=for-the-badge)
