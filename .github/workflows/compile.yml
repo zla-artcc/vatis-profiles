@@ -11,8 +11,6 @@ on:
 
 jobs:
   compile:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -28,7 +26,7 @@ jobs:
 
     - name: Get next version
       id: get_next_version
-      uses: thenativeweb/get-next-version@main
+      uses: thenativeweb/get-next-version@2.7.1
       with:
         prefix: 'v'
 
