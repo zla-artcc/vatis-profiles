@@ -47,6 +47,6 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add -A
-        git diff --cached --quiet || (git commit -m "Auto-generate profiles [skip ci]" && git push)
+        git diff --cached --quiet || (git commit -m "Auto-generate profiles" && git push)
         git tag "$VERSION"
         git push origin "$VERSION"
