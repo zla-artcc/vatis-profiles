@@ -18,7 +18,7 @@
       }
     },
     "surfaceWind": {
-      "speakLeadingZero": true,
+      "speakLeadingZero": false,
       "magneticVariation": {
         "enabled": true,
         "magneticDegrees": -10
