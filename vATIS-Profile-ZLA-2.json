@@ -1,7 +1,7 @@
 {
   "name": "ZLA Non-TRACON Fields",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-2.json",
-  "updateSerial": 2025082400,
+  "updateSerial": 2025090100,
   "stations": [
     {
       "ordinal": 98,
@@ -23,7 +23,7 @@
           }
         },
         "surfaceWind": {
-          "speakLeadingZero": false,
+          "speakLeadingZero": true,
           "magneticVariation": {
             "enabled": true,
             "magneticDegrees": -10
