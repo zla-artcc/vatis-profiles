@@ -27,3 +27,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           body_path: CHANGELOG.md
+          files: |
+            vATIS-Profile-!(DEV-*)*.json
+          make_latest: true
