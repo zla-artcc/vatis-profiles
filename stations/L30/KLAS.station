@@ -1966,7 +1966,7 @@
     {
       "id": "5c434e41-43a1-41ac-9a02-ce6cea1d7ffc",
       "name": "CONFIG 1 (19/26)",
-      "airportConditions": "VISUAL APPROACHES IN USE. LANDING RWYS 26L, ^19R, AND ^19L. DEPTG RWYS 26R, ^19L, AND ^19R. SIMUL APPS TO CROSSING AND PARALLEL RWYS IN USE. CONVERGING RWY OPS IN EFFECT.",
+      "airportConditions": "VISUAL APPROACHES IN USE. LANDING RWYS 26L, ^19L AND ^19R. DEPTG RWYS 26R, ^19R, AND ^19L. SIMUL APPS TO CROSSING AND PARALLEL RWYS IN USE. CONVERGING RWY OPS IN EFFECT.",
       "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -1976,8 +1976,8 @@
     {
       "id": "d9defc81-0e88-448d-892b-e8d75c8661c0",
       "name": "CONFIG 2 (1/8)",
-      "airportConditions": "VIS APPS IN USE RWY 1L. LDG RWYS 1L, AND ^1R. DEPTG RWY 8L AT TWY A8.",
-      "notams": "LAS VEGAS METROPLEX PROCEDURES IN EFFECT. VERIFY NAVIGATIONAL DATA IS UP TO DATE. ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "airportConditions": "VIS APPS IN USE RWY 1, 8. LDG RWYS 1L, AND ^8R. DEPTG RWY 8L AT TWY A8. VFR DEPG RWY 1L AT TWY B.",
+      "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
@@ -1987,7 +1987,7 @@
       "id": "afe88275-8692-4a03-97f2-66f728ca178e",
       "name": "CONFIG 3 (1/26)",
       "airportConditions": "VIS APPS IN USE RWYS 1L, AND ^26L. LDG RWYS 26L, ^1L, AND ^1R. DEPTG RWYS 1R FULL LENGTH, AND ^1L AT TWY B. SIMUL APPS TO CROSSING AND PARALLEL RWYS IN USE. CONVERGING RWY OPS IN EFFECT.",
-      "notams": "LAS VEGAS METROPLEX PROCEDURES IN EFFECT. VERIFY NAVIGATIONAL DATA IS UP TO DATE. ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
@@ -1996,15 +1996,62 @@
     {
       "id": "f5920fb1-6970-4058-9f8c-bd0f7f122130",
       "name": "CONFIG 4 (8/19)",
-      "airportConditions": "VIS APPS IN USE, LDG RWYS 8R, ^19R, AND ^19L. DEPTG RWY 8L AT TWY A8. SIMUL APCHS TO CROSSING AND PARALLEL RWYS IN USE. CONVERGING RWY OPS IN EFFECT.",
-      "notams": "RWY 01L GLIDESLOPE OTS. CHECK DENSITY ALTITUDE. LAS VEGAS METROPLEX PROCEDURES IN EFFECT. VERIFY NAVIGATIONAL DATA IS UP TO DATE. ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "airportConditions": "RNP APCH Z RY 19L, RY 8R. LANDING RWYS 8R AND ^19L. DEPG RWYS 8L AND ^8L AT ALPHA 8.",
+      "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "externalGenerator": {
+        "enabled": false
+      }
+    },
+    {
+      "id": "88fd61cf-06b1-4fb9-9eb9-f58e7e034297",
+      "name": "STRAIGHT 19",
+      "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPARTING RUNWAYS 19L, AND ^19R.",
+      "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "template": "",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "06aabaad-38f0-4e5d-af7f-5f3caa3fd142",
+      "name": "STRAIGHT 8",
+      "airportConditions": "VISUAL AND RNAV APPROACHES IN USE. LANDING RUNWAY 8R. DEPARTING RUNWAY 8L.",
+      "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
       }
     }
   ],
-  "contractions": [],
+  "contractions": [
+    {
+      "variableName": "APPS",
+      "text": "APPROACHES",
+      "voice": "APPROACHES"
+    },
+    {
+      "variableName": "RNAV",
+      "text": "RNAV",
+      "voice": "R NAV"
+    },
+    {
+      "variableName": "Z",
+      "text": "Z",
+      "voice": "ZULU"
+    },
+    {
+      "variableName": "ADZYS",
+      "text": "ADZYS",
+      "voice": "ADVISORIES"
+    }
+  ],
   "airportConditionDefinitions": [
     {
       "text": "LAHSO IN EFFECT RWY 19R. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -2014,28 +2061,48 @@
   ],
   "notamDefinitions": [
     {
-      "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
       "ordinal": 1,
       "enabled": false
     },
     {
-      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 2,
       "enabled": false
     },
     {
-      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "text": "CHECK DENSITY ALTITUDE",
       "ordinal": 3,
       "enabled": false
     },
     {
-      "text": "CHECK DENSITY ALTITUDE",
+      "text": "LLWS ADZYS IN EFCT.",
+      "ordinal": 4,
+      "enabled": true
+    },
+    {
+      "text": "GC COMBINED ON 121.1",
       "ordinal": 4,
       "enabled": false
     },
     {
+      "text": "CD AND GC COMBINED ON 121.1",
+      "ordinal": 6,
+      "enabled": false
+    },
+    {
       "text": "HELICOPTERS OVER THE STRIP AT 3 THOUSAND FEET AND BELOW.",
-      "ordinal": 4,
+      "ordinal": 7,
+      "enabled": false
+    },
+    {
+      "text": "LAS VEGAS METROPLEX PROCEDURES IN EFFECT. VERIFY NAVIGATIONAL DATA IS UP TO DATE.",
+      "ordinal": 8,
+      "enabled": false
+    },
+    {
+      "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
+      "ordinal": 9,
       "enabled": false
     }
   ]
