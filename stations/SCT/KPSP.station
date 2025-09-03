@@ -1975,17 +1975,44 @@
       "airportConditions": "@RNAV APPROACHES IN USE. LANDING RWYS 31L, ^31R",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     },
     {
       "id": "07b58ec4-fb60-48c4-a83a-f286d92836c4",
       "name": "SOUTH VMC (13L/R)",
       "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPTG RWYS 13L, ^13R.",
-      "notams": "EXPECT DELAYS FOR DEPARTURES TO OAKLAND CENTER AIRPORTS INCLUDING KSFO, KSJC, KOAK, KSMF, AND KMRY. PILOTS WISHING TO FLY IN THE EVENT SHOULD BOTH DEPART FROM AND ARRIVE AT EVENT AIRPORTS.",
+      "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "11cc2cc5-128c-4e74-897e-ae1aae7ff1b7",
+      "name": "SOUTH IMC (13L/R)",
+      "airportConditions": "@RNAV APPROACHES IN USE. LANDING RWYS 13L, ^13R",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     }
   ],
