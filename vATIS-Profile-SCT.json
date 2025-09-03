@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2025090101,
+  "updateSerial": 2025090300,
   "stations": [
     {
       "ordinal": 99,
@@ -1972,7 +1972,7 @@
         {
           "id": "014b4143-b8a6-45e4-b3d7-3ffa0045c763",
           "name": "NORMAL (8/15)",
-          "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARR AND DEPTG RWY 8, AND RWY 15. LAHSO IN EFFECT RWY 15, AVBL LDG DIST FOUR THOUSAND TWO HUNDRED FIFTY FEET. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARR AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15, AVBL LDG DIST FOUR THOUSAND TWO HUNDRED FIFTY FEET. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -1982,7 +1982,7 @@
         {
           "id": "ed0e89d6-6eeb-43fc-8af4-8e170e27d6f2",
           "name": "NORMAL IMC (8/15)",
-          "airportConditions": "ILS RWY 8 APCH IN USE. ARVNG AND DEPTG RWY 8 AND RWY 15. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "ILS RWY 8 APCH IN USE. ARR AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15, AVBL LDG DIST FOUR THOUSAND TWO HUNDRED FIFTY FEET. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -12196,6 +12196,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -13940,6 +13946,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -14020,6 +14032,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -14054,8 +14082,9 @@
       "presets": [
         {
           "id": "4a6ddfd0-4b56-4326-8826-affeeddf292d",
+          "ordinal": 1,
           "name": "NORMAL (26)",
-          "airportConditions": "ILS RWY 26L APP IN USE, OR VECTOR FOR VIS APP WILL BE PROVIDED. LDG AND DEPTG RWYS 26R, AND ^26L.",
+          "airportConditions": "ILS AND VIS APR IN USE, RY26L & RY26R. LNDG AND DEPG RY 26L AND RY 26R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -14064,18 +14093,43 @@
         },
         {
           "id": "9f4f8cf4-72ed-4f57-b6d4-aa6e02fb2c4c",
+          "ordinal": 2,
           "name": "EAST (8)",
-          "airportConditions": "ILS RWY 8L APP IN USE. LDG AND DEPTG RWY 8L, AND 8R.",
+          "airportConditions": "ILS RUNWAY 8 LEFT APPROACH IN USE. VISUAL APCH RY 8L, RY 8R IN USE. LNDG AND DEPG RY 8L AND RY 8R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "01c2694a-67e6-4ad9-83a1-ef9517dba6d2",
+          "ordinal": 3,
+          "name": "EAST  IMC (8)",
+          "airportConditions": "ILS RUNWAY 8 LEFT APPROACH IN USE. LNDG AND DEPG RY 8L AND RY 8R.",
+          "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "425133e1-e815-46ba-a86f-247e7a12a1f3",
+          "ordinal": 3,
           "name": "ODO (8/26)",
-          "airportConditions": "ILS RWY 26L APP IN USE. LDG RWYS 26L, AND ^26R. DEPTG RWYS 8L, AND ^8R. OPPOSITE DRCTN OPS IN EFFECT.",
+          "airportConditions": "OPPOSITE DIRECTION OPS IN EFCT FOR NOISE ABATEMENT. ILS AND VIS APR IN USE, RY26L & RY26R. JETS DEPART RUNWAYS 8L AND ^8R FOR NOISE ABATEMENT.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -14083,7 +14137,23 @@
           }
         }
       ],
-      "contractions": [],
+      "contractions": [
+        {
+          "variableName": "ONT",
+          "text": "ONT",
+          "voice": "ONTARIO"
+        },
+        {
+          "variableName": "APR",
+          "text": "APPROACHES",
+          "voice": "APPROACHES"
+        },
+        {
+          "variableName": "OPS",
+          "text": "OPERATIONS",
+          "voice": "OPERATIONS"
+        }
+      ],
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
@@ -14099,6 +14169,11 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
+          "enabled": false
+        },
+        {
+          "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF @ONT.",
+          "ordinal": 4,
           "enabled": false
         }
       ]
@@ -18074,17 +18149,44 @@
           "airportConditions": "@RNAV APPROACHES IN USE. LANDING RWYS 31L, ^31R",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "07b58ec4-fb60-48c4-a83a-f286d92836c4",
           "name": "SOUTH VMC (13L/R)",
           "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPTG RWYS 13L, ^13R.",
-          "notams": "EXPECT DELAYS FOR DEPARTURES TO OAKLAND CENTER AIRPORTS INCLUDING KSFO, KSJC, KOAK, KSMF, AND KMRY. PILOTS WISHING TO FLY IN THE EVENT SHOULD BOTH DEPART FROM AND ARRIVE AT EVENT AIRPORTS.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "11cc2cc5-128c-4e74-897e-ae1aae7ff1b7",
+          "name": "SOUTH IMC (13L/R)",
+          "airportConditions": "@RNAV APPROACHES IN USE. LANDING RWYS 13L, ^13R",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -18219,6 +18321,12 @@
             "text": "{visibility}",
             "voice": "VISIBILITY {visibility}"
           }
+        },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
         },
         "presentWeather": {
           "presentWeatherTypes": {
@@ -19964,6 +20072,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -20044,6 +20158,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -20079,7 +20209,7 @@
         {
           "id": "005074c8-2fd3-4510-bfdd-4dba2ff95406",
           "name": "WEST",
-          "airportConditions": "LOC, @RNAV, AND VIS APPS IN USE. LDG AND DEPTG RWY 27.",
+          "airportConditions": "LANDING RUNWAY 27, LOC, @RNAV, AND VIS APPS IN USE. LDG AND DEPTG RWY 27.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -20089,7 +20219,7 @@
         {
           "id": "a343e52a-16c4-43ed-a178-1e753a380712",
           "name": "WEST - IMC",
-          "airportConditions": "LANDING RUNWAY 27. LOCALIZER, @RNAV APPROACHES IN USE. DEPTG RWY 27.",
+          "airportConditions": "LANDING RUNWAY 27 LOCALIZER, @RNAV APPROACHES IN USE. DEPG RWY 27.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -20099,7 +20229,7 @@
         {
           "id": "c56dd740-3827-4bb4-b816-02c3b8bc336d",
           "name": "EAST",
-          "airportConditions": "ILS RWY 9 AND VIS APPS IN USE. DEPTG RWY 9.",
+          "airportConditions": "LANDING RUNWAY 9, ILS AND VIS APPS IN USE. DEPTG RWY 9.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -20119,7 +20249,7 @@
         {
           "id": "a4802def-c068-4744-8d94-e71ff706f6e7",
           "name": "ODO (ARR 9/DEP 27)",
-          "airportConditions": "ILS RWY 9 APP IN USE. DEPTG RWY 27. OPPOSITE DRCTN OPS IN EFFECT.",
+          "airportConditions": "LANDING RUNWAY 9, ILS APP IN USE. DEPTG RWY 27. OPPOSITE DRCTN OPS IN EFFECT.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -22200,6 +22330,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -23944,6 +24080,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -24024,6 +24166,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -24077,8 +24235,8 @@
         },
         {
           "id": "911abd2b-99e2-4b9d-ac03-feca04c2dca2",
-          "name": "RWY 04 IMC",
-          "airportConditions": "LANDING AND DEPARTING RWY 21. @RNAV AND VOR APPROACHES IN USE.",
+          "name": "EAST IMC",
+          "airportConditions": "LANDING AND DEPARTING RWY 3. @RNAV APPROACHES IN USE.",
           "notams": "MINIROUTE CLOSED.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -24088,7 +24246,7 @@
         {
           "id": "93b46738-848a-454a-b498-451ea0b57a8f",
           "name": "EAST",
-          "airportConditions": "LANDING AND DEPARTING RWY 03. VISUAL APPROACHES IN USE.",
+          "airportConditions": "LANDING AND DEPARTING RWY 3. VISUAL APPROACHES IN USE.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -26261,6 +26419,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -28005,6 +28169,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -28085,6 +28255,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -28120,17 +28306,23 @@
         {
           "id": "b9e9fd9e-cb2b-45b9-8498-dca515aedbca",
           "name": "SOUTH (16)",
-          "airportConditions": "ILS-Z RWY 16R APP, AND VIS APPS IN USE. LDG AND DEPTG RWYS 16L AND ^16R.",
+          "airportConditions": "@ILS_Z RWY 16R APP, AND VIS APPS IN USE. LDG AND DEPTG RWYS 16 LEFT AND RIGHT.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "e00b7ede-252a-4fb1-9906-3cae10d306ba",
           "name": "SOUTH - IMC (16)",
-          "airportConditions": "ILS-Z RWY 16R APCH IN USE. LNDG AND DEPTG RWYS 16L, AND ^16R.",
+          "airportConditions": "@ILS_Z RWY 16R APCH IN USE. LNDG AND DEPTG RWYS 16L, AND ^16R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -28148,12 +28340,23 @@
           }
         }
       ],
-      "contractions": [],
+      "contractions": [
+        {
+          "variableName": "ILS_Z",
+          "text": "ILS-Z",
+          "voice": "ILS ZULU"
+        }
+      ],
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
+          "text": "RWY 16L PATTERN ALTITUDE ONE THOUSAND SEVEN HUNDRED FEET.",
+          "ordinal": 0,
+          "enabled": true
+        },
+        {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
-          "ordinal": 1,
+          "ordinal": 2,
           "enabled": false
         }
       ]
