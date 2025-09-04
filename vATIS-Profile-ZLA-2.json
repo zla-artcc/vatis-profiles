@@ -1,7 +1,7 @@
 {
   "name": "ZLA Non-TRACON Fields",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-2.json",
-  "updateSerial": 2025090400,
+  "updateSerial": 2025090401,
   "stations": [
     {
       "ordinal": 98,
