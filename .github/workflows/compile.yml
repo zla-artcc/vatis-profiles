@@ -16,7 +16,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-          fetch-depth: 0
+        fetch-depth: 0
     
     - name: Set up Python 3.x
       uses: actions/setup-python@v4
@@ -50,3 +50,13 @@ jobs:
         git diff --cached --quiet || (git commit -m "Auto-generate profiles" && git push)
         git tag "$VERSION"
         git push origin "$VERSION"
+
+    - name: Create release
+      if: github.event_name == 'push'
+      id: release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          vATIS-Profile-!(DEV-*)*.json
+        generate_release_notes: true
+        make_latest: true
