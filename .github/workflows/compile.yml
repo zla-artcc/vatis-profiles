@@ -60,3 +60,4 @@ jobs:
           vATIS-Profile-!(DEV-*)*.json
         generate_release_notes: true
         make_latest: true
+        tag_name: ${{ steps.get_next_version.outputs.version }}
