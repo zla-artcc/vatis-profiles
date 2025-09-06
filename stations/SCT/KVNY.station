@@ -2010,8 +2010,8 @@
   "airportConditionDefinitions": [],
   "notamDefinitions": [
     {
-      "text": "RWY 16L PATTERN ALTITUDE ONE THOUSAND SEVEN HUNDRED FEET.",
-      "ordinal": 0,
+      "text": "RWY ^16L PATTERN ALTITUDE ONE THOUSAND SEVEN HUNDRED FEET.",
+      "ordinal": 1,
       "enabled": true
     },
     {
