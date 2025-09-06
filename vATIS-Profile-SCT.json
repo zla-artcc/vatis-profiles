@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2025090402,
+  "updateSerial": 2025090600,
   "stations": [
     {
       "ordinal": 99,
@@ -14172,7 +14172,7 @@
           "enabled": false
         },
         {
-          "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF @ONT.",
+          "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF +ONT.",
           "ordinal": 4,
           "enabled": false
         }
@@ -24344,6 +24344,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -26088,6 +26094,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -26167,6 +26179,22 @@
             "text": "A{altimeter} ({altimeter|text})",
             "voice": "ALTIMETER {altimeter}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -26306,11 +26334,16 @@
           "variableName": "H",
           "text": "H",
           "voice": "HOTEL"
+        },
+        {
+          "variableName": "OPS",
+          "text": "OPS",
+          "voice": "OPERATIONS"
         }
       ],
       "airportConditionDefinitions": [
         {
-          "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
+          "text": "RWY 20L DEPTS TURN LEFT 15 DEGREES AT DEP END OF RWY.",
           "ordinal": 1,
           "enabled": true
         },
@@ -26327,13 +26360,18 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
+          "ordinal": 2,
+          "enabled": true
+        },
+        {
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
           "enabled": false
         },
         {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-          "ordinal": 3,
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "ordinal": 4,
           "enabled": false
         }
       ]
@@ -28350,8 +28388,8 @@
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
-          "text": "RWY 16L PATTERN ALTITUDE ONE THOUSAND SEVEN HUNDRED FEET.",
-          "ordinal": 0,
+          "text": "RWY ^16L PATTERN ALTITUDE ONE THOUSAND SEVEN HUNDRED FEET.",
+          "ordinal": 1,
           "enabled": true
         },
         {

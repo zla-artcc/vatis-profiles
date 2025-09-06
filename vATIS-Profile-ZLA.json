@@ -2,7 +2,7 @@
   "name": "Los Angeles ARTCC (ZLA)",
   "id": "e1126dde-5a6a-40dd-ad5c-3f594f8c0f82",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA.json",
-  "updateSerial": 2025090402,
+  "updateSerial": 2025090600,
   "stations": [
     {
       "ordinal": 98,
@@ -6088,13 +6088,25 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 240
       },
       "presets": [
         {
           "id": "20ac6dd7-2eab-4776-b8a2-8ff1964cc31b",
+          "ordinal": 1,
           "name": "25/15",
-          "airportConditions": "VOR RWY 25, AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, ^15L, AND ^15R.",
+          "airportConditions": "VOR RWY 25 AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, ^15L, AND ^15R.",
+          "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "688e3e37-c832-4652-8b7e-aeda2cb65948",
+          "ordinal": 1,
+          "name": "25/15 (IMC)",
+          "airportConditions": "VOR RWY 25 APPR IN USE. LDG AND DEPTG RWYS 25, ^15L, AND ^15R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -6103,6 +6115,7 @@
         },
         {
           "id": "2802dd50-1d05-41e5-b4da-39f2acee5646",
+          "ordinal": 3,
           "name": "25/33",
           "airportConditions": "VOR RWY 25, AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, ^33L, AND ^33R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -6113,6 +6126,7 @@
         },
         {
           "id": "9c02de1b-90d7-42b1-8478-e2efd6755a0d",
+          "ordinal": 4,
           "name": "7/15",
           "airportConditions": "ILS AND @RNAV RWY 7 AND VIS APPS IN USE. LDG AND DEPTG RWYS 7, ^15L, AND ^15R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -6123,6 +6137,7 @@
         },
         {
           "id": "acb28145-27f6-4089-9451-46c1049b7f67",
+          "ordinal": 5,
           "name": "7/33",
           "airportConditions": "ILS AND @RNAV RWY 7, AND VIS APPS IN USE. LDG AND DEPTG RWYS 7, ^33L, AND ^33R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -12464,7 +12479,7 @@
           "enabled": false
         },
         {
-          "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF @ONT.",
+          "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF +ONT.",
           "ordinal": 4,
           "enabled": false
         }
@@ -16662,6 +16677,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -18406,6 +18427,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -18485,6 +18512,22 @@
             "text": "A{altimeter} ({altimeter|text})",
             "voice": "ALTIMETER {altimeter}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -18624,11 +18667,16 @@
           "variableName": "H",
           "text": "H",
           "voice": "HOTEL"
+        },
+        {
+          "variableName": "OPS",
+          "text": "OPS",
+          "voice": "OPERATIONS"
         }
       ],
       "airportConditionDefinitions": [
         {
-          "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
+          "text": "RWY 20L DEPTS TURN LEFT 15 DEGREES AT DEP END OF RWY.",
           "ordinal": 1,
           "enabled": true
         },
@@ -18645,13 +18693,18 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
+          "ordinal": 2,
+          "enabled": true
+        },
+        {
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
           "enabled": false
         },
         {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-          "ordinal": 3,
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "ordinal": 4,
           "enabled": false
         }
       ]
@@ -20668,8 +20721,8 @@
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
-          "text": "RWY 16L PATTERN ALTITUDE ONE THOUSAND SEVEN HUNDRED FEET.",
-          "ordinal": 0,
+          "text": "RWY ^16L PATTERN ALTITUDE ONE THOUSAND SEVEN HUNDRED FEET.",
+          "ordinal": 1,
           "enabled": true
         },
         {

@@ -2,7 +2,7 @@
   "name": "Joshua Control Facility (JCF)",
   "id": "c9b6d3c1-514e-4cef-b2fe-4672401a9799",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-JCF.json",
-  "updateSerial": 2025090402,
+  "updateSerial": 2025090600,
   "stations": [
     {
       "ordinal": 99,
