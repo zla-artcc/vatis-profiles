@@ -1960,13 +1960,25 @@
   "atisVoice": {
     "useTextToSpeech": true,
     "voice": "Default",
-    "speechRate": 180
+    "speechRate": 240
   },
   "presets": [
     {
       "id": "20ac6dd7-2eab-4776-b8a2-8ff1964cc31b",
+      "ordinal": 1,
       "name": "25/15",
-      "airportConditions": "VOR RWY 25, AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, ^15L, AND ^15R.",
+      "airportConditions": "VOR RWY 25 AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, ^15L, AND ^15R.",
+      "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "externalGenerator": {
+        "enabled": false
+      }
+    },
+    {
+      "id": "688e3e37-c832-4652-8b7e-aeda2cb65948",
+      "ordinal": 1,
+      "name": "25/15 (IMC)",
+      "airportConditions": "VOR RWY 25 APPR IN USE. LDG AND DEPTG RWYS 25, ^15L, AND ^15R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -1975,6 +1987,7 @@
     },
     {
       "id": "2802dd50-1d05-41e5-b4da-39f2acee5646",
+      "ordinal": 3,
       "name": "25/33",
       "airportConditions": "VOR RWY 25, AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, ^33L, AND ^33R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -1985,6 +1998,7 @@
     },
     {
       "id": "9c02de1b-90d7-42b1-8478-e2efd6755a0d",
+      "ordinal": 4,
       "name": "7/15",
       "airportConditions": "ILS AND @RNAV RWY 7 AND VIS APPS IN USE. LDG AND DEPTG RWYS 7, ^15L, AND ^15R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -1995,6 +2009,7 @@
     },
     {
       "id": "acb28145-27f6-4089-9451-46c1049b7f67",
+      "ordinal": 5,
       "name": "7/33",
       "airportConditions": "ILS AND @RNAV RWY 7, AND VIS APPS IN USE. LDG AND DEPTG RWYS 7, ^33L, AND ^33R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
