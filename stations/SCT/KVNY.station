@@ -1966,7 +1966,7 @@
     {
       "id": "b9e9fd9e-cb2b-45b9-8498-dca515aedbca",
       "name": "SOUTH (16)",
-      "airportConditions": "@ILS_Z RWY 16R APP, AND VIS APPS IN USE. LDG AND DEPTG RWYS 16 LEFT AND RIGHT.",
+      "airportConditions": "@ILS_Z RWY 16R APCH IN USE, VISUAL APCH IN USE. LDG AND DEPTG RWYS 16 LEFT AND RIGHT.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -2020,4 +2020,5 @@
       "enabled": false
     }
   ]
+
 }
