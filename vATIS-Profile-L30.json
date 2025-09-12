@@ -2,7 +2,7 @@
   "name": "Las Vegas TRACON (L30)",
   "id": "935bca6d-a174-4aa9-bb41-27f99533e86c",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-L30.json",
-  "updateSerial": 2025090600,
+  "updateSerial": 2025091200,
   "stations": [
     {
       "ordinal": 99,
@@ -3924,6 +3924,11 @@
           "variableName": "ADZYS",
           "text": "ADZYS",
           "voice": "ADVISORIES"
+        },
+        {
+          "variableName": "ASAP",
+          "text": "ASAP",
+          "voice": "AS SOON AS POSSIBLE"
         }
       ],
       "airportConditionDefinitions": [
@@ -3935,48 +3940,53 @@
       ],
       "notamDefinitions": [
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
           "ordinal": 1,
-          "enabled": false
+          "enabled": true
+        },
+        {
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "ordinal": 2,
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-          "ordinal": 2,
-          "enabled": false
+          "ordinal": 3,
+          "enabled": true
         },
         {
           "text": "CHECK DENSITY ALTITUDE",
-          "ordinal": 3,
+          "ordinal": 4,
           "enabled": false
         },
         {
           "text": "LLWS ADZYS IN EFCT.",
-          "ordinal": 4,
+          "ordinal": 5,
           "enabled": false
         },
         {
           "text": "GC COMBINED ON 121.1",
-          "ordinal": 4,
-          "enabled": false
-        },
-        {
-          "text": "CD AND GC COMBINED ON 121.1",
           "ordinal": 6,
           "enabled": false
         },
         {
-          "text": "HELICOPTERS OVER THE STRIP AT 3 THOUSAND FEET AND BELOW.",
+          "text": "CD AND GC COMBINED ON 121.1",
           "ordinal": 7,
           "enabled": false
         },
         {
-          "text": "LAS VEGAS METROPLEX PROCEDURES IN EFFECT. VERIFY NAVIGATIONAL DATA IS UP TO DATE.",
+          "text": "HELICOPTERS OVER THE STRIP AT 3 THOUSAND FEET AND BELOW.",
           "ordinal": 8,
           "enabled": false
         },
         {
-          "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
+          "text": "LAS VEGAS METROPLEX PROCEDURES IN EFFECT. VERIFY NAVIGATIONAL DATA IS UP TO DATE.",
           "ordinal": 9,
+          "enabled": false
+        },
+        {
+          "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
+          "ordinal": 10,
           "enabled": false
         }
       ]

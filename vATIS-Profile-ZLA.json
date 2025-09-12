@@ -2,7 +2,7 @@
   "name": "Los Angeles ARTCC (ZLA)",
   "id": "e1126dde-5a6a-40dd-ad5c-3f594f8c0f82",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA.json",
-  "updateSerial": 2025090600,
+  "updateSerial": 2025091200,
   "stations": [
     {
       "ordinal": 98,
@@ -4069,6 +4069,11 @@
           "variableName": "ADZYS",
           "text": "ADZYS",
           "voice": "ADVISORIES"
+        },
+        {
+          "variableName": "ASAP",
+          "text": "ASAP",
+          "voice": "AS SOON AS POSSIBLE"
         }
       ],
       "airportConditionDefinitions": [
@@ -4080,48 +4085,53 @@
       ],
       "notamDefinitions": [
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
           "ordinal": 1,
-          "enabled": false
+          "enabled": true
+        },
+        {
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "ordinal": 2,
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-          "ordinal": 2,
-          "enabled": false
+          "ordinal": 3,
+          "enabled": true
         },
         {
           "text": "CHECK DENSITY ALTITUDE",
-          "ordinal": 3,
+          "ordinal": 4,
           "enabled": false
         },
         {
           "text": "LLWS ADZYS IN EFCT.",
-          "ordinal": 4,
+          "ordinal": 5,
           "enabled": false
         },
         {
           "text": "GC COMBINED ON 121.1",
-          "ordinal": 4,
-          "enabled": false
-        },
-        {
-          "text": "CD AND GC COMBINED ON 121.1",
           "ordinal": 6,
           "enabled": false
         },
         {
-          "text": "HELICOPTERS OVER THE STRIP AT 3 THOUSAND FEET AND BELOW.",
+          "text": "CD AND GC COMBINED ON 121.1",
           "ordinal": 7,
           "enabled": false
         },
         {
-          "text": "LAS VEGAS METROPLEX PROCEDURES IN EFFECT. VERIFY NAVIGATIONAL DATA IS UP TO DATE.",
+          "text": "HELICOPTERS OVER THE STRIP AT 3 THOUSAND FEET AND BELOW.",
           "ordinal": 8,
           "enabled": false
         },
         {
-          "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
+          "text": "LAS VEGAS METROPLEX PROCEDURES IN EFFECT. VERIFY NAVIGATIONAL DATA IS UP TO DATE.",
           "ordinal": 9,
+          "enabled": false
+        },
+        {
+          "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
+          "ordinal": 10,
           "enabled": false
         }
       ]
@@ -8236,12 +8246,12 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 4,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 5,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -10393,12 +10403,12 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "ACFT PUSHING ONTO TWY K, TWY L, TWY M CTC GC ON 121.4 FOR PUSH.",
@@ -12471,12 +12481,12 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF +ONT.",
@@ -14540,12 +14550,12 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "NEW RNAV PROCEDURES IN EFFECT. LOAD NEWEST NAVIGATION DATA.",
@@ -16522,7 +16532,7 @@
         {
           "id": "005074c8-2fd3-4510-bfdd-4dba2ff95406",
           "name": "WEST",
-          "airportConditions": "LANDING RUNWAY 27, LOC, @RNAV, AND VIS APPS IN USE. LDG AND DEPTG RWY 27.",
+          "airportConditions": "LANDING RUNWAY 27, LOC, @RNAV, AND VIS APPS IN USE. DEPTG RWY 27.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -16575,6 +16585,21 @@
           "variableName": "RNAV",
           "text": "RNAV",
           "voice": "R NAV"
+        },
+        {
+          "variableName": "RLS",
+          "text": "RLS",
+          "voice": "RELEASE"
+        },
+        {
+          "variableName": "CD",
+          "text": "CD",
+          "voice": "clearance delivery"
+        },
+        {
+          "variableName": "ASAP",
+          "text": "ASAP",
+          "voice": "AS SOON AS POSSIBLE"
         }
       ],
       "airportConditionDefinitions": [],
@@ -16585,14 +16610,19 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
+        },
+        {
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "ordinal": 3,
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-          "ordinal": 3,
-          "enabled": false
+          "ordinal": 4,
+          "enabled": true
         }
       ]
     },
@@ -18699,13 +18729,13 @@
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-          "ordinal": 2,
-          "enabled": false
+          "ordinal": 4,
+          "enabled": true
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-          "ordinal": 4,
-          "enabled": false
+          "ordinal": 3,
+          "enabled": true
         }
       ]
     },
@@ -20677,7 +20707,7 @@
         {
           "id": "b9e9fd9e-cb2b-45b9-8498-dca515aedbca",
           "name": "SOUTH (16)",
-          "airportConditions": "@ILS_Z RWY 16R APP, AND VIS APPS IN USE. LDG AND DEPTG RWYS 16 LEFT AND RIGHT.",
+          "airportConditions": "@ILS_Z RWY 16R APCH IN USE, VISUAL APCH IN USE. LDG AND DEPTG RWYS 16 LEFT AND RIGHT.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
