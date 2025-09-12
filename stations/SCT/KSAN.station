@@ -1966,7 +1966,7 @@
     {
       "id": "005074c8-2fd3-4510-bfdd-4dba2ff95406",
       "name": "WEST",
-      "airportConditions": "LANDING RUNWAY 27, LOC, @RNAV, AND VIS APPS IN USE. LDG AND DEPTG RWY 27.",
+      "airportConditions": "LANDING RUNWAY 27, LOC, @RNAV, AND VIS APPS IN USE. DEPTG RWY 27.",
       "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -2019,6 +2019,21 @@
       "variableName": "RNAV",
       "text": "RNAV",
       "voice": "R NAV"
+    },
+    {
+      "variableName": "RLS",
+      "text": "RLS",
+      "voice": "RELEASE"
+    },
+    {
+      "variableName": "CD",
+      "text": "CD",
+      "voice": "clearance delivery"
+    },
+    {
+      "variableName": "ASAP",
+      "text": "ASAP",
+      "voice": "AS SOON AS POSSIBLE"
     }
   ],
   "airportConditionDefinitions": [],
@@ -2029,14 +2044,19 @@
       "enabled": false
     },
     {
-      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
       "ordinal": 2,
-      "enabled": false
+      "enabled": true
+    },
+    {
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+      "ordinal": 3,
+      "enabled": true
     },
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-      "ordinal": 3,
-      "enabled": false
+      "ordinal": 4,
+      "enabled": true
     }
   ]
 }
