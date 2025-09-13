@@ -2046,12 +2046,12 @@
     {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
       "ordinal": 4,
-      "enabled": true
+      "enabled": false
     },
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 5,
-      "enabled": true
+      "enabled": false
     }
   ]
 }
