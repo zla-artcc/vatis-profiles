@@ -2,7 +2,7 @@
   "name": "Las Vegas TRACON (L30)",
   "id": "935bca6d-a174-4aa9-bb41-27f99533e86c",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-L30.json",
-  "updateSerial": 2025091200,
+  "updateSerial": 2025091300,
   "stations": [
     {
       "ordinal": 99,
@@ -3942,17 +3942,17 @@
         {
           "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "CHECK DENSITY ALTITUDE",

@@ -1,7 +1,7 @@
 {
   "name": "ZLA Real D-ATIS",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-D-ATIS.json",
-  "updateSerial": 2025091200,
+  "updateSerial": 2025091300,
   "stations": [
     {
       "ordinal": 1,
@@ -2073,17 +2073,17 @@
         {
           "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "CHECK DENSITY ALTITUDE",
@@ -4170,12 +4170,12 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 4,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 5,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -6327,12 +6327,12 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "ACFT PUSHING ONTO TWY K, TWY L, TWY M CTC GC ON 121.4 FOR PUSH.",
@@ -8405,17 +8405,17 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF +ONT.",
           "ordinal": 4,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -10467,17 +10467,17 @@
         {
           "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
           "ordinal": 2,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 3,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 4,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -12585,12 +12585,12 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 4,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 3,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
