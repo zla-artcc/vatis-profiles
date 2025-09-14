@@ -1975,8 +1975,25 @@
       }
     },
     {
+      "id": "36cf59e3-2a2e-4543-a5fe-81a22c0d96dc",
+      "ordinal": 1,
+      "name": "NORMAL IMC (26)",
+      "airportConditions": "ILS RUNWAY 26 RIGHT APPROACH IN USE. RNAV/GPS APCH RY 26L IN USE. LNDG AND DEPG RY 26L AND RY 26R.",
+      "notams": "ILS CRITICAL AREAS ARE IN EFFECT. PILOTS READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+      "template": "",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
       "id": "9f4f8cf4-72ed-4f57-b6d4-aa6e02fb2c4c",
-      "ordinal": 2,
+      "ordinal": 3,
       "name": "EAST (8)",
       "airportConditions": "ILS RUNWAY 8 LEFT APPROACH IN USE. VISUAL APCH RY 8L, RY 8R IN USE. LNDG AND DEPG RY 8L AND RY 8R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -1993,7 +2010,7 @@
     },
     {
       "id": "01c2694a-67e6-4ad9-83a1-ef9517dba6d2",
-      "ordinal": 3,
+      "ordinal": 4,
       "name": "EAST  IMC (8)",
       "airportConditions": "ILS RUNWAY 8 LEFT APPROACH IN USE. LNDG AND DEPG RY 8L AND RY 8R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -2010,7 +2027,7 @@
     },
     {
       "id": "425133e1-e815-46ba-a86f-247e7a12a1f3",
-      "ordinal": 3,
+      "ordinal": 5,
       "name": "ODO (8/26)",
       "airportConditions": "OPPOSITE DIRECTION OPS IN EFCT FOR NOISE ABATEMENT. ILS AND VIS APR IN USE, RY26L & RY26R. JETS DEPART RUNWAYS 8L AND ^8R FOR NOISE ABATEMENT.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -2037,7 +2054,13 @@
       "voice": "OPERATIONS"
     }
   ],
-  "airportConditionDefinitions": [],
+  "airportConditionDefinitions": [
+    {
+      "text": "RWY 26R CATEGORY 2 AND 3 ILS APPROACH NOT AUTHORIZED.",
+      "ordinal": 1,
+      "enabled": false
+    }
+  ],
   "notamDefinitions": [
     {
       "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
@@ -2060,5 +2083,4 @@
       "enabled": true
     }
   ]
-
 }
