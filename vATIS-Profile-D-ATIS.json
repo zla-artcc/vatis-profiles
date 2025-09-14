@@ -1,7 +1,7 @@
 {
   "name": "ZLA Real D-ATIS",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-D-ATIS.json",
-  "updateSerial": 2025091300,
+  "updateSerial": 2025091400,
   "stations": [
     {
       "ordinal": 1,
@@ -4100,7 +4100,7 @@
         {
           "id": "ed0e89d6-6eeb-43fc-8af4-8e170e27d6f2",
           "name": "NORMAL IMC (8/15)",
-          "airportConditions": "ILS RWY 8 APCH IN USE. ARR AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15, AVBL LDG DIST FOUR THOUSAND TWO HUNDRED FIFTY FEET. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "ILS RWY 8 APCH IN USE. ARVNG RWY 8 DEPG RWY 15. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -6148,7 +6148,7 @@
           "id": "ad47e047-c7df-420b-bf13-0b4d93587ba6",
           "name": "WEST - INST AND VISUAL",
           "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 24R AND RWY 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND 25.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -6160,8 +6160,8 @@
         {
           "id": "d6990d0d-8f5c-4aeb-82ca-9009a09de41c",
           "name": "WEST - SIMUL INST",
-          "airportConditions": "SIMUL INST APCHS AND @RNAV RNP APCHS IN PROG RWY 24R AND RWY 25L, AND SIMUL APCHS IN PROG BETWEEN LOS ANGELES AND HAWTHORNE AIRPORTS. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND 25.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "SIMUL INST APCHS AND @RNAV RNP RWYS 24R AND ^25L APCHS, AND SIMUL APCHS IN PROG BTWN +LAX AND HHR, SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -6173,8 +6173,8 @@
         {
           "id": "1c5dd589-4e4f-49d5-8c04-04a9a5291c68",
           "name": "WEST - SIMUL INST AND VISUAL",
-          "airportConditions": "SIMUL INST APCHS AND @RNAV RNP APCHS IN PROG RWYS 24R AND 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL VISUAL APCHS TO ALL RWYS IN PROG, AND SIMUL APCHS IN PROG BETWEEN LOS ANGELES AND HAWTHORNE AIRPORTS. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND 25.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "SIMUL INST APCHS AND @RNAV RNP APCHS IN PROG RWYS 24R AND ^25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL VISUAL APCHS TO ALL RWYS IN PROG, AND SIMUL APCHS IN PROG BETWEEN +LAX AND HHR AIRPORTS. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -6187,7 +6187,7 @@
           "id": "f75663e4-6629-41fa-8bec-ecd085d118a5",
           "name": "EAST - INST AND VISUAL",
           "airportConditions": "INST APCHS IN PROG RWY 6L AND RWY 7R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL VISUAL APCHS TO ALL RWYS IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 6 and 7.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -6200,7 +6200,7 @@
           "id": "62b9abc7-d2d9-42e0-b895-86fb0d0c29d6",
           "name": "EAST - SIMUL INST",
           "airportConditions": "SIMUL INST APCHS IN PROG RWY 6L AND RWY 7R. SIMUL INSTR DEPARTURES IN PROG RWYs 6 AND 7.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -6213,7 +6213,7 @@
           "id": "87221528-e3c3-4742-8ae8-121af32bfea4",
           "name": "EAST - SIMUL INST AND VISUAL",
           "airportConditions": "SIMUL INST APCHS IN PROG RWY 6L AND RWY 7R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL VISUAL APCHS TO ALL RWYS IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 6 AND 7.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -6226,7 +6226,7 @@
           "id": "207a3dde-7bc4-4a17-a42b-9a88c7f47fe3",
           "name": "OVER-OCEAN - INST",
           "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 6R. OPPOSITE DIRECTION TRAFFIC WILL DEPART THE SOUTH COMPLEX. DEPARTING RWY 25R.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -6304,6 +6304,11 @@
           "variableName": "LADYJ",
           "text": "LADYJ",
           "voice": "LADY JAY"
+        },
+        {
+          "variableName": "HHR",
+          "text": "HHR",
+          "voice": "HAWTHORNE"
         }
       ],
       "airportConditionDefinitions": [
@@ -6322,7 +6327,7 @@
         {
           "text": "PILOTS EXPECTED TO BRIEF AND COMPLY WITH ALL PUBLISHED SIDS AND STARS. VERIFY ALTITUDES, HEADINGS, SPEEDS, CLIMB OR DESCENT GRADIENTS PRIOR TO DEP OR ARR.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
@@ -8333,8 +8338,25 @@
           }
         },
         {
+          "id": "36cf59e3-2a2e-4543-a5fe-81a22c0d96dc",
+          "ordinal": 1,
+          "name": "NORMAL IMC (26)",
+          "airportConditions": "ILS RUNWAY 26 RIGHT APPROACH IN USE. RNAV/GPS APCH RY 26L IN USE. LNDG AND DEPG RY 26L AND RY 26R.",
+          "notams": "ILS CRITICAL AREAS ARE IN EFFECT. PILOTS READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+          "template": "",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
           "id": "9f4f8cf4-72ed-4f57-b6d4-aa6e02fb2c4c",
-          "ordinal": 2,
+          "ordinal": 3,
           "name": "EAST (8)",
           "airportConditions": "ILS RUNWAY 8 LEFT APPROACH IN USE. VISUAL APCH RY 8L, RY 8R IN USE. LNDG AND DEPG RY 8L AND RY 8R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -8351,7 +8373,7 @@
         },
         {
           "id": "01c2694a-67e6-4ad9-83a1-ef9517dba6d2",
-          "ordinal": 3,
+          "ordinal": 4,
           "name": "EAST  IMC (8)",
           "airportConditions": "ILS RUNWAY 8 LEFT APPROACH IN USE. LNDG AND DEPG RY 8L AND RY 8R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -8368,7 +8390,7 @@
         },
         {
           "id": "425133e1-e815-46ba-a86f-247e7a12a1f3",
-          "ordinal": 3,
+          "ordinal": 5,
           "name": "ODO (8/26)",
           "airportConditions": "OPPOSITE DIRECTION OPS IN EFCT FOR NOISE ABATEMENT. ILS AND VIS APR IN USE, RY26L & RY26R. JETS DEPART RUNWAYS 8L AND ^8R FOR NOISE ABATEMENT.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
@@ -8395,7 +8417,13 @@
           "voice": "OPERATIONS"
         }
       ],
-      "airportConditionDefinitions": [],
+      "airportConditionDefinitions": [
+        {
+          "text": "RWY 26R CATEGORY 2 AND 3 ILS APPROACH NOT AUTHORIZED.",
+          "ordinal": 1,
+          "enabled": false
+        }
+      ],
       "notamDefinitions": [
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
