@@ -1,7 +1,7 @@
 {
   "name": "ZLA Real D-ATIS",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-D-ATIS.json",
-  "updateSerial": 2025091400,
+  "updateSerial": 2025100800,
   "stations": [
     {
       "ordinal": 1,
@@ -10477,12 +10477,17 @@
         {
           "variableName": "CD",
           "text": "CD",
-          "voice": "clearance delivery"
+          "voice": "Clearance Delivery"
         },
         {
           "variableName": "ASAP",
           "text": "ASAP",
           "voice": "AS SOON AS POSSIBLE"
+        },
+        {
+          "variableName": "DRCTN",
+          "text": "DRCTN",
+          "voice": "DIRECTION"
         }
       ],
       "airportConditionDefinitions": [],

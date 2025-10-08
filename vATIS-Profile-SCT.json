@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2025091400,
+  "updateSerial": 2025100800,
   "stations": [
     {
       "ordinal": 99,
@@ -20299,12 +20299,17 @@
         {
           "variableName": "CD",
           "text": "CD",
-          "voice": "clearance delivery"
+          "voice": "Clearance Delivery"
         },
         {
           "variableName": "ASAP",
           "text": "ASAP",
           "voice": "AS SOON AS POSSIBLE"
+        },
+        {
+          "variableName": "DRCTN",
+          "text": "DRCTN",
+          "voice": "DIRECTION"
         }
       ],
       "airportConditionDefinitions": [],
