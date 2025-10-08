@@ -2028,12 +2028,17 @@
     {
       "variableName": "CD",
       "text": "CD",
-      "voice": "clearance delivery"
+      "voice": "Clearance Delivery"
     },
     {
       "variableName": "ASAP",
       "text": "ASAP",
       "voice": "AS SOON AS POSSIBLE"
+    },
+    {
+      "variableName": "DRCTN",
+      "text": "DRCTN",
+      "voice": "DIRECTION"
     }
   ],
   "airportConditionDefinitions": [],
