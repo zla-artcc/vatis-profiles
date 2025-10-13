@@ -1,7 +1,7 @@
 {
   "name": "ZLA Real D-ATIS",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-D-ATIS.json",
-  "updateSerial": 2025100800,
+  "updateSerial": 2025101300,
   "stations": [
     {
       "ordinal": 1,
@@ -6146,6 +6146,7 @@
       "presets": [
         {
           "id": "ad47e047-c7df-420b-bf13-0b4d93587ba6",
+          "ordinal": 1,
           "name": "WEST - INST AND VISUAL",
           "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 24R AND RWY 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND 25.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
@@ -6154,11 +6155,15 @@
             "enabled": false,
             "textUrl": "https://datis.clowd.io/klax",
             "voiceUrl": "https://datis.clowd.io/klax",
-            "arrival": "24R, 25L"
+            "arrival": "24R, 25L",
+            "departure": "25R, 24L",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "d6990d0d-8f5c-4aeb-82ca-9009a09de41c",
+          "ordinal": 2,
           "name": "WEST - SIMUL INST",
           "airportConditions": "SIMUL INST APCHS AND @RNAV RNP RWYS 24R AND ^25L APCHS, AND SIMUL APCHS IN PROG BTWN +LAX AND HHR, SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
@@ -6167,11 +6172,15 @@
             "enabled": false,
             "textUrl": "https://datis.clowd.io/klax",
             "voiceUrl": "https://datis.clowd.io/klax",
-            "arrival": "24R, 25L"
+            "arrival": "24R, 25L",
+            "departure": "25R, 24L",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "1c5dd589-4e4f-49d5-8c04-04a9a5291c68",
+          "ordinal": 3,
           "name": "WEST - SIMUL INST AND VISUAL",
           "airportConditions": "SIMUL INST APCHS AND @RNAV RNP APCHS IN PROG RWYS 24R AND ^25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL VISUAL APCHS TO ALL RWYS IN PROG, AND SIMUL APCHS IN PROG BETWEEN +LAX AND HHR AIRPORTS. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
@@ -6180,72 +6189,78 @@
             "enabled": false,
             "textUrl": "https://datis.clowd.io/klax",
             "voiceUrl": "https://datis.clowd.io/klax",
-            "arrival": "24R, 25L"
-          }
-        },
-        {
-          "id": "f75663e4-6629-41fa-8bec-ecd085d118a5",
-          "name": "EAST - INST AND VISUAL",
-          "airportConditions": "INST APCHS IN PROG RWY 6L AND RWY 7R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL VISUAL APCHS TO ALL RWYS IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 6 and 7.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
-          "externalGenerator": {
-            "enabled": false,
-            "textUrl": "https://datis.clowd.io/klax",
-            "voiceUrl": "https://datis.clowd.io/klax",
-            "arrival": "6L, 7R"
+            "arrival": "24R, 25L",
+            "departure": "25R, 24L",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "62b9abc7-d2d9-42e0-b895-86fb0d0c29d6",
+          "ordinal": 4,
           "name": "EAST - SIMUL INST",
-          "airportConditions": "SIMUL INST APCHS IN PROG RWY 6L AND RWY 7R. SIMUL INSTR DEPARTURES IN PROG RWYs 6 AND 7.",
+          "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 6L AND ^7R APCHS, SIMUL INSTR DEPARTURES IN PROG RWYS 6 AND 7.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "https://datis.clowd.io/klax",
             "voiceUrl": "https://datis.clowd.io/klax",
-            "arrival": "6L, 7R"
+            "arrival": "6L, 7R",
+            "departure": "6R, 7L",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
-          "id": "87221528-e3c3-4742-8ae8-121af32bfea4",
-          "name": "EAST - SIMUL INST AND VISUAL",
-          "airportConditions": "SIMUL INST APCHS IN PROG RWY 6L AND RWY 7R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL VISUAL APCHS TO ALL RWYS IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 6 AND 7.",
+          "id": "f75663e4-6629-41fa-8bec-ecd085d118a5",
+          "ordinal": 6,
+          "name": "EAST - INST AND VISUAL",
+          "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 6L AND ^7R APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL INSTR DEPARTURES IN PROG RWYS 6 AND 7.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "https://datis.clowd.io/klax",
             "voiceUrl": "https://datis.clowd.io/klax",
-            "arrival": "6L, 7R"
+            "arrival": "6L, 7R",
+            "departure": "6R, 7L",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "207a3dde-7bc4-4a17-a42b-9a88c7f47fe3",
+          "ordinal": 7,
           "name": "OVER-OCEAN - INST",
-          "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 6R. OPPOSITE DIRECTION TRAFFIC WILL DEPART THE SOUTH COMPLEX. DEPARTING RWY 25R.",
+          "airportConditions": "INST APCHS AND @RNAV RNP APCHS ^6R, OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "https://datis.clowd.io/klax",
             "voiceUrl": "https://datis.clowd.io/klax",
-            "arrival": "6R"
+            "arrival": "6R",
+            "departure": "25R",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "0c5033c0-fec1-4bd6-880f-d3b124f4785c",
+          "ordinal": 8,
           "name": "OVER-OCEAN - INST AND VISUAL",
-          "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 6R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. OPPOSITE DIRECTION TRAFFIC WILL DEPART THE SOUTH COMPLEX. DEPARTING RWY 25R.",
+          "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 6R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
           "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "https://datis.clowd.io/klax",
             "voiceUrl": "https://datis.clowd.io/klax",
-            "arrival": "6R"
+            "arrival": "6R",
+            "departure": "25R",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -6309,6 +6324,11 @@
           "variableName": "HHR",
           "text": "HHR",
           "voice": "HAWTHORNE"
+        },
+        {
+          "variableName": "OPP",
+          "text": "OPP",
+          "voice": "OPPOSITE"
         }
       ],
       "airportConditionDefinitions": [
