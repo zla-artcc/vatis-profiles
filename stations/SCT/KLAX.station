@@ -1974,7 +1974,10 @@
         "enabled": false,
         "textUrl": "https://datis.clowd.io/klax",
         "voiceUrl": "https://datis.clowd.io/klax",
-        "arrival": "24R, 25L"
+        "arrival": "24R, 25L",
+        "departure": "25R, 24L",
+        "approaches": "",
+        "remarks": ""
       }
     },
     {
@@ -1988,7 +1991,10 @@
         "enabled": false,
         "textUrl": "https://datis.clowd.io/klax",
         "voiceUrl": "https://datis.clowd.io/klax",
-        "arrival": "24R, 25L"
+        "arrival": "24R, 25L",
+        "departure": "25R, 24L",
+        "approaches": "",
+        "remarks": ""
       }
     },
     {
@@ -2002,7 +2008,10 @@
         "enabled": false,
         "textUrl": "https://datis.clowd.io/klax",
         "voiceUrl": "https://datis.clowd.io/klax",
-        "arrival": "24R, 25L"
+        "arrival": "24R, 25L",
+        "departure": "25R, 24L",
+        "approaches": "",
+        "remarks": ""
       }
     },
     {
@@ -2017,7 +2026,7 @@
         "textUrl": "https://datis.clowd.io/klax",
         "voiceUrl": "https://datis.clowd.io/klax",
         "arrival": "6L, 7R",
-        "departure": "",
+        "departure": "6R, 7L",
         "approaches": "",
         "remarks": ""
       }
@@ -2033,7 +2042,10 @@
         "enabled": false,
         "textUrl": "https://datis.clowd.io/klax",
         "voiceUrl": "https://datis.clowd.io/klax",
-        "arrival": "6L, 7R"
+        "arrival": "6L, 7R",
+        "departure": "6R, 7L",
+        "approaches": "",
+        "remarks": ""
       }
     },
     {
@@ -2047,7 +2059,10 @@
         "enabled": false,
         "textUrl": "https://datis.clowd.io/klax",
         "voiceUrl": "https://datis.clowd.io/klax",
-        "arrival": "6R"
+        "arrival": "6R",
+        "departure": "25R",
+        "approaches": "",
+        "remarks": ""
       }
     },
     {
@@ -2061,7 +2076,10 @@
         "enabled": false,
         "textUrl": "https://datis.clowd.io/klax",
         "voiceUrl": "https://datis.clowd.io/klax",
-        "arrival": "6R"
+        "arrival": "6R",
+        "departure": "25R",
+        "approaches": "",
+        "remarks": ""
       }
     }
   ],
