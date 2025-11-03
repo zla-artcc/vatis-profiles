@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2025101300,
+  "updateSerial": 2025110300,
   "stations": [
     {
       "ordinal": 99,
@@ -14122,7 +14122,7 @@
           "name": "NORMAL IMC (26)",
           "airportConditions": "ILS RUNWAY 26 RIGHT APPROACH IN USE. RNAV/GPS APCH RY 26L IN USE. LNDG AND DEPG RY 26L AND RY 26R.",
           "notams": "ILS CRITICAL AREAS ARE IN EFFECT. PILOTS READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
-          "template": "",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
