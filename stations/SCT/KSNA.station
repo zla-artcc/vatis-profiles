@@ -2107,7 +2107,7 @@
     {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
       "ordinal": 3,
-      "enabled": false
+      "enabled": true
     }
   ]
 }
