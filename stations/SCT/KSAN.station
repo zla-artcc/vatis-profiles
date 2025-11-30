@@ -2046,7 +2046,7 @@
     {
       "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
       "ordinal": 1,
-      "enabled": false
+      "enabled": true
     },
     {
       "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
