@@ -2113,7 +2113,7 @@
     {
       "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
       "ordinal": 10,
-      "enabled": false
+      "enabled": true
     }
   ]
 }
