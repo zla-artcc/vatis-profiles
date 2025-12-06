@@ -1,7 +1,7 @@
 {
   "name": "ZLA Real D-ATIS",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-D-ATIS.json",
-  "updateSerial": 2025112300,
+  "updateSerial": 2025120600,
   "stations": [
     {
       "ordinal": 1,
@@ -2118,7 +2118,7 @@
         {
           "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
           "ordinal": 10,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -4155,7 +4155,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "ACFT IN GATES @B1 THRU @B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
@@ -8448,7 +8448,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
@@ -10515,7 +10515,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
@@ -12628,7 +12628,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
@@ -14666,7 +14666,7 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         }
       ]
     }
