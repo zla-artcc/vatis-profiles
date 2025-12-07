@@ -2017,7 +2017,7 @@
     {
       "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
       "ordinal": 2,
-      "enabled": true
+      "enabled": false
     }
   ]
 }
