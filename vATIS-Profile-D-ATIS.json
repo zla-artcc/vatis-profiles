@@ -1,7 +1,7 @@
 {
   "name": "ZLA Real D-ATIS",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-D-ATIS.json",
-  "updateSerial": 2025120700,
+  "updateSerial": 2026010900,
   "stations": [
     {
       "ordinal": 1,
@@ -14659,14 +14659,24 @@
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
-          "text": "RWY ^16L PATTERN ALTITUDE ONE THOUSAND SEVEN HUNDRED FEET.",
+          "text": "RWY ^16L PATTERN ALTITUDE ONE THOUSAND SIX HUNDRED FEET.",
           "ordinal": 1,
           "enabled": true
         },
         {
-          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
-          "ordinal": 2,
+          "text": "RWY ^34R PATTERN ALTITUDE ONE THOUSAND SIX HUNDRED FEET.",
+          "ordinal": 1,
           "enabled": false
+        },
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "ordinal": 3,
+          "enabled": false
+        },
+        {
+          "text": "ENSURE MODE C IS TURNED ON PRIOR TO TAXI ON MOVEMENT AREAS.",
+          "ordinal": 4,
+          "enabled": true
         }
       ]
     }
