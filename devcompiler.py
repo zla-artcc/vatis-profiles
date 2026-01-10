@@ -24,14 +24,14 @@ PROFILES = {
 #    "./vATIS-Profile-DEV-SBA.json": ['SBA'],
     "./vATIS-Profile-DEV-SCT.json": ['SCT'],
     "./vATIS-Profile-DEV-ZLA.json": ['KBFL', 'KBUR', 'KLAS', 'KLAX', 'KONT', 'KPSP', 'KSAN', 'KSBA', 'KSNA',
-                                 'KVNY'],
+                                 'KVNY', 'KPOC'],
 #    "./vATIS-Profile-DEV-ZLA-2.json": ['CTR'],
 #    "./vATIS-Profile-DEV-D-ATIS.json": ['KBUR', 'KLAS', 'KLAX', 'KONT', 'KSAN', 'KSNA', 'KPOC',
 #                                 'KVNY']
 }
 
 # Exclude these airports from all profiles.
-EXCLUDE_AIRPORTS = []
+EXCLUDE_AIRPORTS = ['KPOC']
 
 def filter_available_stations():
     """Remove airports in EXCLUDE_AIRPORTS from AVAILABLE_STATIONS."""
