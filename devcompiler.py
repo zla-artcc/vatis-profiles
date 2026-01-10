@@ -19,15 +19,15 @@ AVAILABLE_STATIONS = glob.glob("./stations/*/*.station")
 # Each profile (key) has "stations" updated to those found using the search filter (value)
 # Profile: Search filter
 PROFILES = {
-    "./vATIS-Profile-DEV-JCF.json": ['JCF'],
-    "./vATIS-Profile-DEV-L30.json": ['L30'],
-    "./vATIS-Profile-DEV-SBA.json": ['SBA'],
+#    "./vATIS-Profile-DEV-JCF.json": ['JCF'],
+#    "./vATIS-Profile-DEV-L30.json": ['L30'],
+#    "./vATIS-Profile-DEV-SBA.json": ['SBA'],
     "./vATIS-Profile-DEV-SCT.json": ['SCT'],
     "./vATIS-Profile-DEV-ZLA.json": ['KBFL', 'KBUR', 'KLAS', 'KLAX', 'KONT', 'KPSP', 'KSAN', 'KSBA', 'KSNA',
                                  'KVNY'],
-    "./vATIS-Profile-DEV-ZLA-2.json": ['CTR'],
-    "./vATIS-Profile-DEV-D-ATIS.json": ['KBUR', 'KLAS', 'KLAX', 'KONT', 'KSAN', 'KSNA', 'KPOC',
-                                 'KVNY']
+#    "./vATIS-Profile-DEV-ZLA-2.json": ['CTR'],
+#    "./vATIS-Profile-DEV-D-ATIS.json": ['KBUR', 'KLAS', 'KLAX', 'KONT', 'KSAN', 'KSNA', 'KPOC',
+#                                 'KVNY']
 }
 
 # Exclude these airports from all profiles.
