@@ -1972,7 +1972,7 @@
     {
       "id": "580f3bb1-c0cf-4b77-85ff-cc03fa5f7e0a",
       "name": "NORMAL IMC (31L/R)",
-      "airportConditions": "@RNAV APPROACHES IN USE. LANDING RWYS 31L, ^31R",
+      "airportConditions": "@RNAV APPROACHES IN USE. LANDING AND DEPARTING RWYS 31L, ^31R.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false,
@@ -2003,7 +2003,7 @@
     {
       "id": "11cc2cc5-128c-4e74-897e-ae1aae7ff1b7",
       "name": "SOUTH IMC (13L/R)",
-      "airportConditions": "@RNAV APPROACHES IN USE. LANDING RWYS 13L, ^13R",
+      "airportConditions": "@RNAV APPROACHES IN USE. LANDING RWYS 13L, ^13R.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false,
