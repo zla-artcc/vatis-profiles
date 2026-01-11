@@ -2030,8 +2030,8 @@
       "id": "6f00290e-4077-4870-8323-29c087cc9751",
       "ordinal": 5,
       "name": "CLOSED",
-      "airportConditions": "REMARKS. SANTA MONICA AIRPORT CEASED CLASS *D OPERATIONS AT 9 PM LOCAL TIME AND WILL RESUME OPERATIONS AT 7 AM LOCAL TIME.",
-      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [WX]. [ARPT_COND] [NOTAMS]",
+      "airportConditions": "REMARKS. SANTA MONICA TOWER HOURS OF OPERATION ARE FROM 0700 LOCAL TIME TO 2100 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 120.1. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false,
         "textUrl": "",
@@ -2048,16 +2048,6 @@
       "variableName": "RNAV",
       "text": "RNAV",
       "voice": "R NAV"
-    },
-    {
-      "variableName": "AM",
-      "text": "AM",
-      "voice": "A M"
-    },
-    {
-      "variableName": "PM",
-      "text": "PM",
-      "voice": "P M"
     }
   ],
   "airportConditionDefinitions": [],
