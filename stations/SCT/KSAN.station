@@ -2043,8 +2043,23 @@
   ],
   "airportConditionDefinitions": [
     {
-      "text": "NO OFFSHORE VFR TRANSITIONS.",
+      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
       "ordinal": 1,
+      "enabled": false
+    },
+    {
+      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "ordinal": 1,
+      "enabled": false
+    },
+    {
+      "text": "NO OFFSHORE VFR TRANSITIONS.",
+      "ordinal": 3,
+      "enabled": true
+    },
+    {
+      "text": "USE CAUTION MODEL ROCKETS AT FIESTA ISLAND AT OR BELOW 010.",
+      "ordinal": 4,
       "enabled": false
     }
   ],
@@ -2055,18 +2070,8 @@
       "enabled": false
     },
     {
-      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
-      "ordinal": 2,
-      "enabled": false
-    },
-    {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-      "ordinal": 3,
-      "enabled": false
-    },
-    {
-      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-      "ordinal": 4,
+      "ordinal": 2,
       "enabled": false
     }
   ]

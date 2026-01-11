@@ -1968,7 +1968,7 @@
       "ordinal": 1,
       "name": "NORMAL (26)",
       "airportConditions": "ILS AND VIS APR IN USE, RY26L & RY26R. LNDG AND DEPG RY 26L AND RY 26R.",
-      "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "notams": "PILOTS READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
