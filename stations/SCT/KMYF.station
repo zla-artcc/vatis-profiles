@@ -76,6 +76,12 @@
         "voice": "VISIBILITY {visibility}"
       }
     },
+    "runwayVisualRange": {
+      "neutralTendency": "Neutral",
+      "goingUpTendency": "Going Up",
+      "goingDownTendency": "Going Down",
+      "template": {}
+    },
     "presentWeather": {
       "presentWeatherTypes": {
         "-DS": {
@@ -1820,6 +1826,12 @@
     },
     "clouds": {
       "identifyCeilingLayer": true,
+      "identifyCeilingLayerTextAtis": false,
+      "textAtisCeilingPrefix": "CIG",
+      "cloudCeilingLayerTypes": [
+        "BKN",
+        "OVC"
+      ],
       "convertToMetric": false,
       "isAltitudeInHundreds": false,
       "undeterminedLayerAltitude": {
@@ -1900,6 +1912,22 @@
         "voice": "ALTIMETER {altimeter}"
       }
     },
+    "trend": {
+      "nosigText": "NOSIG",
+      "nosigVoice": "No Significant Changes",
+      "becomingText": "BECMG",
+      "becomingVoice": "Becoming",
+      "temporaryText": "TEMPO",
+      "temporaryVoice": "Temporary",
+      "template": {}
+    },
+    "windShear": {
+      "runwayText": "WS R{Runway}",
+      "runwayVoice": "Wind Shear Runway {Runway}",
+      "allRunwayText": "WS ALL RWY",
+      "allRunwayVoice": "Wind Shear All Runways",
+      "template": {}
+    },
     "transitionLevel": {
       "values": [],
       "template": {
@@ -1935,10 +1963,46 @@
     {
       "id": "4e9e3ee6-182d-4ef8-a6e0-8b42e7028445",
       "name": "WEST",
-      "airportConditions": "VISUAL APPROACHES IN USE. LANDING RWYS 28R, ^28L.",
+      "airportConditions": "ILS AND VISUAL APPROACH RWY 28R IN USE. LANDING AND DEPARTING RWYS 28R, ^28L.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "0af9a182-cb97-4e80-9e59-cf507406a3eb",
+      "name": "EAST",
+      "airportConditions": "VISUAL APPROACH RWY 10L IN USE. LANDING AND DEPARTING RWYS 10L, ^10R.",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "7eaa2019-caf3-4c3f-9eb5-14823da30558",
+      "name": "WEST IMC",
+      "airportConditions": "ILS APPROACH RWY 28R IN USE. LANDING AND DEPARTING RWYS 28R, ^28L.",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     }
   ],
