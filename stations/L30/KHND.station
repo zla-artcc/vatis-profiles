@@ -1964,7 +1964,7 @@
       "id": "4af147af-e176-41c4-b9d6-c97aaaf161e6",
       "ordinal": 1,
       "name": "NORTH (35)",
-      "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWYS 35L, ^35R.",
+      "airportConditions": "VISUAL APPROACH IN USE RWY @35LR.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -1980,7 +1980,7 @@
       "id": "d4e5f187-adeb-4f8b-ac7a-3e40bf0729f2",
       "ordinal": 2,
       "name": "SOUTH (17)",
-      "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWYS 17L, ^17R.",
+      "airportConditions": "VISUAL APPROACH IN USE RWY 17L/R.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -1996,7 +1996,7 @@
       "id": "fdb817ee-bea0-476a-a8e7-f4051180b576",
       "ordinal": 2,
       "name": "RWY 17/35 ODO",
-      "airportConditions": "VISUAL APPROACHES IN USE. ARRIVING RWYS 35L, ^35R. DEPARTING RWYS 17L, ^17R.",
+      "airportConditions": "VISUAL APPROACH IN USE RWY 35LR, 17LR.",
       "notams": "OPPOSITE DIRECTION OPERATIONS IN USE.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2026,7 +2026,24 @@
       }
     }
   ],
-  "contractions": [],
+  "contractions": [
+    {
+      "variableName": "35LR",
+      "text": "35L/R",
+      "voice": "THREE FIVE LEFT AND RIGHT"
+    },
+    {
+      "variableName": "17LR",
+      "text": "17L/R",
+      "voice": "ONE SEVEN LEFT AND RIGHT"
+    }
+  ],
   "airportConditionDefinitions": [],
-  "notamDefinitions": []
+  "notamDefinitions": [
+    {
+      "text": "ALL AIRCRAFT REQUIRING ENGINE RUNUP PROCEDURE COMPLETE ON THE RAMP.",
+      "ordinal": 1,
+      "enabled": true
+    }
+  ]
 }
