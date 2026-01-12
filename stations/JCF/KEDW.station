@@ -76,6 +76,12 @@
         "voice": "VISIBILITY {visibility}"
       }
     },
+    "runwayVisualRange": {
+      "neutralTendency": "Neutral",
+      "goingUpTendency": "Going Up",
+      "goingDownTendency": "Going Down",
+      "template": {}
+    },
     "presentWeather": {
       "presentWeatherTypes": {
         "-DS": {
@@ -1820,6 +1826,12 @@
     },
     "clouds": {
       "identifyCeilingLayer": true,
+      "identifyCeilingLayerTextAtis": false,
+      "textAtisCeilingPrefix": "CIG",
+      "cloudCeilingLayerTypes": [
+        "BKN",
+        "OVC"
+      ],
       "convertToMetric": false,
       "isAltitudeInHundreds": false,
       "undeterminedLayerAltitude": {
@@ -1900,6 +1912,22 @@
         "voice": "ALTIMETER {altimeter}"
       }
     },
+    "trend": {
+      "nosigText": "NOSIG",
+      "nosigVoice": "No Significant Changes",
+      "becomingText": "BECMG",
+      "becomingVoice": "Becoming",
+      "temporaryText": "TEMPO",
+      "temporaryVoice": "Temporary",
+      "template": {}
+    },
+    "windShear": {
+      "runwayText": "WS R{Runway}",
+      "runwayVoice": "Wind Shear Runway {Runway}",
+      "allRunwayText": "WS ALL RWY",
+      "allRunwayVoice": "Wind Shear All Runways",
+      "template": {}
+    },
     "transitionLevel": {
       "values": [],
       "template": {
@@ -1914,7 +1942,7 @@
       }
     },
     "closingStatement": {
-      "autoIncludeClosingStatement": true,
+      "autoIncludeClosingStatement": false,
       "template": {
         "text": "...ADVS YOU HAVE INFO {letter}",
         "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -1934,9 +1962,39 @@
   "presets": [
     {
       "id": "650e113e-951c-4306-8e39-5fe91e06c472",
-      "name": "RWY 23L",
-      "airportConditions": "VISUAL AND INST APPROACHES IN USE. ARRIVING AND DEPARTING RWY 23L.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "name": "RWY 23",
+      "airportConditions": "VISUAL AND INST APPROACHES IN USE. ARRIVING AND DEPARTING RWY 23L, ^23R.",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "c2ab1f21-efe9-4a07-92d4-a11c3e8de391",
+      "name": "RWY 5",
+      "airportConditions": "VISUAL AND INST APPROACHES IN USE. ARRIVING AND DEPARTING RWY 5L, ^5R.",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "13b9b01f-ec02-4912-a2cf-d3791d3e1d22",
+      "name": "CLOSED",
+      "airportConditions": "REMARKS. EDWARDS TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2200 LOCAL TIME MONDAY THROUGH FRIDAY, 0600 TO 1200 LOCAL TIME SATURDAY. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 123.4. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
       }
