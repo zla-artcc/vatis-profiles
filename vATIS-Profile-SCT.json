@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2026011000,
+  "updateSerial": 2026011200,
   "stations": [
     {
       "ordinal": 99,
@@ -1972,7 +1972,7 @@
         {
           "id": "014b4143-b8a6-45e4-b3d7-3ffa0045c763",
           "name": "NORMAL (8/15)",
-          "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARR AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15, AVBL LDG DIST FOUR THOUSAND TWO HUNDRED FIFTY FEET. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARR AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -2030,33 +2030,48 @@
           "variableName": "B4",
           "text": "B4",
           "voice": "BRAVO FOUR"
+        },
+        {
+          "variableName": "CD",
+          "text": "CD",
+          "voice": "CLEARANCE DELIVERY"
+        },
+        {
+          "variableName": "GC",
+          "text": "GC",
+          "voice": "GROUND CONTROL"
         }
       ],
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
-          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
-          "ordinal": 1,
-          "enabled": false
-        },
-        {
           "text": "ACFT IN GATES @B1 THRU @B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
-          "ordinal": 2,
+          "ordinal": 1,
           "enabled": true
         },
         {
           "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
-          "ordinal": 3,
+          "ordinal": 2,
           "enabled": true
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "text": "CD AND GC COMBINED ON 123.9.",
+          "ordinal": 2,
+          "enabled": false
+        },
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 4,
           "enabled": false
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 5,
+          "enabled": false
+        },
+        {
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "ordinal": 6,
           "enabled": false
         }
       ]
@@ -2138,6 +2153,12 @@
             "text": "{visibility}",
             "voice": "VISIBILITY {visibility}"
           }
+        },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
         },
         "presentWeather": {
           "presentWeatherTypes": {
@@ -3883,6 +3904,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -3963,6 +3990,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -3977,7 +4020,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -3985,7 +4028,7 @@
         }
       },
       "notamsBeforeFreeText": false,
-      "airportConditionsBeforeFreeText": false,
+      "airportConditionsBeforeFreeText": true,
       "frequency": 120150000,
       "idsEndpoint": "",
       "useDecimalTerminology": false,
@@ -3998,15 +4041,73 @@
         {
           "id": "59fc1339-ccde-4352-9aec-5510d8eb647f",
           "name": "WEST",
-          "airportConditions": "ARRIVING AND DEPARTING RWY 24. VISUAL APPROACHES IN USE.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "LANDING AND DEPARTING RWY 24.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "2e737a5a-1685-440f-b8db-42182910a05a",
+          "name": "EAST",
+          "airportConditions": "LANDING AND DEPARTING RWY 6.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "e27935e7-ea5a-4da9-a05e-63c1649a222c",
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. PALOMAR TOWER HOURS OF OPERATION ARE FROM 0700 LOCAL TIME TO 2200 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 118.6. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
-      "contractions": [],
-      "airportConditionDefinitions": [],
+      "contractions": [
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "R NAV"
+        }
+      ],
+      "airportConditionDefinitions": [
+        {
+          "text": "VISUAL APPROACHES IN USE.",
+          "ordinal": 1,
+          "enabled": true
+        },
+        {
+          "text": "ILS RWY 24, RNAV, VOR APPROCHES IN USE.",
+          "ordinal": 2,
+          "enabled": false
+        },
+        {
+          "text": "RNAV, VOR APPROACHES IN USE.",
+          "ordinal": 3,
+          "enabled": false
+        }
+      ],
       "notamDefinitions": []
     },
     {
@@ -4090,6 +4191,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -5834,6 +5941,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -5914,6 +6027,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -5928,7 +6057,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -5949,27 +6078,61 @@
         {
           "id": "432e205d-d00d-4372-a728-e3ddacb52953",
           "name": "WEST",
-          "airportConditions": "@RNAV AND VISUAL APPROACHES IN USE RWY 25. SIMULTANEOUS APCHS AND DEPTS IN PROG BETWEEN HAWTHORNE AND LOS ANGELES. INSTRUMENT DEPTS TURN LEFT HDG 205 UNLESS OTHERWISE DIRECTED.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "LOC AND VISUAL APPROACHES IN USE RWY 25. SIMULTANEOUS APCHS AND DEPTS IN PROG BETWEEN HAWTHORNE AND LOS ANGELES. INSTRUMENT DEPTS TURN LEFT HDG 205 UNLESS OTHERWISE DIRECTED.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "e48da19d-b71d-49e9-a245-6a51298916be",
           "name": "EAST",
-          "airportConditions": "LANDING AND DEPARTING RUNWAY 07. VISUAL APPROACHES IN USE. SIMULTANEOUS INST APPROACHES IN PROG BETWEEN LOS ANGELES AND HAWTHORNE AIRPORTS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "VISUAL APPROACH IN USE. LANDING AND DEPARTING RWY 7.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "b6d3b1ac-27e8-4e0d-9e30-9ab6552e1cb5",
           "name": "EAST IMC",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "RNAV RWY 7 APPROACH IN USE. SIMULTANEOUS INST APPROACHES IN PROG BETWEEN LOS ANGELES AND HAWTHORNE AIRPORTS.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "3561da7e-9dd0-452d-b89c-5d5f99babf61",
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. HAWTHORNE TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2200 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 120.1. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -5978,6 +6141,11 @@
           "variableName": "RNAV",
           "text": "RNAV",
           "voice": "R NAV"
+        },
+        {
+          "variableName": "MUN",
+          "text": "MUN",
+          "voice": "MUNICIPAL"
         }
       ],
       "airportConditionDefinitions": [],
@@ -7949,11 +8117,28 @@
       },
       "presets": [
         {
-          "id": "ad47e047-c7df-420b-bf13-0b4d93587ba6",
+          "id": "1c5dd589-4e4f-49d5-8c04-04a9a5291c68",
           "ordinal": 1,
+          "name": "WEST - SIMUL INST AND VISUAL",
+          "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 24R AND ^25L APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG, AND SIMUL APCHS IN PROG BTWN +LAX AND +HHR. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+          "notams": "",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "https://datis.clowd.io/klax",
+            "voiceUrl": "https://datis.clowd.io/klax",
+            "arrival": "24R, 25L",
+            "departure": "25R, 24L",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "ad47e047-c7df-420b-bf13-0b4d93587ba6",
+          "ordinal": 2,
           "name": "WEST - INST AND VISUAL",
-          "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 24R AND RWY 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND 25.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 24R AND RWY 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -7967,27 +8152,10 @@
         },
         {
           "id": "d6990d0d-8f5c-4aeb-82ca-9009a09de41c",
-          "ordinal": 2,
-          "name": "WEST - SIMUL INST",
-          "airportConditions": "SIMUL INST APCHS AND @RNAV RNP RWYS 24R AND ^25L APCHS, AND SIMUL APCHS IN PROG BTWN +LAX AND HHR, SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
-          "externalGenerator": {
-            "enabled": false,
-            "textUrl": "https://datis.clowd.io/klax",
-            "voiceUrl": "https://datis.clowd.io/klax",
-            "arrival": "24R, 25L",
-            "departure": "25R, 24L",
-            "approaches": "",
-            "remarks": ""
-          }
-        },
-        {
-          "id": "1c5dd589-4e4f-49d5-8c04-04a9a5291c68",
           "ordinal": 3,
-          "name": "WEST - SIMUL INST AND VISUAL",
-          "airportConditions": "SIMUL INST APCHS AND @RNAV RNP APCHS IN PROG RWYS 24R AND ^25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL VISUAL APCHS TO ALL RWYS IN PROG, AND SIMUL APCHS IN PROG BETWEEN +LAX AND HHR AIRPORTS. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "name": "WEST - SIMUL INST",
+          "airportConditions": "SIMUL INST APCHS AND @RNAV RNP RWYS 24R AND ^25L APCHS, AND SIMUL APCHS IN PROG BTWN +LAX AND +HHR, SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -7995,33 +8163,16 @@
             "voiceUrl": "https://datis.clowd.io/klax",
             "arrival": "24R, 25L",
             "departure": "25R, 24L",
-            "approaches": "",
-            "remarks": ""
-          }
-        },
-        {
-          "id": "62b9abc7-d2d9-42e0-b895-86fb0d0c29d6",
-          "ordinal": 4,
-          "name": "EAST - SIMUL INST",
-          "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 6L AND ^7R APCHS, SIMUL INSTR DEPARTURES IN PROG RWYS 6 AND 7.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
-          "externalGenerator": {
-            "enabled": false,
-            "textUrl": "https://datis.clowd.io/klax",
-            "voiceUrl": "https://datis.clowd.io/klax",
-            "arrival": "6L, 7R",
-            "departure": "6R, 7L",
             "approaches": "",
             "remarks": ""
           }
         },
         {
           "id": "f75663e4-6629-41fa-8bec-ecd085d118a5",
-          "ordinal": 6,
+          "ordinal": 4,
           "name": "EAST - INST AND VISUAL",
           "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 6L AND ^7R APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL INSTR DEPARTURES IN PROG RWYS 6 AND 7.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -8034,11 +8185,28 @@
           }
         },
         {
-          "id": "207a3dde-7bc4-4a17-a42b-9a88c7f47fe3",
-          "ordinal": 7,
-          "name": "OVER-OCEAN - INST",
-          "airportConditions": "INST APCHS AND @RNAV RNP APCHS ^6R, OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "id": "62b9abc7-d2d9-42e0-b895-86fb0d0c29d6",
+          "ordinal": 5,
+          "name": "EAST - SIMUL INST",
+          "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 6L AND ^7R APCHS, SIMUL INSTR DEPARTURES IN PROG RWYS 6 AND 7.",
+          "notams": "",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "https://datis.clowd.io/klax",
+            "voiceUrl": "https://datis.clowd.io/klax",
+            "arrival": "6L, 7R",
+            "departure": "6R, 7L",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "0c5033c0-fec1-4bd6-880f-d3b124f4785c",
+          "ordinal": 5,
+          "name": "OVER-OCEAN - INST AND VISUAL",
+          "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 6R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -8051,11 +8219,11 @@
           }
         },
         {
-          "id": "0c5033c0-fec1-4bd6-880f-d3b124f4785c",
-          "ordinal": 8,
-          "name": "OVER-OCEAN - INST AND VISUAL",
-          "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 6R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "id": "207a3dde-7bc4-4a17-a42b-9a88c7f47fe3",
+          "ordinal": 7,
+          "name": "OVER-OCEAN - INST",
+          "airportConditions": "INST APCHS AND @RNAV RNP APCHS ^6R, OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -8145,12 +8313,32 @@
           "text": "CTC CONTROLLER ONLY FOR PUSH ONTO TWY.",
           "ordinal": 2,
           "enabled": false
+        },
+        {
+          "text": "CALL FOR PUSH ONTO TWYS A, *C, *D, *K, *L, *M. PUSH AND START AT PILOTS DISCRETION ON RAMPS AND ALLEYWAYS.",
+          "ordinal": 3,
+          "enabled": true
+        },
+        {
+          "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "ordinal": 4,
+          "enabled": true
+        },
+        {
+          "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "ordinal": 5,
+          "enabled": true
         }
       ],
       "notamDefinitions": [
         {
-          "text": "PILOTS EXPECTED TO BRIEF AND COMPLY WITH ALL PUBLISHED SIDS AND STARS. VERIFY ALTITUDES, HEADINGS, SPEEDS, CLIMB OR DESCENT GRADIENTS PRIOR TO DEP OR ARR.",
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
+          "ordinal": 2,
           "enabled": false
         },
         {
@@ -8164,23 +8352,13 @@
           "enabled": false
         },
         {
-          "text": "ACFT PUSHING ONTO TWY K, TWY L, TWY M CTC GC ON 121.4 FOR PUSH.",
-          "ordinal": 4,
-          "enabled": false
-        },
-        {
-          "text": "ALL ACFT CTC GC ON 121.4 FOR PUSH.",
+          "text": "USE CAUTION MODEL ROCKETS AT FIESTA ISLAND AT OR BELOW 010.",
           "ordinal": 5,
           "enabled": false
         },
         {
-          "text": "CALL FOR PUSH ONTO TWYS A, *C, *D, *K, *L, *M. PUSH AND START AT PILOTS DISCRETION ON RAMPS AND ALLEYWAYS.",
+          "text": "NO OFFSHORE VFR TRANSITIONS.",
           "ordinal": 6,
-          "enabled": true
-        },
-        {
-          "text": "RUNWAY INCURSIONS HAVE OCCURRED AT TAXIWAYS V, W, AND Y NEAR RWY 24L. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES. REMAIN ALERT AND EXERCISE EXTREME CAUTION.",
-          "ordinal": 7,
           "enabled": false
         }
       ]
@@ -10132,7 +10310,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -10154,18 +10332,45 @@
           "id": "b79b588a-bf64-45dd-ac1f-1900c01d6f49",
           "name": "WEST",
           "airportConditions": "ILS RWY 30 APPROACH IN USE. LANDING AND DEPARTING RWYS 30, ^26L, ^26R.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "79bd3308-7cd4-480f-a2da-c1779938e676",
           "name": "EAST",
           "airportConditions": "LA RIVER VISUAL RWY 12 IN USE. @RNAV RNP APPROACH AVAILABLE ON REQUEST. LANDING AND DEPARTING RWYS 12, ^8L, ^8R.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "c0454ba3-738f-422d-8b3b-b8b56ad03c99",
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. LONG BEACH TOWER HOURS OF OPERATION ARE FROM 0615 LOCAL TIME TO 2345 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 119.4. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -10276,6 +10481,12 @@
             "text": "{visibility}",
             "voice": "VISIBILITY {visibility}"
           }
+        },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
         },
         "presentWeather": {
           "presentWeatherTypes": {
@@ -12021,6 +12232,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -12101,6 +12318,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -12115,7 +12348,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -12136,10 +12369,61 @@
         {
           "id": "4e9e3ee6-182d-4ef8-a6e0-8b42e7028445",
           "name": "WEST",
-          "airportConditions": "VISUAL APPROACHES IN USE. LANDING RWYS 28R, ^28L.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "ILS AND VISUAL APPROACH RWY 28R IN USE. LANDING AND DEPARTING RWYS 28R, ^28L.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING] ",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "0af9a182-cb97-4e80-9e59-cf507406a3eb",
+          "name": "EAST",
+          "airportConditions": "VISUAL APPROACH RWY 10L IN USE. LANDING AND DEPARTING RWYS 10L, ^10R.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "7eaa2019-caf3-4c3f-9eb5-14823da30558",
+          "name": "WEST IMC",
+          "airportConditions": "ILS APPROACH RWY 28R IN USE. LANDING AND DEPARTING RWYS 28R, ^28L.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "09088dd3-8dd5-4734-9b95-b83aa78ade1d",
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. MONTGOMERY TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2100 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 119.2. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -12163,6 +12447,16 @@
           "variableName": "10R",
           "text": "10R",
           "voice": "ONE ZERO RIGHT"
+        },
+        {
+          "variableName": "AM",
+          "text": "AM",
+          "voice": "A M"
+        },
+        {
+          "variableName": "PM",
+          "text": "PM",
+          "voice": "P M"
         }
       ],
       "airportConditionDefinitions": [],
@@ -14138,7 +14432,7 @@
           "ordinal": 1,
           "name": "NORMAL (26)",
           "airportConditions": "ILS AND VIS APR IN USE, RY26L & RY26R. LNDG AND DEPG RY 26L AND RY 26R.",
-          "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "notams": "PILOTS READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -16198,7 +16492,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -16220,16 +16514,22 @@
           "id": "8266924a-e61f-42f3-8871-42d60b5d9745",
           "name": "NORMAL VMC (31L/R)",
           "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPTG RWYS 31L, ^31R.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "580f3bb1-c0cf-4b77-85ff-cc03fa5f7e0a",
           "name": "NORMAL IMC (31L/R)",
           "airportConditions": "@RNAV APPROACHES IN USE. LANDING AND DEPARTING RWYS 31L, ^31R.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -16245,7 +16545,7 @@
           "name": "SOUTH VMC (13L/R)",
           "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPTG RWYS 13L, ^13R.",
           "notams": "",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -16260,7 +16560,22 @@
           "id": "11cc2cc5-128c-4e74-897e-ae1aae7ff1b7",
           "name": "SOUTH IMC (13L/R)",
           "airportConditions": "@RNAV APPROACHES IN USE. LANDING RWYS 13L, ^13R.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "490136d0-90e4-45c1-aa5b-3b044e0001a3",
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. PALM SPRINGS TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2300 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 119.7. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -18291,8 +18606,8 @@
         {
           "id": "005074c8-2fd3-4510-bfdd-4dba2ff95406",
           "name": "WEST",
-          "airportConditions": "LANDING RUNWAY 27, LOC, @RNAV, AND VIS APPS IN USE. DEPTG RWY 27.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "LANDING RUNWAY 27 LOCALIZER, VISUAL, RNAV APPROACHES IN USE. DEPG RWY 27. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -18301,8 +18616,8 @@
         {
           "id": "a343e52a-16c4-43ed-a178-1e753a380712",
           "name": "WEST - IMC",
-          "airportConditions": "LANDING RUNWAY 27 LOCALIZER, @RNAV APPROACHES IN USE. DEPG RWY 27.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "LANDING RUNWAY 27 LOCALIZER, RNAV APPROACHES IN USE. DEPG RWY 27. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -18311,8 +18626,8 @@
         {
           "id": "c56dd740-3827-4bb4-b816-02c3b8bc336d",
           "name": "EAST",
-          "airportConditions": "LANDING RUNWAY 9, ILS AND VIS APPS IN USE. DEPTG RWY 9.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "LANDING RUNWAY 9 ILS, RNAV, VISUAL APPROACHES IN USE. DEPG RWY 9. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -18321,8 +18636,8 @@
         {
           "id": "a4460aff-7669-4b30-84ac-76195b9ffc32",
           "name": "EAST - IMC",
-          "airportConditions": "LANDING RUNWAY 9. ILS, @RNAV APPROACHES IN USE. DEPTG RWY 9.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "LANDING RUNWAY 9 ILS, RNAV APPROACHES IN USE. DEPG RWY 9. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -18331,8 +18646,8 @@
         {
           "id": "a4802def-c068-4744-8d94-e71ff706f6e7",
           "name": "ODO (ARR 9/DEP 27)",
-          "airportConditions": "LANDING RUNWAY 9, ILS APP IN USE. DEPTG RWY 27. OPPOSITE DRCTN OPS IN EFFECT.",
-          "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "LANDING RUNWAY 9 ILS APP IN USE. DEPG RWY 27. OPPOSITE DRCTN OPS IN EFFECT. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
@@ -18366,7 +18681,28 @@
           "voice": "DIRECTION"
         }
       ],
-      "airportConditionDefinitions": [],
+      "airportConditionDefinitions": [
+        {
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
+          "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+          "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "NO OFFSHORE VFR TRANSITIONS.",
+          "ordinal": 3,
+          "enabled": true
+        },
+        {
+          "text": "USE CAUTION MODEL ROCKETS AT FIESTA ISLAND AT OR BELOW 010.",
+          "ordinal": 4,
+          "enabled": false
+        }
+      ],
       "notamDefinitions": [
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
@@ -18374,18 +18710,8 @@
           "enabled": false
         },
         {
-          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
-          "ordinal": 2,
-          "enabled": false
-        },
-        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-          "ordinal": 3,
-          "enabled": false
-        },
-        {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-          "ordinal": 4,
+          "ordinal": 2,
           "enabled": false
         }
       ]
@@ -18467,6 +18793,12 @@
             "text": "{visibility}",
             "voice": "VISIBILITY {visibility}"
           }
+        },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
         },
         "presentWeather": {
           "presentWeatherTypes": {
@@ -20212,6 +20544,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -20292,6 +20630,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -20306,7 +20660,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -20327,33 +20681,54 @@
         {
           "id": "f8210917-d46b-4b1d-a8e0-8efc6db3d5ba",
           "name": "WEST",
-          "airportConditions": "LOCALIZER D AND VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWY 27R AND 27L.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "LOCALIZER *D AND VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWY 27R AND 27L.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "e41f2e63-a5ce-4290-939d-f65a25c3de61",
+          "name": "EAST",
+          "airportConditions": "@RNAV RWY 9L, VOR, AND VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWYS 9L, ^9R.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "114e0576-1681-4a14-92d7-aa92aa08392b",
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. GILLESPIE TOWER HOURS OF OPERATION ARE FROM 0700 LOCAL TIME TO 2100 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 120.7. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
       "contractions": [
         {
-          "variableName": "27L",
-          "text": "27L",
-          "voice": "TWO SEVEN LEFT"
-        },
-        {
-          "variableName": "27R",
-          "text": "27R",
-          "voice": "TWO SEVEN RIGHT"
-        },
-        {
-          "variableName": "9L",
-          "text": "9L",
-          "voice": "NINER LEFT"
-        },
-        {
-          "variableName": "9R",
-          "text": "9R",
-          "voice": "NINER RIGHT"
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "R NAV"
         }
       ],
       "airportConditionDefinitions": [],
@@ -22303,7 +22678,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -22318,45 +22693,89 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 210
       },
       "presets": [
         {
           "id": "4e0a80cc-7584-4517-86c7-d69ed542de80",
+          "ordinal": 1,
           "name": "WEST",
-          "airportConditions": "LANDING AND DEPARTING RWY 21. VISUAL APPROACHES IN USE.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "VOR-*A, @RNAV, VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWY 21.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "6cbf2428-fb3f-4cff-b1e4-d91ab32c3b9f",
+          "ordinal": 2,
           "name": "WEST IMC",
-          "airportConditions": "LANDING AND DEPARTING RWY 21. @RNAV AND VOR APPROACHES IN USE.",
+          "airportConditions": "VOR-A, @RNAV APPROACHES IN USE. LANDING AND DEPARTING RWY 21.",
           "notams": "MINIROUTE CLOSED.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
-          "id": "911abd2b-99e2-4b9d-ac03-feca04c2dca2",
-          "name": "EAST IMC",
-          "airportConditions": "LANDING AND DEPARTING RWY 3. @RNAV APPROACHES IN USE.",
-          "notams": "MINIROUTE CLOSED.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
-          "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "93b46738-848a-454a-b498-451ea0b57a8f",
+          "ordinal": 2,
           "name": "EAST",
-          "airportConditions": "LANDING AND DEPARTING RWY 3. VISUAL APPROACHES IN USE.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "@RNAV, VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWY 3.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "911abd2b-99e2-4b9d-ac03-feca04c2dca2",
+          "ordinal": 4,
+          "name": "EAST IMC",
+          "airportConditions": "@RNAV APPROACHES IN USE. LANDING AND DEPARTING RWY 3.",
+          "notams": "MINIROUTE CLOSED.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "6f00290e-4077-4870-8323-29c087cc9751",
+          "ordinal": 5,
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. SANTA MONICA TOWER HOURS OF OPERATION ARE FROM 0700 LOCAL TIME TO 2100 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 120.1. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -24317,7 +24736,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -24340,9 +24759,15 @@
           "name": "SOUTH",
           "airportConditions": "VIS APPS RWY 20R IN USE. LDG AND DEPTG RWYS 20R, AND ^20L. ",
           "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
@@ -24350,9 +24775,15 @@
           "name": "SOUTH IMC",
           "airportConditions": "ILS RWY 20R APPROACH IN USE. LANDING AND DEPARTING RUNWAYS ^20R AND ^20L.",
           "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
@@ -24360,9 +24791,15 @@
           "name": "NORTH",
           "airportConditions": "VIS APPS IN USE. LDG AND DEPTG RWY 2L, AND ^2R.",
           "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TAXIWAYS AND RUNWAYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS. ",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
@@ -24370,9 +24807,30 @@
           "name": "NORTH IMC",
           "airportConditions": "@RNAV AND LOC BC APPS IN USE. LDG AND DEPTG RWY 2L, AND ^2R.",
           "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.  ",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "d06fae4b-ad06-404d-839c-93f2d5b1b82d",
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. JOHN WAYNE TOWER HOURS OF OPERATION ARE FROM 0615 LOCAL TIME TO 2300 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 126.8. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -26430,7 +26888,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -26453,7 +26911,7 @@
           "name": "SOUTH (16)",
           "airportConditions": "@ILS_Z RWY 16R APCH IN USE, VISUAL APCH IN USE. LDG AND DEPTG RWYS 16 LEFT AND RIGHT.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -26469,19 +26927,47 @@
           "name": "SOUTH - IMC (16)",
           "airportConditions": "@ILS_Z RWY 16R APCH IN USE. LNDG AND DEPTG RWYS 16L, AND ^16R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "33ddc6f1-907e-451d-907c-5f850091f5c5",
           "name": "NORTH (34)",
-          "airportConditions": "VIS APPS IN USE. LDG AND DEPTG RWYS 34L, AND ^34R.",
+          "airportConditions": "VISUAL APCH IN USE. LNDG AND DEPG RWY 34L_R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "60aa3783-6c0e-4a08-a5a2-602fb891055b",
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. VAN NUYS TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2245 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 119.3. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "notams": "",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -26490,6 +26976,11 @@
           "variableName": "ILS_Z",
           "text": "ILS-Z",
           "voice": "ILS ZULU"
+        },
+        {
+          "variableName": "34L_R",
+          "text": "34 L/R",
+          "voice": "THREE FOUR LEFT AND RIGHT"
         }
       ],
       "airportConditionDefinitions": [],
@@ -26535,8 +27026,8 @@
         "surfaceWind": {
           "speakLeadingZero": false,
           "magneticVariation": {
-            "enabled": false,
-            "magneticDegrees": 0
+            "enabled": true,
+            "magneticDegrees": -10
           },
           "standard": {
             "template": {
@@ -26593,6 +27084,12 @@
             "text": "{visibility}",
             "voice": "VISIBILITY {visibility}"
           }
+        },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
         },
         "presentWeather": {
           "presentWeatherTypes": {
@@ -28338,6 +28835,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -28418,6 +28921,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -28432,7 +28951,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -28440,35 +28959,88 @@
         }
       },
       "notamsBeforeFreeText": false,
-      "airportConditionsBeforeFreeText": false,
+      "airportConditionsBeforeFreeText": true,
       "frequency": 132100000,
       "idsEndpoint": "",
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
-          "id": "4bc60d15-65d7-4ee9-b2b4-de23cfc20d8a",
-          "name": "RWY 30",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "id": "1af35809-17a9-481e-9339-2ff71b955780",
+          "ordinal": 0,
+          "name": "RWY 12",
+          "airportConditions": "LNDG AND DEPG RWY 12.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
-          "id": "1af35809-17a9-481e-9339-2ff71b955780",
-          "name": "RWY 11",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "id": "4bc60d15-65d7-4ee9-b2b4-de23cfc20d8a",
+          "ordinal": 2,
+          "name": "RWY 30",
+          "airportConditions": "LNDG AND DEPG RWY 30.",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "ea2d0802-c49a-493e-8954-cbcca3058962",
+          "ordinal": 3,
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. WHITEMAN TOWER HOURS OF OPERATION ARE FROM 0800 LOCAL TIME TO 2000 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 120.1. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false
           }
         }
       ],
-      "contractions": [],
-      "airportConditionDefinitions": [],
+      "contractions": [
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "ARE NAV"
+        }
+      ],
+      "airportConditionDefinitions": [
+        {
+          "text": "RWY 12 IN USE.",
+          "ordinal": 1,
+          "enabled": true
+        },
+        {
+          "text": "RWY 30 IN USE.",
+          "ordinal": 2,
+          "enabled": false
+        },
+        {
+          "text": "RNAV RWY 12 AND VOR APPROACHES IN USE",
+          "ordinal": 2,
+          "enabled": false
+        },
+        {
+          "text": "VOR APPROACH IN USE.",
+          "ordinal": 4,
+          "enabled": false
+        }
+      ],
       "notamDefinitions": []
     }
   ]

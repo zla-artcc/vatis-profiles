@@ -2,7 +2,7 @@
   "name": "Santa Barbara TRACON (SBA)",
   "id": "f41ff02d-b3c8-4e9c-8898-45f3d7ea3bef",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SBA.json",
-  "updateSerial": 2026011000,
+  "updateSerial": 2026011200,
   "stations": [
     {
       "ordinal": 99,
@@ -1951,14 +1951,14 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
           }
         }
       },
-      "notamsBeforeFreeText": false,
+      "notamsBeforeFreeText": true,
       "airportConditionsBeforeFreeText": false,
       "frequency": 132650000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
@@ -1966,62 +1966,125 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "Default",
-        "speechRate": 240
+        "speechRate": 220
       },
       "presets": [
         {
           "id": "20ac6dd7-2eab-4776-b8a2-8ff1964cc31b",
           "ordinal": 1,
           "name": "25/15",
-          "airportConditions": "VOR RWY 25 AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, ^15L, AND ^15R.",
+          "airportConditions": "VOR VIS APCH IN USE RWY 25 AND ^15R.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "688e3e37-c832-4652-8b7e-aeda2cb65948",
           "ordinal": 1,
           "name": "25/15 (IMC)",
-          "airportConditions": "VOR RWY 25 APPR IN USE. LDG AND DEPTG RWYS 25, ^15L, AND ^15R.",
+          "airportConditions": "VOR RWY 25 APPR IN USE.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "2802dd50-1d05-41e5-b4da-39f2acee5646",
           "ordinal": 3,
           "name": "25/33",
-          "airportConditions": "VOR RWY 25, AND VIS APPS IN USE. LDG AND DEPTG RWYS 25, ^33L, AND ^33R.",
+          "airportConditions": "VOR VIS APCH IN USE RWY 25 AND ^33L.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "9c02de1b-90d7-42b1-8478-e2efd6755a0d",
           "ordinal": 4,
           "name": "7/15",
-          "airportConditions": "ILS AND @RNAV RWY 7 AND VIS APPS IN USE. LDG AND DEPTG RWYS 7, ^15L, AND ^15R.",
+          "airportConditions": "ILS AND @RNAV RWY 7, VIS ^15R APPS IN USE.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "acb28145-27f6-4089-9451-46c1049b7f67",
           "ordinal": 5,
           "name": "7/33",
-          "airportConditions": "ILS AND @RNAV RWY 7, AND VIS APPS IN USE. LDG AND DEPTG RWYS 7, ^33L, AND ^33R.",
+          "airportConditions": "ILS AND @RNAV RWY 7, VIS ^33L APPS IN USE.",
           "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "6730efa9-1b04-40b8-8fe8-dd31b3c72ec2",
+          "ordinal": 6,
+          "name": "7 (IMC)",
+          "airportConditions": "ILS, RNAV RWY 7 APPS IN USE.",
+          "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "1fdd0c01-c3bb-40c5-8b04-d27a6649fa1f",
+          "ordinal": 7,
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. SANTA BARBARA TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2300 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 119.7. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -2061,8 +2124,13 @@
       "notamDefinitions": [
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
-          "ordinal": 2,
+          "ordinal": 1,
           "enabled": false
+        },
+        {
+          "text": "CHECK AIRPORT DIAGRAM, TWY NAMES HAVE CHANGED AND MAY NOT MATCH SCENERY.",
+          "ordinal": 2,
+          "enabled": true
         }
       ]
     },
@@ -2147,6 +2215,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -2201,9 +2275,21 @@
               "text": "-FZDZ",
               "spoken": "Light Freezing Drizzle"
             },
+            "-FZDZPL": {
+              "text": "-FZDZPL",
+              "spoken": "Light Freezing Drizzle And Ice Pellets"
+            },
             "-FZDZRA": {
               "text": "-FZDZRA",
               "spoken": "Light Freezing Drizzle And Rain"
+            },
+            "-FZDZSG": {
+              "text": "-FZDZSG",
+              "spoken": "Light Freezing Drizzle And Snow Grains"
+            },
+            "-FZDZSN": {
+              "text": "-FZDZSN",
+              "spoken": "Light Freezing Drizzle And Snow"
             },
             "-FZRA": {
               "text": "-FZRA",
@@ -2212,6 +2298,18 @@
             "-FZRADZ": {
               "text": "-FZRADZ",
               "spoken": "Light Freezing Rain And Drizzle"
+            },
+            "-FZRAPL": {
+              "text": "-FZRAPL",
+              "spoken": "Light Freezing Rain And Ice Pellets"
+            },
+            "-FZRASG": {
+              "text": "-FZRASG",
+              "spoken": "Light Freezing Rain And Snow Grains"
+            },
+            "-FZRASN": {
+              "text": "-FZRASN",
+              "spoken": "Light Freezing Rain And Snow"
             },
             "-FZUP": {
               "text": "-FZUP",
@@ -2697,9 +2795,21 @@
               "text": "+FZDZ",
               "spoken": "Heavy Freezing Drizzle"
             },
+            "+FZDZPL": {
+              "text": "+FZDZPL",
+              "spoken": "Heavy Freezing Drizzle And Ice Pellets"
+            },
             "+FZDZRA": {
               "text": "+FZDZRA",
               "spoken": "Heavy Freezing Drizzle And Rain"
+            },
+            "+FZDZSG": {
+              "text": "+FZDZSG",
+              "spoken": "Heavy Freezing Drizzle And Snow Grains"
+            },
+            "+FZDZSN": {
+              "text": "+FZDZSN",
+              "spoken": "Heavy Freezing Drizzle And Snow"
             },
             "+FZRA": {
               "text": "+FZRA",
@@ -2708,6 +2818,18 @@
             "+FZRADZ": {
               "text": "+FZRADZ",
               "spoken": "Heavy Freezing Rain And Drizzle"
+            },
+            "+FZRAPL": {
+              "text": "+FZRAPL",
+              "spoken": "Heavy Freezing Rain And Ice Pellets"
+            },
+            "+FZRASG": {
+              "text": "+FZRASG",
+              "spoken": "Heavy Freezing Rain And Snow Grains"
+            },
+            "+FZRASN": {
+              "text": "+FZRASN",
+              "spoken": "Heavy Freezing Rain And Snow"
             },
             "+FZUP": {
               "text": "+FZUP",
@@ -3253,9 +3375,21 @@
               "text": "FZDZ",
               "spoken": "Freezing Drizzle"
             },
+            "FZDZPL": {
+              "text": "FZDZPL",
+              "spoken": "Freezing Drizzle And Ice Pellets"
+            },
             "FZDZRA": {
               "text": "FZDZRA",
               "spoken": "Freezing Drizzle And Rain"
+            },
+            "FZDZSG": {
+              "text": "FZDZSG",
+              "spoken": "Freezing Drizzle And Snow Grains"
+            },
+            "FZDZSN": {
+              "text": "FZDZSN",
+              "spoken": "Freezing Drizzle And Snow"
             },
             "FZFG": {
               "text": "FZFG",
@@ -3268,6 +3402,18 @@
             "FZRADZ": {
               "text": "FZRADZ",
               "spoken": "Freezing Rain And Drizzle"
+            },
+            "FZRAPL": {
+              "text": "FZRAPL",
+              "spoken": "Freezing Rain And Ice Pellets"
+            },
+            "FZRASG": {
+              "text": "FZRASG",
+              "spoken": "Freezing Rain And Snow Grains"
+            },
+            "FZRASN": {
+              "text": "FZRASN",
+              "spoken": "Freezing Rain And Snow"
             },
             "FZUP": {
               "text": "FZUP",
@@ -3296,6 +3442,10 @@
             "MIFG": {
               "text": "MIFG",
               "spoken": "Shallow Fog"
+            },
+            "NSW": {
+              "text": "NSW",
+              "spoken": "No Significant Weather"
             },
             "PL": {
               "text": "PL",
@@ -3815,11 +3965,21 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
             "text": "undetermined",
             "voice": "undetermined"
+          },
+          "automaticCbDetection": {
+            "text": "//////CB",
+            "voice": "RADAR DETECTED C-B CLOUDS"
           },
           "types": {
             "FEW": {
@@ -3891,6 +4051,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -3905,7 +4081,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -3919,25 +4095,53 @@
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "Default"
+        "voice": "Default",
+        "speechRate": 210
       },
       "presets": [
         {
           "id": "be4b8b2c-2fca-427c-99f6-bbbba2812f2d",
           "name": "SOUTHEAST",
-          "airportConditions": "ILS AND VISUAL APPROACH RWY 11 IN USE. ARRIVING AND DEPARTING RWY 11.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "ILS RWY 11 APPROACH IN USE. LANDING AND DEPARTING RWY 11.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "02762a68-a7bb-4cc2-951b-fd1ed749011f",
           "name": "NORTHWEST",
-          "airportConditions": "VISUAL APPROACHES IN USE. LDG AND DEPTG RWY 29.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "GPS RWY 29 APPROACH IN USE. LDG AND DEPTG RWY 29.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "1a8711a9-b12e-4aed-b1bf-4058c78338d7",
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. SAN LUIS TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2000 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 124.0. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -4032,6 +4236,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -4086,9 +4296,21 @@
               "text": "-FZDZ",
               "spoken": "Light Freezing Drizzle"
             },
+            "-FZDZPL": {
+              "text": "-FZDZPL",
+              "spoken": "Light Freezing Drizzle And Ice Pellets"
+            },
             "-FZDZRA": {
               "text": "-FZDZRA",
               "spoken": "Light Freezing Drizzle And Rain"
+            },
+            "-FZDZSG": {
+              "text": "-FZDZSG",
+              "spoken": "Light Freezing Drizzle And Snow Grains"
+            },
+            "-FZDZSN": {
+              "text": "-FZDZSN",
+              "spoken": "Light Freezing Drizzle And Snow"
             },
             "-FZRA": {
               "text": "-FZRA",
@@ -4097,6 +4319,18 @@
             "-FZRADZ": {
               "text": "-FZRADZ",
               "spoken": "Light Freezing Rain And Drizzle"
+            },
+            "-FZRAPL": {
+              "text": "-FZRAPL",
+              "spoken": "Light Freezing Rain And Ice Pellets"
+            },
+            "-FZRASG": {
+              "text": "-FZRASG",
+              "spoken": "Light Freezing Rain And Snow Grains"
+            },
+            "-FZRASN": {
+              "text": "-FZRASN",
+              "spoken": "Light Freezing Rain And Snow"
             },
             "-FZUP": {
               "text": "-FZUP",
@@ -4582,9 +4816,21 @@
               "text": "+FZDZ",
               "spoken": "Heavy Freezing Drizzle"
             },
+            "+FZDZPL": {
+              "text": "+FZDZPL",
+              "spoken": "Heavy Freezing Drizzle And Ice Pellets"
+            },
             "+FZDZRA": {
               "text": "+FZDZRA",
               "spoken": "Heavy Freezing Drizzle And Rain"
+            },
+            "+FZDZSG": {
+              "text": "+FZDZSG",
+              "spoken": "Heavy Freezing Drizzle And Snow Grains"
+            },
+            "+FZDZSN": {
+              "text": "+FZDZSN",
+              "spoken": "Heavy Freezing Drizzle And Snow"
             },
             "+FZRA": {
               "text": "+FZRA",
@@ -4593,6 +4839,18 @@
             "+FZRADZ": {
               "text": "+FZRADZ",
               "spoken": "Heavy Freezing Rain And Drizzle"
+            },
+            "+FZRAPL": {
+              "text": "+FZRAPL",
+              "spoken": "Heavy Freezing Rain And Ice Pellets"
+            },
+            "+FZRASG": {
+              "text": "+FZRASG",
+              "spoken": "Heavy Freezing Rain And Snow Grains"
+            },
+            "+FZRASN": {
+              "text": "+FZRASN",
+              "spoken": "Heavy Freezing Rain And Snow"
             },
             "+FZUP": {
               "text": "+FZUP",
@@ -5138,9 +5396,21 @@
               "text": "FZDZ",
               "spoken": "Freezing Drizzle"
             },
+            "FZDZPL": {
+              "text": "FZDZPL",
+              "spoken": "Freezing Drizzle And Ice Pellets"
+            },
             "FZDZRA": {
               "text": "FZDZRA",
               "spoken": "Freezing Drizzle And Rain"
+            },
+            "FZDZSG": {
+              "text": "FZDZSG",
+              "spoken": "Freezing Drizzle And Snow Grains"
+            },
+            "FZDZSN": {
+              "text": "FZDZSN",
+              "spoken": "Freezing Drizzle And Snow"
             },
             "FZFG": {
               "text": "FZFG",
@@ -5153,6 +5423,18 @@
             "FZRADZ": {
               "text": "FZRADZ",
               "spoken": "Freezing Rain And Drizzle"
+            },
+            "FZRAPL": {
+              "text": "FZRAPL",
+              "spoken": "Freezing Rain And Ice Pellets"
+            },
+            "FZRASG": {
+              "text": "FZRASG",
+              "spoken": "Freezing Rain And Snow Grains"
+            },
+            "FZRASN": {
+              "text": "FZRASN",
+              "spoken": "Freezing Rain And Snow"
             },
             "FZUP": {
               "text": "FZUP",
@@ -5181,6 +5463,10 @@
             "MIFG": {
               "text": "MIFG",
               "spoken": "Shallow Fog"
+            },
+            "NSW": {
+              "text": "NSW",
+              "spoken": "No Significant Weather"
             },
             "PL": {
               "text": "PL",
@@ -5700,11 +5986,21 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
             "text": "undetermined",
             "voice": "undetermined"
+          },
+          "automaticCbDetection": {
+            "text": "//////CB",
+            "voice": "RADAR DETECTED C-B CLOUDS"
           },
           "types": {
             "FEW": {
@@ -5776,6 +6072,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -5790,7 +6102,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -5804,25 +6116,53 @@
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "Default"
+        "voice": "Default",
+        "speechRate": 180
       },
       "presets": [
         {
           "id": "d32dc143-37e1-420f-92a4-6f93e9c4146b",
           "name": "NORTHWEST",
-          "airportConditions": "VISUAL RWY 30 AND LOC BC APPROACH IN USE. ARRIVING AND DEPARTING RWY 30.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "VISUAL RWY 30 AND LOC BC APPROACH IN USE. LANDING AND DEPARTING RWY 30.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "65edff29-04ad-434d-bef3-0e1a4b7dd7cd",
           "name": "SOUTHEAST",
-          "airportConditions": "ILS RWY 12, VISUAL APPROACH IN USE. ARRIVING AND DEPARTING RWY 12.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "airportConditions": "ILS RWY 12, VISUAL APPROACH IN USE. LANDING AND DEPARTING RWY 12.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "ed5132ad-a26f-4d3e-9943-ea87351d6591",
+          "name": "CLOSED",
+          "airportConditions": "REMARKS. SATA MARIA TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2000 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 118.3. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+          "template": "",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -5914,6 +6254,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -5968,9 +6314,21 @@
               "text": "-FZDZ",
               "spoken": "Light Freezing Drizzle"
             },
+            "-FZDZPL": {
+              "text": "-FZDZPL",
+              "spoken": "Light Freezing Drizzle And Ice Pellets"
+            },
             "-FZDZRA": {
               "text": "-FZDZRA",
               "spoken": "Light Freezing Drizzle And Rain"
+            },
+            "-FZDZSG": {
+              "text": "-FZDZSG",
+              "spoken": "Light Freezing Drizzle And Snow Grains"
+            },
+            "-FZDZSN": {
+              "text": "-FZDZSN",
+              "spoken": "Light Freezing Drizzle And Snow"
             },
             "-FZRA": {
               "text": "-FZRA",
@@ -5979,6 +6337,18 @@
             "-FZRADZ": {
               "text": "-FZRADZ",
               "spoken": "Light Freezing Rain And Drizzle"
+            },
+            "-FZRAPL": {
+              "text": "-FZRAPL",
+              "spoken": "Light Freezing Rain And Ice Pellets"
+            },
+            "-FZRASG": {
+              "text": "-FZRASG",
+              "spoken": "Light Freezing Rain And Snow Grains"
+            },
+            "-FZRASN": {
+              "text": "-FZRASN",
+              "spoken": "Light Freezing Rain And Snow"
             },
             "-FZUP": {
               "text": "-FZUP",
@@ -6464,9 +6834,21 @@
               "text": "+FZDZ",
               "spoken": "Heavy Freezing Drizzle"
             },
+            "+FZDZPL": {
+              "text": "+FZDZPL",
+              "spoken": "Heavy Freezing Drizzle And Ice Pellets"
+            },
             "+FZDZRA": {
               "text": "+FZDZRA",
               "spoken": "Heavy Freezing Drizzle And Rain"
+            },
+            "+FZDZSG": {
+              "text": "+FZDZSG",
+              "spoken": "Heavy Freezing Drizzle And Snow Grains"
+            },
+            "+FZDZSN": {
+              "text": "+FZDZSN",
+              "spoken": "Heavy Freezing Drizzle And Snow"
             },
             "+FZRA": {
               "text": "+FZRA",
@@ -6475,6 +6857,18 @@
             "+FZRADZ": {
               "text": "+FZRADZ",
               "spoken": "Heavy Freezing Rain And Drizzle"
+            },
+            "+FZRAPL": {
+              "text": "+FZRAPL",
+              "spoken": "Heavy Freezing Rain And Ice Pellets"
+            },
+            "+FZRASG": {
+              "text": "+FZRASG",
+              "spoken": "Heavy Freezing Rain And Snow Grains"
+            },
+            "+FZRASN": {
+              "text": "+FZRASN",
+              "spoken": "Heavy Freezing Rain And Snow"
             },
             "+FZUP": {
               "text": "+FZUP",
@@ -7020,9 +7414,21 @@
               "text": "FZDZ",
               "spoken": "Freezing Drizzle"
             },
+            "FZDZPL": {
+              "text": "FZDZPL",
+              "spoken": "Freezing Drizzle And Ice Pellets"
+            },
             "FZDZRA": {
               "text": "FZDZRA",
               "spoken": "Freezing Drizzle And Rain"
+            },
+            "FZDZSG": {
+              "text": "FZDZSG",
+              "spoken": "Freezing Drizzle And Snow Grains"
+            },
+            "FZDZSN": {
+              "text": "FZDZSN",
+              "spoken": "Freezing Drizzle And Snow"
             },
             "FZFG": {
               "text": "FZFG",
@@ -7035,6 +7441,18 @@
             "FZRADZ": {
               "text": "FZRADZ",
               "spoken": "Freezing Rain And Drizzle"
+            },
+            "FZRAPL": {
+              "text": "FZRAPL",
+              "spoken": "Freezing Rain And Ice Pellets"
+            },
+            "FZRASG": {
+              "text": "FZRASG",
+              "spoken": "Freezing Rain And Snow Grains"
+            },
+            "FZRASN": {
+              "text": "FZRASN",
+              "spoken": "Freezing Rain And Snow"
             },
             "FZUP": {
               "text": "FZUP",
@@ -7063,6 +7481,10 @@
             "MIFG": {
               "text": "MIFG",
               "spoken": "Shallow Fog"
+            },
+            "NSW": {
+              "text": "NSW",
+              "spoken": "No Significant Weather"
             },
             "PL": {
               "text": "PL",
@@ -7582,11 +8004,21 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
             "text": "undetermined",
             "voice": "undetermined"
+          },
+          "automaticCbDetection": {
+            "text": "//////CB",
+            "voice": "RADAR DETECTED C-B CLOUDS"
           },
           "types": {
             "FEW": {
@@ -7658,6 +8090,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -7672,7 +8120,7 @@
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": true,
+          "autoIncludeClosingStatement": false,
           "template": {
             "text": "...ADVS YOU HAVE INFO {letter}",
             "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -7686,17 +8134,55 @@
       "useDecimalTerminology": false,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "Default"
+        "voice": "Default",
+        "speechRate": 220
       },
       "presets": [
         {
           "id": "c372cd29-1812-456d-9559-f741aace66b0",
           "name": "RWY 30",
-          "airportConditions": "VISUAL APPROACHES IN USE. LDG AND DEPTG RWY 30.",
+          "airportConditions": "ILS, TACAN RWY 30 AND VISUAL APPROACHES IN USE. LDG AND DEPTG RWY 30.",
           "notams": "USE CAUTION ROCKET LAUNCHES INVOF AIRPORT.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "ec3c2cbc-11c0-4573-b4d2-83f11352d471",
+          "name": "RWY 12",
+          "airportConditions": "ILS, TACAN RWY 12 AND VISUAL APPROACHES IN USE. LDG AND DEPTG RWY 12.",
+          "notams": "USE CAUTION ROCKET LAUNCHES INVOF AIRPORT.",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "70ce3672-0025-481e-86d0-e9e1f3f36ee4",
+          "name": "CLOSED",
+          "airportConditions": "VANDENBERG AIRPORT IS CLOSED. APPROACHES, LANDINGS, AND TRAFFIC PATTERNS TO THE AIRPORT ARE PROHIBITED. TOWER HOURS OF OPERATION ARE FROM 0800 LOCAL TIME TO 1700 LOCAL TIME MONDAY THROUGH FRIDAY. FOR ADDITIONAL INFORMATION CONTACT THE OVERLYING CONTROLLER.",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
