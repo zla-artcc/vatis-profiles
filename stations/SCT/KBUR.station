@@ -1966,7 +1966,7 @@
     {
       "id": "014b4143-b8a6-45e4-b3d7-3ffa0045c763",
       "name": "NORMAL (8/15)",
-      "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARR AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15, AVBL LDG DIST FOUR THOUSAND TWO HUNDRED FIFTY FEET. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARR AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -2024,33 +2024,48 @@
       "variableName": "B4",
       "text": "B4",
       "voice": "BRAVO FOUR"
+    },
+    {
+      "variableName": "CD",
+      "text": "CD",
+      "voice": "CLEARANCE DELIVERY"
+    },
+    {
+      "variableName": "GC",
+      "text": "GC",
+      "voice": "GROUND CONTROL"
     }
   ],
   "airportConditionDefinitions": [],
   "notamDefinitions": [
     {
-      "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
-      "ordinal": 1,
-      "enabled": false
-    },
-    {
       "text": "ACFT IN GATES @B1 THRU @B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
-      "ordinal": 2,
+      "ordinal": 1,
       "enabled": true
     },
     {
       "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
-      "ordinal": 3,
+      "ordinal": 2,
       "enabled": true
     },
     {
-      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+      "text": "CD AND GC COMBINED ON 123.9.",
+      "ordinal": 2,
+      "enabled": false
+    },
+    {
+      "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
       "ordinal": 4,
       "enabled": false
     },
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 5,
+      "enabled": false
+    },
+    {
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+      "ordinal": 6,
       "enabled": false
     }
   ]

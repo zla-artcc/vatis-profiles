@@ -1,7 +1,7 @@
 {
-  "ordinal": 1,
-  "identifier": "KLAS",
-  "name": "Las Vegas",
+  "ordinal": 99,
+  "identifier": "KMHV",
+  "name": "Mojave Air & Space Port/Rutan Field",
   "atisType": "Combined",
   "codeRange": {
     "low": "A",
@@ -9,9 +9,6 @@
   },
   "atisFormat": {
     "observationTime": {
-      "standardUpdateTime": [
-        56
-      ],
       "template": {
         "text": "{time}Z",
         "voice": "{time} ZULU {special}"
@@ -20,8 +17,8 @@
     "surfaceWind": {
       "speakLeadingZero": false,
       "magneticVariation": {
-        "enabled": true,
-        "magneticDegrees": -10
+        "enabled": false,
+        "magneticDegrees": 0
       },
       "standard": {
         "template": {
@@ -1123,17 +1120,9 @@
           "text": "+UP",
           "spoken": "Heavy Unidentified Precipitation"
         },
-        "BC": {
-          "text": "BC",
-          "spoken": "patches"
-        },
         "BCFG": {
           "text": "BCFG",
           "spoken": "Patches Of Fog"
-        },
-        "BL": {
-          "text": "BL",
-          "spoken": "blowing"
         },
         "BLDU": {
           "text": "BLDU",
@@ -1149,11 +1138,7 @@
         },
         "BR": {
           "text": "BR",
-          "spoken": "mist"
-        },
-        "DR": {
-          "text": "DR",
-          "spoken": "low drifting"
+          "spoken": "Mist"
         },
         "DRDU": {
           "text": "DRDU",
@@ -1169,15 +1154,15 @@
         },
         "DS": {
           "text": "DS",
-          "spoken": "dust storm"
+          "spoken": "Duststorm"
         },
         "DU": {
           "text": "DU",
-          "spoken": "widespread dust"
+          "spoken": "Dust"
         },
         "DZ": {
           "text": "DZ",
-          "spoken": "drizzle"
+          "spoken": "Drizzle"
         },
         "DZPL": {
           "text": "DZPL",
@@ -1221,19 +1206,15 @@
         },
         "FC": {
           "text": "FC",
-          "spoken": "funnel cloud tornado waterspout"
+          "spoken": "Funnel Cloud"
         },
         "FG": {
           "text": "FG",
-          "spoken": "fog"
+          "spoken": "Fog"
         },
         "FU": {
           "text": "FU",
-          "spoken": "smoke"
-        },
-        "FZ": {
-          "text": "FZ",
-          "spoken": "freezing"
+          "spoken": "Smoke"
         },
         "FZDZ": {
           "text": "FZDZ",
@@ -1283,25 +1264,9 @@
           "text": "FZUP",
           "spoken": "Unidentified Freezing Precipitation"
         },
-        "GR": {
-          "text": "GR",
-          "spoken": "hail"
-        },
-        "GS": {
-          "text": "GS",
-          "spoken": "small hail"
-        },
         "HZ": {
           "text": "HZ",
-          "spoken": "haze"
-        },
-        "IC": {
-          "text": "IC",
-          "spoken": "ice crystals"
-        },
-        "MI": {
-          "text": "MI",
-          "spoken": "shallow"
+          "spoken": "Haze"
         },
         "MIFG": {
           "text": "MIFG",
@@ -1313,7 +1278,7 @@
         },
         "PL": {
           "text": "PL",
-          "spoken": "ice pellets"
+          "spoken": "Ice Pellets"
         },
         "PLDZ": {
           "text": "PLDZ",
@@ -1357,23 +1322,15 @@
         },
         "PO": {
           "text": "PO",
-          "spoken": "well developed dust, sand whirls"
-        },
-        "PR": {
-          "text": "PR",
-          "spoken": "partial"
+          "spoken": "Dust/Sand Whirls"
         },
         "PRFG": {
           "text": "PRFG",
           "spoken": "Partial Fog"
         },
-        "PY": {
-          "text": "PY",
-          "spoken": "spray"
-        },
         "RA": {
           "text": "RA",
-          "spoken": "rain"
+          "spoken": "Rain"
         },
         "RADZ": {
           "text": "RADZ",
@@ -1433,11 +1390,11 @@
         },
         "SA": {
           "text": "SA",
-          "spoken": "sand"
+          "spoken": "Sand"
         },
         "SG": {
           "text": "SG",
-          "spoken": "snow grains"
+          "spoken": "Snow Grains"
         },
         "SGDZ": {
           "text": "SGDZ",
@@ -1478,10 +1435,6 @@
         "SGSNRA": {
           "text": "SGSNRA",
           "spoken": "Snow Grains, Snow And Rain"
-        },
-        "SH": {
-          "text": "SH",
-          "spoken": "showers"
         },
         "SHGR": {
           "text": "SHGR",
@@ -1593,7 +1546,7 @@
         },
         "SN": {
           "text": "SN",
-          "spoken": "snow"
+          "spoken": "Snow"
         },
         "SNDZ": {
           "text": "SNDZ",
@@ -1645,15 +1598,15 @@
         },
         "SQ": {
           "text": "SQ",
-          "spoken": "squalls"
+          "spoken": "Squalls"
         },
         "SS": {
           "text": "SS",
-          "spoken": "sandstorm"
+          "spoken": "Sandstorm"
         },
         "TS": {
           "text": "TS",
-          "spoken": "thunderstorm"
+          "spoken": "Thunderstorm"
         },
         "TSGR": {
           "text": "TSGR",
@@ -1765,11 +1718,11 @@
         },
         "UP": {
           "text": "UP",
-          "spoken": "unknown precipitation"
+          "spoken": "Unidentified Precipitation"
         },
         "VA": {
           "text": "VA",
-          "spoken": "volcanic ash"
+          "spoken": "Volcanic Ash"
         },
         "VCBLDU": {
           "text": "VCBLDU",
@@ -1941,21 +1894,20 @@
     "notams": {
       "template": {
         "text": "NOTAMS... {notams}",
-        "voice": "NOTICES TO AIRMEN: {notams}"
+        "voice": "NOTICES TO AIR MISSIONS: {notams}"
       }
     },
     "closingStatement": {
-      "autoIncludeClosingStatement": true,
+      "autoIncludeClosingStatement": false,
       "template": {
-        "text": "...ADVS YOU HAVE INFO {letter}",
+        "text": "...ADVS YOU HAVE INFO {letter}.",
         "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
       }
     }
   },
-  "notamsBeforeFreeText": true,
+  "notamsBeforeFreeText": false,
   "airportConditionsBeforeFreeText": false,
-  "frequency": 132400000,
-  "idsEndpoint": "https://ids.laartcc.org/remote/atis",
+  "frequency": 132225000,
   "useDecimalTerminology": false,
   "atisVoice": {
     "useTextToSpeech": true,
@@ -1964,51 +1916,10 @@
   },
   "presets": [
     {
-      "id": "5c434e41-43a1-41ac-9a02-ce6cea1d7ffc",
-      "name": "CONFIG 1 (19/26)",
-      "airportConditions": "VISUAL APPROACHES IN USE. LANDING RWYS 26L, ^19L AND ^19R. DEPTG RWYS 26R, ^19R, AND ^19L. SIMUL APPS TO CROSSING AND PARALLEL RWYS IN USE. CONVERGING RWY OPS IN EFFECT.",
-      "notams": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
-      "externalGenerator": {
-        "enabled": false
-      }
-    },
-    {
-      "id": "d9defc81-0e88-448d-892b-e8d75c8661c0",
-      "name": "CONFIG 2 (1/8)",
-      "airportConditions": "VIS APPS IN USE RWY 1, 8. LDG RWYS 1L, AND ^8R. DEPTG RWY 8L AT TWY A8. VFR DEPG RWY 1L AT TWY B.",
-      "notams": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
-      "externalGenerator": {
-        "enabled": false
-      }
-    },
-    {
-      "id": "afe88275-8692-4a03-97f2-66f728ca178e",
-      "name": "CONFIG 3 (1/26)",
-      "airportConditions": "VISUAL APPROACHES IN USE. LANDING RWYS 26L AND ^1L. DEPG RWYS 1R FULL LENGTH AND ^1L AT BRAVO. SIMUL APCHS TO CROSSING AND PARALLEL RUNWAYS IN USE.",
-      "notams": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
-      "externalGenerator": {
-        "enabled": false
-      }
-    },
-    {
-      "id": "f5920fb1-6970-4058-9f8c-bd0f7f122130",
-      "name": "CONFIG 4 (8/19)",
-      "airportConditions": "RNP APCH Z RY 19L, RY 8R. LANDING RWYS 8R AND ^19L. DEPG RWYS 8L AND ^8L AT ALPHA 8.",
-      "notams": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
-      "externalGenerator": {
-        "enabled": false
-      }
-    },
-    {
-      "id": "88fd61cf-06b1-4fb9-9eb9-f58e7e034297",
-      "name": "STRAIGHT 19",
-      "airportConditions": "VISUAL APPROACHES IN USE. LANDING AND DEPARTING RUNWAYS 19L, AND ^19R.",
-      "notams": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-      "template": "",
+      "id": "4fdfc7f1-e413-46dc-8a50-79cbe8765693",
+      "ordinal": 0,
+      "name": "AWOS-3PT",
+      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false,
         "textUrl": "",
@@ -2020,100 +1931,22 @@
       }
     },
     {
-      "id": "06aabaad-38f0-4e5d-af7f-5f3caa3fd142",
-      "name": "STRAIGHT 8",
-      "airportConditions": "VISUAL AND RNAV APPROACHES IN USE. LANDING RUNWAY 8R. DEPARTING RUNWAY 8L.",
-      "notams": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
+      "id": "71204f04-5743-4e6a-8b19-7815fe0c264e",
+      "ordinal": 1,
+      "name": "CLOSED",
+      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     }
   ],
-  "contractions": [
-    {
-      "variableName": "APPS",
-      "text": "APPROACHES",
-      "voice": "APPROACHES"
-    },
-    {
-      "variableName": "RNAV",
-      "text": "RNAV",
-      "voice": "R NAV"
-    },
-    {
-      "variableName": "Z",
-      "text": "Z",
-      "voice": "ZULU"
-    },
-    {
-      "variableName": "ADZYS",
-      "text": "ADZYS",
-      "voice": "ADVISORIES"
-    },
-    {
-      "variableName": "ASAP",
-      "text": "ASAP",
-      "voice": "AS SOON AS POSSIBLE"
-    }
-  ],
-  "airportConditionDefinitions": [
-    {
-      "text": "LAHSO IN EFFECT RWY 19R. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-      "ordinal": 1,
-      "enabled": false
-    }
-  ],
-  "notamDefinitions": [
-    {
-      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
-      "ordinal": 1,
-      "enabled": false
-    },
-    {
-      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-      "ordinal": 2,
-      "enabled": false
-    },
-    {
-      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-      "ordinal": 3,
-      "enabled": false
-    },
-    {
-      "text": "CHECK DENSITY ALTITUDE",
-      "ordinal": 4,
-      "enabled": false
-    },
-    {
-      "text": "LLWS ADZYS IN EFCT.",
-      "ordinal": 5,
-      "enabled": false
-    },
-    {
-      "text": "GC COMBINED ON 121.1",
-      "ordinal": 6,
-      "enabled": false
-    },
-    {
-      "text": "CD AND GC COMBINED ON 121.1",
-      "ordinal": 7,
-      "enabled": false
-    },
-    {
-      "text": "HELICOPTERS OVER THE STRIP AT 3 THOUSAND FEET AND BELOW.",
-      "ordinal": 8,
-      "enabled": false
-    },
-    {
-      "text": "LAS VEGAS METROPLEX PROCEDURES IN EFFECT. VERIFY NAVIGATIONAL DATA IS UP TO DATE.",
-      "ordinal": 9,
-      "enabled": false
-    },
-    {
-      "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
-      "ordinal": 10,
-      "enabled": false
-    }
-  ]
+  "contractions": [],
+  "airportConditionDefinitions": [],
+  "notamDefinitions": []
 }

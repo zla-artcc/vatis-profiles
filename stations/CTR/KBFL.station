@@ -79,6 +79,12 @@
         "voice": "VISIBILITY {visibility}"
       }
     },
+    "runwayVisualRange": {
+      "neutralTendency": "Neutral",
+      "goingUpTendency": "Going Up",
+      "goingDownTendency": "Going Down",
+      "template": {}
+    },
     "presentWeather": {
       "presentWeatherTypes": {
         "-DS": {
@@ -1823,6 +1829,12 @@
     },
     "clouds": {
       "identifyCeilingLayer": true,
+      "identifyCeilingLayerTextAtis": false,
+      "textAtisCeilingPrefix": "CIG",
+      "cloudCeilingLayerTypes": [
+        "BKN",
+        "OVC"
+      ],
       "convertToMetric": false,
       "isAltitudeInHundreds": false,
       "undeterminedLayerAltitude": {
@@ -1903,6 +1915,22 @@
         "voice": "ALTIMETER {altimeter}"
       }
     },
+    "trend": {
+      "nosigText": "NOSIG",
+      "nosigVoice": "No Significant Changes",
+      "becomingText": "BECMG",
+      "becomingVoice": "Becoming",
+      "temporaryText": "TEMPO",
+      "temporaryVoice": "Temporary",
+      "template": {}
+    },
+    "windShear": {
+      "runwayText": "WS R{Runway}",
+      "runwayVoice": "Wind Shear Runway {Runway}",
+      "allRunwayText": "WS ALL RWY",
+      "allRunwayVoice": "Wind Shear All Runways",
+      "template": {}
+    },
     "transitionLevel": {
       "values": [],
       "template": {
@@ -1917,7 +1945,7 @@
       }
     },
     "closingStatement": {
-      "autoIncludeClosingStatement": true,
+      "autoIncludeClosingStatement": false,
       "template": {
         "text": "...ADVS YOU HAVE INFO {letter}",
         "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -1932,7 +1960,7 @@
   "atisVoice": {
     "useTextToSpeech": true,
     "voice": "Default",
-    "speechRate": 180
+    "speechRate": 200
   },
   "presets": [
     {
@@ -1940,9 +1968,15 @@
       "name": "NORTH",
       "airportConditions": "VIS AND ILS APPS IN USE. LNDG AND DEPTG 30L, 30R.",
       "notams": "READBACK ALL RWY ASSIGNMENT AND HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     },
     {
@@ -1950,9 +1984,15 @@
       "name": "SOUTH",
       "airportConditions": "VIS AND RNAV APPS IN USE. LNDG AND DEPTG 12L, 12R.",
       "notams": "READBACK ALL RWY ASSIGNMENT AND HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     },
     {
@@ -1960,9 +2000,15 @@
       "name": "NORTH IMC",
       "airportConditions": "RNAV AND ILS APPS IN USE. LNDG AND DEPTG 30L, 30R.",
       "notams": "READBACK ALL RWY ASSIGNMENT AND HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     },
     {
@@ -1970,9 +2016,30 @@
       "name": "SOUTH IMC",
       "airportConditions": "RNAV APPS IN USE. LNDG AND DEPTG 12L, 12R.",
       "notams": "READBACK ALL RWY ASSIGNMENT AND HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "7837b55a-f76d-4116-8894-ce1b352e3af7",
+      "name": "CLOSED",
+      "airportConditions": "REMARKS. BAKERSFIELD TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2300 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 118.1. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     }
   ],

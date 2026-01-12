@@ -1966,8 +1966,8 @@
     {
       "id": "005074c8-2fd3-4510-bfdd-4dba2ff95406",
       "name": "WEST",
-      "airportConditions": "LANDING RUNWAY 27, LOC, @RNAV, AND VIS APPS IN USE. DEPTG RWY 27.",
-      "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "airportConditions": "LANDING RUNWAY 27 LOCALIZER, VISUAL, RNAV APPROACHES IN USE. DEPG RWY 27. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+      "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
@@ -1976,8 +1976,8 @@
     {
       "id": "a343e52a-16c4-43ed-a178-1e753a380712",
       "name": "WEST - IMC",
-      "airportConditions": "LANDING RUNWAY 27 LOCALIZER, @RNAV APPROACHES IN USE. DEPG RWY 27.",
-      "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "airportConditions": "LANDING RUNWAY 27 LOCALIZER, RNAV APPROACHES IN USE. DEPG RWY 27. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+      "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
@@ -1986,8 +1986,8 @@
     {
       "id": "c56dd740-3827-4bb4-b816-02c3b8bc336d",
       "name": "EAST",
-      "airportConditions": "LANDING RUNWAY 9, ILS AND VIS APPS IN USE. DEPTG RWY 9.",
-      "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "airportConditions": "LANDING RUNWAY 9 ILS, RNAV, VISUAL APPROACHES IN USE. DEPG RWY 9. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+      "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
@@ -1996,8 +1996,8 @@
     {
       "id": "a4460aff-7669-4b30-84ac-76195b9ffc32",
       "name": "EAST - IMC",
-      "airportConditions": "LANDING RUNWAY 9. ILS, @RNAV APPROACHES IN USE. DEPTG RWY 9.",
-      "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "airportConditions": "LANDING RUNWAY 9 ILS, RNAV APPROACHES IN USE. DEPG RWY 9. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+      "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
@@ -2006,8 +2006,8 @@
     {
       "id": "a4802def-c068-4744-8d94-e71ff706f6e7",
       "name": "ODO (ARR 9/DEP 27)",
-      "airportConditions": "LANDING RUNWAY 9, ILS APP IN USE. DEPTG RWY 27. OPPOSITE DRCTN OPS IN EFFECT.",
-      "notams": "ASDE-X SYSTEM IN USE. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "airportConditions": "LANDING RUNWAY 9 ILS APP IN USE. DEPG RWY 27. OPPOSITE DRCTN OPS IN EFFECT. ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+      "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false
@@ -2041,7 +2041,28 @@
       "voice": "DIRECTION"
     }
   ],
-  "airportConditionDefinitions": [],
+  "airportConditionDefinitions": [
+    {
+      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
+      "ordinal": 1,
+      "enabled": false
+    },
+    {
+      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "ordinal": 1,
+      "enabled": false
+    },
+    {
+      "text": "NO OFFSHORE VFR TRANSITIONS.",
+      "ordinal": 3,
+      "enabled": true
+    },
+    {
+      "text": "USE CAUTION MODEL ROCKETS AT FIESTA ISLAND AT OR BELOW 010.",
+      "ordinal": 4,
+      "enabled": false
+    }
+  ],
   "notamDefinitions": [
     {
       "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
@@ -2049,18 +2070,8 @@
       "enabled": false
     },
     {
-      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
-      "ordinal": 2,
-      "enabled": false
-    },
-    {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-      "ordinal": 3,
-      "enabled": false
-    },
-    {
-      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-      "ordinal": 4,
+      "ordinal": 2,
       "enabled": false
     }
   ]

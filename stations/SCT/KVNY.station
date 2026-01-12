@@ -1945,7 +1945,7 @@
       }
     },
     "closingStatement": {
-      "autoIncludeClosingStatement": true,
+      "autoIncludeClosingStatement": false,
       "template": {
         "text": "...ADVS YOU HAVE INFO {letter}",
         "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
@@ -1968,7 +1968,7 @@
       "name": "SOUTH (16)",
       "airportConditions": "@ILS_Z RWY 16R APCH IN USE, VISUAL APCH IN USE. LDG AND DEPTG RWYS 16 LEFT AND RIGHT.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
         "textUrl": "",
@@ -1984,19 +1984,47 @@
       "name": "SOUTH - IMC (16)",
       "airportConditions": "@ILS_Z RWY 16R APCH IN USE. LNDG AND DEPTG RWYS 16L, AND ^16R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     },
     {
       "id": "33ddc6f1-907e-451d-907c-5f850091f5c5",
       "name": "NORTH (34)",
-      "airportConditions": "VIS APPS IN USE. LDG AND DEPTG RWYS 34L, AND ^34R.",
+      "airportConditions": "VISUAL APCH IN USE. LNDG AND DEPG RWY 34L_R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "60aa3783-6c0e-4a08-a5a2-602fb891055b",
+      "name": "CLOSED",
+      "airportConditions": "REMARKS. VAN NUYS TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2245 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 119.3. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+      "notams": "",
+      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     }
   ],
@@ -2005,6 +2033,11 @@
       "variableName": "ILS_Z",
       "text": "ILS-Z",
       "voice": "ILS ZULU"
+    },
+    {
+      "variableName": "34L_R",
+      "text": "34 L/R",
+      "voice": "THREE FOUR LEFT AND RIGHT"
     }
   ],
   "airportConditionDefinitions": [],
