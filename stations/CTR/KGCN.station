@@ -1982,7 +1982,18 @@
       }
     }
   ],
-  "contractions": [],
+  "contractions": [
+    {
+      "variableName": "AM",
+      "text": "AM",
+      "voice": "A M"
+    },
+    {
+      "variableName": "PM",
+      "text": "PM",
+      "voice": "P M"
+    }
+  ],
   "airportConditionDefinitions": [
     {
       "text": "VIS APPS IN USE",
