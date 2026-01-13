@@ -1984,7 +1984,7 @@
       "id": "ad47e047-c7df-420b-bf13-0b4d93587ba6",
       "ordinal": 2,
       "name": "WEST - INST AND VISUAL",
-      "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 24R AND RWY 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+      "airportConditions": "INST APCHS AND RNAV RNP APCHS RY 24R AND 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
       "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -2164,7 +2164,7 @@
     {
       "text": "CALL FOR PUSH ONTO TWYS A, *C, *D, *K, *L, *M. PUSH AND START AT PILOTS DISCRETION ON RAMPS AND ALLEYWAYS.",
       "ordinal": 3,
-      "enabled": true
+      "enabled": false
     },
     {
       "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
@@ -2172,8 +2172,18 @@
       "enabled": true
     },
     {
-      "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+      "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
       "ordinal": 5,
+      "enabled": true
+    },
+    {
+      "text": "CAUTION. RUNWAY INCURSIONS HAVE OCCURRED AT TAXIWAYS V, W, AND Y NEAR RWY 24L.",
+      "ordinal": 5,
+      "enabled": false
+    },
+    {
+      "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+      "ordinal": 7,
       "enabled": true
     }
   ],
@@ -2190,22 +2200,12 @@
     },
     {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-      "ordinal": 2,
-      "enabled": false
-    },
-    {
-      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 3,
       "enabled": false
     },
     {
-      "text": "USE CAUTION MODEL ROCKETS AT FIESTA ISLAND AT OR BELOW 010.",
-      "ordinal": 5,
-      "enabled": false
-    },
-    {
-      "text": "NO OFFSHORE VFR TRANSITIONS.",
-      "ordinal": 6,
+      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "ordinal": 4,
       "enabled": false
     }
   ]

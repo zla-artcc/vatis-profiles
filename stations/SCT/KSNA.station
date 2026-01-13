@@ -1960,14 +1960,14 @@
   "atisVoice": {
     "useTextToSpeech": true,
     "voice": "Default",
-    "speechRate": 180
+    "speechRate": 200
   },
   "presets": [
     {
       "id": "7d0a5818-3626-4294-9d48-d3d73e5d2c15",
       "name": "SOUTH",
       "airportConditions": "VIS APPS RWY 20R IN USE. LDG AND DEPTG RWYS 20R, AND ^20L. ",
-      "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+      "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -1983,7 +1983,7 @@
       "id": "bd9500c1-5036-4b3b-b9b7-6315f213793d",
       "name": "SOUTH IMC",
       "airportConditions": "ILS RWY 20R APPROACH IN USE. LANDING AND DEPARTING RUNWAYS ^20R AND ^20L.",
-      "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+      "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -1999,7 +1999,7 @@
       "id": "464dad55-7adb-4db3-9d97-a350df43c1d6",
       "name": "NORTH",
       "airportConditions": "VIS APPS IN USE. LDG AND DEPTG RWY 2L, AND ^2R.",
-      "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TAXIWAYS AND RUNWAYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS. ",
+      "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -2015,7 +2015,7 @@
       "id": "afa05742-88e9-4363-b52f-5b609c6418ed",
       "name": "NORTH IMC",
       "airportConditions": "@RNAV AND LOC BC APPS IN USE. LDG AND DEPTG RWY 2L, AND ^2R.",
-      "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.  ",
+      "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -2048,26 +2048,6 @@
       "variableName": "RNAV",
       "text": "RNAV",
       "voice": "R NAV"
-    },
-    {
-      "variableName": "20L",
-      "text": "20L",
-      "voice": "TWO ZERO LEFT"
-    },
-    {
-      "variableName": "20R",
-      "text": "20R",
-      "voice": "TWO ZERO RIGHT"
-    },
-    {
-      "variableName": "2L",
-      "text": "2L",
-      "voice": "TWO LEFT"
-    },
-    {
-      "variableName": "2R",
-      "text": "2R",
-      "voice": "TWO RIGHT"
     },
     {
       "variableName": "TXG",
@@ -2122,9 +2102,24 @@
       "enabled": true
     },
     {
-      "text": "ACFT SOUTH OF @H TXG ON @A BE ADZD RY20L DEPTS MK IMDT SE TRN OVR @A.",
+      "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
       "ordinal": 2,
+      "enabled": true
+    },
+    {
+      "text": "ACFT SOUTH OF @H TXG ON @A BE ADZD RY20L DEPTS MK IMDT SE TRN OVR @A.",
+      "ordinal": 3,
       "enabled": false
+    },
+    {
+      "text": "OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS.",
+      "ordinal": 4,
+      "enabled": true
+    },
+    {
+      "text": "READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+      "ordinal": 5,
+      "enabled": true
     }
   ],
   "notamDefinitions": [
@@ -2134,13 +2129,8 @@
       "enabled": false
     },
     {
-      "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
-      "ordinal": 2,
-      "enabled": true
-    },
-    {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-      "ordinal": 4,
+      "ordinal": 2,
       "enabled": false
     },
     {
