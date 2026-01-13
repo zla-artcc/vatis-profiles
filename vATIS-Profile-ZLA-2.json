@@ -1,7 +1,7 @@
 {
   "name": "ZLA Non-TRACON Fields",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-2.json",
-  "updateSerial": 2026011200,
+  "updateSerial": 2026011300,
   "stations": [
     {
       "ordinal": 98,
@@ -4067,7 +4067,18 @@
           }
         }
       ],
-      "contractions": [],
+      "contractions": [
+        {
+          "variableName": "AM",
+          "text": "AM",
+          "voice": "A M"
+        },
+        {
+          "variableName": "PM",
+          "text": "PM",
+          "voice": "P M"
+        }
+      ],
       "airportConditionDefinitions": [
         {
           "text": "VIS APPS IN USE",

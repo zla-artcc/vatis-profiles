@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2026011200,
+  "updateSerial": 2026011300,
   "stations": [
     {
       "ordinal": 99,
@@ -8137,7 +8137,7 @@
           "id": "ad47e047-c7df-420b-bf13-0b4d93587ba6",
           "ordinal": 2,
           "name": "WEST - INST AND VISUAL",
-          "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 24R AND RWY 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+          "airportConditions": "INST APCHS AND RNAV RNP APCHS RY 24R AND 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -8317,7 +8317,7 @@
         {
           "text": "CALL FOR PUSH ONTO TWYS A, *C, *D, *K, *L, *M. PUSH AND START AT PILOTS DISCRETION ON RAMPS AND ALLEYWAYS.",
           "ordinal": 3,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
@@ -8325,8 +8325,18 @@
           "enabled": true
         },
         {
-          "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS. PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
           "ordinal": 5,
+          "enabled": true
+        },
+        {
+          "text": "CAUTION. RUNWAY INCURSIONS HAVE OCCURRED AT TAXIWAYS V, W, AND Y NEAR RWY 24L.",
+          "ordinal": 5,
+          "enabled": false
+        },
+        {
+          "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "ordinal": 7,
           "enabled": true
         }
       ],
@@ -8343,22 +8353,12 @@
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-          "ordinal": 2,
-          "enabled": false
-        },
-        {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
           "enabled": false
         },
         {
-          "text": "USE CAUTION MODEL ROCKETS AT FIESTA ISLAND AT OR BELOW 010.",
-          "ordinal": 5,
-          "enabled": false
-        },
-        {
-          "text": "NO OFFSHORE VFR TRANSITIONS.",
-          "ordinal": 6,
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+          "ordinal": 4,
           "enabled": false
         }
       ]
@@ -24751,14 +24751,14 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 200
       },
       "presets": [
         {
           "id": "7d0a5818-3626-4294-9d48-d3d73e5d2c15",
           "name": "SOUTH",
           "airportConditions": "VIS APPS RWY 20R IN USE. LDG AND DEPTG RWYS 20R, AND ^20L. ",
-          "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -24774,7 +24774,7 @@
           "id": "bd9500c1-5036-4b3b-b9b7-6315f213793d",
           "name": "SOUTH IMC",
           "airportConditions": "ILS RWY 20R APPROACH IN USE. LANDING AND DEPARTING RUNWAYS ^20R AND ^20L.",
-          "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -24790,7 +24790,7 @@
           "id": "464dad55-7adb-4db3-9d97-a350df43c1d6",
           "name": "NORTH",
           "airportConditions": "VIS APPS IN USE. LDG AND DEPTG RWY 2L, AND ^2R.",
-          "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TAXIWAYS AND RUNWAYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS. ",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -24806,7 +24806,7 @@
           "id": "afa05742-88e9-4363-b52f-5b609c6418ed",
           "name": "NORTH IMC",
           "airportConditions": "@RNAV AND LOC BC APPS IN USE. LDG AND DEPTG RWY 2L, AND ^2R.",
-          "notams": "ASDE-X SYSTEM IN USE. OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS. READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.  ",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -24839,26 +24839,6 @@
           "variableName": "RNAV",
           "text": "RNAV",
           "voice": "R NAV"
-        },
-        {
-          "variableName": "20L",
-          "text": "20L",
-          "voice": "TWO ZERO LEFT"
-        },
-        {
-          "variableName": "20R",
-          "text": "20R",
-          "voice": "TWO ZERO RIGHT"
-        },
-        {
-          "variableName": "2L",
-          "text": "2L",
-          "voice": "TWO LEFT"
-        },
-        {
-          "variableName": "2R",
-          "text": "2R",
-          "voice": "TWO RIGHT"
         },
         {
           "variableName": "TXG",
@@ -24913,9 +24893,24 @@
           "enabled": true
         },
         {
-          "text": "ACFT SOUTH OF @H TXG ON @A BE ADZD RY20L DEPTS MK IMDT SE TRN OVR @A.",
+          "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
           "ordinal": 2,
+          "enabled": true
+        },
+        {
+          "text": "ACFT SOUTH OF @H TXG ON @A BE ADZD RY20L DEPTS MK IMDT SE TRN OVR @A.",
+          "ordinal": 3,
           "enabled": false
+        },
+        {
+          "text": "OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS.",
+          "ordinal": 4,
+          "enabled": true
+        },
+        {
+          "text": "READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+          "ordinal": 5,
+          "enabled": true
         }
       ],
       "notamDefinitions": [
@@ -24925,13 +24920,8 @@
           "enabled": false
         },
         {
-          "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
-          "ordinal": 2,
-          "enabled": true
-        },
-        {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-          "ordinal": 4,
+          "ordinal": 2,
           "enabled": false
         },
         {
@@ -26981,9 +26971,20 @@
           "variableName": "34L_R",
           "text": "34 L/R",
           "voice": "THREE FOUR LEFT AND RIGHT"
+        },
+        {
+          "variableName": "ADZYS",
+          "text": "ADZYS",
+          "voice": "ADVISORIES"
         }
       ],
-      "airportConditionDefinitions": [],
+      "airportConditionDefinitions": [
+        {
+          "text": "LLWS ADZYS IN EFCT.",
+          "ordinal": 1,
+          "enabled": false
+        }
+      ],
       "notamDefinitions": [
         {
           "text": "RWY ^16L PATTERN ALTITUDE ONE THOUSAND SIX HUNDRED FEET.",
