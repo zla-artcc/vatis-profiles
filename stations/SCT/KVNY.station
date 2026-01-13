@@ -2038,9 +2038,20 @@
       "variableName": "34L_R",
       "text": "34 L/R",
       "voice": "THREE FOUR LEFT AND RIGHT"
+    },
+    {
+      "variableName": "ADZYS",
+      "text": "ADZYS",
+      "voice": "ADVISORIES"
     }
   ],
-  "airportConditionDefinitions": [],
+  "airportConditionDefinitions": [
+    {
+      "text": "LLWS ADZYS IN EFCT.",
+      "ordinal": 1,
+      "enabled": false
+    }
+  ],
   "notamDefinitions": [
     {
       "text": "RWY ^16L PATTERN ALTITUDE ONE THOUSAND SIX HUNDRED FEET.",
