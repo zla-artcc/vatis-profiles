@@ -1997,7 +1997,7 @@
       "id": "ed5132ad-a26f-4d3e-9943-ea87351d6591",
       "name": "CLOSED",
       "airportConditions": "REMARKS. SATA MARIA TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2000 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 118.3. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-      "template": "",
+      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false,
         "textUrl": "",

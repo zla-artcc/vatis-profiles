@@ -1994,9 +1994,15 @@
       "id": "13b9b01f-ec02-4912-a2cf-d3791d3e1d22",
       "name": "CLOSED",
       "airportConditions": "REMARKS. EDWARDS TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2200 LOCAL TIME MONDAY THROUGH FRIDAY, 0600 TO 1200 LOCAL TIME SATURDAY. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 123.4. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
+      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     }
   ],
