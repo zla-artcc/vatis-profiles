@@ -2009,7 +2009,7 @@
       "id": "09088dd3-8dd5-4734-9b95-b83aa78ade1d",
       "name": "CLOSED",
       "airportConditions": "REMARKS. MONTGOMERY TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2100 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 119.2. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-      "template": "",
+      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false,
         "textUrl": "",

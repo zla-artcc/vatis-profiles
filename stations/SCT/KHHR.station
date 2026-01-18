@@ -2012,7 +2012,7 @@
       "id": "3561da7e-9dd0-452d-b89c-5d5f99babf61",
       "name": "CLOSED",
       "airportConditions": "REMARKS. HAWTHORNE TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2200 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 120.1. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-      "template": "",
+      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false,
         "textUrl": "",
