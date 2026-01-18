@@ -2,7 +2,7 @@
   "name": "Las Vegas TRACON (L30)",
   "id": "935bca6d-a174-4aa9-bb41-27f99533e86c",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-L30.json",
-  "updateSerial": 2026011300,
+  "updateSerial": 2026011800,
   "stations": [
     {
       "ordinal": 99,
@@ -2020,7 +2020,8 @@
           "ordinal": 3,
           "name": "CLOSED",
           "airportConditions": "REMARKS. HENDERSON TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2000 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 125.1. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-          "template": "",
+          "notams": "",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -6162,7 +6163,7 @@
           "id": "08816fff-31e3-4d1d-9f83-d1f51681fc03",
           "name": "CLOSED (OCT-MAR)",
           "airportConditions": "REMARKS. NORTH LAS VEGAS TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2000 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 125.7. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -6177,7 +6178,7 @@
           "id": "53ae06fc-0ffb-4ad8-9718-1beadfdca5b2",
           "name": "CLOSED (APR-SEP)",
           "airportConditions": "REMARKS. NORTH LAS VEGAS TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2100 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 125.7. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",

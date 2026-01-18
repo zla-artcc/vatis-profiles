@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2026011300,
+  "updateSerial": 2026011800,
   "stations": [
     {
       "ordinal": 99,
@@ -6124,7 +6124,7 @@
           "id": "3561da7e-9dd0-452d-b89c-5d5f99babf61",
           "name": "CLOSED",
           "airportConditions": "REMARKS. HAWTHORNE TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2200 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 120.1. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-          "template": "",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -12415,7 +12415,7 @@
           "id": "09088dd3-8dd5-4734-9b95-b83aa78ade1d",
           "name": "CLOSED",
           "airportConditions": "REMARKS. MONTGOMERY TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2100 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 119.2. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-          "template": "",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -29007,9 +29007,15 @@
           "ordinal": 3,
           "name": "CLOSED",
           "airportConditions": "REMARKS. WHITEMAN TOWER HOURS OF OPERATION ARE FROM 0800 LOCAL TIME TO 2000 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 120.1. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
+          "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
