@@ -1997,9 +1997,15 @@
       "ordinal": 3,
       "name": "CLOSED",
       "airportConditions": "REMARKS. WHITEMAN TOWER HOURS OF OPERATION ARE FROM 0800 LOCAL TIME TO 2000 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 120.1. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS]",
+      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
-        "enabled": false
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
       }
     }
   ],
