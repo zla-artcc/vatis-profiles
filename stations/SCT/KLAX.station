@@ -1964,25 +1964,8 @@
   },
   "presets": [
     {
-      "id": "1c5dd589-4e4f-49d5-8c04-04a9a5291c68",
-      "ordinal": 1,
-      "name": "WEST - SIMUL INST AND VISUAL",
-      "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 24R AND ^25L APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG, AND SIMUL APCHS IN PROG BTWN +LAX AND +HHR. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
-      "notams": "",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
-      "externalGenerator": {
-        "enabled": false,
-        "textUrl": "https://datis.clowd.io/klax",
-        "voiceUrl": "https://datis.clowd.io/klax",
-        "arrival": "24R, 25L",
-        "departure": "25R, 24L",
-        "approaches": "",
-        "remarks": ""
-      }
-    },
-    {
       "id": "ad47e047-c7df-420b-bf13-0b4d93587ba6",
-      "ordinal": 2,
+      "ordinal": 1,
       "name": "WEST - INST AND VISUAL",
       "airportConditions": "INST APCHS AND RNAV RNP APCHS RY 24R AND 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
       "notams": "",
@@ -1999,9 +1982,26 @@
     },
     {
       "id": "d6990d0d-8f5c-4aeb-82ca-9009a09de41c",
-      "ordinal": 3,
+      "ordinal": 2,
       "name": "WEST - SIMUL INST",
       "airportConditions": "SIMUL INST APCHS AND @RNAV RNP RWYS 24R AND ^25L APCHS, AND SIMUL APCHS IN PROG BTWN +LAX AND +HHR, SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+      "notams": "",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "https://datis.clowd.io/klax",
+        "voiceUrl": "https://datis.clowd.io/klax",
+        "arrival": "24R, 25L",
+        "departure": "25R, 24L",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "1c5dd589-4e4f-49d5-8c04-04a9a5291c68",
+      "ordinal": 3,
+      "name": "WEST - SIMUL INST AND VISUAL",
+      "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 24R AND ^25L APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG, AND SIMUL APCHS IN PROG BTWN +LAX AND +HHR. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
       "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -2018,7 +2018,7 @@
       "id": "f75663e4-6629-41fa-8bec-ecd085d118a5",
       "ordinal": 4,
       "name": "EAST - INST AND VISUAL",
-      "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 6L AND ^7R APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL INSTR DEPARTURES IN PROG RWYS 6 AND 7.",
+      "airportConditions": "INST APCHS AND RNAV RNP RWYS 6L AND ^7R APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL INSTR DEPARTURES IN PROG RWYS 6 AND 7.",
       "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -2049,10 +2049,27 @@
       }
     },
     {
-      "id": "0c5033c0-fec1-4bd6-880f-d3b124f4785c",
+      "id": "ecbfc1f9-795e-426e-b245-fb2e242a59f0",
       "ordinal": 5,
-      "name": "OVER-OCEAN - INST AND VISUAL",
-      "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 6R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
+      "name": "EAST - SIMUL INST AND VISUAL",
+      "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 6L AND ^7R APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. SIMUL INSTR DEPARTURES IN PROG RWYS 6 AND 7.",
+      "notams": "",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "https://datis.clowd.io/klax",
+        "voiceUrl": "https://datis.clowd.io/klax",
+        "arrival": "6L, 7R",
+        "departure": "6R, 7L",
+        "approaches": "",
+        "remarks": ""
+      }
+    },
+    {
+      "id": "207a3dde-7bc4-4a17-a42b-9a88c7f47fe3",
+      "ordinal": 7,
+      "name": "OVER-OCEAN - INST",
+      "airportConditions": "INST APCHS AND @RNAV RNP APCHS ^6R, OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
       "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -2066,10 +2083,10 @@
       }
     },
     {
-      "id": "207a3dde-7bc4-4a17-a42b-9a88c7f47fe3",
-      "ordinal": 7,
-      "name": "OVER-OCEAN - INST",
-      "airportConditions": "INST APCHS AND @RNAV RNP APCHS ^6R, OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
+      "id": "0c5033c0-fec1-4bd6-880f-d3b124f4785c",
+      "ordinal": 8,
+      "name": "OVER-OCEAN - INST AND VISUAL",
+      "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 6R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
       "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -2148,6 +2165,11 @@
       "variableName": "OPP",
       "text": "OPP",
       "voice": "OPPOSITE"
+    },
+    {
+      "variableName": "TFC",
+      "text": "TFC",
+      "voice": "TRAFFIC"
     }
   ],
   "airportConditionDefinitions": [
@@ -2164,7 +2186,7 @@
     {
       "text": "CALL FOR PUSH ONTO TWYS A, *C, *D, *K, *L, *M. PUSH AND START AT PILOTS DISCRETION ON RAMPS AND ALLEYWAYS.",
       "ordinal": 3,
-      "enabled": false
+      "enabled": true
     },
     {
       "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
