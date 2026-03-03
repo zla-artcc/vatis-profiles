@@ -22,12 +22,13 @@ PROFILES = {
 #    "./vATIS-Profile-DEV-JCF.json": ['JCF'],
 #    "./vATIS-Profile-DEV-L30.json": ['L30'],
 #    "./vATIS-Profile-DEV-SBA.json": ['SBA'],
-    "./vATIS-Profile-DEV-SCT.json": ['SCT'],
-    "./vATIS-Profile-DEV-ZLA.json": ['KBFL', 'KBUR', 'KLAS', 'KLAX', 'KONT', 'KPSP', 'KSAN', 'KSBA', 'KSNA',
-                                 'KVNY', 'KPOC'],
+#    "./vATIS-Profile-DEV-SCT.json": ['SCT'],
+#    "./vATIS-Profile-DEV-ZLA.json": ['KBFL', 'KBUR', 'KLAS', 'KLAX', 'KONT', 'KPSP', 'KSAN', 'KSBA', 'KSNA',
+#                                 'KVNY', 'KPOC'],
 #    "./vATIS-Profile-DEV-ZLA-2.json": ['CTR'],
 #    "./vATIS-Profile-DEV-D-ATIS.json": ['KBUR', 'KLAS', 'KLAX', 'KONT', 'KSAN', 'KSNA', 'KPOC',
 #                                 'KVNY']
+    "./vATIS-Profile-ZLA-CRAZY.json": ['CTR', 'L30', 'SCT', 'SBA', 'JCF'],
 }
 
 # Exclude these airports from all profiles.
