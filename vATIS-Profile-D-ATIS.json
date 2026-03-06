@@ -1,7 +1,7 @@
 {
   "name": "ZLA Real D-ATIS",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-D-ATIS.json",
-  "updateSerial": 2026030300,
+  "updateSerial": 2026030600,
   "stations": [
     {
       "ordinal": 1,
@@ -2078,7 +2078,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
@@ -4190,7 +4190,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 6,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -6419,7 +6419,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
@@ -8500,7 +8500,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
@@ -10588,7 +10588,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -12730,7 +12730,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         }
       ]
     },

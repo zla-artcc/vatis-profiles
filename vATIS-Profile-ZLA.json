@@ -2,7 +2,7 @@
   "name": "Los Angeles ARTCC (ZLA)",
   "id": "e1126dde-5a6a-40dd-ad5c-3f594f8c0f82",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA.json",
-  "updateSerial": 2026030300,
+  "updateSerial": 2026030600,
   "stations": [
     {
       "ordinal": 98,
@@ -4159,7 +4159,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
@@ -8401,7 +8401,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 6,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -10630,7 +10630,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
@@ -12711,7 +12711,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
@@ -16889,7 +16889,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -19031,7 +19031,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
