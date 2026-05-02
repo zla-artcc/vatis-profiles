@@ -2037,5 +2037,11 @@
     }
   ],
   "airportConditionDefinitions": [],
-  "notamDefinitions": []
+  "notamDefinitions": [
+    {
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+      "ordinal": 1,
+      "enabled": true
+    }
+  ]
 }
