@@ -2,7 +2,7 @@
   "name": "Los Angeles ARTCC (ZLA)",
   "id": "e1126dde-5a6a-40dd-ad5c-3f594f8c0f82",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA.json",
-  "updateSerial": 2026050300,
+  "updateSerial": 2026051500,
   "stations": [
     {
       "ordinal": 98,
@@ -8295,7 +8295,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
@@ -12601,7 +12601,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
@@ -14684,7 +14684,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
@@ -16777,7 +16777,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
@@ -18855,7 +18855,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "Default",
-        "speechRate": 200
+        "speechRate": 220
       },
       "presets": [
         {
@@ -18975,11 +18975,6 @@
           "voice": "OVER"
         },
         {
-          "variableName": "A",
-          "text": "A",
-          "voice": "ALPHA"
-        },
-        {
           "variableName": "H",
           "text": "H",
           "voice": "HOTEL"
@@ -18997,12 +18992,12 @@
           "enabled": true
         },
         {
-          "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
+          "text": "CAUTION, SIMULTANEOUS OPS TO CLOSELY SPACED PARALLEL RWYS.",
           "ordinal": 2,
           "enabled": true
         },
         {
-          "text": "ACFT SOUTH OF @H TXG ON @A BE ADZD RY20L DEPTS MK IMDT SE TRN OVR @A.",
+          "text": "ACFT SOUTH OF *H TXG ON *A BE ADZD RY20L DEPTS MK IMDT SE TRN OVR *A.",
           "ordinal": 3,
           "enabled": false
         },
@@ -20997,7 +20992,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
@@ -21093,7 +21088,7 @@
         {
           "text": "RWY ^16L PATTERN ALTITUDE ONE THOUSAND SIX HUNDRED FEET.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "RWY ^34R PATTERN ALTITUDE ONE THOUSAND SIX HUNDRED FEET.",
@@ -21108,7 +21103,7 @@
         {
           "text": "ENSURE MODE C IS TURNED ON PRIOR TO TAXI ON MOVEMENT AREAS.",
           "ordinal": 4,
-          "enabled": true
+          "enabled": false
         }
       ]
     }
