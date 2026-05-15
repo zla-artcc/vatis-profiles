@@ -1,5 +1,5 @@
 {
-  "ordinal": 99,
+  "ordinal": 8,
   "identifier": "KPSP",
   "name": "Palm Springs",
   "atisType": "Combined",
@@ -1957,7 +1957,7 @@
   "atisVoice": {
     "useTextToSpeech": true,
     "voice": "Default",
-    "speechRate": 180
+    "speechRate": 220
   },
   "presets": [
     {

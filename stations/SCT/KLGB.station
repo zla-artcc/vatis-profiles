@@ -1,5 +1,5 @@
 {
-  "ordinal": 99,
+  "ordinal": 5,
   "identifier": "KLGB",
   "name": "Long Beach",
   "atisType": "Combined",
@@ -1960,7 +1960,7 @@
   "atisVoice": {
     "useTextToSpeech": true,
     "voice": "Default",
-    "speechRate": 180
+    "speechRate": 220
   },
   "presets": [
     {

@@ -1,5 +1,5 @@
 {
-  "ordinal": 99,
+  "ordinal": 9,
   "identifier": "KSEE",
   "name": "Gillespie",
   "atisType": "Combined",
@@ -1952,12 +1952,12 @@
   "notamsBeforeFreeText": false,
   "airportConditionsBeforeFreeText": false,
   "frequency": 125450000,
-  "idsEndpoint": "",
+  "idsEndpoint": "https://ids.laartcc.org/remote/atis",
   "useDecimalTerminology": false,
   "atisVoice": {
     "useTextToSpeech": true,
     "voice": "Default",
-    "speechRate": 180
+    "speechRate": 220
   },
   "presets": [
     {

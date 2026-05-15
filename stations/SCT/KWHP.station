@@ -1,5 +1,5 @@
 {
-  "ordinal": 99,
+  "ordinal": 13,
   "identifier": "KWHP",
   "name": "Whiteman",
   "atisType": "Combined",
@@ -1952,7 +1952,7 @@
   "notamsBeforeFreeText": false,
   "airportConditionsBeforeFreeText": true,
   "frequency": 132100000,
-  "idsEndpoint": "",
+  "idsEndpoint": "https://ids.laartcc.org/remote/atis",
   "useDecimalTerminology": false,
   "atisVoice": {
     "useTextToSpeech": true,
