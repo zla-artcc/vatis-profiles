@@ -1952,19 +1952,19 @@
   "notamsBeforeFreeText": false,
   "airportConditionsBeforeFreeText": false,
   "frequency": 119150000,
-  "idsEndpoint": "",
+  "idsEndpoint": "https://ids.laartcc.org/remote/atis",
   "useDecimalTerminology": false,
   "atisVoice": {
     "useTextToSpeech": true,
     "voice": "Default",
-    "speechRate": 210
+    "speechRate": 220
   },
   "presets": [
     {
       "id": "4e0a80cc-7584-4517-86c7-d69ed542de80",
       "ordinal": 1,
       "name": "WEST",
-      "airportConditions": "VOR-*A, @RNAV, VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWY 21.",
+      "airportConditions": "VOR-*A, RNAV, VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWY 21.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -1980,7 +1980,7 @@
       "id": "6cbf2428-fb3f-4cff-b1e4-d91ab32c3b9f",
       "ordinal": 2,
       "name": "WEST IMC",
-      "airportConditions": "VOR-A, @RNAV APPROACHES IN USE. LANDING AND DEPARTING RWY 21.",
+      "airportConditions": "VOR-A, RNAV APPROACHES IN USE. LANDING AND DEPARTING RWY 21.",
       "notams": "MINIROUTE CLOSED.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -1997,7 +1997,7 @@
       "id": "93b46738-848a-454a-b498-451ea0b57a8f",
       "ordinal": 2,
       "name": "EAST",
-      "airportConditions": "@RNAV, VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWY 3.",
+      "airportConditions": "RNAV, VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWY 3.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -2013,7 +2013,7 @@
       "id": "911abd2b-99e2-4b9d-ac03-feca04c2dca2",
       "ordinal": 4,
       "name": "EAST IMC",
-      "airportConditions": "@RNAV APPROACHES IN USE. LANDING AND DEPARTING RWY 3.",
+      "airportConditions": "RNAV APPROACHES IN USE. LANDING AND DEPARTING RWY 3.",
       "notams": "MINIROUTE CLOSED.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {

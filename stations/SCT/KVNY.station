@@ -1960,7 +1960,7 @@
   "atisVoice": {
     "useTextToSpeech": true,
     "voice": "Default",
-    "speechRate": 180
+    "speechRate": 220
   },
   "presets": [
     {
@@ -2056,7 +2056,7 @@
     {
       "text": "RWY ^16L PATTERN ALTITUDE ONE THOUSAND SIX HUNDRED FEET.",
       "ordinal": 1,
-      "enabled": true
+      "enabled": false
     },
     {
       "text": "RWY ^34R PATTERN ALTITUDE ONE THOUSAND SIX HUNDRED FEET.",
@@ -2071,7 +2071,7 @@
     {
       "text": "ENSURE MODE C IS TURNED ON PRIOR TO TAXI ON MOVEMENT AREAS.",
       "ordinal": 4,
-      "enabled": true
+      "enabled": false
     }
   ]
 }

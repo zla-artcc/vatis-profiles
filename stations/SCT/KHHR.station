@@ -1955,12 +1955,12 @@
   "notamsBeforeFreeText": false,
   "airportConditionsBeforeFreeText": false,
   "frequency": 118400000,
-  "idsEndpoint": "",
+  "idsEndpoint": "https://ids.laartcc.org/remote/atis",
   "useDecimalTerminology": false,
   "atisVoice": {
     "useTextToSpeech": true,
     "voice": "Default",
-    "speechRate": 180
+    "speechRate": 220
   },
   "presets": [
     {

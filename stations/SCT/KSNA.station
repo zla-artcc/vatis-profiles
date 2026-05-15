@@ -1960,7 +1960,7 @@
   "atisVoice": {
     "useTextToSpeech": true,
     "voice": "Default",
-    "speechRate": 200
+    "speechRate": 220
   },
   "presets": [
     {
@@ -2080,11 +2080,6 @@
       "voice": "OVER"
     },
     {
-      "variableName": "A",
-      "text": "A",
-      "voice": "ALPHA"
-    },
-    {
       "variableName": "H",
       "text": "H",
       "voice": "HOTEL"
@@ -2102,12 +2097,12 @@
       "enabled": true
     },
     {
-      "text": "CAUTION, SIMULTANEOUS @OPS TO CLOSELY SPACED PARALLEL RWYS.",
+      "text": "CAUTION, SIMULTANEOUS OPS TO CLOSELY SPACED PARALLEL RWYS.",
       "ordinal": 2,
       "enabled": true
     },
     {
-      "text": "ACFT SOUTH OF @H TXG ON @A BE ADZD RY20L DEPTS MK IMDT SE TRN OVR @A.",
+      "text": "ACFT SOUTH OF *H TXG ON *A BE ADZD RY20L DEPTS MK IMDT SE TRN OVR *A.",
       "ordinal": 3,
       "enabled": false
     },
