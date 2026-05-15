@@ -2061,7 +2061,7 @@
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 5,
-      "enabled": false
+      "enabled": true
     },
     {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",

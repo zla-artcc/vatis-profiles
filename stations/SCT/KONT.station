@@ -2075,7 +2075,7 @@
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 3,
-      "enabled": false
+      "enabled": true
     },
     {
       "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF +ONT.",

@@ -2050,7 +2050,7 @@
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 1,
-      "enabled": false
+      "enabled": true
     },
     {
       "text": "NO OFFSHORE VFR TRANSITIONS.",
