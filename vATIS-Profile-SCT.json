@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2026051600,
+  "updateSerial": 2026060100,
   "stations": [
     {
       "ordinal": 99,
@@ -8327,38 +8327,53 @@
       ],
       "airportConditionDefinitions": [
         {
-          "text": "CTC L A GC ON 121.75 FOR PUSH OR TAXI ON A.",
+          "text": "CTC L A GC ON 121.75 FOR PUSH OR TAXI ON *A.",
           "ordinal": 1,
           "enabled": false
         },
         {
-          "text": "CTC CONTROLLER ONLY FOR PUSH ONTO TWY.",
+          "text": "CTC L A GC FOR ALL PUSHBACKS.",
           "ordinal": 2,
           "enabled": false
         },
         {
-          "text": "CALL FOR PUSH ONTO TWYS A, *C, *D, *K, *L, *M. PUSH AND START AT PILOTS DISCRETION ON RAMPS AND ALLEYWAYS.",
+          "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP.",
           "ordinal": 3,
-          "enabled": true
+          "enabled": false
         },
         {
-          "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP. PUSH AND START AT PILOTS DISCRETION IN ALLEYWAYS.",
           "ordinal": 4,
           "enabled": true
         },
         {
-          "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
-          "ordinal": 5,
-          "enabled": true
-        },
-        {
-          "text": "CAUTION. RUNWAY INCURSIONS HAVE OCCURRED AT TAXIWAYS V, W, AND Y NEAR RWY 24L.",
+          "text": "CITY RAMP COMBINED ON 121.4.",
           "ordinal": 5,
           "enabled": false
         },
         {
-          "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
+          "ordinal": 6,
+          "enabled": true
+        },
+        {
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 7,
+          "enabled": false
+        },
+        {
+          "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "ordinal": 8,
+          "enabled": false
+        },
+        {
+          "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "ordinal": 9,
+          "enabled": false
+        },
+        {
+          "text": "USE CAUTION WHEN EXITING RY24R AT TWY V, *W, AND *Y, TO HOLD SHORT OF RY24L. MULTIPLE RUNWAY INCURSIONS HAVE OCCURRED.",
+          "ordinal": 10,
           "enabled": true
         }
       ],
