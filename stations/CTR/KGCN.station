@@ -1910,7 +1910,7 @@
   "frequency": 124300000,
   "useDecimalTerminology": false,
   "atisVoice": {
-    "useTextToSpeech": true,
+    "useTextToSpeech": false,
     "voice": "Default",
     "speechRate": 180
   },
