@@ -1,7 +1,7 @@
 {
   "name": "ZLA Non-TRACON Fields",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-2.json",
-  "updateSerial": 2026060100,
+  "updateSerial": 2026060900,
   "stations": [
     {
       "ordinal": 98,
@@ -1963,7 +1963,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 200
       },
@@ -3995,7 +3995,7 @@
       "frequency": 124300000,
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -6005,7 +6005,7 @@
       "frequency": 119825000,
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },

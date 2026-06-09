@@ -2,7 +2,7 @@
   "name": "Santa Barbara TRACON (SBA)",
   "id": "f41ff02d-b3c8-4e9c-8898-45f3d7ea3bef",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SBA.json",
-  "updateSerial": 2026060100,
+  "updateSerial": 2026060900,
   "stations": [
     {
       "ordinal": 99,
@@ -4094,7 +4094,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 210
       },
@@ -6115,7 +6115,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -8133,7 +8133,7 @@
       "idsEndpoint": "",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },

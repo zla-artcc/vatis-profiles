@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2026060100,
+  "updateSerial": 2026060900,
   "stations": [
     {
       "ordinal": 99,
@@ -4033,7 +4033,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -6070,7 +6070,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -12404,7 +12404,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -18594,7 +18594,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -22665,7 +22665,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -24691,7 +24691,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -26709,7 +26709,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -32978,7 +32978,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
