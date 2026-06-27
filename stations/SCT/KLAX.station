@@ -2181,7 +2181,7 @@
     {
       "text": "CTC L A GC FOR ALL PUSHBACKS.",
       "ordinal": 2,
-      "enabled": false
+      "enabled": true
     },
     {
       "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP.",
@@ -2191,12 +2191,12 @@
     {
       "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP. PUSH AND START AT PILOTS DISCRETION IN ALLEYWAYS.",
       "ordinal": 4,
-      "enabled": true
+      "enabled": false
     },
     {
       "text": "CITY RAMP COMBINED ON 121.4.",
       "ordinal": 5,
-      "enabled": false
+      "enabled": true
     },
     {
       "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
@@ -2204,9 +2204,9 @@
       "enabled": true
     },
     {
-      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
       "ordinal": 7,
-      "enabled": false
+      "enabled": true
     },
     {
       "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
