@@ -1,7 +1,7 @@
 {
   "name": "ZLA All Stations",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-AIO.json",
-  "updateSerial": 2026060101,
+  "updateSerial": 2026062700,
   "stations": [
     {
       "ordinal": 98,
@@ -1963,7 +1963,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 200
       },
@@ -3995,7 +3995,7 @@
       "frequency": 124300000,
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -6005,7 +6005,7 @@
       "frequency": 119825000,
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -8033,7 +8033,7 @@
       "idsEndpoint": "",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -10000,7 +10000,7 @@
       "frequency": 132225000,
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -11997,7 +11997,7 @@
       "idsEndpoint": "",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -13994,7 +13994,7 @@
       "idsEndpoint": "",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -16021,7 +16021,7 @@
       "idsEndpoint": "",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -18033,7 +18033,7 @@
       "idsEndpoint": "",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -20211,7 +20211,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 4,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "LLWS ADZYS IN EFCT.",
@@ -22197,7 +22197,7 @@
       "idsEndpoint": "",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -26351,7 +26351,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 210
       },
@@ -28372,7 +28372,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 180
       },
@@ -30390,7 +30390,7 @@
       "idsEndpoint": "",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -32510,7 +32510,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 5,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
@@ -34476,7 +34476,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -36513,7 +36513,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -38777,7 +38777,7 @@
         {
           "text": "CTC L A GC FOR ALL PUSHBACKS.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP.",
@@ -38787,12 +38787,12 @@
         {
           "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP. PUSH AND START AT PILOTS DISCRETION IN ALLEYWAYS.",
           "ordinal": 4,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "CITY RAMP COMBINED ON 121.4.",
           "ordinal": 5,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
@@ -38800,9 +38800,9 @@
           "enabled": true
         },
         {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 7,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
@@ -42847,7 +42847,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -45025,7 +45025,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF +ONT.",
@@ -47115,7 +47115,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "NEW RNAV PROCEDURES IN EFFECT. LOAD NEWEST NAVIGATION DATA.",
@@ -49037,7 +49037,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -51169,7 +51169,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 1,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "NO OFFSHORE VFR TRANSITIONS.",
@@ -53108,7 +53108,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -55134,7 +55134,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -57152,7 +57152,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
@@ -59378,7 +59378,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
@@ -63421,7 +63421,7 @@
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
       "atisVoice": {
-        "useTextToSpeech": true,
+        "useTextToSpeech": false,
         "voice": "Default",
         "speechRate": 220
       },
