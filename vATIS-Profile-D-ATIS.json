@@ -1,7 +1,7 @@
 {
   "name": "ZLA Real D-ATIS",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-D-ATIS.json",
-  "updateSerial": 2026062700,
+  "updateSerial": 2026062800,
   "stations": [
     {
       "ordinal": 1,
@@ -2088,7 +2088,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 4,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "LLWS ADZYS IN EFCT.",
@@ -4180,7 +4180,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 5,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
@@ -6372,12 +6372,12 @@
         {
           "text": "CTC L A GC FOR ALL PUSHBACKS.",
           "ordinal": 2,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP. PUSH AND START AT PILOTS DISCRETION IN ALLEYWAYS.",
@@ -6387,7 +6387,7 @@
         {
           "text": "CITY RAMP COMBINED ON 121.4.",
           "ordinal": 5,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
@@ -6397,7 +6397,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 7,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
@@ -8515,7 +8515,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF +ONT.",
@@ -10576,7 +10576,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "NO OFFSHORE VFR TRANSITIONS.",
@@ -12730,7 +12730,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
