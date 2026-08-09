@@ -1,7 +1,7 @@
 {
   "name": "ZLA All Stations",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-AIO.json",
-  "updateSerial": 2026062800,
+  "updateSerial": 2026080900,
   "stations": [
     {
       "ordinal": 98,
@@ -40886,7 +40886,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 1,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
