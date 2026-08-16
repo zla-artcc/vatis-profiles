@@ -1955,7 +1955,7 @@
   "idsEndpoint": "",
   "useDecimalTerminology": false,
   "atisVoice": {
-    "useTextToSpeech": false,
+    "useTextToSpeech": true,
     "voice": "Default",
     "speechRate": 180
   },
