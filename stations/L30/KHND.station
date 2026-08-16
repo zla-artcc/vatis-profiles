@@ -2042,7 +2042,7 @@
   "airportConditionDefinitions": [],
   "notamDefinitions": [
     {
-      "text": "ALL AIRCRAFT REQUIRING ENGINE RUNUP PROCEDURE, COMPLETE  ON THE RAMP.",
+      "text": "ALL AIRCRAFT REQUIRING ENGINE RUNUP PROCEDURE, COMPLETE ON THE RAMP.",
       "ordinal": 1,
       "enabled": true
     }
