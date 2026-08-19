@@ -2068,19 +2068,19 @@
       "enabled": false
     },
     {
-      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 2,
       "enabled": false
     },
     {
-      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF +ONT.",
       "ordinal": 3,
-      "enabled": false
+      "enabled": true
     },
     {
-      "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF +ONT.",
-      "ordinal": 4,
-      "enabled": true
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+      "ordinal": 99,
+      "enabled": false
     }
   ]
 }

@@ -2072,19 +2072,19 @@
       "enabled": false
     },
     {
-      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 2,
       "enabled": false
     },
     {
-      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "text": "NEW RNAV PROCEDURES IN EFFECT. LOAD NEWEST NAVIGATION DATA.",
       "ordinal": 3,
-      "enabled": false
+      "enabled": true
     },
     {
-      "text": "NEW RNAV PROCEDURES IN EFFECT. LOAD NEWEST NAVIGATION DATA.",
-      "ordinal": 4,
-      "enabled": true
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+      "ordinal": 99,
+      "enabled": false
     }
   ]
 }
