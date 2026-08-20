@@ -2129,8 +2129,8 @@
       "enabled": false
     },
     {
-      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-      "ordinal": 3,
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+      "ordinal": 99,
       "enabled": false
     }
   ]

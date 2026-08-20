@@ -2060,7 +2060,7 @@
     },
     {
       "text": "RWY ^34R PATTERN ALTITUDE ONE THOUSAND SIX HUNDRED FEET.",
-      "ordinal": 1,
+      "ordinal": 2,
       "enabled": false
     },
     {
@@ -2071,6 +2071,11 @@
     {
       "text": "ENSURE MODE C IS TURNED ON PRIOR TO TAXI ON MOVEMENT AREAS.",
       "ordinal": 4,
+      "enabled": false
+    },
+    {
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+      "ordinal": 99,
       "enabled": false
     }
   ]
