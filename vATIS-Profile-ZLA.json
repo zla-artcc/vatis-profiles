@@ -2,7 +2,7 @@
   "name": "Los Angeles ARTCC (ZLA)",
   "id": "e1126dde-5a6a-40dd-ad5c-3f594f8c0f82",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA.json",
-  "updateSerial": 2026081600,
+  "updateSerial": 2026082000,
   "stations": [
     {
       "ordinal": 98,
@@ -4197,8 +4197,8 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-          "ordinal": 3,
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+          "ordinal": 99,
           "enabled": false
         },
         {
@@ -6360,6 +6360,11 @@
           "text": "CHECK AIRPORT DIAGRAM, TWY NAMES HAVE CHANGED AND MAY NOT MATCH SCENERY.",
           "ordinal": 2,
           "enabled": true
+        },
+        {
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+          "ordinal": 99,
+          "enabled": false
         }
       ]
     },
@@ -8429,8 +8434,8 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-          "ordinal": 6,
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+          "ordinal": 99,
           "enabled": false
         }
       ]
@@ -12754,19 +12759,19 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
           "enabled": false
         },
         {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+          "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF +ONT.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
-          "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF +ONT.",
-          "ordinal": 4,
-          "enabled": true
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+          "ordinal": 99,
+          "enabled": false
         }
       ]
     },
@@ -14844,19 +14849,19 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
           "enabled": false
         },
         {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+          "text": "NEW RNAV PROCEDURES IN EFFECT. LOAD NEWEST NAVIGATION DATA.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
-          "text": "NEW RNAV PROCEDURES IN EFFECT. LOAD NEWEST NAVIGATION DATA.",
-          "ordinal": 4,
-          "enabled": true
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+          "ordinal": 99,
+          "enabled": false
         }
       ]
     },
@@ -16932,8 +16937,8 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-          "ordinal": 2,
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+          "ordinal": 99,
           "enabled": false
         }
       ]
@@ -19069,8 +19074,8 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-          "ordinal": 3,
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+          "ordinal": 99,
           "enabled": false
         }
       ]
@@ -21137,7 +21142,7 @@
         },
         {
           "text": "RWY ^34R PATTERN ALTITUDE ONE THOUSAND SIX HUNDRED FEET.",
-          "ordinal": 1,
+          "ordinal": 2,
           "enabled": false
         },
         {
@@ -21148,6 +21153,11 @@
         {
           "text": "ENSURE MODE C IS TURNED ON PRIOR TO TAXI ON MOVEMENT AREAS.",
           "ordinal": 4,
+          "enabled": false
+        },
+        {
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+          "ordinal": 99,
           "enabled": false
         }
       ]

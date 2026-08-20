@@ -2,7 +2,7 @@
   "name": "Las Vegas TRACON (L30)",
   "id": "935bca6d-a174-4aa9-bb41-27f99533e86c",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-L30.json",
-  "updateSerial": 2026081600,
+  "updateSerial": 2026082000,
   "stations": [
     {
       "ordinal": 99,
@@ -4167,8 +4167,8 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-          "ordinal": 3,
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+          "ordinal": 99,
           "enabled": false
         },
         {
