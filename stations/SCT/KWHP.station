@@ -1955,7 +1955,7 @@
   "idsEndpoint": "https://ids.laartcc.org/remote/atis",
   "useDecimalTerminology": false,
   "atisVoice": {
-    "useTextToSpeech": false,
+    "useTextToSpeech": true,
     "voice": "Default",
     "speechRate": 220
   },
@@ -2018,23 +2018,28 @@
   ],
   "airportConditionDefinitions": [
     {
-      "text": "RWY 12 IN USE.",
+      "text": "VOR-*A RWY 12 APP IN USE.",
       "ordinal": 1,
       "enabled": true
     },
     {
-      "text": "RWY 30 IN USE.",
+      "text": "VOR-*A RW 30 APP IN USE.",
       "ordinal": 2,
+      "enabled": false
+    },
+    {
+      "text": "VIS APP IN USE.",
+      "ordinal": 3,
       "enabled": false
     },
     {
       "text": "RNAV RWY 12 AND VOR APPROACHES IN USE",
-      "ordinal": 2,
+      "ordinal": 4,
       "enabled": false
     },
     {
       "text": "VOR APPROACH IN USE.",
-      "ordinal": 4,
+      "ordinal": 5,
       "enabled": false
     }
   ],
