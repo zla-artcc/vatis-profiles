@@ -1953,7 +1953,7 @@
     }
   },
   "notamsBeforeFreeText": true,
-  "airportConditionsBeforeFreeText": false,
+  "airportConditionsBeforeFreeText": true,
   "frequency": 132650000,
   "idsEndpoint": "https://ids.laartcc.org/remote/atis",
   "useDecimalTerminology": false,
@@ -1967,7 +1967,7 @@
       "id": "20ac6dd7-2eab-4776-b8a2-8ff1964cc31b",
       "ordinal": 1,
       "name": "25/15",
-      "airportConditions": "VOR VIS APCH IN USE RWY 25 AND ^15R.",
+      "airportConditions": "LNDG AND DEPG RWY 25, 15_LR.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -1984,7 +1984,7 @@
       "id": "688e3e37-c832-4652-8b7e-aeda2cb65948",
       "ordinal": 1,
       "name": "25/15 (IMC)",
-      "airportConditions": "VOR RWY 25 APPR IN USE.",
+      "airportConditions": "LNDG AND DEPG RWY 25.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2001,7 +2001,7 @@
       "id": "2802dd50-1d05-41e5-b4da-39f2acee5646",
       "ordinal": 3,
       "name": "25/33",
-      "airportConditions": "VOR VIS APCH IN USE RWY 25 AND ^33L.",
+      "airportConditions": "LNDG AND DEPG RWY 25 AND 33L_R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2018,7 +2018,7 @@
       "id": "9c02de1b-90d7-42b1-8478-e2efd6755a0d",
       "ordinal": 4,
       "name": "7/15",
-      "airportConditions": "ILS AND @RNAV RWY 7, VIS ^15R APPS IN USE.",
+      "airportConditions": "LNDG AND DEPG RWY 7, 15_LR.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2035,7 +2035,7 @@
       "id": "acb28145-27f6-4089-9451-46c1049b7f67",
       "ordinal": 5,
       "name": "7/33",
-      "airportConditions": "ILS AND @RNAV RWY 7, VIS ^33L APPS IN USE.",
+      "airportConditions": "LNDG AND DEPG RWY 7, 33L_R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2052,7 +2052,7 @@
       "id": "6730efa9-1b04-40b8-8fe8-dd31b3c72ec2",
       "ordinal": 6,
       "name": "7 (IMC)",
-      "airportConditions": "ILS, RNAV RWY 7 APPS IN USE.",
+      "airportConditions": "LNDG AND DEPG RWY 7.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2084,37 +2084,43 @@
   ],
   "contractions": [
     {
-      "variableName": "VOR",
-      "text": "VOR",
-      "voice": "V O R"
-    },
-    {
       "variableName": "RNAV",
       "text": "RNAV",
       "voice": "R NAV"
     },
     {
-      "variableName": "15L",
-      "text": "15L",
-      "voice": "ONE FIVE LEFT"
+      "variableName": "15_LR",
+      "text": "15L/R",
+      "voice": "ONE FIVE LEFT AND RIGHT"
     },
     {
-      "variableName": "15R",
-      "text": "15R",
-      "voice": "ONE FIVE RIGHT"
-    },
-    {
-      "variableName": "33L",
-      "text": "33L",
-      "voice": "THREE THREE LEFT"
-    },
-    {
-      "variableName": "33R",
-      "text": "33R",
-      "voice": "THREE THREE RIGHT"
+      "variableName": "33L_R",
+      "text": "33L/R",
+      "voice": "THREE THREE LEFT AND RIGHT"
     }
   ],
-  "airportConditionDefinitions": [],
+  "airportConditionDefinitions": [
+    {
+      "text": "VOR RWY 25 AND VIS APCHS ARE IN USE.",
+      "ordinal": 1,
+      "enabled": true
+    },
+    {
+      "text": "VOR RWY 25 APCH IN USE.",
+      "ordinal": 2,
+      "enabled": false
+    },
+    {
+      "text": "ILS AND @RNAV RWY 7, VIS ^15R APPS IN USE.",
+      "ordinal": 3,
+      "enabled": false
+    },
+    {
+      "text": "ILS AND @RNAV RWY 7 APCH IN USE.",
+      "ordinal": 4,
+      "enabled": false
+    }
+  ],
   "notamDefinitions": [
     {
       "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
