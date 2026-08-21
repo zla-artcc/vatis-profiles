@@ -1,7 +1,7 @@
 {
   "name": "ZLA Real D-ATIS",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-D-ATIS.json",
-  "updateSerial": 2026082000,
+  "updateSerial": 2026082100,
   "stations": [
     {
       "ordinal": 1,
@@ -2118,7 +2118,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
@@ -4120,7 +4120,7 @@
         {
           "id": "014b4143-b8a6-45e4-b3d7-3ffa0045c763",
           "name": "NORMAL (8/15)",
-          "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARR AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARVNG AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -4220,7 +4220,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -6464,12 +6464,12 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 4,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -8555,7 +8555,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -10633,7 +10633,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -12770,7 +12770,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -14729,7 +14729,7 @@
         }
       },
       "notamsBeforeFreeText": true,
-      "airportConditionsBeforeFreeText": false,
+      "airportConditionsBeforeFreeText": true,
       "frequency": 127550000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
@@ -14742,24 +14742,8 @@
         {
           "id": "b9e9fd9e-cb2b-45b9-8498-dca515aedbca",
           "name": "SOUTH (16)",
-          "airportConditions": "@ILS_Z RWY 16R APCH IN USE, VISUAL APCH IN USE. LDG AND DEPTG RWYS 16 LEFT AND RIGHT.",
-          "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
-          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
-          "externalGenerator": {
-            "enabled": false,
-            "textUrl": "",
-            "voiceUrl": "",
-            "arrival": "",
-            "departure": "",
-            "approaches": "",
-            "remarks": ""
-          }
-        },
-        {
-          "id": "e00b7ede-252a-4fb1-9906-3cae10d306ba",
-          "name": "SOUTH - IMC (16)",
-          "airportConditions": "@ILS_Z RWY 16R APCH IN USE. LNDG AND DEPTG RWYS 16L, AND ^16R.",
-          "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "LDG AND DEPG RWY 16L_R.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -14774,8 +14758,8 @@
         {
           "id": "33ddc6f1-907e-451d-907c-5f850091f5c5",
           "name": "NORTH (34)",
-          "airportConditions": "VISUAL APCH IN USE. LNDG AND DEPG RWY 34L_R.",
-          "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "LNDG AND DEPG RWY 34L_R.",
+          "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -14791,7 +14775,7 @@
           "id": "60aa3783-6c0e-4a08-a5a2-602fb891055b",
           "name": "CLOSED",
           "airportConditions": "REMARKS. VAN NUYS TOWER HOURS OF OPERATION ARE FROM 0600 LOCAL TIME TO 2245 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 119.3. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
-          "notams": "",
+          "notams": "RWY 16L, ^34R IS UNLIT AND NOT AVAILABLE FOR USE WHEN THE TOWER IS CLOSED. NOISE ABATEMENT PROCEDURES ARE IN EFFECT.",
           "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
@@ -14806,11 +14790,6 @@
       ],
       "contractions": [
         {
-          "variableName": "ILS_Z",
-          "text": "ILS-Z",
-          "voice": "ILS ZULU"
-        },
-        {
           "variableName": "34L_R",
           "text": "34 L/R",
           "voice": "THREE FOUR LEFT AND RIGHT"
@@ -14819,12 +14798,32 @@
           "variableName": "ADZYS",
           "text": "ADZYS",
           "voice": "ADVISORIES"
+        },
+        {
+          "variableName": "16L_R",
+          "text": "16 L/R",
+          "voice": "ONE SIX LEFT AND RIGHT"
         }
       ],
       "airportConditionDefinitions": [
         {
-          "text": "LLWS ADZYS IN EFCT.",
+          "text": "ILS-*Z RWY 16R APCH IN USE, VISUAL APCH IN USE.",
           "ordinal": 1,
+          "enabled": true
+        },
+        {
+          "text": "ILS-*Z RWY 16R APCH IN USE.",
+          "ordinal": 2,
+          "enabled": false
+        },
+        {
+          "text": "VISUAL APCHS IN USE.",
+          "ordinal": 3,
+          "enabled": false
+        },
+        {
+          "text": "VOR-*A APCH IN USE.",
+          "ordinal": 4,
           "enabled": false
         }
       ],
@@ -14852,7 +14851,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "enabled": true
         }
       ]
     }
