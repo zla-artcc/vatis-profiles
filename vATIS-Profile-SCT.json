@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2026082100,
+  "updateSerial": 2026082200,
   "stations": [
     {
       "ordinal": 99,
@@ -2072,7 +2072,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -8391,12 +8391,12 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 3,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 4,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -10443,7 +10443,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -14587,7 +14587,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -16677,7 +16677,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -20748,7 +20748,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -28940,7 +28940,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
@@ -31021,7 +31021,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": true
+          "enabled": false
         }
       ]
     },
