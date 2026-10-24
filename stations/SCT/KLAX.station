@@ -2469,6 +2469,16 @@
       "variableName": "TFC",
       "text": "TFC",
       "voice": "TRAFFIC"
+    },
+    {
+      "variableName": "RY24R",
+      "text": "RY24R",
+      "voice": "RUNWAY TWO FOUR RIGHT"
+    },
+    {
+      "variableName": "RY24L",
+      "text": "RY24L",
+      "voice": "RUNWAY TWO FOUR LEFT"
     }
   ],
   "patterns": [
@@ -2514,7 +2524,7 @@
     {
       "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
       "ordinal": 6,
-      "enabled": true
+      "enabled": false
     },
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
@@ -2544,18 +2554,18 @@
       "enabled": false
     },
     {
-      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
+      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAS, CONTACT CD ASAP FOR RELEASE.",
       "ordinal": 2,
-      "enabled": false
-    },
-    {
-      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-      "ordinal": 3,
       "enabled": false
     },
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 4,
+      "enabled": false
+    },
+	{
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC.",
+      "ordinal": 99,
       "enabled": false
     }
   ],

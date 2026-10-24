@@ -2309,14 +2309,24 @@
         "approaches": "",
         "remarks": ""
       }
+    },
+    {
+      "id": "6f9cdfd9-4a84-43d5-a083-cb682784447d",
+      "name": "D-ATIS",
+      "airportConditions": "",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
+      "externalGenerator": {
+        "enabled": false,
+        "textUrl": "",
+        "voiceUrl": "",
+        "arrival": "",
+        "departure": "",
+        "approaches": "",
+        "remarks": ""
+      }
     }
   ],
   "contractions": [
-    {
-      "variableName": "34L_R",
-      "text": "34 L/R",
-      "voice": "THREE FOUR LEFT AND RIGHT"
-    },
     {
       "variableName": "ADZYS",
       "text": "ADZYS",
@@ -2396,7 +2406,18 @@
       "enabled": false
     }
   ],
-  "datisTextReplacements": [],
+  "datisTextReplacements": [
+    {
+      "pattern": "DRONE \\\\w{1,} MILE \\\\w{1,} OF THE AIRPORT AT \\\\d{1,4} FEET",
+      "replacement": "",
+      "isRegex": true
+    },
+    {
+      "pattern": "CLSD[^.]*\\\\.",
+      "replacement": "",
+      "isRegex": true
+    }
+  ],
   "datisPrependAirportConditions": "",
   "datisAppendAirportConditions": "",
   "datisPrependNotams": "",
