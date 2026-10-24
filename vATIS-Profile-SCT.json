@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2026102401,
+  "updateSerial": 2026102402,
   "stations": [
     {
       "ordinal": 99,
@@ -9577,6 +9577,16 @@
           "variableName": "TFC",
           "text": "TFC",
           "voice": "TRAFFIC"
+        },
+        {
+          "variableName": "RY24R",
+          "text": "RY24R",
+          "voice": "RUNWAY TWO FOUR RIGHT"
+        },
+        {
+          "variableName": "RY24L",
+          "text": "RY24L",
+          "voice": "RUNWAY TWO FOUR LEFT"
         }
       ],
       "patterns": [
@@ -9622,7 +9632,7 @@
         {
           "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
           "ordinal": 6,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
@@ -9652,18 +9662,18 @@
           "enabled": false
         },
         {
-          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAS, CONTACT CD ASAP FOR RELEASE.",
           "ordinal": 2,
-          "enabled": false
-        },
-        {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS. ADVISE IF YOU HAVE OUTDATED SCENERY.",
-          "ordinal": 3,
           "enabled": false
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 4,
+          "enabled": false
+        },
+        {
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC.",
+          "ordinal": 99,
           "enabled": false
         }
       ],
@@ -35688,14 +35698,24 @@
             "approaches": "",
             "remarks": ""
           }
+        },
+        {
+          "id": "6f9cdfd9-4a84-43d5-a083-cb682784447d",
+          "name": "D-ATIS",
+          "airportConditions": "",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
         }
       ],
       "contractions": [
-        {
-          "variableName": "34L_R",
-          "text": "34 L/R",
-          "voice": "THREE FOUR LEFT AND RIGHT"
-        },
         {
           "variableName": "ADZYS",
           "text": "ADZYS",
@@ -35775,7 +35795,18 @@
           "enabled": false
         }
       ],
-      "datisTextReplacements": [],
+      "datisTextReplacements": [
+        {
+          "pattern": "DRONE \\\\w{1,} MILE \\\\w{1,} OF THE AIRPORT AT \\\\d{1,4} FEET",
+          "replacement": "",
+          "isRegex": true
+        },
+        {
+          "pattern": "CLSD[^.]*\\\\.",
+          "replacement": "",
+          "isRegex": true
+        }
+      ],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
       "datisPrependNotams": "",
