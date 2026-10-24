@@ -2395,7 +2395,7 @@
       "enabled": false
     },
     {
-      "text": "ILS RWY 1L, ^1R, AND ^26L APPS IN USE.",
+      "text": "ILS RW 1L, ^1R, AND ^26L APPS IN USE.",
       "ordinal": 6,
       "enabled": false
     },
@@ -2412,10 +2412,9 @@
   ],
   "notamDefinitions": [
     {
-      "text": "CHECK DENSITY ALTITUDE",
-      "ordinal": 1,
-      "weatherCondition": "temperature >= 29c",
-      "enabled": true
+      "text": "NOISE ABATEMENT PROC IN EFCT.",
+      "ordinal": 0,
+      "enabled": false
     },
     {
       "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
@@ -2423,12 +2422,12 @@
       "enabled": false
     },
     {
-      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
-      "ordinal": 99,
+      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "ordinal": 3,
       "enabled": false
     },
     {
-      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
       "ordinal": 4,
       "enabled": false
     },
@@ -2449,19 +2448,25 @@
     },
     {
       "text": "HELICOPTOR CONTROL OPEN ON 123.82.",
-      "ordinal": 7,
+      "ordinal": 8,
       "stationCondition": "WhenOnline",
       "stationCallsigns": "LAS_P*_TWR",
       "enabled": true
     },
     {
-      "text": "HELICOPTERS OVER THE STRIP AT 3000.",
+      "text": "HELICOPTERS OVER THE STRIP AT *3000.",
       "ordinal": 9,
       "enabled": true
     },
     {
-      "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
+      "text": "CHECK DENSITY ALTITUDE",
       "ordinal": 10,
+      "weatherCondition": "temperature >= 29c",
+      "enabled": true
+    },
+    {
+      "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
+      "ordinal": 11,
       "enabled": false
     }
   ],
