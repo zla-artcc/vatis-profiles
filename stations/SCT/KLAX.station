@@ -2469,6 +2469,16 @@
       "variableName": "TFC",
       "text": "TFC",
       "voice": "TRAFFIC"
+    },
+    {
+      "variableName": "RY24R",
+      "text": "RY24R",
+      "voice": "RUNWAY TWO FOUR RIGHT"
+    },
+    {
+      "variableName": "RY24L",
+      "text": "RY24L",
+      "voice": "RUNWAY TWO FOUR LEFT"
     }
   ],
   "patterns": [
@@ -2514,7 +2524,7 @@
     {
       "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
       "ordinal": 6,
-      "enabled": true
+      "enabled": false
     },
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
