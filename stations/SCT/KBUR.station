@@ -2259,13 +2259,13 @@
     "useTextToSpeech": true,
     "useWavPack": false,
     "voice": "Default",
-    "speechRate": 220
+    "speechRate": 200
   },
   "presets": [
     {
       "id": "014b4143-b8a6-45e4-b3d7-3ffa0045c763",
       "name": "NORMAL (8/15)",
-      "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARVNG AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARVNG AND DEPTG RWY 8 AND RWY 15.",
       "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -2313,28 +2313,7 @@
       }
     }
   ],
-  "contractions": [
-    {
-      "variableName": "B1",
-      "text": "B1",
-      "voice": "BRAVO ONE"
-    },
-    {
-      "variableName": "B4",
-      "text": "B4",
-      "voice": "BRAVO FOUR"
-    },
-    {
-      "variableName": "CD",
-      "text": "CD",
-      "voice": "CLEARANCE DELIVERY"
-    },
-    {
-      "variableName": "GC",
-      "text": "GC",
-      "voice": "GROUND CONTROL"
-    }
-  ],
+  "contractions": [],
   "patterns": [
     {
       "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC)-([ABCDXYZ])\\b",
@@ -2347,29 +2326,48 @@
       "voice": "$1 $phonetic($2)"
     }
   ],
-  "airportConditionDefinitions": [],
+  "airportConditionDefinitions": [
+    {
+      "text": "LAHSO IN EFFECT RWY 15.",
+      "ordinal": 1,
+      "enabled": true
+    },
+    {
+      "text": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+      "ordinal": 2,
+      "enabled": true
+    },
+    {
+      "text": "TEST LAHSO IN EFFECT RWY 15.",
+      "ordinal": 3,
+      "weatherCondition": "(ceiling >= 1000ft AND visibility >= 4.82km) AND ((winddir >= 080 AND winddir <= 260) OR (windspeed = 0kt))",
+      "enabled": false
+    }
+  ],
   "notamDefinitions": [
     {
       "text": "FOR PUSHBACK CONTACT RAMP CONTROL ON 130.87.",
-      "ordinal": 0,
+      "ordinal": 1,
       "stationCondition": "WhenOnline",
       "stationCallsigns": "BUR_*RMP",
       "enabled": true
     },
     {
-      "text": "ACFT IN GATES @B1 THRU @B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
+      "text": "AIRLINE RAMP UNCONTROLLED CONTACT TWR FOR PUSHBACK.",
       "ordinal": 2,
+      "stationCondition": "WhenOffline",
+      "stationCallsigns": "BUR_*RMP",
       "enabled": true
+    },
+    {
+      "text": "ACFT IN GATES *B1 THRU *B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
+      "ordinal": 3,
+      "enabled": false
     },
     {
       "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
-      "ordinal": 3,
-      "enabled": true
-    },
-    {
-      "text": "CD AND GC COMBINED ON 123.9.",
       "ordinal": 4,
-      "enabled": false
+      "enabled": true
     },
     {
       "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
@@ -2377,13 +2375,23 @@
       "enabled": false
     },
     {
-      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "text": "CD AND GC COMBINED ON 123.9.",
       "ordinal": 6,
       "enabled": false
     },
     {
+      "text": "TWR, GC, CD COMBINED ON 118.7.",
+      "ordinal": 7,
+      "enabled": false
+    },
+    {
+      "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+      "ordinal": 8,
+      "enabled": false
+    },
+    {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
-      "ordinal": 99,
+      "ordinal": 9,
       "enabled": false
     }
   ],
