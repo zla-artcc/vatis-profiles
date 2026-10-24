@@ -2395,7 +2395,7 @@
       "enabled": false
     },
     {
-      "text": "ILS RW 1L, ^1R, AND ^26L APPS IN USE.",
+      "text": "ILS RWY 1L, ^1R, AND ^26L APPS IN USE.",
       "ordinal": 6,
       "enabled": false
     },
@@ -2428,7 +2428,7 @@
     },
     {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
-      "ordinal": 4,
+      "ordinal": 99,
       "enabled": false
     },
     {
