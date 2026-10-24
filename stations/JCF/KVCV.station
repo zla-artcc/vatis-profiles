@@ -2334,7 +2334,14 @@
     }
   ],
   "airportConditionDefinitions": [],
-  "notamDefinitions": [],
+  "notamDefinitions": [
+    {
+      "text": "CHECK DENSITY ALTITUDE",
+      "ordinal": 1,
+      "weatherCondition": "temperature >= 29c",
+      "enabled": true
+    }
+  ],
   "datisTextReplacements": [],
   "datisPrependAirportConditions": "",
   "datisAppendAirportConditions": "",
