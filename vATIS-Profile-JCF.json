@@ -2,7 +2,7 @@
   "name": "Joshua Control Facility (JCF)",
   "id": "c9b6d3c1-514e-4cef-b2fe-4672401a9799",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-JCF.json",
-  "updateSerial": 2026102400,
+  "updateSerial": 2026102401,
   "stations": [
     {
       "ordinal": 99,
@@ -2257,7 +2257,7 @@
       "frequency": 127425000,
       "idsEndpoint": "",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -2325,7 +2325,14 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 29c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -4540,7 +4547,7 @@
       "airportConditionsSeparator": ". ",
       "frequency": 132225000,
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -4593,7 +4600,14 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 29c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -6853,7 +6867,7 @@
       "frequency": 118275000,
       "idsEndpoint": "",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -6906,7 +6920,14 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 29c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -9166,7 +9187,7 @@
       "frequency": 135475000,
       "idsEndpoint": "",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -9249,7 +9270,14 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 29c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -11509,7 +11537,7 @@
       "frequency": 123300000,
       "idsEndpoint": "",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -11577,7 +11605,14 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 29c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",

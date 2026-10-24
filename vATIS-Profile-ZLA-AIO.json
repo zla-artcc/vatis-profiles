@@ -1,7 +1,7 @@
 {
   "name": "ZLA All Stations",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-AIO.json",
-  "updateSerial": 2026102400,
+  "updateSerial": 2026102401,
   "stations": [
     {
       "ordinal": 98,
@@ -2259,7 +2259,7 @@
       "frequency": 118600000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -2392,14 +2392,7 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [
-        {
-          "text": "CHECK DENSITY ALTITUDE",
-          "ordinal": 1,
-          "weatherCondition": "temperature >= 29c",
-          "enabled": true
-        }
-      ],
+      "notamDefinitions": [],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -4613,8 +4606,9 @@
       "notamsSeparator": ". ",
       "airportConditionsSeparator": ". ",
       "frequency": 124300000,
+      "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -4725,7 +4719,14 @@
           "enabled": false
         }
       ],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 18c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -6940,7 +6941,7 @@
       "airportConditionsSeparator": ". ",
       "frequency": 119825000,
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -9284,7 +9285,7 @@
       "frequency": 127425000,
       "idsEndpoint": "",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -9352,7 +9353,14 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 29c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -11567,7 +11575,7 @@
       "airportConditionsSeparator": ". ",
       "frequency": 132225000,
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -11620,7 +11628,14 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 29c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -13880,7 +13895,7 @@
       "frequency": 118275000,
       "idsEndpoint": "",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -13933,7 +13948,14 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 29c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -16193,7 +16215,7 @@
       "frequency": 135475000,
       "idsEndpoint": "",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -16276,7 +16298,14 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 29c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -18536,7 +18565,7 @@
       "frequency": 123300000,
       "idsEndpoint": "",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -18604,7 +18633,14 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 29c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -30508,7 +30544,7 @@
       "frequency": 120600000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -32845,7 +32881,7 @@
       "frequency": 121150000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -35179,7 +35215,7 @@
       "frequency": 133125000,
       "idsEndpoint": "",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -39904,7 +39940,7 @@
       "frequency": 120150000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -42257,7 +42293,7 @@
       "frequency": 118400000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -44628,7 +44664,7 @@
           "name": "WEST - INST AND VISUAL",
           "airportConditions": "INST APCHS AND RNAV RNP APCHS RY 24R AND 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
           "notams": "",
-          "template": "",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -49541,7 +49577,7 @@
       "frequency": 126900000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -54459,13 +54495,6 @@
           "enabled": true
         },
         {
-          "text": "CHECK DENSITY ALTITUDE",
-          "ordinal": 98,
-          "separatorAfter": "",
-          "weatherCondition": "temperature >= 29c",
-          "enabled": true
-        },
-        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "enabled": false
@@ -56686,7 +56715,7 @@
       "frequency": 132025000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -61389,7 +61418,7 @@
       "frequency": 132350000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -63731,7 +63760,7 @@
       "frequency": 125450000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -66065,7 +66094,7 @@
       "frequency": 119150000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,

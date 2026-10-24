@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2026102400,
+  "updateSerial": 2026102401,
   "stations": [
     {
       "ordinal": 99,
@@ -4652,7 +4652,7 @@
       "frequency": 120150000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -7005,7 +7005,7 @@
       "frequency": 118400000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -9376,7 +9376,7 @@
           "name": "WEST - INST AND VISUAL",
           "airportConditions": "INST APCHS AND RNAV RNP APCHS RY 24R AND 25L, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
           "notams": "",
-          "template": "",
+          "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -14289,7 +14289,7 @@
       "frequency": 126900000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -19207,13 +19207,6 @@
           "enabled": true
         },
         {
-          "text": "CHECK DENSITY ALTITUDE",
-          "ordinal": 98,
-          "separatorAfter": "",
-          "weatherCondition": "temperature >= 29c",
-          "enabled": true
-        },
-        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "enabled": false
@@ -21434,7 +21427,7 @@
       "frequency": 132025000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -26137,7 +26130,7 @@
       "frequency": 132350000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -28479,7 +28472,7 @@
       "frequency": 125450000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -30813,7 +30806,7 @@
       "frequency": 119150000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,

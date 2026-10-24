@@ -1,7 +1,7 @@
 {
   "name": "ZLA Non-TRACON Fields",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-2.json",
-  "updateSerial": 2026102400,
+  "updateSerial": 2026102401,
   "stations": [
     {
       "ordinal": 98,
@@ -2259,7 +2259,7 @@
       "frequency": 118600000,
       "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -2392,14 +2392,7 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [
-        {
-          "text": "CHECK DENSITY ALTITUDE",
-          "ordinal": 1,
-          "weatherCondition": "temperature >= 29c",
-          "enabled": true
-        }
-      ],
+      "notamDefinitions": [],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -4613,8 +4606,9 @@
       "notamsSeparator": ". ",
       "airportConditionsSeparator": ". ",
       "frequency": 124300000,
+      "idsEndpoint": "https://ids.laartcc.org/remote/atis",
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
@@ -4725,7 +4719,14 @@
           "enabled": false
         }
       ],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "CHECK DENSITY ALTITUDE",
+          "ordinal": 1,
+          "weatherCondition": "temperature >= 18c",
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -6940,7 +6941,7 @@
       "airportConditionsSeparator": ". ",
       "frequency": 119825000,
       "useDecimalTerminology": false,
-      "randomizeAtisLetterOnConnect": false,
+      "randomizeAtisLetterOnConnect": true,
       "atisVoice": {
         "useTextToSpeech": false,
         "useWavPack": false,
