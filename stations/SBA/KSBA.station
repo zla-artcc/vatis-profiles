@@ -2266,7 +2266,7 @@
       "id": "20ac6dd7-2eab-4776-b8a2-8ff1964cc31b",
       "ordinal": 1,
       "name": "25/15",
-      "airportConditions": "LNDG AND DEPG RWY 25, 15_LR.",
+      "airportConditions": "LNDG AND DEPG RWY 25, 15 L/R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2300,7 +2300,7 @@
       "id": "2802dd50-1d05-41e5-b4da-39f2acee5646",
       "ordinal": 3,
       "name": "25/33",
-      "airportConditions": "LNDG AND DEPG RWY 25 AND 33L_R.",
+      "airportConditions": "LNDG AND DEPG RWY 25 AND 33 L/R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2317,7 +2317,7 @@
       "id": "9c02de1b-90d7-42b1-8478-e2efd6755a0d",
       "ordinal": 4,
       "name": "7/15",
-      "airportConditions": "LNDG AND DEPG RWY 7, 15_LR.",
+      "airportConditions": "LNDG AND DEPG RWY 7, 15 L/R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2334,7 +2334,7 @@
       "id": "acb28145-27f6-4089-9451-46c1049b7f67",
       "ordinal": 5,
       "name": "7/33",
-      "airportConditions": "LNDG AND DEPG RWY 7, 33L_R.",
+      "airportConditions": "LNDG AND DEPG RWY 7, 33 L/R.",
       "notams": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2386,16 +2386,6 @@
       "variableName": "RNAV",
       "text": "RNAV",
       "voice": "R NAV"
-    },
-    {
-      "variableName": "15_LR",
-      "text": "15L/R",
-      "voice": "ONE FIVE LEFT AND RIGHT"
-    },
-    {
-      "variableName": "33L_R",
-      "text": "33L/R",
-      "voice": "THREE THREE LEFT AND RIGHT"
     }
   ],
   "patterns": [
@@ -2408,6 +2398,11 @@
       "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC) ([ABCDXYZ])\\b",
       "text": "$1 $2",
       "voice": "$1 $phonetic($2)"
+    },
+    {
+      "pattern": "(15|33) (L/R)",
+      "text": "$1 L/R",
+      "voice": "$1 LEFT AND RIGHT"
     }
   ],
   "airportConditionDefinitions": [
