@@ -2236,7 +2236,7 @@
     "notams": {
       "template": {
         "text": "NOTAMS... {notams}",
-        "voice": "NOTICES TO AIRMEN: {notams}"
+        "voice": "NOTICES TO AIRMEN... {notams}"
       }
     },
     "closingStatement": {
@@ -2356,7 +2356,18 @@
       "voice": "AS SOON AS POSSIBLE"
     }
   ],
-  "patterns": [],
+  "patterns": [
+    {
+      "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC)-([ABCDXYZ])\\b",
+      "text": "$1-$2",
+      "voice": "$1 $phonetic($2)"
+    },
+    {
+      "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC) ([ABCDXYZ])\\b",
+      "text": "$1 $2",
+      "voice": "$1 $phonetic($2)"
+    }
+  ],
   "airportConditionDefinitions": [
     {
       "text": "VISUAL APPROACHES IN USE.",
@@ -2413,7 +2424,7 @@
     },
     {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
-      "ordinal": 3,
+      "ordinal": 99,
       "enabled": false
     },
     {

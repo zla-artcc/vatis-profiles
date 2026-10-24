@@ -2236,7 +2236,7 @@
     "notams": {
       "template": {
         "text": "NOTAMS... {notams}",
-        "voice": "NOTICES TO AIRMEN: {notams}"
+        "voice": "NOTICES TO AIRMEN... {notams}"
       }
     },
     "closingStatement": {
@@ -2265,7 +2265,7 @@
     {
       "id": "b9e9fd9e-cb2b-45b9-8498-dca515aedbca",
       "name": "SOUTH (16)",
-      "airportConditions": "LDG AND DEPG RWY 16L_R . TAXILANE A1 CLSD . .",
+      "airportConditions": "LDG AND DEPG RWY 16 L/R . TAXILANE A1 CLSD . .",
       "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2281,7 +2281,7 @@
     {
       "id": "33ddc6f1-907e-451d-907c-5f850091f5c5",
       "name": "NORTH (34)",
-      "airportConditions": "LNDG AND DEPG RWY 34L_R.",
+      "airportConditions": "LNDG AND DEPG RWY 34 L/R.",
       "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2321,22 +2321,33 @@
       "variableName": "ADZYS",
       "text": "ADZYS",
       "voice": "ADVISORIES"
-    },
-    {
-      "variableName": "16L_R",
-      "text": "16 L/R",
-      "voice": "ONE SIX LEFT AND RIGHT"
     }
   ],
-  "patterns": [],
+  "patterns": [
+    {
+      "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC)-([ABCDXYZ])\\b",
+      "text": "$1-$2",
+      "voice": "$1 $phonetic($2)"
+    },
+    {
+      "pattern": "(16|34) (L/R)",
+      "text": "$1 L/R",
+      "voice": "$1 LEFT AND RIGHT"
+    },
+    {
+      "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC) ([ABCDXYZ])\\b",
+      "text": "$1 $2",
+      "voice": "$1 $phonetic($2)"
+    }
+  ],
   "airportConditionDefinitions": [
     {
-      "text": "ILS-*Z RWY 16R APCH IN USE, VISUAL APCH IN USE.",
+      "text": "ILS-Z RWY 16R APCH IN USE, VISUAL APCH IN USE.",
       "ordinal": 1,
       "enabled": false
     },
     {
-      "text": "ILS-*Z RWY 16R APCH IN USE.",
+      "text": "ILS-Z RWY 16R APCH IN USE.",
       "ordinal": 2,
       "enabled": true
     },
@@ -2346,7 +2357,7 @@
       "enabled": false
     },
     {
-      "text": "VOR-*A APCH IN USE.",
+      "text": "VOR-A APCH IN USE.",
       "ordinal": 4,
       "enabled": false
     }
@@ -2373,15 +2384,15 @@
       "enabled": false
     },
     {
-      "text": "CHECK DENSITY ALTITUDE",
-      "ordinal": 4,
+      "text": "CHECK DENSITY ALTITUDE.",
+      "ordinal": 5,
       "separatorAfter": "",
       "weatherCondition": "temperature >= 29c",
       "enabled": true
     },
     {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
-      "ordinal": 6,
+      "ordinal": 99,
       "enabled": false
     }
   ],

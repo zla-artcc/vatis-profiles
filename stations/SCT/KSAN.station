@@ -2236,7 +2236,7 @@
     "notams": {
       "template": {
         "text": "NOTAMS... {notams}",
-        "voice": "NOTICES TO AIRMEN: {notams}"
+        "voice": "NOTICES TO AIRMEN... {notams}"
       }
     },
     "closingStatement": {
@@ -2340,7 +2340,18 @@
       "voice": "DIRECTION"
     }
   ],
-  "patterns": [],
+  "patterns": [
+    {
+      "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC)-([ABCDXYZ])\\b",
+      "text": "$1-$2",
+      "voice": "$1 $phonetic($2)"
+    },
+    {
+      "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC) ([ABCDXYZ])\\b",
+      "text": "$1 $2",
+      "voice": "$1 $phonetic($2)"
+    }
+  ],
   "airportConditionDefinitions": [
     {
       "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +LAX, CONTACT CD ASAP FOR RELEASE.",
@@ -2360,11 +2371,6 @@
     {
       "text": "USE CAUTION MODEL ROCKETS AT FIESTA ISLAND AT OR BELOW 010.",
       "ordinal": 4,
-      "enabled": false
-    },
-    {
-      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
-      "ordinal": 5,
       "enabled": false
     }
   ],
