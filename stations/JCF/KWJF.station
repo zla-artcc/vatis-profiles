@@ -2251,7 +2251,7 @@
   "frequency": 123300000,
   "idsEndpoint": "",
   "useDecimalTerminology": false,
-  "randomizeAtisLetterOnConnect": false,
+  "randomizeAtisLetterOnConnect": true,
   "atisVoice": {
     "useTextToSpeech": false,
     "useWavPack": false,
@@ -2319,7 +2319,14 @@
     }
   ],
   "airportConditionDefinitions": [],
-  "notamDefinitions": [],
+  "notamDefinitions": [
+    {
+      "text": "CHECK DENSITY ALTITUDE",
+      "ordinal": 1,
+      "weatherCondition": "temperature >= 29c",
+      "enabled": true
+    }
+  ],
   "datisTextReplacements": [],
   "datisPrependAirportConditions": "",
   "datisAppendAirportConditions": "",
