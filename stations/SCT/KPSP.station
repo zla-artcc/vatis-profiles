@@ -2393,13 +2393,6 @@
       "enabled": true
     },
     {
-      "text": "CHECK DENSITY ALTITUDE",
-      "ordinal": 98,
-      "separatorAfter": "",
-      "weatherCondition": "temperature >= 29c",
-      "enabled": true
-    },
-    {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
       "ordinal": 99,
       "enabled": false
