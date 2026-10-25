@@ -2,7 +2,7 @@
   "name": "DEV SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-DEV-SCT.json",
-  "updateSerial": 2026102500,
+  "updateSerial": 2026102503,
   "stations": [
     {
       "ordinal": 99,
@@ -2406,6 +2406,12 @@
           "enabled": false
         },
         {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": false
+        },
+        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
@@ -4727,9 +4733,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -7095,9 +7111,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         },
         {
           "variableName": "MUN",
@@ -9563,6 +9589,21 @@
           "variableName": "RY24L",
           "text": "RY24L",
           "voice": "RUNWAY TWO FOUR LEFT"
+        },
+        {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -9666,7 +9707,13 @@
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-          "ordinal": 4,
+          "ordinal": 3,
+          "enabled": false
+        },
+        {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
           "enabled": false
         },
         {
@@ -11994,29 +12041,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
-        },
-        {
-          "variableName": "26L",
-          "text": "26L",
-          "voice": "TWO SIX LEFT"
-        },
-        {
-          "variableName": "26R",
-          "text": "26R",
-          "voice": "TWO SIX RIGHT"
-        },
-        {
-          "variableName": "8L",
-          "text": "8L",
-          "voice": "EIGHT LEFT"
-        },
-        {
-          "variableName": "8R",
-          "text": "8R",
-          "voice": "EIGHT RIGHT"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -12033,6 +12070,12 @@
       ],
       "airportConditionDefinitions": [],
       "notamDefinitions": [
+        {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": false
+        },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
@@ -14370,24 +14413,19 @@
       ],
       "contractions": [
         {
-          "variableName": "28L",
-          "text": "28L",
-          "voice": "TWO EIGHT LEFT"
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
         },
         {
-          "variableName": "28R",
-          "text": "28R",
-          "voice": "TWO EIGHT RIGHT"
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
         },
         {
-          "variableName": "10L",
-          "text": "10L",
-          "voice": "ONE ZERO LEFT"
-        },
-        {
-          "variableName": "10R",
-          "text": "10R",
-          "voice": "ONE ZERO RIGHT"
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "ARE NAV"
         },
         {
           "variableName": "AM",
@@ -16773,6 +16811,21 @@
           "variableName": "OPS",
           "text": "OPERATIONS",
           "voice": "OPERATIONS"
+        },
+        {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -16809,6 +16862,12 @@
           "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF ONT.",
           "ordinal": 3,
           "enabled": true
+        },
+        {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
@@ -19163,29 +19222,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
-        },
-        {
-          "variableName": "31L",
-          "text": "31L",
-          "voice": "THREE ONE LEFT"
-        },
-        {
-          "variableName": "31R",
-          "text": "31R",
-          "voice": "THREE ONE RIGHT"
-        },
-        {
-          "variableName": "13L",
-          "text": "13L",
-          "voice": "ONE THREE LEFT"
-        },
-        {
-          "variableName": "13R",
-          "text": "13R",
-          "voice": "ONE THREE RIGHT"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -19216,6 +19265,12 @@
           "text": "NEW RNAV PROCEDURES IN EFFECT. LOAD NEWEST NAVIGATION DATA.",
           "ordinal": 3,
           "enabled": true
+        },
+        {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
@@ -21498,9 +21553,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -23856,9 +23921,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         },
         {
           "variableName": "RLS",
@@ -23919,6 +23994,12 @@
         {
           "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
           "enabled": false
         },
         {
@@ -28541,9 +28622,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -30912,9 +31003,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -33285,9 +33386,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         },
         {
           "variableName": "TXG",
@@ -33318,11 +33429,6 @@
           "variableName": "OVR",
           "text": "OVER",
           "voice": "OVER"
-        },
-        {
-          "variableName": "H",
-          "text": "H",
-          "voice": "HOTEL"
         },
         {
           "variableName": "OPS",
@@ -33378,6 +33484,12 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
+          "enabled": false
+        },
+        {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
           "enabled": false
         },
         {
@@ -35728,6 +35840,21 @@
           "variableName": "ADZYS",
           "text": "ADZYS",
           "voice": "ADVISORIES"
+        },
+        {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -35796,6 +35923,12 @@
           "separatorAfter": "",
           "weatherCondition": "temperature >= 29c",
           "enabled": true
+        },
+        {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
@@ -38132,6 +38265,16 @@
         }
       ],
       "contractions": [
+        {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
         {
           "variableName": "RNAV",
           "text": "RNAV",

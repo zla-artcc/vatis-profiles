@@ -2328,14 +2328,19 @@
   ],
   "contractions": [
     {
-      "variableName": "35LR",
-      "text": "35L/R",
-      "voice": "THREE FIVE LEFT AND RIGHT"
+      "variableName": "INC",
+      "text": "INC",
+      "voice": "INCLUDE"
     },
     {
-      "variableName": "17LR",
-      "text": "17L/R",
-      "voice": "ONE SEVEN LEFT AND RIGHT"
+      "variableName": "RMKS",
+      "text": "RMKS",
+      "voice": "REMARKS"
+    },
+	{
+      "variableName": "RNAV",
+      "text": "RNAV",
+      "voice": "ARE NAV"
     }
   ],
   "patterns": [

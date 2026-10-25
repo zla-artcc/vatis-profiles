@@ -2436,6 +2436,21 @@
       "variableName": "RY24L",
       "text": "RY24L",
       "voice": "RUNWAY TWO FOUR LEFT"
+    },
+    {
+      "variableName": "INC",
+      "text": "INC",
+      "voice": "INCLUDE"
+    },
+    {
+      "variableName": "RMKS",
+      "text": "RMKS",
+      "voice": "REMARKS"
+    },
+	{
+      "variableName": "RNAV",
+      "text": "RNAV",
+      "voice": "ARE NAV"
     }
   ],
   "patterns": [
@@ -2539,7 +2554,13 @@
     },
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-      "ordinal": 4,
+      "ordinal": 3,
+      "enabled": false
+    },
+    {
+      "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+      "ordinal": 98,
+      "onlineCondition": "2215z-0230z",
       "enabled": false
     },
     {

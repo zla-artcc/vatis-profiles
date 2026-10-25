@@ -2322,24 +2322,19 @@
   ],
   "contractions": [
     {
-      "variableName": "28L",
-      "text": "28L",
-      "voice": "TWO EIGHT LEFT"
+      "variableName": "INC",
+      "text": "INC",
+      "voice": "INCLUDE"
     },
     {
-      "variableName": "28R",
-      "text": "28R",
-      "voice": "TWO EIGHT RIGHT"
+      "variableName": "RMKS",
+      "text": "RMKS",
+      "voice": "REMARKS"
     },
-    {
-      "variableName": "10L",
-      "text": "10L",
-      "voice": "ONE ZERO LEFT"
-    },
-    {
-      "variableName": "10R",
-      "text": "10R",
-      "voice": "ONE ZERO RIGHT"
+	{
+      "variableName": "RNAV",
+      "text": "RNAV",
+      "voice": "ARE NAV"
     },
     {
       "variableName": "AM",

@@ -2344,31 +2344,21 @@
   ],
   "contractions": [
     {
-      "variableName": "30R",
-      "text": "30R",
-      "voice": "THREE ZERO RIGHT"
-    },
-    {
-      "variableName": "30L",
-      "text": "30L",
-      "voice": "THREE ZERO LEFT"
-    },
-    {
-      "variableName": "12R",
-      "text": "12R",
-      "voice": "ONE TWO RIGHT"
-    },
-    {
-      "variableName": "12L",
-      "text": "12L",
-      "voice": "ONE TWO LEFT"
-    },
-    {
       "variableName": "APPS",
       "text": "APPS",
       "voice": "APPROACHES"
     },
     {
+      "variableName": "INC",
+      "text": "INC",
+      "voice": "INCLUDE"
+    },
+    {
+      "variableName": "RMKS",
+      "text": "RMKS",
+      "voice": "REMARKS"
+    },
+	{
       "variableName": "RNAV",
       "text": "RNAV",
       "voice": "ARE NAV"

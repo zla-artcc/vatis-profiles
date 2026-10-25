@@ -2266,9 +2266,19 @@
   ],
   "contractions": [
     {
+      "variableName": "INC",
+      "text": "INC",
+      "voice": "INCLUDE"
+    },
+    {
+      "variableName": "RMKS",
+      "text": "RMKS",
+      "voice": "REMARKS"
+    },
+	{
       "variableName": "RNAV",
       "text": "RNAV",
-      "voice": "R NAV"
+      "voice": "ARE NAV"
     }
   ],
   "patterns": [

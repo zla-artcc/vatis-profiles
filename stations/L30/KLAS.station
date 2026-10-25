@@ -2340,7 +2340,7 @@
     {
       "variableName": "RNAV",
       "text": "RNAV",
-      "voice": "R NAV"
+      "voice": "ARE NAV"
     },
     {
       "variableName": "Z",
@@ -2356,6 +2356,16 @@
       "variableName": "ASAP",
       "text": "ASAP",
       "voice": "AS SOON AS POSSIBLE"
+    },
+	{
+      "variableName": "INC",
+      "text": "INC",
+      "voice": "INCLUDE"
+    },
+    {
+      "variableName": "RMKS",
+      "text": "RMKS",
+      "voice": "REMARKS"
     }
   ],
   "patterns": [
@@ -2504,9 +2514,15 @@
       "enabled": true
     },
     {
+      "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+      "ordinal": 98,
+      "onlineCondition": "2215z-0230z",
+      "enabled": false
+    },
+    {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
       "ordinal": 99,
-	  "onlineCondition": "2230z-0300z",
+      "onlineCondition": "2230z-0300z",
       "enabled": false
     }
   ],
