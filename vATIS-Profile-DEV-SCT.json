@@ -2,7 +2,7 @@
   "name": "DEV SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-DEV-SCT.json",
-  "updateSerial": 2026102508,
+  "updateSerial": 2026102509,
   "stations": [
     {
       "ordinal": 99,
@@ -4543,6 +4543,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -6906,6 +6908,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -11851,6 +11855,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -14208,6 +14214,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -16580,6 +16588,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -19001,6 +19011,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -21360,6 +21372,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -23726,6 +23740,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -26090,6 +26106,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -28432,6 +28450,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -30776,6 +30796,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -38073,6 +38095,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
