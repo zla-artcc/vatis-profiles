@@ -2120,6 +2120,8 @@
       "becomingVoice": "Becoming",
       "temporaryText": "TEMPO",
       "temporaryVoice": "Temporary",
+      "templateText": "{Trend}",
+      "templateVoice": "TREND, {Trend}",
       "template": {}
     },
     "windShear": {
@@ -2420,12 +2422,12 @@
     {
       "text": "OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS.",
       "ordinal": 4,
-      "enabled": true
+      "enabled": false
     },
     {
       "text": "READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
       "ordinal": 5,
-      "enabled": true
+      "enabled": false
     }
   ],
   "notamDefinitions": [

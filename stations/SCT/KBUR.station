@@ -2120,6 +2120,8 @@
       "becomingVoice": "Becoming",
       "temporaryText": "TEMPO",
       "temporaryVoice": "Temporary",
+      "templateText": "{Trend}",
+      "templateVoice": "TREND, {Trend}",
       "template": {}
     },
     "windShear": {
@@ -2330,68 +2332,76 @@
     {
       "text": "LAHSO IN EFFECT RWY 15.",
       "ordinal": 1,
+      "weatherCondition": "(ceiling >= 1000ft AND visibility >= 3sm) AND ((winddir >= 070 AND winddir <= 250) OR (windspeed = 0kt))",
       "enabled": true
     },
     {
       "text": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
       "ordinal": 2,
       "enabled": true
-    },
-    {
-      "text": "TEST LAHSO IN EFFECT RWY 15.",
-      "ordinal": 3,
-      "weatherCondition": "(ceiling >= 1000ft AND visibility >= 4.82km) AND ((winddir >= 080 AND winddir <= 260) OR (windspeed = 0kt))",
-      "enabled": false
     }
   ],
   "notamDefinitions": [
     {
       "text": "FOR PUSHBACK CONTACT RAMP CONTROL ON 130.87.",
       "ordinal": 1,
-      "stationCondition": "WhenOnline",
-      "stationCallsigns": "BUR_*RMP",
+      "onlineCondition": "BUR_*RMP",
+      "enabled": true
+    },
+    {
+      "text": "AIRLINE RAMP UNCONTROLLED CONTACT GC FOR PUSHBACK.",
+      "ordinal": 2,
+      "onlineCondition": "BUR_*GND NOT BUR_*RMP",
       "enabled": true
     },
     {
       "text": "AIRLINE RAMP UNCONTROLLED CONTACT TWR FOR PUSHBACK.",
-      "ordinal": 2,
-      "stationCondition": "WhenOffline",
-      "stationCallsigns": "BUR_*RMP",
+      "ordinal": 3,
+      "onlineCondition": "BUR_*TWR NOT (BUR_*RMP OR BUR_*GND)",
+      "enabled": true
+    },
+    {
+      "text": "AIRLINE RAMP UNCONTROLLED CONTACT APP FOR PUSHBACK.",
+      "ordinal": 4,
+      "onlineCondition": "(BUR_*APP OR SCT_*APP) NOT (BUR_*RMP OR BUR_*TWR OR BUR_*GND)",
       "enabled": true
     },
     {
       "text": "ACFT IN GATES *B1 THRU *B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
-      "ordinal": 3,
-      "enabled": false
-    },
-    {
-      "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
-      "ordinal": 4,
-      "enabled": true
-    },
-    {
-      "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
       "ordinal": 5,
       "enabled": false
     },
     {
-      "text": "CD AND GC COMBINED ON 123.9.",
+      "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
+      "ordinal": 6,
+      "onlineCondition": "1300z-0546z",
+      "enabled": true
+    },
+    {
+      "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
       "ordinal": 6,
       "enabled": false
     },
     {
+      "text": "CD AND GC COMBINED ON 123.9.",
+      "ordinal": 8,
+      "onlineCondition": "BUR_*GND NOT BUR_*DEL",
+      "enabled": true
+    },
+    {
       "text": "TWR, GC, CD COMBINED ON 118.7.",
-      "ordinal": 7,
-      "enabled": false
+      "ordinal": 9,
+      "onlineCondition": "BUR_*TWR NOT (BUR_*GND OR BUR_*DEL)",
+      "enabled": true
     },
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-      "ordinal": 8,
+      "ordinal": 10,
       "enabled": false
     },
     {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
-      "ordinal": 9,
+      "ordinal": 11,
       "enabled": false
     }
   ],

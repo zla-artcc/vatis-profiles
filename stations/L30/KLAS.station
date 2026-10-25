@@ -2120,6 +2120,8 @@
       "becomingVoice": "Becoming",
       "temporaryText": "TEMPO",
       "temporaryVoice": "Temporary",
+      "templateText": "{Trend}",
+      "templateVoice": "TREND, {Trend}",
       "template": {}
     },
     "windShear": {
@@ -2413,7 +2415,7 @@
   "notamDefinitions": [
     {
       "text": "NOISE ABATEMENT PROC IN EFCT.",
-      "ordinal": 0,
+      "ordinal": 1,
       "enabled": false
     },
     {
@@ -2427,46 +2429,83 @@
       "enabled": false
     },
     {
-      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
-      "ordinal": 99,
+      "text": "LLWS ADZYS IN EFCT.",
+      "ordinal": 4,
       "enabled": false
     },
     {
-      "text": "LLWS ADZYS IN EFCT.",
+      "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
       "ordinal": 5,
       "enabled": false
     },
     {
-      "text": "GC COMBINED ON 121.1",
+      "text": "CD COMBINED ON 121.9.",
       "ordinal": 6,
+      "onlineCondition": "NOT LAS_*DEL",
       "enabled": false
     },
     {
-      "text": "CD AND GC COMBINED ON 121.1",
+      "text": "CD COMBINED ON 121.1.",
       "ordinal": 7,
+      "onlineCondition": "NOT LAS_*DEL",
       "enabled": false
+    },
+    {
+      "text": "GC COMBINED ON 121.1.",
+      "ordinal": 8,
+      "onlineCondition": "(LAS_E*GND AND LAS_*DEL) NOT LAS_W*GND",
+      "enabled": true
+    },
+    {
+      "text": "GC COMBINED ON 121.9.",
+      "ordinal": 9,
+      "onlineCondition": "(LAS_W*GND AND LAS_*DEL) NOT LAS_E*GND",
+      "enabled": true
+    },
+    {
+      "text": "CD AND GC COMBINED ON 121.1.",
+      "ordinal": 10,
+      "onlineCondition": "LAS_E*GND NOT (LAS_*DEL OR LAS_W*GND)",
+      "enabled": true
+    },
+    {
+      "text": "CD AND GC COMBINED ON 121.9.",
+      "ordinal": 11,
+      "onlineCondition": "LAS_W*GND NOT (LAS_E*GND OR LAS_*DEL)",
+      "enabled": true
     },
     {
       "text": "HELICOPTOR CONTROL OPEN ON 123.82.",
-      "ordinal": 8,
-      "stationCondition": "WhenOnline",
-      "stationCallsigns": "LAS_P*_TWR",
+      "ordinal": 12,
+      "onlineCondition": "LAS_H*TWR",
+      "enabled": true
+    },
+    {
+      "text": "HELICOPTOR CONTROL OPEN ON 119.9.",
+      "ordinal": 13,
+      "onlineCondition": "LAS_E*TWR NOT LAS_P*TWR",
+      "enabled": true
+    },
+    {
+      "text": "ALL TOWER FUNCTIONS, CD AND GC COMBINED ON 119.9.",
+      "ordinal": 14,
+      "onlineCondition": "LAS_E*TWR NOT (LAS_*GND OR LAS_*DEL OR LAS_*TWR)",
       "enabled": true
     },
     {
       "text": "HELICOPTERS OVER THE STRIP AT *3000.",
-      "ordinal": 9,
+      "ordinal": 15,
       "enabled": true
     },
     {
-      "text": "CHECK DENSITY ALTITUDE",
-      "ordinal": 10,
+      "text": "CHECK DENSITY ALTITUDE.",
+      "ordinal": 16,
       "weatherCondition": "temperature >= 29c",
       "enabled": true
     },
     {
-      "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
-      "ordinal": 11,
+      "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+      "ordinal": 17,
       "enabled": false
     }
   ],
