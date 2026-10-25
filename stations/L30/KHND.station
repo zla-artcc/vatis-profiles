@@ -2263,7 +2263,7 @@
       "id": "4af147af-e176-41c4-b9d6-c97aaaf161e6",
       "ordinal": 1,
       "name": "NORTH (35)",
-      "airportConditions": "VISUAL APPROACH IN USE RWY @35LR.",
+      "airportConditions": "VISUAL APPROACH IN USE RWY 35L/R.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -2295,7 +2295,7 @@
       "id": "fdb817ee-bea0-476a-a8e7-f4051180b576",
       "ordinal": 2,
       "name": "RWY 17/35 ODO",
-      "airportConditions": "VISUAL APPROACH IN USE RWY 35LR, 17LR.",
+      "airportConditions": "VISUAL APPROACH IN USE RWY 35L/R, 17L/R.",
       "notams": "OPPOSITE DIRECTION OPERATIONS IN USE.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
@@ -2353,6 +2353,11 @@
       "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC) ([ABCDXYZ])\\b",
       "text": "$1 $2",
       "voice": "$1 $phonetic($2)"
+    },
+    {
+      "pattern": "(17|35) (L/R)",
+      "text": "$1 L/R",
+      "voice": "$1 LEFT AND RIGHT"
     }
   ],
   "airportConditionDefinitions": [],
