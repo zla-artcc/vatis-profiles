@@ -2,7 +2,7 @@
   "name": "Las Vegas TRACON (L30)",
   "id": "935bca6d-a174-4aa9-bb41-27f99533e86c",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-L30.json",
-  "updateSerial": 2026102500,
+  "updateSerial": 2026102501,
   "stations": [
     {
       "ordinal": 99,
@@ -2269,7 +2269,7 @@
           "id": "4af147af-e176-41c4-b9d6-c97aaaf161e6",
           "ordinal": 1,
           "name": "NORTH (35)",
-          "airportConditions": "VISUAL APPROACH IN USE RWY @35LR.",
+          "airportConditions": "VISUAL APPROACH IN USE RWY 35L/R.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -2301,7 +2301,7 @@
           "id": "fdb817ee-bea0-476a-a8e7-f4051180b576",
           "ordinal": 2,
           "name": "RWY 17/35 ODO",
-          "airportConditions": "VISUAL APPROACH IN USE RWY 35LR, 17LR.",
+          "airportConditions": "VISUAL APPROACH IN USE RWY 35L/R, 17L/R.",
           "notams": "OPPOSITE DIRECTION OPERATIONS IN USE.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
@@ -2334,14 +2334,19 @@
       ],
       "contractions": [
         {
-          "variableName": "35LR",
-          "text": "35L/R",
-          "voice": "THREE FIVE LEFT AND RIGHT"
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
         },
         {
-          "variableName": "17LR",
-          "text": "17L/R",
-          "voice": "ONE SEVEN LEFT AND RIGHT"
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -2354,6 +2359,11 @@
           "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC) ([ABCDXYZ])\\b",
           "text": "$1 $2",
           "voice": "$1 $phonetic($2)"
+        },
+        {
+          "pattern": "(17|35) (L/R)",
+          "text": "$1 L/R",
+          "voice": "$1 LEFT AND RIGHT"
         }
       ],
       "airportConditionDefinitions": [],
@@ -4718,7 +4728,7 @@
         {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         },
         {
           "variableName": "Z",
@@ -4734,6 +4744,16 @@
           "variableName": "ASAP",
           "text": "ASAP",
           "voice": "AS SOON AS POSSIBLE"
+        },
+        {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
         }
       ],
       "patterns": [
@@ -4882,9 +4902,16 @@
           "enabled": true
         },
         {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": true
+        },
+        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "onlineCondition": "2230z-0300z",
+          "enabled": true
         }
       ],
       "datisTextReplacements": [],
