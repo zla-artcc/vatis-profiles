@@ -2355,7 +2355,7 @@
       "text": "RMKS",
       "voice": "REMARKS"
     },
-	{
+    {
       "variableName": "RNAV",
       "text": "RNAV",
       "voice": "ARE NAV"
@@ -2420,7 +2420,7 @@
       "enabled": true
     },
     {
-      "text": "ACFT SOUTH OF *H TXG ON *A BE ADZD RY20L DEPTS MK IMDT SE TRN OVR *A.",
+      "text": "ACFT SOUTH OF *H TXG ON *A BE ADZD RY 20L DEPTS MK IMDT SE TRN OVR *A.",
       "ordinal": 3,
       "enabled": false
     },
