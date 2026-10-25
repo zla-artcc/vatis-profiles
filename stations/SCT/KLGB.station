@@ -2120,6 +2120,8 @@
       "becomingVoice": "Becoming",
       "temporaryText": "TEMPO",
       "temporaryVoice": "Temporary",
+      "templateText": "{Trend}",
+      "templateVoice": "TREND, {Trend}",
       "template": {}
     },
     "windShear": {
@@ -2319,7 +2321,7 @@
       "text": "RMKS",
       "voice": "REMARKS"
     },
-	{
+    {
       "variableName": "RNAV",
       "text": "RNAV",
       "voice": "ARE NAV"
