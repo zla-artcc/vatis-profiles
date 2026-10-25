@@ -2338,29 +2338,19 @@
   ],
   "contractions": [
     {
+      "variableName": "INC",
+      "text": "INC",
+      "voice": "INCLUDE"
+    },
+    {
+      "variableName": "RMKS",
+      "text": "RMKS",
+      "voice": "REMARKS"
+    },
+	{
       "variableName": "RNAV",
       "text": "RNAV",
-      "voice": "R NAV"
-    },
-    {
-      "variableName": "31L",
-      "text": "31L",
-      "voice": "THREE ONE LEFT"
-    },
-    {
-      "variableName": "31R",
-      "text": "31R",
-      "voice": "THREE ONE RIGHT"
-    },
-    {
-      "variableName": "13L",
-      "text": "13L",
-      "voice": "ONE THREE LEFT"
-    },
-    {
-      "variableName": "13R",
-      "text": "13R",
-      "voice": "ONE THREE RIGHT"
+      "voice": "ARE NAV"
     }
   ],
   "patterns": [
@@ -2393,10 +2383,16 @@
       "enabled": true
     },
     {
+      "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+      "ordinal": 98,
+      "onlineCondition": "2215z-0230z",
+      "enabled": true
+    },
+    {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
       "ordinal": 99,
-      "enabled": false
-    }
+      "onlineCondition": "2230z-0300z",
+      "enabled": true    }
   ],
   "datisTextReplacements": [],
   "datisPrependAirportConditions": "",

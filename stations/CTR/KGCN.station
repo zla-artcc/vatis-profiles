@@ -2292,6 +2292,21 @@
       "variableName": "PM",
       "text": "PM",
       "voice": "P M"
+    },
+	{
+      "variableName": "INC",
+      "text": "INC",
+      "voice": "INCLUDE"
+    },
+    {
+      "variableName": "RMKS",
+      "text": "RMKS",
+      "voice": "REMARKS"
+    },
+	{
+      "variableName": "RNAV",
+      "text": "RNAV",
+      "voice": "ARE NAV"
     }
   ],
   "patterns": [

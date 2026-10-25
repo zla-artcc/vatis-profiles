@@ -1973,14 +1973,19 @@
   ],
   "contractions": [
     {
-      "variableName": "APR",
-      "text": "APPROACH",
-      "voice": "APPROACH"
+      "variableName": "INC",
+      "text": "INC",
+      "voice": "INCLUDE"
     },
     {
-      "variableName": "A",
-      "text": "A",
-      "voice": "ALPHA"
+      "variableName": "RMKS",
+      "text": "RMKS",
+      "voice": "REMARKS"
+    },
+	{
+      "variableName": "RNAV",
+      "text": "RNAV",
+      "voice": "ARE NAV"
     }
   ],
   "airportConditionDefinitions": [],

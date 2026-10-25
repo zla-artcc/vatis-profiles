@@ -2,7 +2,7 @@
   "name": "DEV SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-DEV-SCT.json",
-  "updateSerial": 2026102400,
+  "updateSerial": 2026102506,
   "stations": [
     {
       "ordinal": 99,
@@ -2126,6 +2126,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -2265,13 +2267,13 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 220
+        "speechRate": 200
       },
       "presets": [
         {
           "id": "014b4143-b8a6-45e4-b3d7-3ffa0045c763",
           "name": "NORMAL (8/15)",
-          "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARVNG AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARVNG AND DEPTG RWY 8 AND RWY 15.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -2319,28 +2321,7 @@
           }
         }
       ],
-      "contractions": [
-        {
-          "variableName": "B1",
-          "text": "B1",
-          "voice": "BRAVO ONE"
-        },
-        {
-          "variableName": "B4",
-          "text": "B4",
-          "voice": "BRAVO FOUR"
-        },
-        {
-          "variableName": "CD",
-          "text": "CD",
-          "voice": "CLEARANCE DELIVERY"
-        },
-        {
-          "variableName": "GC",
-          "text": "GC",
-          "voice": "GROUND CONTROL"
-        }
-      ],
+      "contractions": [],
       "patterns": [
         {
           "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC)-([ABCDXYZ])\\b",
@@ -2353,44 +2334,88 @@
           "voice": "$1 $phonetic($2)"
         }
       ],
-      "airportConditionDefinitions": [],
+      "airportConditionDefinitions": [
+        {
+          "text": "LAHSO IN EFFECT RWY 15.",
+          "ordinal": 1,
+          "weatherCondition": "(ceiling >= 1000ft AND visibility >= 3sm) AND ((winddir >= 070 AND winddir <= 250) OR (windspeed = 0kt))",
+          "enabled": true
+        },
+        {
+          "text": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "ordinal": 2,
+          "enabled": true
+        }
+      ],
       "notamDefinitions": [
         {
           "text": "FOR PUSHBACK CONTACT RAMP CONTROL ON 130.87.",
-          "ordinal": 0,
-          "stationCondition": "WhenOnline",
-          "stationCallsigns": "BUR_*RMP",
+          "ordinal": 1,
+          "onlineCondition": "BUR_*RMP",
           "enabled": true
         },
         {
-          "text": "ACFT IN GATES @B1 THRU @B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
+          "text": "AIRLINE RAMP UNCONTROLLED CONTACT GC FOR PUSHBACK.",
           "ordinal": 2,
+          "onlineCondition": "BUR_*GND NOT BUR_*RMP",
           "enabled": true
         },
         {
-          "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
+          "text": "AIRLINE RAMP UNCONTROLLED CONTACT TWR FOR PUSHBACK.",
           "ordinal": 3,
+          "onlineCondition": "BUR_*TWR NOT (BUR_*RMP OR BUR_*GND)",
           "enabled": true
         },
         {
-          "text": "CD AND GC COMBINED ON 123.9.",
+          "text": "AIRLINE RAMP UNCONTROLLED CONTACT APP FOR PUSHBACK.",
           "ordinal": 4,
-          "enabled": false
+          "onlineCondition": "(BUR_*APP OR SCT_*APP) NOT (BUR_*RMP OR BUR_*TWR OR BUR_*GND)",
+          "enabled": true
         },
         {
-          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "text": "ACFT IN GATES *B1 THRU *B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
           "ordinal": 5,
           "enabled": false
         },
         {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+          "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
+          "ordinal": 6,
+          "onlineCondition": "1300z-0546z",
+          "enabled": true
+        },
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
           "ordinal": 6,
           "enabled": false
         },
         {
+          "text": "CD AND GC COMBINED ON 123.9.",
+          "ordinal": 8,
+          "onlineCondition": "BUR_*GND NOT BUR_*DEL",
+          "enabled": true
+        },
+        {
+          "text": "TWR, GC, CD COMBINED ON 118.7.",
+          "ordinal": 9,
+          "onlineCondition": "BUR_*TWR NOT (BUR_*GND OR BUR_*DEL)",
+          "enabled": true
+        },
+        {
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+          "ordinal": 10,
+          "enabled": false
+        },
+        {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": true
+        },
+        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "onlineCondition": "2230z-0300z",
+          "enabled": true
         }
       ],
       "datisTextReplacements": [],
@@ -4708,9 +4733,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -7076,9 +7111,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         },
         {
           "variableName": "MUN",
@@ -9228,6 +9273,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -9391,7 +9438,7 @@
           "id": "d6990d0d-8f5c-4aeb-82ca-9009a09de41c",
           "ordinal": 2,
           "name": "WEST - SIMUL INST",
-          "airportConditions": "SIMUL INST APCHS AND @RNAV RNP RWYS 24R AND ^25L APCHS, AND SIMUL APCHS IN PROG BTWN +LAX AND +HHR, SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+          "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 24R AND ^25L APCHS, AND SIMUL APCHS IN PROG BTWN +LAX AND HHR, SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -9408,7 +9455,7 @@
           "id": "1c5dd589-4e4f-49d5-8c04-04a9a5291c68",
           "ordinal": 3,
           "name": "WEST - SIMUL INST AND VISUAL",
-          "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 24R AND ^25L APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG, AND SIMUL APCHS IN PROG BTWN +LAX AND +HHR. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+          "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 24R AND ^25L APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG, AND SIMUL APCHS IN PROG BTWN +LAX AND HHR. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -9476,7 +9523,7 @@
           "id": "207a3dde-7bc4-4a17-a42b-9a88c7f47fe3",
           "ordinal": 7,
           "name": "OVER-OCEAN - INST",
-          "airportConditions": "INST APCHS AND @RNAV RNP APCHS ^6R, OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
+          "airportConditions": "INST APCHS AND RNAV RNP APCHS ^6R, OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -9493,7 +9540,7 @@
           "id": "0c5033c0-fec1-4bd6-880f-d3b124f4785c",
           "ordinal": 8,
           "name": "OVER-OCEAN - INST AND VISUAL",
-          "airportConditions": "INST APCHS AND @RNAV RNP APCHS IN PROG RWY 6R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
+          "airportConditions": "INST APCHS AND RNAV RNP APCHS IN PROG RWY 6R, OR VCTR FOR VISUAL APCH WILL BE PROVIDED. OPP DIRECTION TFC DEPG RY 25, SIMUL INSTR DEPARTURES IN PROG ^25R.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -9508,51 +9555,6 @@
         }
       ],
       "contractions": [
-        {
-          "variableName": "RNAV",
-          "text": "RNAV",
-          "voice": "R NAV"
-        },
-        {
-          "variableName": "24R",
-          "text": "24R",
-          "voice": "TWO FOUR RIGHT"
-        },
-        {
-          "variableName": "24L",
-          "text": "24L",
-          "voice": "TWO FOUR LEFT"
-        },
-        {
-          "variableName": "25R",
-          "text": "25R",
-          "voice": "TWO FIVE RIGHT"
-        },
-        {
-          "variableName": "25L",
-          "text": "25L",
-          "voice": "TWO FIVE LEFT"
-        },
-        {
-          "variableName": "6L",
-          "text": "6L",
-          "voice": "SIX LEFT"
-        },
-        {
-          "variableName": "6R",
-          "text": "6R",
-          "voice": "SIX RIGHT"
-        },
-        {
-          "variableName": "7L",
-          "text": "7L",
-          "voice": "SEVEN LEFT"
-        },
-        {
-          "variableName": "7R",
-          "text": "7R",
-          "voice": "SEVEN RIGHT"
-        },
         {
           "variableName": "SUMMR",
           "text": "SUMMR",
@@ -9587,6 +9589,21 @@
           "variableName": "RY24L",
           "text": "RY24L",
           "voice": "RUNWAY TWO FOUR LEFT"
+        },
+        {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -9603,55 +9620,77 @@
       ],
       "airportConditionDefinitions": [
         {
-          "text": "CTC L A GC ON 121.75 FOR PUSH OR TAXI ON *A.",
-          "ordinal": 1,
-          "stationCondition": "WhenOnline",
-          "stationCallsigns": "LAX_S_GND",
-          "enabled": false
-        },
-        {
-          "text": "CTC L A GC FOR ALL PUSHBACKS.",
-          "ordinal": 2,
-          "enabled": false
-        },
-        {
-          "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP.",
-          "ordinal": 3,
+          "text": "HELICOPTOR CONTROL OPEN ON 119.8.",
+          "ordinal": 0,
+          "onlineCondition": "LAX_H*_TWR",
           "enabled": true
         },
         {
-          "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP. PUSH AND START AT PILOTS DISCRETION IN ALLEYWAYS.",
+          "text": "CTC L A GC ON 121.75 FOR PUSH OR TAXI ON *A.",
+          "ordinal": 2,
+          "onlineCondition": "(LAX_S*GND AND LAX_N*GND) NOT LAX_W*GND",
+          "enabled": true
+        },
+        {
+          "text": "CTC L A GC ON 121.4 FOR PUSH OR TAXI ON *A.",
+          "ordinal": 3,
+          "onlineCondition": "LAX_W*GND",
+          "enabled": true
+        },
+        {
+          "text": "GC FREQ FOR ALL RWYS IS 121.75.",
           "ordinal": 4,
-          "enabled": false
+          "onlineCondition": "LAX_S*GND NOT (LAX_N*GND OR LAX_W*GND)",
+          "enabled": true
         },
         {
-          "text": "CITY RAMP COMBINED ON 121.4.",
+          "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP.",
           "ordinal": 5,
-          "enabled": false
+          "enabled": true
         },
         {
-          "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
+          "text": "CTC L A GC FOR ALL PUSHBACKS.",
           "ordinal": 6,
           "enabled": false
         },
         {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP. PUSH AND START AT PILOTS DISCRETION IN ALLEYWAYS.",
           "ordinal": 7,
           "enabled": false
         },
         {
-          "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "text": "CITY RAMP COMBINED ON 121.4.",
           "ordinal": 8,
           "enabled": false
         },
         {
-          "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
           "ordinal": 9,
+          "enabled": true
+        },
+        {
+          "text": "UPON RECEIPT OF YOUR ATC CLNC REED BACK ONLY YOUR SQUAWK CODE.",
+          "ordinal": 10,
+          "enabled": false
+        },
+        {
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "ordinal": 11,
+          "enabled": false
+        },
+        {
+          "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "ordinal": 12,
+          "enabled": false
+        },
+        {
+          "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "ordinal": 13,
           "enabled": false
         },
         {
           "text": "USE CAUTION WHEN EXITING RY24R AT TWY V, *W, AND *Y, TO HOLD SHORT OF RY24L. MULTIPLE RUNWAY INCURSIONS HAVE OCCURRED.",
-          "ordinal": 10,
+          "ordinal": 14,
           "enabled": true
         }
       ],
@@ -9668,13 +9707,20 @@
         },
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
-          "ordinal": 4,
+          "ordinal": 3,
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC.",
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": true
+        },
+        {
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "onlineCondition": "2230z-0300z",
+          "enabled": true
         }
       ],
       "datisTextReplacements": [],
@@ -11995,29 +12041,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
-        },
-        {
-          "variableName": "26L",
-          "text": "26L",
-          "voice": "TWO SIX LEFT"
-        },
-        {
-          "variableName": "26R",
-          "text": "26R",
-          "voice": "TWO SIX RIGHT"
-        },
-        {
-          "variableName": "8L",
-          "text": "8L",
-          "voice": "EIGHT LEFT"
-        },
-        {
-          "variableName": "8R",
-          "text": "8R",
-          "voice": "EIGHT RIGHT"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -12035,9 +12071,16 @@
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": true
+        },
+        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "onlineCondition": "2230z-0300z",
+          "enabled": true
         }
       ],
       "datisTextReplacements": [],
@@ -14370,24 +14413,19 @@
       ],
       "contractions": [
         {
-          "variableName": "28L",
-          "text": "28L",
-          "voice": "TWO EIGHT LEFT"
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
         },
         {
-          "variableName": "28R",
-          "text": "28R",
-          "voice": "TWO EIGHT RIGHT"
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
         },
         {
-          "variableName": "10L",
-          "text": "10L",
-          "voice": "ONE ZERO LEFT"
-        },
-        {
-          "variableName": "10R",
-          "text": "10R",
-          "voice": "ONE ZERO RIGHT"
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "ARE NAV"
         },
         {
           "variableName": "AM",
@@ -16773,6 +16811,21 @@
           "variableName": "OPS",
           "text": "OPERATIONS",
           "voice": "OPERATIONS"
+        },
+        {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -16811,9 +16864,16 @@
           "enabled": true
         },
         {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": true
+        },
+        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "onlineCondition": "2230z-0300z",
+          "enabled": true
         }
       ],
       "datisTextReplacements": [],
@@ -19162,29 +19222,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
-        },
-        {
-          "variableName": "31L",
-          "text": "31L",
-          "voice": "THREE ONE LEFT"
-        },
-        {
-          "variableName": "31R",
-          "text": "31R",
-          "voice": "THREE ONE RIGHT"
-        },
-        {
-          "variableName": "13L",
-          "text": "13L",
-          "voice": "ONE THREE LEFT"
-        },
-        {
-          "variableName": "13R",
-          "text": "13R",
-          "voice": "ONE THREE RIGHT"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -19217,9 +19267,16 @@
           "enabled": true
         },
         {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": true
+        },
+        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "onlineCondition": "2230z-0300z",
+          "enabled": true
         }
       ],
       "datisTextReplacements": [],
@@ -21496,9 +21553,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -23854,9 +23921,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         },
         {
           "variableName": "RLS",
@@ -23920,9 +23997,16 @@
           "enabled": false
         },
         {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": true
+        },
+        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "onlineCondition": "2230z-0300z",
+          "enabled": true
         }
       ],
       "datisTextReplacements": [],
@@ -28538,9 +28622,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -30909,9 +31003,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -33056,6 +33160,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -33280,9 +33386,19 @@
       ],
       "contractions": [
         {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
           "variableName": "RNAV",
           "text": "RNAV",
-          "voice": "R NAV"
+          "voice": "ARE NAV"
         },
         {
           "variableName": "TXG",
@@ -33315,11 +33431,6 @@
           "voice": "OVER"
         },
         {
-          "variableName": "H",
-          "text": "H",
-          "voice": "HOTEL"
-        },
-        {
           "variableName": "OPS",
           "text": "OPS",
           "voice": "OPERATIONS"
@@ -33349,19 +33460,19 @@
           "enabled": true
         },
         {
-          "text": "ACFT SOUTH OF *H TXG ON *A BE ADZD RY20L DEPTS MK IMDT SE TRN OVR *A.",
+          "text": "ACFT SOUTH OF *H TXG ON *A BE ADZD RY 20L DEPTS MK IMDT SE TRN OVR *A.",
           "ordinal": 3,
           "enabled": false
         },
         {
           "text": "OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS.",
           "ordinal": 4,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "ordinal": 5,
-          "enabled": true
+          "enabled": false
         }
       ],
       "notamDefinitions": [
@@ -33376,9 +33487,16 @@
           "enabled": false
         },
         {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": true
+        },
+        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "onlineCondition": "2230z-0300z",
+          "enabled": true
         }
       ],
       "datisTextReplacements": [],
@@ -35509,6 +35627,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -35720,6 +35840,21 @@
           "variableName": "ADZYS",
           "text": "ADZYS",
           "voice": "ADVISORIES"
+        },
+        {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
+        {
+          "variableName": "RNAV",
+          "text": "RNAV",
+          "voice": "ARE NAV"
         }
       ],
       "patterns": [
@@ -35741,14 +35876,14 @@
       ],
       "airportConditionDefinitions": [
         {
-          "text": "ILS-Z RWY 16R APCH IN USE, VISUAL APCH IN USE.",
+          "text": "ILS-Z RWY 16R APCH IN USE, VISUAL APCH IN USE .",
           "ordinal": 1,
-          "enabled": false
+          "enabled": true
         },
         {
-          "text": "ILS-Z RWY 16R APCH IN USE.",
+          "text": "ILS-Z RWY 16R APCH IN USE .",
           "ordinal": 2,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "VISUAL APCHS IN USE.",
@@ -35790,9 +35925,16 @@
           "enabled": true
         },
         {
+          "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+          "ordinal": 98,
+          "onlineCondition": "2215z-0230z",
+          "enabled": true
+        },
+        {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
-          "enabled": false
+          "onlineCondition": "2230z-0300z",
+          "enabled": true
         }
       ],
       "datisTextReplacements": [
@@ -38123,6 +38265,16 @@
         }
       ],
       "contractions": [
+        {
+          "variableName": "INC",
+          "text": "INC",
+          "voice": "INCLUDE"
+        },
+        {
+          "variableName": "RMKS",
+          "text": "RMKS",
+          "voice": "REMARKS"
+        },
         {
           "variableName": "RNAV",
           "text": "RNAV",

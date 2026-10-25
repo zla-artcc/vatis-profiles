@@ -2400,10 +2400,16 @@
       "enabled": false
     },
     {
+      "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
+      "ordinal": 98,
+      "onlineCondition": "2215z-0230z",
+      "enabled": true
+    },
+    {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
       "ordinal": 99,
-      "enabled": false
-    }
+      "onlineCondition": "2230z-0300z",
+      "enabled": true    }
   ],
   "datisTextReplacements": [],
   "datisPrependAirportConditions": "",
