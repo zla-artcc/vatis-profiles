@@ -2120,6 +2120,8 @@
       "becomingVoice": "Becoming",
       "temporaryText": "TEMPO",
       "temporaryVoice": "Temporary",
+      "templateText": "{Trend}",
+      "templateVoice": "TREND, {Trend}",
       "template": {}
     },
     "windShear": {
@@ -2352,14 +2354,14 @@
   ],
   "airportConditionDefinitions": [
     {
-      "text": "ILS-Z RWY 16R APCH IN USE, VISUAL APCH IN USE.",
+      "text": "ILS-Z RWY 16R APCH IN USE, VISUAL APCH IN USE .",
       "ordinal": 1,
-      "enabled": false
+      "enabled": true
     },
     {
-      "text": "ILS-Z RWY 16R APCH IN USE.",
+      "text": "ILS-Z RWY 16R APCH IN USE .",
       "ordinal": 2,
-      "enabled": true
+      "enabled": false
     },
     {
       "text": "VISUAL APCHS IN USE.",
