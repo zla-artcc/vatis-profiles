@@ -1,7 +1,7 @@
 {
   "name": "DEV - ZLA",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-DEV-ZLA.json",
-  "updateSerial": 2026102401,
+  "updateSerial": 2026102500,
   "stations": [
     {
       "ordinal": 98,
@@ -12071,7 +12071,7 @@
           "id": "d6990d0d-8f5c-4aeb-82ca-9009a09de41c",
           "ordinal": 2,
           "name": "WEST - SIMUL INST",
-          "airportConditions": "SIMUL INST APCHS AND @RNAV RNP RWYS 24R AND ^25L APCHS, AND SIMUL APCHS IN PROG BTWN +LAX AND +HHR, SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+          "airportConditions": "SIMUL INST APCHS AND @RNAV RNP RWYS 24R AND ^25L APCHS, AND SIMUL APCHS IN PROG BTWN +LAX AND HHR, SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -12088,7 +12088,7 @@
           "id": "1c5dd589-4e4f-49d5-8c04-04a9a5291c68",
           "ordinal": 3,
           "name": "WEST - SIMUL INST AND VISUAL",
-          "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 24R AND ^25L APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG, AND SIMUL APCHS IN PROG BTWN +LAX AND +HHR. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
+          "airportConditions": "SIMUL INST APCHS AND RNAV RNP RWYS 24R AND ^25L APCHS, OR VCTR FOR VISUAL APCH WILL BE PROVIDED, SIMUL VISUAL APCHS TO ALL RWYS ARE IN PROG, AND SIMUL APCHS IN PROG BTWN +LAX AND HHR. SIMUL INSTR DEPARTURES IN PROG RWYS 24 AND ^25.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -12189,51 +12189,6 @@
       ],
       "contractions": [
         {
-          "variableName": "RNAV",
-          "text": "RNAV",
-          "voice": "R NAV"
-        },
-        {
-          "variableName": "24R",
-          "text": "24R",
-          "voice": "TWO FOUR RIGHT"
-        },
-        {
-          "variableName": "24L",
-          "text": "24L",
-          "voice": "TWO FOUR LEFT"
-        },
-        {
-          "variableName": "25R",
-          "text": "25R",
-          "voice": "TWO FIVE RIGHT"
-        },
-        {
-          "variableName": "25L",
-          "text": "25L",
-          "voice": "TWO FIVE LEFT"
-        },
-        {
-          "variableName": "6L",
-          "text": "6L",
-          "voice": "SIX LEFT"
-        },
-        {
-          "variableName": "6R",
-          "text": "6R",
-          "voice": "SIX RIGHT"
-        },
-        {
-          "variableName": "7L",
-          "text": "7L",
-          "voice": "SEVEN LEFT"
-        },
-        {
-          "variableName": "7R",
-          "text": "7R",
-          "voice": "SEVEN RIGHT"
-        },
-        {
           "variableName": "SUMMR",
           "text": "SUMMR",
           "voice": "SUMMER"
@@ -12283,65 +12238,77 @@
       ],
       "airportConditionDefinitions": [
         {
+          "text": "HELICOPTOR CONTROL OPEN ON 119.8.",
+          "ordinal": 0,
+          "onlineCondition": "LAX_H*_TWR",
+          "enabled": true
+        },
+        {
           "text": "CTC L A GC ON 121.75 FOR PUSH OR TAXI ON *A.",
-          "ordinal": 1,
-          "onlineCondition": "LAX_S_GND NOT LAX_W*_GND",
-          "enabled": false
+          "ordinal": 2,
+          "onlineCondition": "(LAX_S*GND AND LAX_N*GND) NOT LAX_W*GND",
+          "enabled": true
+        },
+        {
+          "text": "CTC L A GC ON 121.4 FOR PUSH OR TAXI ON *A.",
+          "ordinal": 3,
+          "onlineCondition": "LAX_W*GND",
+          "enabled": true
         },
         {
           "text": "GC FREQ FOR ALL RWYS IS 121.75.",
-          "ordinal": 2,
-          "onlineCondition": "LAX_S*_GND NOT LAX_N*_GND",
+          "ordinal": 4,
+          "onlineCondition": "LAX_S*GND NOT (LAX_N*GND OR LAX_W*GND)",
           "enabled": true
         },
         {
           "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP.",
-          "ordinal": 3,
+          "ordinal": 5,
           "enabled": true
         },
         {
           "text": "CTC L A GC FOR ALL PUSHBACKS.",
-          "ordinal": 4,
-          "enabled": false
-        },
-        {
-          "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP. PUSH AND START AT PILOTS DISCRETION IN ALLEYWAYS.",
-          "ordinal": 5,
-          "enabled": false
-        },
-        {
-          "text": "CITY RAMP COMBINED ON 121.4.",
           "ordinal": 6,
           "enabled": false
         },
         {
-          "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
+          "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP. PUSH AND START AT PILOTS DISCRETION IN ALLEYWAYS.",
           "ordinal": 7,
-          "enabled": true
+          "enabled": false
         },
         {
-          "text": "UPON RECEIPT OF YOUR ATC CLNC REED BACK ONLY YOUR SQUAWK CODE.",
+          "text": "CITY RAMP COMBINED ON 121.4.",
           "ordinal": 8,
           "enabled": false
         },
         {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
           "ordinal": 9,
-          "enabled": false
+          "enabled": true
         },
         {
-          "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "text": "UPON RECEIPT OF YOUR ATC CLNC REED BACK ONLY YOUR SQUAWK CODE.",
           "ordinal": 10,
           "enabled": false
         },
         {
-          "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 11,
           "enabled": false
         },
         {
-          "text": "USE CAUTION WHEN EXITING RY24R AT TWY V, *W, AND *Y, TO HOLD SHORT OF RY24L. MULTIPLE RUNWAY INCURSIONS HAVE OCCURRED.",
+          "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "ordinal": 12,
+          "enabled": false
+        },
+        {
+          "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "ordinal": 13,
+          "enabled": false
+        },
+        {
+          "text": "USE CAUTION WHEN EXITING RY24R AT TWY V, *W, AND *Y, TO HOLD SHORT OF RY24L. MULTIPLE RUNWAY INCURSIONS HAVE OCCURRED.",
+          "ordinal": 14,
           "enabled": true
         }
       ],
