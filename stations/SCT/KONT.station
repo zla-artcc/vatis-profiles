@@ -2391,6 +2391,7 @@
     {
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
       "ordinal": 99,
+	  "onlineCondition": "2230z-0300z",
       "enabled": false
     }
   ],

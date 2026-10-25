@@ -1,7 +1,7 @@
 {
   "name": "DEV - ZLA",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-DEV-ZLA.json",
-  "updateSerial": 2026102400,
+  "updateSerial": 2026102401,
   "stations": [
     {
       "ordinal": 98,
@@ -4521,6 +4521,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -4814,7 +4816,7 @@
       "notamDefinitions": [
         {
           "text": "NOISE ABATEMENT PROC IN EFCT.",
-          "ordinal": 0,
+          "ordinal": 1,
           "enabled": false
         },
         {
@@ -4828,46 +4830,84 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
-          "ordinal": 99,
+          "text": "LLWS ADZYS IN EFCT.",
+          "ordinal": 4,
           "enabled": false
         },
         {
-          "text": "LLWS ADZYS IN EFCT.",
+          "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
           "ordinal": 5,
           "enabled": false
         },
         {
-          "text": "GC COMBINED ON 121.1",
+          "text": "CD COMBINED ON 121.9.",
           "ordinal": 6,
+          "onlineCondition": "NOT LAS_*DEL",
           "enabled": false
         },
         {
-          "text": "CD AND GC COMBINED ON 121.1",
+          "text": "CD COMBINED ON 121.1.",
           "ordinal": 7,
+          "onlineCondition": "NOT LAS_*DEL",
           "enabled": false
+        },
+        {
+          "text": "GC COMBINED ON 121.1.",
+          "ordinal": 8,
+          "onlineCondition": "(LAS_E*GND AND LAS_*DEL) NOT LAS_W*GND",
+          "enabled": true
+        },
+        {
+          "text": "GC COMBINED ON 121.9.",
+          "ordinal": 9,
+          "onlineCondition": "(LAS_W*GND AND LAS_*DEL) NOT LAS_E*GND",
+          "enabled": true
+        },
+        {
+          "text": "CD AND GC COMBINED ON 121.1.",
+          "ordinal": 10,
+          "onlineCondition": "LAS_E*GND NOT (LAS_*DEL OR LAS_W*GND)",
+          "enabled": true
+        },
+        {
+          "text": "CD AND GC COMBINED ON 121.9.",
+          "ordinal": 11,
+          "onlineCondition": "LAS_W*GND NOT (LAS_E*GND OR LAS_*DEL)",
+          "enabled": true
         },
         {
           "text": "HELICOPTOR CONTROL OPEN ON 123.82.",
-          "ordinal": 8,
-          "stationCondition": "WhenOnline",
-          "stationCallsigns": "LAS_P*_TWR",
+          "ordinal": 12,
+          "onlineCondition": "LAS_H*TWR",
+          "enabled": true
+        },
+        {
+          "text": "HELICOPTOR CONTROL OPEN ON 119.9.",
+          "ordinal": 13,
+          "onlineCondition": "LAS_E*TWR NOT LAS_P*TWR",
+          "enabled": true
+        },
+        {
+          "text": "ALL TOWER FUNCTIONS, CD AND GC COMBINED ON 119.9.",
+          "ordinal": 14,
+          "onlineCondition": "LAS_E*TWR NOT (LAS_*GND OR LAS_*DEL OR LAS_*TWR)",
           "enabled": true
         },
         {
           "text": "HELICOPTERS OVER THE STRIP AT *3000.",
-          "ordinal": 9,
+          "ordinal": 15,
           "enabled": true
         },
         {
-          "text": "CHECK DENSITY ALTITUDE",
-          "ordinal": 10,
+          "text": "CHECK DENSITY ALTITUDE.",
+          "ordinal": 16,
           "weatherCondition": "temperature >= 29c",
           "enabled": true
         },
         {
-          "text": "+SFO, +SJC, +OAK DEPARTURES MUST FILE ALWYS, RAZRR, OR BANDD STAR.",
-          "ordinal": 11,
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
+          "ordinal": 99,
+          "onlineCondition": "2230z-0300z",
           "enabled": false
         }
       ],
@@ -7320,6 +7360,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
+          "onlineCondition": "2230z-0300z",
           "enabled": false
         }
       ],
@@ -9451,6 +9492,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -9590,13 +9633,13 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 220
+        "speechRate": 200
       },
       "presets": [
         {
           "id": "014b4143-b8a6-45e4-b3d7-3ffa0045c763",
           "name": "NORMAL (8/15)",
-          "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARVNG AND DEPTG RWY 8 AND RWY 15. LAHSO IN EFFECT RWY 15. READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "ILS RWY 8 APP IN USE, VECTORS VIS APP. ARVNG AND DEPTG RWY 8 AND RWY 15.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -9644,28 +9687,7 @@
           }
         }
       ],
-      "contractions": [
-        {
-          "variableName": "B1",
-          "text": "B1",
-          "voice": "BRAVO ONE"
-        },
-        {
-          "variableName": "B4",
-          "text": "B4",
-          "voice": "BRAVO FOUR"
-        },
-        {
-          "variableName": "CD",
-          "text": "CD",
-          "voice": "CLEARANCE DELIVERY"
-        },
-        {
-          "variableName": "GC",
-          "text": "GC",
-          "voice": "GROUND CONTROL"
-        }
-      ],
+      "contractions": [],
       "patterns": [
         {
           "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC)-([ABCDXYZ])\\b",
@@ -9678,43 +9700,81 @@
           "voice": "$1 $phonetic($2)"
         }
       ],
-      "airportConditionDefinitions": [],
+      "airportConditionDefinitions": [
+        {
+          "text": "LAHSO IN EFFECT RWY 15.",
+          "ordinal": 1,
+          "weatherCondition": "(ceiling >= 1000ft AND visibility >= 3sm) AND ((winddir >= 070 AND winddir <= 250) OR (windspeed = 0kt))",
+          "enabled": true
+        },
+        {
+          "text": "READBACK ALL RWY HOLD SHORT INSTRUCTIONS.",
+          "ordinal": 2,
+          "enabled": true
+        }
+      ],
       "notamDefinitions": [
         {
           "text": "FOR PUSHBACK CONTACT RAMP CONTROL ON 130.87.",
-          "ordinal": 0,
-          "stationCondition": "WhenOnline",
-          "stationCallsigns": "BUR_*RMP",
+          "ordinal": 1,
+          "onlineCondition": "BUR_*RMP",
           "enabled": true
         },
         {
-          "text": "ACFT IN GATES @B1 THRU @B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
+          "text": "AIRLINE RAMP UNCONTROLLED CONTACT GC FOR PUSHBACK.",
           "ordinal": 2,
+          "onlineCondition": "BUR_*GND NOT BUR_*RMP",
           "enabled": true
         },
         {
-          "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
+          "text": "AIRLINE RAMP UNCONTROLLED CONTACT TWR FOR PUSHBACK.",
           "ordinal": 3,
+          "onlineCondition": "BUR_*TWR NOT (BUR_*RMP OR BUR_*GND)",
           "enabled": true
         },
         {
-          "text": "CD AND GC COMBINED ON 123.9.",
+          "text": "AIRLINE RAMP UNCONTROLLED CONTACT APP FOR PUSHBACK.",
           "ordinal": 4,
-          "enabled": false
+          "onlineCondition": "(BUR_*APP OR SCT_*APP) NOT (BUR_*RMP OR BUR_*TWR OR BUR_*GND)",
+          "enabled": true
         },
         {
-          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "text": "ACFT IN GATES *B1 THRU *B4 ADVISE GC 10 MINS PRIOR TO PUSHBACK.",
           "ordinal": 5,
           "enabled": false
         },
         {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+          "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
           "ordinal": 6,
+          "onlineCondition": "1300z-0546z",
+          "enabled": true
+        },
+        {
+          "text": "+SFO, +OAK DEPARTURES MUST FILE WWAVS OR SKIZM STAR.",
+          "ordinal": 6,
+          "enabled": false
+        },
+        {
+          "text": "CD AND GC COMBINED ON 123.9.",
+          "ordinal": 8,
+          "onlineCondition": "BUR_*GND NOT BUR_*DEL",
+          "enabled": true
+        },
+        {
+          "text": "TWR, GC, CD COMBINED ON 118.7.",
+          "ordinal": 9,
+          "onlineCondition": "BUR_*TWR NOT (BUR_*GND OR BUR_*DEL)",
+          "enabled": true
+        },
+        {
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
+          "ordinal": 10,
           "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
+          "onlineCondition": "2230z-0300z",
           "enabled": false
         }
       ],
@@ -11846,6 +11906,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -12223,14 +12285,14 @@
         {
           "text": "CTC L A GC ON 121.75 FOR PUSH OR TAXI ON *A.",
           "ordinal": 1,
-          "stationCondition": "WhenOnline",
-          "stationCallsigns": "LAX_S_GND",
+          "onlineCondition": "LAX_S_GND NOT LAX_W*_GND",
           "enabled": false
         },
         {
-          "text": "CTC L A GC FOR ALL PUSHBACKS.",
+          "text": "GC FREQ FOR ALL RWYS IS 121.75.",
           "ordinal": 2,
-          "enabled": false
+          "onlineCondition": "LAX_S*_GND NOT LAX_N*_GND",
+          "enabled": true
         },
         {
           "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP.",
@@ -12238,38 +12300,48 @@
           "enabled": true
         },
         {
-          "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP. PUSH AND START AT PILOTS DISCRETION IN ALLEYWAYS.",
+          "text": "CTC L A GC FOR ALL PUSHBACKS.",
           "ordinal": 4,
           "enabled": false
         },
         {
-          "text": "CITY RAMP COMBINED ON 121.4.",
+          "text": "CALL 4 PUSH ONTO ALL TWYS AND CITY RAMP. PUSH AND START AT PILOTS DISCRETION IN ALLEYWAYS.",
           "ordinal": 5,
           "enabled": false
         },
         {
-          "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
+          "text": "CITY RAMP COMBINED ON 121.4.",
           "ordinal": 6,
           "enabled": false
         },
         {
-          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
+          "text": "INCLUDE YOUR CALL SIGN IN ALL READBACKS.",
           "ordinal": 7,
-          "enabled": false
+          "enabled": true
         },
         {
-          "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
+          "text": "UPON RECEIPT OF YOUR ATC CLNC REED BACK ONLY YOUR SQUAWK CODE.",
           "ordinal": 8,
           "enabled": false
         },
         {
-          "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 9,
           "enabled": false
         },
         {
-          "text": "USE CAUTION WHEN EXITING RY24R AT TWY V, *W, AND *Y, TO HOLD SHORT OF RY24L. MULTIPLE RUNWAY INCURSIONS HAVE OCCURRED.",
+          "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
           "ordinal": 10,
+          "enabled": false
+        },
+        {
+          "text": "ACTIVATE TRANSPONDER WITH MODE C ON ALL TWYS AND RWYS.",
+          "ordinal": 11,
+          "enabled": false
+        },
+        {
+          "text": "USE CAUTION WHEN EXITING RY24R AT TWY V, *W, AND *Y, TO HOLD SHORT OF RY24L. MULTIPLE RUNWAY INCURSIONS HAVE OCCURRED.",
+          "ordinal": 12,
           "enabled": true
         }
       ],
@@ -12290,8 +12362,9 @@
           "enabled": false
         },
         {
-          "text": "STAFFING OPTIMIZED FOR EVENT TFC.",
+          "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
+          "onlineCondition": "2230z-0300z",
           "enabled": false
         }
       ],
@@ -14694,6 +14767,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
+          "onlineCondition": "2230z-0300z",
           "enabled": false
         }
       ],
@@ -17100,6 +17174,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
+          "onlineCondition": "2230z-0300z",
           "enabled": false
         }
       ],
@@ -19494,6 +19569,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
+          "onlineCondition": "2230z-0300z",
           "enabled": false
         }
       ],
@@ -21625,6 +21701,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -21925,12 +22003,12 @@
         {
           "text": "OPERATE TRANSPONDER IN MODE C ON ALL TWYS AND RWYS.",
           "ordinal": 4,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "READBACK RWY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "ordinal": 5,
-          "enabled": true
+          "enabled": false
         }
       ],
       "notamDefinitions": [
@@ -21947,6 +22025,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
+          "onlineCondition": "2230z-0300z",
           "enabled": false
         }
       ],
@@ -24078,6 +24157,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -24310,14 +24391,14 @@
       ],
       "airportConditionDefinitions": [
         {
-          "text": "ILS-Z RWY 16R APCH IN USE, VISUAL APCH IN USE.",
+          "text": "ILS-Z RWY 16R APCH IN USE, VISUAL APCH IN USE .",
           "ordinal": 1,
-          "enabled": false
+          "enabled": true
         },
         {
-          "text": "ILS-Z RWY 16R APCH IN USE.",
+          "text": "ILS-Z RWY 16R APCH IN USE .",
           "ordinal": 2,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "VISUAL APCHS IN USE.",
@@ -24361,6 +24442,7 @@
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
+          "onlineCondition": "2230z-0300z",
           "enabled": false
         }
       ],
