@@ -2117,6 +2117,8 @@
       "becomingVoice": "Becoming",
       "temporaryText": "TEMPO",
       "temporaryVoice": "Temporary",
+      "templateText": "{Trend}",
+      "templateVoice": "TREND, {Trend}",
       "template": {}
     },
     "windShear": {

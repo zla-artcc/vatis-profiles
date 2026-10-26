@@ -2117,6 +2117,8 @@
       "becomingVoice": "Becoming",
       "temporaryText": "TEMPO",
       "temporaryVoice": "Temporary",
+      "templateText": "{Trend}",
+      "templateVoice": "TREND, {Trend}",
       "template": {}
     },
     "windShear": {
@@ -2337,7 +2339,7 @@
       "text": "RMKS",
       "voice": "REMARKS"
     },
-	{
+    {
       "variableName": "RNAV",
       "text": "RNAV",
       "voice": "ARE NAV"
@@ -2355,7 +2357,7 @@
       "voice": "$1 $phonetic($2)"
     },
     {
-      "pattern": "(17|35) (L/R)",
+      "pattern": "(17|35)(L/R)",
       "text": "$1 L/R",
       "voice": "$1 LEFT AND RIGHT"
     }
@@ -2367,7 +2369,7 @@
       "ordinal": 1,
       "enabled": true
     },
-	{
+    {
       "text": "CHECK DENSITY ALTITUDE",
       "ordinal": 2,
       "weatherCondition": "temperature >= 29c",
