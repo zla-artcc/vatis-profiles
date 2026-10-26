@@ -2,7 +2,7 @@
   "name": "Santa Barbara TRACON (SBA)",
   "id": "f41ff02d-b3c8-4e9c-8898-45f3d7ea3bef",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SBA.json",
-  "updateSerial": 2026102501,
+  "updateSerial": 2026102600,
   "stations": [
     {
       "ordinal": 99,
@@ -2458,13 +2458,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],

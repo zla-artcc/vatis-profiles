@@ -1,7 +1,7 @@
 {
   "name": "ZLA Real D-ATIS",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-D-ATIS.json",
-  "updateSerial": 2026102501,
+  "updateSerial": 2026102600,
   "stations": [
     {
       "ordinal": 1,
@@ -2522,13 +2522,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -4942,13 +4942,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -7520,13 +7520,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -9657,6 +9657,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -9944,13 +9946,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -12081,6 +12083,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -12355,13 +12359,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -14822,13 +14826,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -17260,13 +17264,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [

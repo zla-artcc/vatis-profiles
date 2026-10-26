@@ -2,7 +2,7 @@
   "name": "Los Angeles ARTCC (ZLA)",
   "id": "e1126dde-5a6a-40dd-ad5c-3f594f8c0f82",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA.json",
-  "updateSerial": 2026102501,
+  "updateSerial": 2026102600,
   "stations": [
     {
       "ordinal": 98,
@@ -2126,6 +2126,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -4909,13 +4911,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -7378,13 +7380,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -9798,13 +9800,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -12376,13 +12378,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -14513,6 +14515,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -14800,13 +14804,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -16934,6 +16938,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -17203,13 +17209,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -19340,6 +19346,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -19614,13 +19622,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -22081,13 +22089,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -24519,13 +24527,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [

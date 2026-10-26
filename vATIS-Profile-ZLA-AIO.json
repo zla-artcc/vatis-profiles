@@ -1,7 +1,7 @@
 {
   "name": "ZLA All Stations",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-AIO.json",
-  "updateSerial": 2026102501,
+  "updateSerial": 2026102600,
   "stations": [
     {
       "ordinal": 98,
@@ -2125,6 +2125,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -4464,6 +4466,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -6813,6 +6817,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -9156,6 +9162,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -11447,6 +11455,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -13766,6 +13776,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -16086,6 +16098,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -18436,6 +18450,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -20771,6 +20787,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -21009,7 +21027,7 @@
           "voice": "$1 $phonetic($2)"
         },
         {
-          "pattern": "(17|35) (L/R)",
+          "pattern": "(17|35)(L/R)",
           "text": "$1 L/R",
           "voice": "$1 LEFT AND RIGHT"
         }
@@ -23553,13 +23571,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -25687,6 +25705,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -28366,13 +28386,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -37810,13 +37830,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -39944,6 +39964,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -42307,6 +42329,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -45115,13 +45139,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -47252,6 +47276,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -47475,13 +47501,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -49609,6 +49635,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -51981,6 +52009,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -52268,13 +52298,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -54402,6 +54432,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -54671,13 +54703,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -56761,6 +56793,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -59127,6 +59161,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -59401,13 +59437,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -61491,6 +61527,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -63833,6 +63871,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -66177,6 +66217,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -68891,13 +68933,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -71329,13 +71371,13 @@
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
           "ordinal": 98,
           "onlineCondition": "2215z-0230z",
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [
@@ -73474,6 +73516,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
