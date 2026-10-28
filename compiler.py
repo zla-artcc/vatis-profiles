@@ -32,7 +32,7 @@ PROFILES = {
 }
 
 # Exclude these airports from all profiles.
-EXCLUDE_AIRPORTS = ['KPOC']
+EXCLUDE_AIRPORTS = ['KABC']
 
 def filter_available_stations():
     """Remove airports in EXCLUDE_AIRPORTS from AVAILABLE_STATIONS."""
