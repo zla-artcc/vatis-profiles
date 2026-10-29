@@ -2253,7 +2253,7 @@
   "frequency": 124650000,
   "idsEndpoint": "https://ids.laartcc.org/remote/atis",
   "useDecimalTerminology": false,
-  "randomizeAtisLetterOnConnect": false,
+  "randomizeAtisLetterOnConnect": true,
   "atisVoice": {
     "useTextToSpeech": true,
     "useWavPack": false,

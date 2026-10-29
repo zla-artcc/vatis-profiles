@@ -2265,7 +2265,7 @@
       "id": "1af35809-17a9-481e-9339-2ff71b955780",
       "ordinal": 0,
       "name": "RWY 12",
-      "airportConditions": "LNDG AND DEPG RWY 12.",
+      "airportConditions": "RWY 12 IN USE. LNDG AND DEPG RWY 12.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -2281,7 +2281,7 @@
       "id": "4bc60d15-65d7-4ee9-b2b4-de23cfc20d8a",
       "ordinal": 2,
       "name": "RWY 30",
-      "airportConditions": "LNDG AND DEPG RWY 30.",
+      "airportConditions": "RWY 30 IN USE. LNDG AND DEPG RWY 30.",
       "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false,
@@ -2341,28 +2341,18 @@
   ],
   "airportConditionDefinitions": [
     {
-      "text": "VOR-*A RWY 12 APP IN USE.",
+      "text": "VOR-A APP IN USE.",
       "ordinal": 1,
       "enabled": true
     },
     {
-      "text": "VOR-*A RW 30 APP IN USE.",
+      "text": "VIS APP IN USE.",
       "ordinal": 2,
       "enabled": false
     },
     {
-      "text": "VIS APP IN USE.",
+      "text": "RNAV RWY 12 APP IN USE.",
       "ordinal": 3,
-      "enabled": false
-    },
-    {
-      "text": "RNAV RWY 12 AND VOR APPROACHES IN USE",
-      "ordinal": 4,
-      "enabled": false
-    },
-    {
-      "text": "VOR APPROACH IN USE.",
-      "ordinal": 5,
       "enabled": false
     }
   ],
