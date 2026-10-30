@@ -1,7 +1,7 @@
 {
   "name": "DEV - ZLA",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-DEV-ZLA.json",
-  "updateSerial": 2026102909,
+  "updateSerial": 2026102913,
   "stations": [
     {
       "ordinal": 98,
@@ -2266,7 +2266,7 @@
         "useTextToSpeech": false,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 200
+        "speechRate": 220
       },
       "presets": [
         {
@@ -4829,6 +4829,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
+          "onlineCondition": "",
           "enabled": false
         },
         {
@@ -9657,7 +9658,7 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 200
+        "speechRate": 220
       },
       "presets": [
         {
@@ -9793,6 +9794,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 10,
+          "onlineCondition": "",
           "enabled": false
         },
         {
@@ -12339,6 +12341,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 11,
+          "onlineCondition": "",
           "enabled": false
         },
         {
@@ -14792,6 +14795,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
+          "onlineCondition": "",
           "enabled": false
         },
         {
@@ -17197,6 +17201,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
+          "onlineCondition": "",
           "enabled": false
         },
         {
@@ -19598,6 +19603,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
+          "onlineCondition": "",
           "enabled": false
         },
         {
@@ -22082,6 +22088,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
+          "onlineCondition": "",
           "enabled": false
         },
         {
