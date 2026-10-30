@@ -29,7 +29,7 @@ PROFILES = {
 #    "./vATIS-Profile-DEV-D-ATIS.json": ['KBUR', 'KLAS', 'KLAX', 'KONT', 'KSAN', 'KSNA', 'KPOC',
 #                                 'KVNY'],
 #    "./vATIS-Profile-SCT-1.json": ['KBUR', 'KVNY', 'KWHP'],
-     "./vATIS-Profile-SCT-3.json": ['KONT', 'KPSP', 'SCT A3'],
+     "./vATIS-Profile-DEV-SCT-3.json": ['KONT', 'KPSP', 'SCT A3'],
 #    "./vATIS-Profile-SCT-4.json": ['KSNA', 'KLGB'],
 #    "./vATIS-Profile-SCT-5.json": ['KCRQ', 'KMYF', 'KSEE', 'KSAN', 'KSDM', 'KRNM'],
 #    "./vATIS-Profile-SCT-6.json": ['KLAX', 'KSMO', 'KHHR']

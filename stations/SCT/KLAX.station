@@ -2523,8 +2523,8 @@
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
       "ordinal": 11,
-	  "onlineCondition": "2300z-0245z",
-      "enabled": true
+	  "onlineCondition": "",
+      "enabled": false
     },
     {
       "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
@@ -2568,7 +2568,7 @@
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
       "ordinal": 99,
       "onlineCondition": "2230z-0300z",
-      "enabled": true
+      "enabled": false
     }
   ],
   "datisTextReplacements": [],
