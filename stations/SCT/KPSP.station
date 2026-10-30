@@ -2253,7 +2253,7 @@
   "frequency": 124650000,
   "idsEndpoint": "https://ids.laartcc.org/remote/atis",
   "useDecimalTerminology": false,
-  "randomizeAtisLetterOnConnect": false,
+  "randomizeAtisLetterOnConnect": true,
   "atisVoice": {
     "useTextToSpeech": true,
     "useWavPack": false,
@@ -2377,7 +2377,8 @@
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 2,
-      "enabled": false
+	  "onlineCondition": "2300z-0245z",
+      "enabled": true
     },
     {
       "text": "NEW RNAV PROCEDURES IN EFFECT. LOAD NEWEST NAVIGATION DATA.",
@@ -2394,7 +2395,7 @@
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
       "ordinal": 99,
       "onlineCondition": "2230z-0300z",
-      "enabled": false
+      "enabled": true
     }
   ],
   "datisTextReplacements": [],

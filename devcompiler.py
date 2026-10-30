@@ -24,15 +24,19 @@ PROFILES = {
 #    "./vATIS-Profile-DEV-SBA.json": ['SBA'],
      "./vATIS-Profile-DEV-SCT.json": ['SCT'],
      "./vATIS-Profile-DEV-ZLA.json": ['KBFL', 'KBUR', 'KLAS', 'KLAX', 'KONT', 'KPSP', 'KSAN', 'KSBA', 'KSNA',
-                                  'KVNY', 'KPOC'],
-#    "./vATIS-Profile-DEV-ZLA-2.json": ['CTR'],
+                                  'KVNY'],
+#    "./vATIS-Profile-DEV-ZLA-2.json": ['CTR', 'NTD', 'KNYL'],
 #    "./vATIS-Profile-DEV-D-ATIS.json": ['KBUR', 'KLAS', 'KLAX', 'KONT', 'KSAN', 'KSNA', 'KPOC',
-#                                 'KVNY']
-     "./vATIS-Profile-DEV-ZLA-AIO.json": ['CTR', 'L30', 'SCT', 'SBA', 'JCF'],
+#                                 'KVNY'],
+#    "./vATIS-Profile-SCT-1.json": ['KBUR', 'KVNY', 'KWHP'],
+     "./vATIS-Profile-SCT-3.json": ['KONT', 'KPSP', 'SCT A3'],
+#    "./vATIS-Profile-SCT-4.json": ['KSNA', 'KLGB'],
+#    "./vATIS-Profile-SCT-5.json": ['KCRQ', 'KMYF', 'KSEE', 'KSAN', 'KSDM', 'KRNM'],
+#    "./vATIS-Profile-SCT-6.json": ['KLAX', 'KSMO', 'KHHR']
 }
 
 # Exclude these airports from all profiles.
-EXCLUDE_AIRPORTS = ['KPOC']
+EXCLUDE_AIRPORTS = ['KABC']
 
 def filter_available_stations():
     """Remove airports in EXCLUDE_AIRPORTS from AVAILABLE_STATIONS."""
@@ -77,12 +81,15 @@ def build_station_list(station_filter):
     """
     profile_stations = []
 
-    for station in AVAILABLE_STATIONS:
-        for filter_item in station_filter:
-            if filter_item in station:
-                profile_stations.append(station)
+    for key in station_filter:
+        # Match exact folder name
+        profile_stations.extend(glob.glob(f"./stations/{key}/*.station"))
 
-    return profile_stations
+        # Match exact station file name anywhere under stations/
+        profile_stations.extend(glob.glob(f"./stations/*/{key}.station"))
+
+
+    return sorted(set(profile_stations))
 
 def build_profile(profile_stations, vatis_profile):
     """

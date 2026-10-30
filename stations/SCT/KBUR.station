@@ -2261,7 +2261,7 @@
     "useTextToSpeech": true,
     "useWavPack": false,
     "voice": "Default",
-    "speechRate": 200
+    "speechRate": 220
   },
   "presets": [
     {
@@ -2397,7 +2397,8 @@
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 10,
-      "enabled": false
+	  "onlineCondition": "2300z-0245z",
+      "enabled": true
     },
     {
       "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
@@ -2409,7 +2410,7 @@
       "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
       "ordinal": 99,
       "onlineCondition": "2230z-0300z",
-      "enabled": false
+      "enabled": true
     }
   ],
   "datisTextReplacements": [],
