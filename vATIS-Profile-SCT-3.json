@@ -2,7 +2,7 @@
   "name": "SCT Area 3",
   "id": "604492c4-4985-4330-9696-c72810331b7f",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT-3.json",
-  "updateSerial": 2026102908,
+  "updateSerial": 2026102909,
   "stations": [
     {
       "ordinal": 99,
