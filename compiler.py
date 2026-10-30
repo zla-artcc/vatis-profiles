@@ -78,12 +78,15 @@ def build_station_list(station_filter):
     """
     profile_stations = []
 
-    for station in AVAILABLE_STATIONS:
-        for filter_item in station_filter:
-            if filter_item in station:
-                profile_stations.append(station)
+    for key in station_filter:
+        # Match exact folder name
+        profile_stations.extend(glob.glob(f"./stations/{key}/*.station"))
 
-    return profile_stations
+        # Match exact station file name anywhere under stations/
+        profile_stations.extend(glob.glob(f"./stations/*/{key}.station"))
+
+
+    return sorted(set(profile_stations))
 
 def build_profile(profile_stations, vatis_profile):
     """
