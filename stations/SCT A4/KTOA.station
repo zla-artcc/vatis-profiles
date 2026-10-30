@@ -2220,7 +2220,7 @@
     {
       "id": "922c5c8c-9967-484a-b2a7-f799fb545c82",
       "name": "Northwest (29)",
-      "airportConditions": "ILS RWY 29R APPR IN USE. LNDG AND DEPG RWY 29.",
+      "airportConditions": "ILS RWY 29R APPR IN USE. LNDG AND DEPG RWY 29. ALL AIRCRAFT READBACK HOLD SHORT INSTRUCTIONS AND RUNWAY ASSIGNMENTS WITH YOUR CALL SIGN.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -2235,7 +2235,7 @@
     {
       "id": "adad7d96-82f3-45c2-8eb7-e28bd3cc2216",
       "name": "Southeast (11)",
-      "airportConditions": "GPS RWY 11L APPR IN USE. LNDG AND DEPG RWY 11.",
+      "airportConditions": "GPS RWY 11L APPR IN USE. LNDG AND DEPG RWY 11. ALL AIRCRAFT READBACK HOLD SHORT INSTRUCTIONS AND RUNWAY ASSIGNMENTS WITH YOUR CALL SIGN.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,

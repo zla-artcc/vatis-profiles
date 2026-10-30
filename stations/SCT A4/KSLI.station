@@ -2220,22 +2220,7 @@
     {
       "id": "3e97b8dd-5faa-4fa0-8fa1-2a36edac7c35",
       "name": "West",
-      "airportConditions": "GPS RWY 22L APP IN USE. LNDG AND DEPG RWYS 22L/R.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
-      "externalGenerator": {
-        "enabled": false,
-        "textUrl": "",
-        "voiceUrl": "",
-        "arrival": "",
-        "departure": "",
-        "approaches": "",
-        "remarks": ""
-      }
-    },
-    {
-      "id": "1831dbd5-b050-447c-a2cf-7f42a62f586c",
-      "name": "West (Low IMC)",
-      "airportConditions": "LOC, GPS, VOR APPS IN USE. LNDG AND DEPG RWY 24.",
+      "airportConditions": "GPS RWY 22L APP IN USE. LNDG AND DEPG RWYS 22 L/R. ALL AIRCRAFT READBACK HOLD SHORT INSTRUCTIONS AND RUNWAY ASSIGNMENTS WITH YOUR CALL SIGN.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -2250,7 +2235,7 @@
     {
       "id": "399a8b7f-6e09-45bf-a0ae-6a0987d2bd27",
       "name": "East",
-      "airportConditions": "VOR-A APPR IN USE. LNDG AND DEPG RWY 6.",
+      "airportConditions": "GPS OR VOR RWY 22L CIRCLE 4R APP IN USE. LNDG AND DEPG RWYS 4 L/R. ALL AIRCRAFT READBACK HOLD SHORT INSTRUCTIONS AND RUNWAY ASSIGNMENTS WITH YOUR CALL SIGN.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -2265,7 +2250,7 @@
     {
       "id": "ee1790f0-98d9-4f54-a28b-8145e6459b8c",
       "name": "Closed",
-      "airportConditions": "REMARKS. FULLERTON TOWER HOURS OF OPERATION ARE FROM 0700 LOCAL TIME TO 2100 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 119.1. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
+      "airportConditions": "REMARKS. LOS ALAMITOS TOWER HOURS OF OPERATION ARE FROM 0700 LOCAL TIME TO 2200 LOCAL TIME. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 123.85. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT THE OVERLYING ONLINE CONTROLLER.",
       "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false,
@@ -2305,6 +2290,11 @@
       "pattern": "(ILS|RNAV|RNP|VOR|LDA|LOC) ([ABCDXYZ])\\b",
       "text": "$1 $2",
       "voice": "$1 $phonetic($2)"
+    },
+    {
+      "pattern": "(\\b([0-9]|[1-3][0-9])\\b) (L/R)",
+      "text": "$1 $3",
+      "voice": "$runway($1) LEFT AND RIGHT"
     }
   ],
   "airportConditionDefinitions": [],

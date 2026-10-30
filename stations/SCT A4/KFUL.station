@@ -2221,7 +2221,7 @@
       "id": "71167323-155b-4d69-ad4a-6d86c7db5247",
       "ordinal": 1,
       "name": "West",
-      "airportConditions": "VOR-A APPR IN USE. LNDG AND DEPG RWY 24.",
+      "airportConditions": "VOR-A APPR IN USE. LNDG AND DEPG RWY 24. ALL AIRCRAFT READBACK HOLD SHORT INSTRUCTIONS AND RUNWAY ASSIGNMENTS WITH YOUR CALL SIGN.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -2237,7 +2237,7 @@
       "id": "1253f976-fd65-461e-b82a-220e3482d09e",
       "ordinal": 1,
       "name": "West (Low IMC)",
-      "airportConditions": "LOC, GPS, VOR APPS IN USE. LNDG AND DEPG RWY 24.",
+      "airportConditions": "LOC, GPS, VOR APPS IN USE. LNDG AND DEPG RWY 24. ALL AIRCRAFT READBACK HOLD SHORT INSTRUCTIONS AND RUNWAY ASSIGNMENTS WITH YOUR CALL SIGN.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -2253,7 +2253,7 @@
       "id": "71c054fb-d319-4f37-9cc6-4e8a97136e2b",
       "ordinal": 3,
       "name": "East",
-      "airportConditions": "VOR-A APPR IN USE. LNDG AND DEPG RWY 6.",
+      "airportConditions": "VOR-A APPR IN USE. LNDG AND DEPG RWY 6. ALL AIRCRAFT READBACK HOLD SHORT INSTRUCTIONS AND RUNWAY ASSIGNMENTS WITH YOUR CALL SIGN.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
