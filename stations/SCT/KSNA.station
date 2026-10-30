@@ -2444,7 +2444,7 @@
     {
       "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
       "ordinal": 2,
-	  "onlineCondition": "2300z-0245z"
+	  "onlineCondition": "2300z-0245z",
       "enabled": true
     },
     {
