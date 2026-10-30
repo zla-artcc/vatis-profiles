@@ -2267,7 +2267,7 @@
     {
       "id": "5c434e41-43a1-41ac-9a02-ce6cea1d7ffc",
       "name": "CONFIG 1 (19/26)",
-      "airportConditions": "LANDING RWYS 26L, ^19L AND ^19R. DEPTG RWYS 26R, ^19R, AND ^19L. SIMUL APPS TO CROSSING AND PARALLEL RWYS IN USE, CONVERGING RWY OPS IN EFFECT.",
+      "airportConditions": "LANDING RWYS 26L, ^19L AND ^19R. DEPG RWYS 26R, ^19R, AND ^19L. SIMUL APPS TO CROSSING AND PARALLEL RWYS IN USE, CONVERGING RWY OPS IN EFFECT.",
       "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
@@ -2277,7 +2277,7 @@
     {
       "id": "d9defc81-0e88-448d-892b-e8d75c8661c0",
       "name": "CONFIG 2 (1/8)",
-      "airportConditions": "LDG RWYS 1L, AND ^8R. DEPTG RWY 8L AT TWY A8. VFR DEPG RWY 1L AT TWY B.",
+      "airportConditions": "LDG RWYS 1L, AND ^8R. DEPG RWY 8L AT TWY A8. VFR DEPG RWY 1L AT TWY B.",
       "notams": "",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
