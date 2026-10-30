@@ -2,7 +2,7 @@
   "name": "Joshua Control Facility (JCF)",
   "id": "c9b6d3c1-514e-4cef-b2fe-4672401a9799",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-JCF.json",
-  "updateSerial": 2026102600,
+  "updateSerial": 2026103000,
   "stations": [
     {
       "ordinal": 99,
@@ -2264,7 +2264,7 @@
         "useTextToSpeech": false,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
@@ -4556,7 +4556,7 @@
         "useTextToSpeech": false,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
@@ -6878,7 +6878,7 @@
         "useTextToSpeech": false,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
@@ -9200,7 +9200,7 @@
         "useTextToSpeech": false,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
@@ -11552,7 +11552,7 @@
         "useTextToSpeech": false,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {

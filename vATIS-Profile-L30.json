@@ -2,7 +2,7 @@
   "name": "Las Vegas TRACON (L30)",
   "id": "935bca6d-a174-4aa9-bb41-27f99533e86c",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-L30.json",
-  "updateSerial": 2026102600,
+  "updateSerial": 2026103000,
   "stations": [
     {
       "ordinal": 99,
@@ -2264,7 +2264,7 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
@@ -4826,7 +4826,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "enabled": false
+          "onlineCondition": "2300z-0245z",
+          "enabled": true
         },
         {
           "text": "LLWS ADZYS IN EFCT.",
@@ -4913,7 +4914,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": false
+          "enabled": true
         }
       ],
       "datisTextReplacements": [],
@@ -7182,7 +7183,7 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 180
+        "speechRate": 220
       },
       "presets": [
         {
