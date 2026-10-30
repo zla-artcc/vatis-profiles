@@ -2261,7 +2261,7 @@
     "useTextToSpeech": true,
     "useWavPack": false,
     "voice": "Default",
-    "speechRate": 200
+    "speechRate": 220
   },
   "presets": [
     {

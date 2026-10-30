@@ -2218,10 +2218,11 @@
   },
   "presets": [
     {
-      "id": "59f40761-0ed7-4b43-89c1-cd9346125ea4",
-      "name": "North",
-      "airportConditions": "GPS RWY 1 APP IN USE. LNDG AND DEPG RWY 1. ALL AIRCRAFT READBACK HOLD SHORT INSTRUCTIONS AND RUNWAY ASSIGNMENTS WITH YOUR CALL SIGN.",
-      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
+      "id": "18158714-ea3b-4c34-9673-5b4cd733e6e9",
+      "ordinal": 1,
+      "name": "Closed",
+      "airportConditions": "REMARKS. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 123.075. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT LOS ANGELES CENTER.",
+      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
       "externalGenerator": {
         "enabled": false,
         "textUrl": "",
@@ -2234,6 +2235,7 @@
     },
     {
       "id": "187a38fb-ea72-427c-a301-02fe7e7b8dfd",
+      "ordinal": 2,
       "name": "South",
       "airportConditions": "GPS OR LDA RWY 19 APP IN USE. LNDG AND DEPG RWY 19. ALL AIRCRAFT READBACK HOLD SHORT INSTRUCTIONS AND RUNWAY ASSIGNMENTS WITH YOUR CALL SIGN.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
@@ -2248,10 +2250,11 @@
       }
     },
     {
-      "id": "18158714-ea3b-4c34-9673-5b4cd733e6e9",
-      "name": "Closed",
-      "airportConditions": "REMARKS. THE COMMON TRAFFIC ADVISORY FREQUENCY IS 123.075. FOR IFR DEPARTURE AND ARRIVAL SERVICES CONTACT LOS ANGELES CENTER.",
-      "template": "[FACILITY] AUTOMATED WEATHER OBSERVATION [TIME] [WX]. [ARPT_COND] [NOTAMS]",
+      "id": "59f40761-0ed7-4b43-89c1-cd9346125ea4",
+      "ordinal": 3,
+      "name": "North",
+      "airportConditions": "GPS RWY 1 APP IN USE. LNDG AND DEPG RWY 1. ALL AIRCRAFT READBACK HOLD SHORT INSTRUCTIONS AND RUNWAY ASSIGNMENTS WITH YOUR CALL SIGN.",
+      "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
         "textUrl": "",
@@ -2299,7 +2302,7 @@
   ],
   "airportConditionDefinitions": [
     {
-      "text": "ST. GEORGE TOWER HOURS OF OPERATION ARE FROM 0700 LOCAL TIME TO 2200 LOCAL TIME. ",
+      "text": "ST. GEORGE TOWER HOURS OF OPERATION ARE FROM 9999 LOCAL TIME TO 9999 LOCAL TIME. ",
       "ordinal": 1,
       "enabled": false
     }
