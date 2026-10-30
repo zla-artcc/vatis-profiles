@@ -2,7 +2,7 @@
   "name": "SCT Area 3",
   "id": "604492c4-4985-4330-9696-c72810331b7f",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT-3.json",
-  "updateSerial": 2026102901,
+  "updateSerial": 2026102902,
   "stations": [
     {
       "ordinal": 99,
@@ -2220,7 +2220,7 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 200
+        "speechRate": 220
       },
       "presets": [
         {
@@ -4527,13 +4527,14 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 200
+        "speechRate": 220
       },
       "presets": [
         {
           "id": "0a76e10b-9f66-453e-9336-d6143d717556",
           "ordinal": 99,
           "name": "South",
+          "airportConditions": "VOR-A APPR IN USE. LNDG AND DEPG RWY 19.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -4549,6 +4550,7 @@
           "id": "e3723fb5-0c3e-4df7-8025-450cdad60696",
           "ordinal": 1,
           "name": "North",
+          "airportConditions": "VOR-A APPR IN USE. LNDG AND DEPG RWY 1.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -6833,7 +6835,7 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 200
+        "speechRate": 220
       },
       "presets": [
         {
@@ -11468,7 +11470,7 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 200
+        "speechRate": 220
       },
       "presets": [
         {
@@ -13757,7 +13759,7 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 200
+        "speechRate": 220
       },
       "presets": [
         {

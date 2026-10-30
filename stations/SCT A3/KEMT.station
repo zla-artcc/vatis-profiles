@@ -2214,13 +2214,14 @@
     "useTextToSpeech": true,
     "useWavPack": false,
     "voice": "Default",
-    "speechRate": 200
+    "speechRate": 220
   },
   "presets": [
     {
       "id": "0a76e10b-9f66-453e-9336-d6143d717556",
       "ordinal": 99,
       "name": "South",
+	  "airportConditions": "VOR-A APPR IN USE. LNDG AND DEPG RWY 19.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
@@ -2236,6 +2237,7 @@
       "id": "e3723fb5-0c3e-4df7-8025-450cdad60696",
       "ordinal": 1,
       "name": "North",
+	  "airportConditions": "VOR-A APPR IN USE. LNDG AND DEPG RWY 1.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
