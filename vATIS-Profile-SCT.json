@@ -2,7 +2,7 @@
   "name": "SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT.json",
-  "updateSerial": 2026103001,
+  "updateSerial": 2026103100,
   "stations": [
     {
       "ordinal": 99,
@@ -2403,8 +2403,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 10,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
@@ -2416,7 +2416,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -7319,8 +7319,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 11,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
@@ -7364,7 +7364,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -9726,7 +9726,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -14506,8 +14506,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF ONT.",
@@ -14524,7 +14524,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -16912,8 +16912,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "NEW RNAV PROCEDURES IN EFFECT. LOAD NEWEST NAVIGATION DATA.",
@@ -16930,7 +16930,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -19314,8 +19314,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "NO OFFSHORE TRANSITIONS.",
@@ -19344,7 +19344,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -24182,8 +24182,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
@@ -24195,7 +24195,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -26633,7 +26633,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [

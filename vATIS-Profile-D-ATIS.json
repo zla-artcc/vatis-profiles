@@ -1,7 +1,7 @@
 {
   "name": "ZLA Real D-ATIS",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-D-ATIS.json",
-  "updateSerial": 2026103001,
+  "updateSerial": 2026103100,
   "stations": [
     {
       "ordinal": 1,
@@ -2272,7 +2272,7 @@
         {
           "id": "5c434e41-43a1-41ac-9a02-ce6cea1d7ffc",
           "name": "CONFIG 1 (19/26)",
-          "airportConditions": "LANDING RWYS 26L, ^19L AND ^19R. DEPTG RWYS 26R, ^19R, AND ^19L. SIMUL APPS TO CROSSING AND PARALLEL RWYS IN USE, CONVERGING RWY OPS IN EFFECT.",
+          "airportConditions": "LANDING RWYS 26L, ^19L AND ^19R. DEPG RWYS 26R, ^19R, AND ^19L. SIMUL APPS TO CROSSING AND PARALLEL RWYS IN USE, CONVERGING RWY OPS IN EFFECT.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -2282,7 +2282,7 @@
         {
           "id": "d9defc81-0e88-448d-892b-e8d75c8661c0",
           "name": "CONFIG 2 (1/8)",
-          "airportConditions": "LDG RWYS 1L, AND ^8R. DEPTG RWY 8L AT TWY A8. VFR DEPG RWY 1L AT TWY B.",
+          "airportConditions": "LDG RWYS 1L, AND ^8R. DEPG RWY 8L AT TWY A8. VFR DEPG RWY 1L AT TWY B.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS]",
           "externalGenerator": {
@@ -2441,8 +2441,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 3,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "LLWS ADZYS IN EFCT.",
@@ -2529,7 +2529,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -4937,8 +4937,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 10,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
@@ -4950,7 +4950,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -7484,8 +7484,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 11,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "PILOTS MUST HOLD SHORT WHEN INSTRUCTED AND READBACK ALL HOLD SHORT CLEARANCES.",
@@ -7529,7 +7529,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -9938,8 +9938,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "USE CAUTION FOR NUMEROUS BIRDS OBSERVED IN VICINITY OF ONT.",
@@ -9956,7 +9956,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -12340,8 +12340,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "NO OFFSHORE TRANSITIONS.",
@@ -12370,7 +12370,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -14825,8 +14825,8 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
-          "onlineCondition": "2300z-0245z",
-          "enabled": true
+          "onlineCondition": "",
+          "enabled": false
         },
         {
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
@@ -14838,7 +14838,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [],
@@ -17276,7 +17276,7 @@
           "text": "STAFFING OPTIMIZED FOR EVENT TFC. NON-EVENT TFC EXPECT DELAYS.",
           "ordinal": 99,
           "onlineCondition": "2230z-0300z",
-          "enabled": true
+          "enabled": false
         }
       ],
       "datisTextReplacements": [
