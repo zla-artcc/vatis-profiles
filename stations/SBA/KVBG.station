@@ -9,6 +9,9 @@
   },
   "atisFormat": {
     "observationTime": {
+      "standardUpdateTime": [
+        55
+      ],
       "template": {
         "text": "{time}Z",
         "voice": "{time} ZULU {special}"
@@ -2117,6 +2120,8 @@
       "becomingVoice": "Becoming",
       "temporaryText": "TEMPO",
       "temporaryVoice": "Temporary",
+      "templateText": "{Trend}",
+      "templateVoice": "TREND, {Trend}",
       "template": {}
     },
     "windShear": {

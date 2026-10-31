@@ -2,7 +2,7 @@
   "name": "DEV SoCal TRACON (SCT)",
   "id": "48fd8de2-c0df-4530-8fea-aa028c230ecc",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-DEV-SCT.json",
-  "updateSerial": 2026102909,
+  "updateSerial": 2026102913,
   "stations": [
     {
       "ordinal": 99,
@@ -2267,7 +2267,7 @@
         "useTextToSpeech": true,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 200
+        "speechRate": 220
       },
       "presets": [
         {
@@ -2403,6 +2403,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 10,
+          "onlineCondition": "",
           "enabled": false
         },
         {
@@ -7318,6 +7319,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT. ADVISE IF YOU HAVE OUTDATED SCENERY.",
           "ordinal": 11,
+          "onlineCondition": "",
           "enabled": false
         },
         {
@@ -14504,6 +14506,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
+          "onlineCondition": "",
           "enabled": false
         },
         {
@@ -16909,6 +16912,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
+          "onlineCondition": "",
           "enabled": false
         },
         {
@@ -19310,6 +19314,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
+          "onlineCondition": "",
           "enabled": false
         },
         {
@@ -24177,6 +24182,7 @@
         {
           "text": "METERING, FLOW CONTROL, AND GATE HOLD PROCEDURES IN EFFECT.",
           "ordinal": 2,
+          "onlineCondition": "",
           "enabled": false
         },
         {

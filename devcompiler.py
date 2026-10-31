@@ -23,16 +23,19 @@ PROFILES = {
 #    "./vATIS-Profile-DEV-L30.json": ['L30'],
 #    "./vATIS-Profile-DEV-SBA.json": ['SBA'],
      "./vATIS-Profile-DEV-SCT.json": ['SCT'],
-     "./vATIS-Profile-DEV-ZLA.json": ['KBFL', 'KBUR', 'KLAS', 'KLAX', 'KONT', 'KPSP', 'KSAN', 'KSBA', 'KSNA',
-                                  'KVNY'],
-#    "./vATIS-Profile-DEV-ZLA-2.json": ['CTR', 'NTD', 'KNYL'],
-#    "./vATIS-Profile-DEV-D-ATIS.json": ['KBUR', 'KLAS', 'KLAX', 'KONT', 'KSAN', 'KSNA', 'KPOC',
+     "./vATIS-Profile-DEV-ZLA.json": ['KBFL', 'KBUR', 'KCMA', 'KLAS', 'KLAX', 'KONT', 'KOXR', 'KPSP', 'KSAN', 'KSBA', 'KSNA',
+                                 'KVNY'],
+#    "./vATIS-Profile-DEV-ZLA-2.json": ['CTR', 'NTD'],
+#    "./vATIS-Profile-DEV-D-ATIS.json": ['KBUR', 'KLAS', 'KLAX', 'KONT', 'KSAN', 'KSNA',
 #                                 'KVNY'],
-#    "./vATIS-Profile-SCT-1.json": ['KBUR', 'KVNY', 'KWHP'],
-     "./vATIS-Profile-SCT-3.json": ['KONT', 'KPSP', 'SCT A3'],
-#    "./vATIS-Profile-SCT-4.json": ['KSNA', 'KLGB'],
-#    "./vATIS-Profile-SCT-5.json": ['KCRQ', 'KMYF', 'KSEE', 'KSAN', 'KSDM', 'KRNM'],
-#    "./vATIS-Profile-SCT-6.json": ['KLAX', 'KSMO', 'KHHR']
+    "./vATIS-Profile-DEV-SCT-1.json": ['KBUR', 'KVNY', 'KWHP'],
+    "./vATIS-Profile-DEV-SCT-3.json": ['KONT', 'KPSP', 'SCT A3'],
+    "./vATIS-Profile-DEV-SCT-4.json": ['KSNA', 'KLGB', 'SCT A4'],
+    "./vATIS-Profile-DEV-SCT-5.json": ['KSAN', 'KMYF', 'SCT A5'],
+    "./vATIS-Profile-DEV-SCT-6.json": ['KLAX', 'KSMO', 'KHHR'],
+    "./vATIS-Profile-DEV-NTD.json": ['NTD']
+#   "./vATIS-Profile-DEV-ZLA-AIO.json": ['CTR', 'L30', 'SCT', 'SBA', 'JCF', 'NTD'],                             
+#   "./vATIS-Profile-DEV-ZLA-AIO.json": ['CTR', 'L30', 'SCT', 'SCT A1', 'SCT A3', 'SCT A4', 'SCT A5', 'SBA', 'JCF', 'NTD'],
 }
 
 # Exclude these airports from all profiles.

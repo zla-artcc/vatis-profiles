@@ -9,6 +9,9 @@
   },
   "atisFormat": {
     "observationTime": {
+      "standardUpdateTime": [
+        54
+      ],
       "template": {
         "text": "{time}Z",
         "voice": "{time} ZULU {special}"
