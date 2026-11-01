@@ -1,7 +1,7 @@
 {
   "name": "ZLA All Stations",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-AIO.json",
-  "updateSerial": 2026103100,
+  "updateSerial": 2026110100,
   "stations": [
     {
       "ordinal": 98,
@@ -39615,6 +39615,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -39922,12 +39924,12 @@
           "enabled": false
         },
         {
-          "text": "ILS AND @RNAV RWY 7, VIS ^15R APPS IN USE.",
+          "text": "ILS AND RNAV RWY 7, VIS ^15R APPS IN USE.",
           "ordinal": 3,
           "enabled": false
         },
         {
-          "text": "ILS AND @RNAV RWY 7 APCH IN USE.",
+          "text": "ILS AND RNAV RWY 7 APCH IN USE.",
           "ordinal": 4,
           "enabled": false
         }
@@ -39942,6 +39944,30 @@
           "text": "CHECK AIRPORT DIAGRAM, TWY NAMES HAVE CHANGED AND MAY NOT MATCH SCENERY.",
           "ordinal": 2,
           "enabled": true
+        },
+        {
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT CD 5 PRIOR TO PUSH.",
+          "ordinal": 3,
+          "onlineCondition": "SBA_*DEL",
+          "enabled": false
+        },
+        {
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT GC 5 PRIOR TO PUSH.",
+          "ordinal": 4,
+          "onlineCondition": "SBA_*GND NOT SBA_*DEL",
+          "enabled": false
+        },
+        {
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT TWR 5 PRIOR TO PUSH.",
+          "ordinal": 5,
+          "onlineCondition": "SBA_*TWR NOT (SBA_*GND OR SBA_*DEL)",
+          "enabled": false
+        },
+        {
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT ATC 5 PRIOR TO PUSH.",
+          "ordinal": 6,
+          "onlineCondition": "NOT (SBA_*GND OR SBA_*TWR OR SBA_*DEL)",
+          "enabled": false
         },
         {
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
@@ -42223,7 +42249,7 @@
         "useTextToSpeech": false,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 210
+        "speechRate": 220
       },
       "presets": [
         {
@@ -49367,7 +49393,7 @@
         {
           "text": "ALL RWY 8 ARRIVALS USE CAUTION FOR +VNY EAST TRAFFIC PATTERN.",
           "ordinal": 6,
-          "onlineCondition": "1300z-0546z",
+          "onlineCondition": "1400z-0646z",
           "enabled": true
         },
         {
@@ -56644,7 +56670,7 @@
         {
           "id": "79bd3308-7cd4-480f-a2da-c1779938e676",
           "name": "EAST",
-          "airportConditions": "LA RIVER VISUAL RWY 12 IN USE. @RNAV RNP APPROACH AVAILABLE ON REQUEST. LANDING AND DEPARTING RWYS 12, ^8L, ^8R.",
+          "airportConditions": "LA RIVER VISUAL RWY 12 IN USE. RNAV RNP APPROACH AVAILABLE ON REQUEST. LANDING AND DEPARTING RWYS 12, ^8L, ^8R.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -63801,7 +63827,7 @@
         {
           "id": "580f3bb1-c0cf-4b77-85ff-cc03fa5f7e0a",
           "name": "NORMAL IMC (31L/R)",
-          "airportConditions": "@RNAV APPROACHES IN USE. LANDING AND DEPARTING RWYS 31L, ^31R.",
+          "airportConditions": "RNAV APPROACHES IN USE. LANDING AND DEPARTING RWYS 31L, ^31R.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -63832,7 +63858,7 @@
         {
           "id": "11cc2cc5-128c-4e74-897e-ae1aae7ff1b7",
           "name": "SOUTH IMC (13L/R)",
-          "airportConditions": "@RNAV APPROACHES IN USE. LANDING RWYS 13L, ^13R.",
+          "airportConditions": "RNAV APPROACHES IN USE. LANDING RWYS 13L, ^13R.",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -71040,7 +71066,7 @@
         {
           "id": "afa05742-88e9-4363-b52f-5b609c6418ed",
           "name": "NORTH IMC",
-          "airportConditions": "@RNAV AND LOC BC APPS IN USE. LDG AND DEPTG RWY 2L, AND ^2R.",
+          "airportConditions": "RNAV AND LOC BC APPS IN USE. LDG AND DEPTG RWY 2L, AND ^2R.",
           "notams": "",
           "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {

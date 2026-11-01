@@ -2,7 +2,7 @@
   "name": "Santa Barbara TRACON (SBA)",
   "id": "f41ff02d-b3c8-4e9c-8898-45f3d7ea3bef",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SBA.json",
-  "updateSerial": 2026103100,
+  "updateSerial": 2026110100,
   "stations": [
     {
       "ordinal": 99,
@@ -2126,6 +2126,8 @@
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "templateText": "{Trend}",
+          "templateVoice": "TREND, {Trend}",
           "template": {}
         },
         "windShear": {
@@ -2433,12 +2435,12 @@
           "enabled": false
         },
         {
-          "text": "ILS AND @RNAV RWY 7, VIS ^15R APPS IN USE.",
+          "text": "ILS AND RNAV RWY 7, VIS ^15R APPS IN USE.",
           "ordinal": 3,
           "enabled": false
         },
         {
-          "text": "ILS AND @RNAV RWY 7 APCH IN USE.",
+          "text": "ILS AND RNAV RWY 7 APCH IN USE.",
           "ordinal": 4,
           "enabled": false
         }
@@ -2453,6 +2455,30 @@
           "text": "CHECK AIRPORT DIAGRAM, TWY NAMES HAVE CHANGED AND MAY NOT MATCH SCENERY.",
           "ordinal": 2,
           "enabled": true
+        },
+        {
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT CD 5 PRIOR TO PUSH.",
+          "ordinal": 3,
+          "onlineCondition": "SBA_*DEL",
+          "enabled": false
+        },
+        {
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT GC 5 PRIOR TO PUSH.",
+          "ordinal": 4,
+          "onlineCondition": "SBA_*GND NOT SBA_*DEL",
+          "enabled": false
+        },
+        {
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT TWR 5 PRIOR TO PUSH.",
+          "ordinal": 5,
+          "onlineCondition": "SBA_*TWR NOT (SBA_*GND OR SBA_*DEL)",
+          "enabled": false
+        },
+        {
+          "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT ATC 5 PRIOR TO PUSH.",
+          "ordinal": 6,
+          "onlineCondition": "NOT (SBA_*GND OR SBA_*TWR OR SBA_*DEL)",
+          "enabled": false
         },
         {
           "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",
@@ -4734,7 +4760,7 @@
         "useTextToSpeech": false,
         "useWavPack": false,
         "voice": "Default",
-        "speechRate": 210
+        "speechRate": 220
       },
       "presets": [
         {
