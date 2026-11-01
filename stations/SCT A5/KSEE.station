@@ -2279,7 +2279,7 @@
     {
       "id": "e41f2e63-a5ce-4290-939d-f65a25c3de61",
       "name": "EAST",
-      "airportConditions": "@RNAV RWY 9L, VOR, AND VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWYS 9L, ^9R.",
+      "airportConditions": "RNAV RWY 9L, VOR, AND VISUAL APPROACHES IN USE. LANDING AND DEPARTING RWYS 9L, ^9R.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [TIME]. [WX]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
