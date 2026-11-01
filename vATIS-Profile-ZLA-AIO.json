@@ -1,7 +1,7 @@
 {
   "name": "ZLA All Stations",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-ZLA-AIO.json",
-  "updateSerial": 2026110100,
+  "updateSerial": 2026110101,
   "stations": [
     {
       "ordinal": 98,
