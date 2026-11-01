@@ -2120,6 +2120,8 @@
       "becomingVoice": "Becoming",
       "temporaryText": "TEMPO",
       "temporaryVoice": "Temporary",
+      "templateText": "{Trend}",
+      "templateVoice": "TREND, {Trend}",
       "template": {}
     },
     "windShear": {
@@ -2392,7 +2394,7 @@
       "text": "RMKS",
       "voice": "REMARKS"
     },
-	{
+    {
       "variableName": "RNAV",
       "text": "RNAV",
       "voice": "ARE NAV"
@@ -2427,12 +2429,12 @@
       "enabled": false
     },
     {
-      "text": "ILS AND @RNAV RWY 7, VIS ^15R APPS IN USE.",
+      "text": "ILS AND RNAV RWY 7, VIS ^15R APPS IN USE.",
       "ordinal": 3,
       "enabled": false
     },
     {
-      "text": "ILS AND @RNAV RWY 7 APCH IN USE.",
+      "text": "ILS AND RNAV RWY 7 APCH IN USE.",
       "ordinal": 4,
       "enabled": false
     }
@@ -2447,6 +2449,30 @@
       "text": "CHECK AIRPORT DIAGRAM, TWY NAMES HAVE CHANGED AND MAY NOT MATCH SCENERY.",
       "ordinal": 2,
       "enabled": true
+    },
+    {
+      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT CD 5 PRIOR TO PUSH.",
+      "ordinal": 3,
+      "onlineCondition": "SBA_*DEL",
+      "enabled": false
+    },
+    {
+      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT GC 5 PRIOR TO PUSH.",
+      "ordinal": 4,
+      "onlineCondition": "SBA_*GND NOT SBA_*DEL",
+      "enabled": false
+    },
+    {
+      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT TWR 5 PRIOR TO PUSH.",
+      "ordinal": 5,
+      "onlineCondition": "SBA_*TWR NOT (SBA_*GND OR SBA_*DEL)",
+      "enabled": false
+    },
+    {
+      "text": "CALL 4 RLS IN EFFECT 4 ACFT LNDG +SFO, CONTACT ATC 5 PRIOR TO PUSH.",
+      "ordinal": 6,
+      "onlineCondition": "NOT (SBA_*GND OR SBA_*TWR OR SBA_*DEL)",
+      "enabled": false
     },
     {
       "text": "INC TRICK OR BAY IN RMKS IF PARTICIPATING IN +OAK EVENT",

@@ -2282,7 +2282,7 @@
     {
       "id": "79bd3308-7cd4-480f-a2da-c1779938e676",
       "name": "EAST",
-      "airportConditions": "LA RIVER VISUAL RWY 12 IN USE. @RNAV RNP APPROACH AVAILABLE ON REQUEST. LANDING AND DEPARTING RWYS 12, ^8L, ^8R.",
+      "airportConditions": "LA RIVER VISUAL RWY 12 IN USE. RNAV RNP APPROACH AVAILABLE ON REQUEST. LANDING AND DEPARTING RWYS 12, ^8L, ^8R.",
       "template": "[FACILITY] ATIS INFO [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] [NOTAMS] [CLOSING]",
       "externalGenerator": {
         "enabled": false,
