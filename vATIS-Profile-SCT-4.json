@@ -2,7 +2,7 @@
   "name": "SCT Area 4",
   "id": "4a3e12fc-a809-430b-a586-113aa827bb23",
   "updateUrl": "https://github.com/ZLA-ARTCC/vatis-profiles/releases/latest/download/vATIS-Profile-SCT-4.json",
-  "updateSerial": 2026110104,
+  "updateSerial": 2026110700,
   "stations": [
     {
       "ordinal": 99,
